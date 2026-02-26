@@ -1,8 +1,5 @@
 {
   "$schema": "https://openapi.vercel.sh/vercel.json",
   "framework": "nextjs",
-  "regions": ["iad1"],
-  "env": {
-    "ANTHROPIC_API_KEY": "@anthropic-api-key"
-  }
+  "regions": ["iad1"]
 }
