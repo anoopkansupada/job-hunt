@@ -1,0 +1,108 @@
+# config.example.yaml — copy to config.yaml and fill in
+# See PLAN.md for full documentation
+
+roles:
+  - "Head of Partnerships"
+  - "VP Partnerships"
+  - "Director of Partnerships"
+  - "Head of Ecosystem"
+  - "VP Business Development"
+  - "Director of Business Development"
+  - "Head of Growth"
+  - "Chief of Staff"
+  - "Head of Web3 Partnerships"
+
+locations:
+  - "New York"
+  - "NYC"
+  - "Remote"
+  - "Hybrid"
+
+seniority:
+  - "Head"
+  - "VP"
+  - "Director"
+  - "Senior"
+  - "Lead"
+  - "Principal"
+
+boost_keywords:
+  - "Web3"
+  - "crypto"
+  - "blockchain"
+  - "DeFi"
+  - "ecosystem"
+  - "protocol"
+  - "startup"
+
+exclude_keywords:
+  - "Junior"
+  - "Entry Level"
+  - "Intern"
+  - "Associate"
+  - "Coordinator"
+
+# min score (0-12) to STORE the job (even silently)
+min_store_score: 2
+# min score to ALERT on Slack
+min_alert_score: 5
+
+# Slack webhook for #job-hunt alerts
+slack_webhook: ""  # add your webhook URL here
+
+companies:
+  # Web3 / Crypto
+  - name: Coinbase
+    lever_slug: coinbase
+  - name: Kraken
+    greenhouse_slug: kraken
+  - name: Chainalysis
+    greenhouse_slug: chainalysis
+  - name: Alchemy
+    lever_slug: alchemyplatform
+  - name: Consensys
+    greenhouse_slug: consensys
+  - name: Ripple
+    greenhouse_slug: ripple
+  - name: Uniswap Labs
+    greenhouse_slug: uniswaplabs
+  - name: Polygon
+    career_page: https://polygon.technology/careers
+  - name: Arbitrum Foundation
+    career_page: https://arbitrum.foundation/jobs
+
+  # Fintech
+  - name: Ramp
+    greenhouse_slug: ramp
+  - name: Brex
+    greenhouse_slug: brex
+  - name: Stripe
+    lever_slug: stripe
+  - name: Plaid
+    greenhouse_slug: plaid
+  - name: Rippling
+    lever_slug: rippling
+
+  # Tech / Growth
+  - name: Notion
+    greenhouse_slug: notion
+  - name: Figma
+    greenhouse_slug: figma
+  - name: Whatnot
+    greenhouse_slug: whatnot
+  - name: Carta
+    greenhouse_slug: carta
+
+boards:
+  - name: Wellfound
+    url: "https://wellfound.com/jobs"
+    method: crawl4ai
+    frequency: every_12h
+  - name: Built In NYC
+    url: "https://www.builtinnyc.com/jobs"
+    method: web_fetch
+    frequency: every_24h
+  - name: Web3.career
+    url: "https://web3.career"
+    method: web_fetch
+    frequency: every_24h

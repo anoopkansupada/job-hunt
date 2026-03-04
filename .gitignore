@@ -1,36 +1,33 @@
-# Dependencies
-node_modules/
-.pnp
-.pnp.js
+# App dependencies
+app/node_modules/
+app/.next/
+app/.vercel/
+app/out/
+app/build/
+app/dist/
 
-# Testing
-coverage/
+# Environment files
+app/.env.local
+app/.env.*.local
+app/.env
 
-# Next.js
-.next/
-out/
+# Scraper runtime files
+scraper/seen_jobs.json
+scraper/jobs/
+scraper/logs/
+scraper/config.yaml
+scraper/__pycache__/
+scraper/scrapers/__pycache__/
+scraper/*.pyc
 
-# Production
-build/
-dist/
-
-# Misc
-.DS_Store
-*.pem
-.env.local
-.env.*.local
-
-# Debug
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
-
-# IDE
-.idea/
-.vscode/
-*.swp
-*.swo
+# Workspace planning files (not code)
+MEMORY.md
+STATE.md
+memory/
 
 # OS
+.DS_Store
 Thumbs.db
-.vercel
+*.swp
+*.swo
+*.pem

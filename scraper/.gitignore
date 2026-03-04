@@ -1,0 +1,6 @@
+seen_jobs.json
+jobs/
+logs/
+config.yaml
+*.pyc
+__pycache__/

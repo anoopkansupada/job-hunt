@@ -1,97 +1,54 @@
-# Job Hunt Optimizer
+# Job Hunt — Career Intelligence Platform
 
-Resume and cover letter optimization powered by Claude.
+Anoop's personal job search system. Two components working together.
 
-## Quick Start (Local Network)
+## Components
 
-### 1. Get Your API Key
-- Go to https://console.anthropic.com/
-- Create/copy your API key
-- Create `.env.local` file in this directory:
-  ```bash
-  cp .env.local.example .env.local
-  # Edit .env.local and paste your ANTHROPIC_API_KEY
-  ```
+### `/app` — Resume Optimizer (Live)
+Next.js 14 app. Paste a job description → get a tailored resume, cover letter, gap analysis, keyword map. 5 strategies, all streaming Claude in real time.
 
-### 2. Start the Dev Server
 ```bash
-npm run dev
+cd app && npm run dev   # → http://localhost:3000
 ```
 
-Server runs on `http://localhost:3000`
+### `/scraper` — Job Discovery Pipeline (Building)
+Python cron pipeline. Pulls from Lever API, Greenhouse API, job boards, and company career pages. Filters for match. Saves as markdown. Alerts on Slack.
 
-### 3. Access from Same Network
-On Catrina's device (same WiFi):
-- Find your Mac's local IP: `ipconfig getifaddr en0` or `ipconfig getifaddr en1`
-- Visit: `http://YOUR_IP:3000`
-
-Example: `http://192.168.1.100:3000`
-
----
-
-## Features
-
-**5 Optimization Strategies:**
-1. **Resume Tailoring** - Match resume to specific job description
-2. **Resume Audit** - Identify gaps and get revision suggestions  
-3. **Bullet Generator** - Convert achievements to strong bullet points
-4. **Cover Letter** - Generate role-specific cover letter
-5. **Keywords Mapping** - Map skills to job requirements
-
-**Streaming Output** - See Claude's response in real-time
+```bash
+cd scraper && python run.py --dry-run
+```
 
 ---
 
 ## Architecture
 
-- **Frontend**: React 18 + Next.js 14 + Tailwind CSS
-- **Backend**: Next.js API routes
-- **LLM**: Claude 3.5 Sonnet (via Anthropic API)
-
-All processing happens locally on your Mac. Everything is private and fast.
-
----
-
-## Optional: Tailscale Remote Access
-
-To access from outside your home network:
-
-1. Both you and Catrina have Tailscale installed
-2. In a terminal (from this app directory):
-   ```bash
-   # Get your Tailscale magic DNS
-   tailscale ip -4
-   # e.g., 100.80.53.56
-   
-   # Or get the DNS name
-   hostname
-   # Then construct: https://[hostname].taila85053.ts.net:3000
-   ```
-
-3. Catrina can then access: `https://jarviss-mac-mini.taila85053.ts.net:3000`
-
----
-
-## Troubleshooting
-
-**"ANTHROPIC_API_KEY not configured"**
-- Check that `.env.local` file exists
-- Verify you pasted your API key correctly
-- Restart the dev server after adding the key
-
-**Can't access from other device**
-- Verify both devices are on same WiFi
-- Check your local IP with: `ipconfig getifaddr en0`
-- Make sure the dev server is still running
-- Try disabling firewall temporarily (or add Next.js to allowlist)
-
----
-
-## Building for Production
-
-```bash
-npm run build
-npm run start
+```
+job-hunt/
+├── app/                → Next.js optimizer (Vercel-deployed)
+│   ├── app/api/        → 5 strategy API routes (Claude streaming)
+│   ├── components/     → UI
+│   └── README.md
+├── scraper/            → Job discovery engine (Mac mini cron)
+│   ├── scrapers/       → lever_api.py, greenhouse_api.py, job_board.py
+│   ├── sources.yaml    → Target roles, companies, filters
+│   └── README.md
+├── PLAN.md             ← Full architecture + build roadmap
+└── README.md           ← This file
 ```
 
-Runs on port 3000. Use with a reverse proxy (nginx, Vercel, etc.) for production.
+## Docs
+
+- **[PLAN.md](PLAN.md)** — Full architecture, build sequence, scraper design
+- **[app/README.md](app/README.md)** — Optimizer setup and features
+- **[scraper/README.md](scraper/README.md)** — Pipeline setup and config
+
+## Status
+
+| Component | Status |
+|-----------|--------|
+| Resume Optimizer | ✅ Live |
+| Lever/Greenhouse API scraper | 🔴 Building |
+| Job board scraper | 🔴 Building |
+| Career page scraper | 🔴 Building |
+| Slack alerts | 🔴 Building |
+| Optimizer ↔ Pipeline integration | ⏳ Planned |
