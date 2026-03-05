@@ -2,5 +2,8 @@ seen_jobs.json
 jobs/
 logs/
 config.yaml
+jobs.db
+jobs.db-wal
+jobs.db-shm
 *.pyc
 __pycache__/
