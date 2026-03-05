@@ -321,6 +321,15 @@ export default function Home() {
         <div className="mb-8 text-center">
           <h1 className="text-5xl font-bold text-white mb-2">Job Hunt Optimizer</h1>
           <p className="text-slate-400">Compare 5 prompting strategies side-by-side</p>
+          <div className="mt-3">
+            <a
+              href="/jobs"
+              className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full text-sm bg-slate-800 hover:bg-slate-700 text-slate-300 border border-slate-700 transition-colors"
+            >
+              🔍 Job Board
+              <span className="px-1.5 py-0.5 rounded text-xs bg-blue-500/20 text-blue-300">INBOX</span>
+            </a>
+          </div>
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
