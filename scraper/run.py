@@ -11,10 +11,23 @@ Usage:
   python3 run.py --dry-run --all                  # Discover + score, don't store
   python3 run.py --company "Stripe"               # Single company
 
+  python3 run.py --apply JOB_ID                   # Start application for a job
+  python3 run.py --update-app APP_ID STATUS        # Update application status
+  python3 run.py --apps                            # Show all applications
+  python3 run.py --apps --status interviewing      # Filter by status
+  python3 run.py --add-contact "Company" "Name" "Title"  # Add a hiring contact
+  python3 run.py --contacts                        # List all contacts
+  python3 run.py --contacts --company "Stripe"     # Contacts at a company
+  python3 run.py --pipeline                        # Full funnel view
+
 Stages:
   1. discover  -> fetch jobs from Lever + Greenhouse APIs
   2. filter    -> score/re-score jobs against config criteria
   3. notify    -> alert on high-scoring matches (future: Slack)
+
+Application statuses:
+  interested -> preparing -> applied -> phone_screen -> interviewing ->
+  final_round -> offer -> accepted | rejected | withdrawn | ghosted
 """
 import sys
 import time
@@ -24,7 +37,9 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).parent))
 
-from db import get_conn, get_stats, init_db, upsert_company, insert_job, update_job
+from db import (get_conn, get_stats, init_db, upsert_company, insert_job, update_job,
+               upsert_contact, get_contacts, create_application, update_application,
+               get_applications, get_app_stats)
 from filter import score_job, passes_threshold, load_config
 from scrapers.lever_api import fetch_lever_jobs, parse_lever_job
 from scrapers.greenhouse_api import fetch_greenhouse_jobs, parse_greenhouse_job
@@ -235,6 +250,172 @@ def run_all(config: dict, limit: int = None, company_name: str = None,
     print_stats()
 
 
+def cmd_apply(job_id: int):
+    """Create an application from a discovered job."""
+    conn = get_conn()
+    job = conn.execute("SELECT * FROM jobs WHERE id=?", (job_id,)).fetchone()
+    conn.close()
+    if not job:
+        print(f"  Job #{job_id} not found")
+        return
+    job = dict(job)
+
+    # Check if already applied
+    conn = get_conn()
+    existing = conn.execute(
+        "SELECT id, status FROM applications WHERE job_id=?", (job_id,)
+    ).fetchone()
+    conn.close()
+    if existing:
+        print(f"  Already tracking: application #{existing['id']} (status: {existing['status']})")
+        return
+
+    app_id = create_application(job_id=job_id)
+    print(f"  Application #{app_id} created")
+    print(f"  {job['title']} @ {job['company_name']}")
+    print(f"  Score: {job['match_score']}/12 | {job['url']}")
+    print(f"  Status: interested")
+    print(f"\n  Next: python3 run.py --update-app {app_id} preparing")
+
+
+def cmd_update_app(app_id: int, new_status: str):
+    """Update an application's status."""
+    from datetime import datetime
+    conn = get_conn()
+    app = conn.execute("SELECT * FROM applications WHERE id=?", (app_id,)).fetchone()
+    conn.close()
+    if not app:
+        print(f"  Application #{app_id} not found")
+        return
+
+    old_status = app["status"]
+    updates = {"status": new_status}
+    if new_status == "applied" and not app["applied_at"]:
+        updates["applied_at"] = datetime.now().isoformat()
+    if new_status in ("phone_screen", "interviewing", "final_round", "offer") and not app["response_at"]:
+        updates["response_at"] = datetime.now().isoformat()
+
+    update_application(app_id, **updates)
+    print(f"  Application #{app_id}: {old_status} -> {new_status}")
+    print(f"  {app['title']} @ {app['company_name']}")
+
+
+def cmd_apps(status: str = None):
+    """Show applications."""
+    apps = get_applications(status=status, limit=100)
+    if not apps:
+        print("  No applications found")
+        return
+
+    # Group by status
+    by_status = {}
+    for a in apps:
+        by_status.setdefault(a["status"], []).append(a)
+
+    status_order = ["interested", "preparing", "applied", "phone_screen",
+                    "interviewing", "final_round", "offer", "accepted",
+                    "rejected", "withdrawn", "ghosted"]
+
+    print(f"\nApplications ({len(apps)} total)")
+    print("=" * 60)
+    for s in status_order:
+        group = by_status.get(s, [])
+        if not group:
+            continue
+        print(f"\n  [{s.upper()}] ({len(group)})")
+        for a in group:
+            ref = f" (referral)" if a.get("referral_contact_id") else ""
+            date = ""
+            if s == "applied" and a.get("applied_at"):
+                date = f" | applied {a['applied_at'][:10]}"
+            elif a.get("next_step_date"):
+                date = f" | next: {a['next_step_date']}"
+            print(f"    #{a['id']} {a['title']} @ {a['company_name']}{ref}{date}")
+            if a.get("notes"):
+                print(f"       note: {a['notes']}")
+
+
+def cmd_add_contact(company_name: str, name: str, title: str = None,
+                    linkedin_url: str = None, email: str = None):
+    """Add a hiring manager contact."""
+    contact_id = upsert_contact(
+        company_name=company_name, name=name, title=title,
+        linkedin_url=linkedin_url, email=email
+    )
+    print(f"  Contact #{contact_id}: {name}")
+    if title:
+        print(f"  Title: {title}")
+    print(f"  Company: {company_name}")
+
+
+def cmd_contacts(company_name: str = None):
+    """List contacts."""
+    contacts = get_contacts(company_name=company_name, limit=100)
+    if not contacts:
+        print("  No contacts found")
+        return
+
+    print(f"\nContacts ({len(contacts)})")
+    print("=" * 60)
+    current_company = None
+    for c in sorted(contacts, key=lambda x: x["company_name"] or ""):
+        if c["company_name"] != current_company:
+            current_company = c["company_name"]
+            print(f"\n  {current_company}")
+        title = f" -- {c['title']}" if c.get("title") else ""
+        li = f" | {c['linkedin_url']}" if c.get("linkedin_url") else ""
+        status = f" [{c['outreach_status']}]" if c["outreach_status"] != "not_contacted" else ""
+        print(f"    #{c['id']} {c['name']}{title}{li}{status}")
+
+
+def cmd_pipeline():
+    """Full funnel view: discovery -> applications -> outcomes."""
+    stats = get_stats()
+    app_stats = get_app_stats()
+
+    print("\nJob Hunt Pipeline -- Full Funnel")
+    print("=" * 50)
+
+    # Discovery
+    print(f"\n  DISCOVERY")
+    print(f"    Jobs found:     {stats.get('total_jobs', 0)}")
+    print(f"    High score 5+:  {stats.get('high_score', 0)}")
+
+    # Applications funnel
+    total_apps = sum(v for k, v in app_stats.items()
+                     if k not in ("total_contacts", "outreach_sent", "outreach_replied"))
+    active = sum(app_stats.get(s, 0) for s in
+                 ["interested", "preparing", "applied", "phone_screen",
+                  "interviewing", "final_round", "offer"])
+    applied = sum(app_stats.get(s, 0) for s in
+                  ["applied", "phone_screen", "interviewing", "final_round",
+                   "offer", "accepted", "rejected", "ghosted"])
+    responses = sum(app_stats.get(s, 0) for s in
+                    ["phone_screen", "interviewing", "final_round", "offer", "accepted"])
+
+    print(f"\n  APPLICATIONS")
+    print(f"    Total tracked:  {total_apps}")
+    print(f"    Active:         {active}")
+    print(f"    Applied:        {applied}")
+    print(f"    Got response:   {responses}")
+    if applied > 0:
+        print(f"    Response rate:  {responses/applied*100:.0f}%")
+
+    # Breakdown
+    for status in ["interested", "preparing", "applied", "phone_screen",
+                   "interviewing", "final_round", "offer", "accepted",
+                   "rejected", "withdrawn", "ghosted"]:
+        ct = app_stats.get(status, 0)
+        if ct > 0:
+            print(f"      {status:<16}: {ct}")
+
+    # Contacts
+    print(f"\n  NETWORKING")
+    print(f"    Contacts:       {app_stats.get('total_contacts', 0)}")
+    print(f"    Outreach sent:  {app_stats.get('outreach_sent', 0)}")
+    print(f"    Replies:        {app_stats.get('outreach_replied', 0)}")
+
+
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Job Hunt Discovery Pipeline")
     parser.add_argument("--stats", action="store_true", help="Show pipeline stats")
@@ -244,13 +425,45 @@ if __name__ == "__main__":
     parser.add_argument("--company", type=str, help="Process single company by name")
     parser.add_argument("--limit", type=int, default=None, help="Max items to process")
     parser.add_argument("--dry-run", action="store_true", help="Preview without storing")
+    # Application tracking
+    parser.add_argument("--apply", type=int, metavar="JOB_ID",
+                        help="Start tracking an application for a job")
+    parser.add_argument("--update-app", nargs=2, metavar=("APP_ID", "STATUS"),
+                        help="Update application status")
+    parser.add_argument("--apps", action="store_true", help="Show all applications")
+    parser.add_argument("--status", type=str, help="Filter applications by status")
+    parser.add_argument("--pipeline", action="store_true", help="Full funnel view")
+    # Contacts
+    parser.add_argument("--add-contact", nargs="+", metavar="ARG",
+                        help="Add contact: COMPANY NAME [TITLE] [LINKEDIN_URL]")
+    parser.add_argument("--contacts", action="store_true", help="List contacts")
     args = parser.parse_args()
 
     init_db()
 
     config = load_config()
 
-    if args.stats or (not args.all and not args.stage and not args.company):
+    if args.apply:
+        cmd_apply(args.apply)
+    elif args.update_app:
+        cmd_update_app(int(args.update_app[0]), args.update_app[1])
+    elif args.apps:
+        cmd_apps(status=args.status)
+    elif args.pipeline:
+        cmd_pipeline()
+    elif args.add_contact:
+        parts = args.add_contact
+        if len(parts) < 2:
+            print("  Usage: --add-contact COMPANY NAME [TITLE] [LINKEDIN_URL]")
+        else:
+            cmd_add_contact(
+                company_name=parts[0], name=parts[1],
+                title=parts[2] if len(parts) > 2 else None,
+                linkedin_url=parts[3] if len(parts) > 3 else None,
+            )
+    elif args.contacts:
+        cmd_contacts(company_name=args.company)
+    elif args.stats or (not args.all and not args.stage and not args.company):
         print_stats()
     elif args.all:
         run_all(config, limit=args.limit, company_name=args.company, dry_run=args.dry_run)
