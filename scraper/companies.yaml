@@ -1,0 +1,3287 @@
+generated_at: '2026-03-05T15:56:29.186893'
+total: 6706
+stats:
+  high_priority: 37
+  medium_priority: 1505
+  low_priority: 5164
+  ats_slugs_added: 13
+  ats_injected: 103
+  total: 940
+companies:
+  high_priority:
+  - name: Abridge
+    career_page: https://abridge.com
+    industry: Core Audio
+    stage: Series C
+    datahive_score: 8
+    source: datahive
+  - name: Ambi Robotics
+    career_page: https://ambirobotics.com
+    datahive_score: 8
+    source: datahive
+  - name: AssemblyAI
+    career_page: https://assemblyai.com
+    industry: Core Audio
+    stage: Series C
+    datahive_score: 8
+    source: datahive
+    lever_slug: assemblyai
+  - name: EIDON AI
+    career_page: https://eidon.ai
+    datahive_score: 8
+    source: datahive
+  - name: Otter.ai
+    career_page: https://otterai.ai
+    datahive_score: 8
+    source: datahive
+  - name: Rev
+    career_page: https://rev.ai
+    industry: Core Audio
+    stage: Not specified
+    datahive_score: 8
+    source: datahive
+  - name: Speechmatics
+    career_page: https://speechmatics.com
+    industry: Core Audio
+    stage: Series B
+    datahive_score: 8
+    source: datahive
+  - name: Ambience Healthcare
+    career_page: https://www.ambiencehealthcare.com
+    industry: Core Audio
+    stage: Series B
+    datahive_score: 7
+    source: datahive
+  - name: Apptronik
+    career_page: https://apptronik.com
+    industry: Adjacent
+    stage: Series A
+    datahive_score: 7
+    source: datahive
+  - name: Cerence
+    career_page: https://cerence.ai
+    industry: Core Audio
+    stage: Public
+    datahive_score: 7
+    source: datahive
+  - name: CVEDIA
+    career_page: https://cvedia.com
+    datahive_score: 7
+    source: datahive
+  - name: Datature
+    career_page: https://datature.com
+    datahive_score: 7
+    source: datahive
+  - name: Deepgram
+    career_page: https://deepgram.com
+    industry: Core Audio
+    stage: Series C
+    datahive_score: 7
+    source: datahive
+  - name: Digital Umuganda
+    career_page: https://digitalumuganda.com
+    datahive_score: 7
+    source: datahive
+  - name: Ello
+    career_page: https://ello.com
+    industry: Core Audio
+    stage: Series A
+    datahive_score: 7
+    source: datahive
+  - name: EnlitenAI, Inc
+    career_page: https://enlitenai.com
+    datahive_score: 7
+    source: datahive
+  - name: Fastino
+    career_page: https://fastino.ai
+    datahive_score: 7
+    source: datahive
+  - name: Fireflies.ai
+    career_page: https://fireflies.ai
+    datahive_score: 7
+    source: datahive
+  - name: GenBio AI
+    career_page: https://genbio.ai
+    datahive_score: 7
+    source: datahive
+  - name: Helm.ai
+    career_page: https://helm.ai
+    datahive_score: 7
+    source: datahive
+  - name: HopeAI
+    career_page: https://hopeai.co
+    datahive_score: 7
+    source: datahive
+  - name: Lelapa AI
+    career_page: https://lelapa.ai
+    datahive_score: 7
+    source: datahive
+  - name: LILT
+    career_page: https://lilt.ai
+    datahive_score: 7
+    source: datahive
+  - name: Nabla
+    career_page: https://nabla.com
+    industry: Core Audio
+    stage: Series B
+    datahive_score: 7
+    source: datahive
+  - name: OpenBabylon
+    career_page: https://openbabylon.com
+    datahive_score: 7
+    source: datahive
+  - name: Osaro, Inc.
+    career_page: https://osaro.ai
+    datahive_score: 7
+    source: datahive
+  - name: Parsed
+    career_page: https://parsed.com
+    datahive_score: 7
+    source: datahive
+  - name: Physical Intelligence
+    career_page: https://physicalintelligence.company
+    industry: Adjacent
+    stage: Series B
+    datahive_score: 7
+    source: datahive
+  - name: precisionlife (formerly RowAnalytics)
+    career_page: https://precisionlife.com
+    datahive_score: 7
+    source: datahive
+  - name: rerun.io
+    career_page: https://rerun.io
+    datahive_score: 7
+    source: datahive
+  - name: Roboflow
+    career_page: https://roboflow.ai
+    datahive_score: 7
+    source: datahive
+  - name: sensmore
+    career_page: https://sensmore.ai
+    datahive_score: 7
+    source: datahive
+  - name: Skild AI
+    career_page: https://skild.ai
+    datahive_score: 7
+    source: datahive
+  - name: Sonde Health
+    career_page: https://www.sondehealth.com
+    industry: Core Audio
+    stage: 2 rounds
+    datahive_score: 7
+    source: datahive
+  - name: Standard Bots
+    career_page: https://standardbots.com
+    industry: Tangential
+    stage: Series B
+    datahive_score: 7
+    source: datahive
+  - name: Voiceitt
+    career_page: https://voiceitt.com
+    industry: Core Audio
+    stage: 3 rounds
+    datahive_score: 7
+    source: datahive
+  - name: Wispr Flow
+    career_page: https://wisprflow.ai
+    industry: Core Audio
+    stage: Series A
+    datahive_score: 7
+    source: datahive
+  - name: Coinbase
+    source: ats_curated
+    greenhouse_slug: coinbase
+  - name: Kraken
+    source: ats_curated
+    greenhouse_slug: kraken
+  - name: Chainalysis
+    source: ats_curated
+    greenhouse_slug: chainalysis
+  - name: Consensys
+    source: ats_curated
+    greenhouse_slug: consensys
+  - name: Ripple
+    source: ats_curated
+    greenhouse_slug: ripple
+  - name: Uniswap Labs
+    source: ats_curated
+    greenhouse_slug: uniswaplabs
+  - name: Fireblocks
+    source: ats_curated
+    greenhouse_slug: fireblocks
+  - name: Ondo Finance
+    source: ats_curated
+    lever_slug: ondo
+  - name: dYdX
+    source: ats_curated
+    greenhouse_slug: dydx
+  - name: Bitpanda
+    source: ats_curated
+    greenhouse_slug: bitpanda
+  - name: Gemini
+    source: ats_curated
+    greenhouse_slug: gemini
+  - name: Galaxy Digital
+    source: ats_curated
+    greenhouse_slug: galaxydigital
+  - name: Paxos
+    source: ats_curated
+    greenhouse_slug: paxos
+  - name: BitGo
+    source: ats_curated
+    greenhouse_slug: bitgo
+  - name: Blockdaemon
+    source: ats_curated
+    lever_slug: blockdaemon
+  - name: Aptos Labs
+    source: ats_curated
+    greenhouse_slug: aptoslabs
+  - name: Sui Foundation
+    source: ats_curated
+    greenhouse_slug: mysten
+  - name: Mysten Labs
+    source: ats_curated
+    greenhouse_slug: mysten
+  - name: Monad
+    source: ats_curated
+    ashby_slug: monad
+  - name: Berachain
+    source: ats_curated
+    ashby_slug: berachain
+  - name: Starkware
+    source: ats_curated
+    greenhouse_slug: starkware
+  - name: Arbitrum Foundation
+    source: ats_curated
+    lever_slug: arbitrumfoundation
+  - name: Optimism
+    source: ats_curated
+    lever_slug: optimism
+  - name: Polygon
+    source: ats_curated
+    greenhouse_slug: polygontechnology
+  - name: Ava Labs
+    source: ats_curated
+    greenhouse_slug: avalabs
+  - name: Near Protocol
+    source: ats_curated
+    greenhouse_slug: near
+  - name: Solana Foundation
+    source: ats_curated
+    lever_slug: solana
+  - name: Hedera
+    source: ats_curated
+    greenhouse_slug: swirldslabs
+  - name: Chainlink Labs
+    source: ats_curated
+    lever_slug: chainlink
+  - name: The Graph
+    source: ats_curated
+    greenhouse_slug: thegraph
+  - name: MoonPay
+    source: ats_curated
+    lever_slug: moonpay
+  - name: Transak
+    source: ats_curated
+    lever_slug: transak
+  - name: Immutable
+    source: ats_curated
+    greenhouse_slug: immutable
+  - name: Sky Mavis
+    source: ats_curated
+    greenhouse_slug: skymavis
+  - name: Yuga Labs
+    source: ats_curated
+    lever_slug: yugalabs
+  - name: Magic Eden
+    source: ats_curated
+    greenhouse_slug: magiceden
+  - name: OpenSea
+    source: ats_curated
+    lever_slug: opensea
+  - name: Blur
+    source: ats_curated
+    greenhouse_slug: blur
+  - name: Zora
+    source: ats_curated
+    ashby_slug: zora
+  - name: Manifold
+    source: ats_curated
+    lever_slug: manifold
+  - name: Stripe
+    source: ats_curated
+    lever_slug: stripe
+  - name: Brex
+    source: ats_curated
+    greenhouse_slug: brex
+  - name: Ramp
+    source: ats_curated
+    greenhouse_slug: ramp
+  - name: Plaid
+    source: ats_curated
+    greenhouse_slug: plaid
+  - name: Rippling
+    source: ats_curated
+    lever_slug: rippling
+  - name: Carta
+    source: ats_curated
+    greenhouse_slug: carta
+  - name: Chime
+    source: ats_curated
+    greenhouse_slug: chime
+  - name: Marqeta
+    source: ats_curated
+    greenhouse_slug: marqeta
+  - name: Adyen
+    source: ats_curated
+    greenhouse_slug: adyen
+  - name: Klarna
+    source: ats_curated
+    greenhouse_slug: klarna
+  - name: Mercury
+    source: ats_curated
+    lever_slug: mercury
+  - name: Arc
+    source: ats_curated
+    lever_slug: arc
+  - name: Pipe
+    source: ats_curated
+    greenhouse_slug: pipe
+  - name: Deel
+    source: ats_curated
+    lever_slug: deel
+  - name: Payoneer
+    source: ats_curated
+    greenhouse_slug: payoneer
+  - name: OpenAI
+    source: ats_curated
+    greenhouse_slug: openai
+  - name: Scale AI
+    source: ats_curated
+    greenhouse_slug: scaleai
+  - name: Weights & Biases
+    source: ats_curated
+    lever_slug: wandb
+  - name: Snowflake
+    source: ats_curated
+    greenhouse_slug: snowflake
+  - name: Pinecone
+    source: ats_curated
+    lever_slug: pinecone
+  - name: Weaviate
+    source: ats_curated
+    lever_slug: weaviate
+  - name: LangChain
+    source: ats_curated
+    lever_slug: langchain
+  - name: Eleven Labs
+    source: ats_curated
+    greenhouse_slug: elevenlabs
+  - name: Perplexity AI
+    source: ats_curated
+    greenhouse_slug: perplexityai
+  - name: Midjourney
+    source: ats_curated
+    greenhouse_slug: midjourney
+  - name: Stability AI
+    source: ats_curated
+    greenhouse_slug: stabilityai
+  - name: Runway
+    source: ats_curated
+    greenhouse_slug: runwayml
+  - name: Pika Labs
+    source: ats_curated
+    lever_slug: pikalabs
+  - name: Cursor
+    source: ats_curated
+    ashby_slug: anysphere
+  - name: Replit
+    source: ats_curated
+    greenhouse_slug: replit
+  - name: Vercel
+    source: ats_curated
+    lever_slug: vercel
+  - name: Linear
+    source: ats_curated
+    ashby_slug: linear
+  - name: Notion
+    source: ats_curated
+    greenhouse_slug: notion
+  - name: Figma
+    source: ats_curated
+    greenhouse_slug: figma
+  - name: Coda
+    source: ats_curated
+    lever_slug: coda
+  - name: Retool
+    source: ats_curated
+    greenhouse_slug: retool
+  - name: Whatnot
+    source: ats_curated
+    greenhouse_slug: whatnot
+  - name: Vanta
+    source: ats_curated
+    greenhouse_slug: vanta
+  - name: Persona
+    source: ats_curated
+    greenhouse_slug: persona
+  - name: Segment
+    source: ats_curated
+    greenhouse_slug: segment
+  - name: Amplitude
+    source: ats_curated
+    greenhouse_slug: amplitude
+  - name: Mixpanel
+    source: ats_curated
+    greenhouse_slug: mixpanel
+  - name: Intercom
+    source: ats_curated
+    greenhouse_slug: intercom
+  - name: Zendesk
+    source: ats_curated
+    greenhouse_slug: zendesk
+  - name: HubSpot
+    source: ats_curated
+    greenhouse_slug: hubspot
+  - name: Salesforce
+    source: ats_curated
+    greenhouse_slug: salesforce
+  - name: Cloudflare
+    source: ats_curated
+    greenhouse_slug: cloudflare
+  - name: HashiCorp
+    source: ats_curated
+    greenhouse_slug: hashicorp
+  - name: Confluent
+    source: ats_curated
+    greenhouse_slug: confluent
+  - name: Elastic
+    source: ats_curated
+    greenhouse_slug: elastic
+  - name: MongoDB
+    source: ats_curated
+    greenhouse_slug: mongodb
+  - name: PlanetScale
+    source: ats_curated
+    lever_slug: planetscale
+  - name: Supabase
+    source: ats_curated
+    greenhouse_slug: supabase
+  - name: Neon
+    source: ats_curated
+    lever_slug: neon
+  - name: Oscar Health
+    source: ats_curated
+    greenhouse_slug: oscar
+  - name: Squarespace
+    source: ats_curated
+    greenhouse_slug: squarespace
+  - name: Justworks
+    source: ats_curated
+    greenhouse_slug: justworks
+  - name: Betterment
+    source: ats_curated
+    greenhouse_slug: betterment
+  - name: Petal
+    source: ats_curated
+    lever_slug: petal
+  - name: Spring Health
+    source: ats_curated
+    greenhouse_slug: springhealth
+  - name: Attentive
+    source: ats_curated
+    lever_slug: attentive
+  - name: Yotpo
+    source: ats_curated
+    greenhouse_slug: yotpo
+  - name: Veeva Systems
+    source: ats_curated
+    greenhouse_slug: veeva
+  medium_priority:
+  - name: Adentris (YC X25)
+    career_page: https://adentris.com
+    datahive_score: 6
+    source: datahive
+  - name: AI ECD
+    career_page: https://aiecd.com
+    datahive_score: 6
+    source: datahive
+  - name: aKin
+    career_page: https://akin.com
+    datahive_score: 6
+    source: datahive
+  - name: Avoma
+    career_page: https://avoma.com
+    industry: Adjacent
+    stage: 2 rounds
+    datahive_score: 6
+    source: datahive
+  - name: Coactive AI
+    career_page: https://coactive.ai
+    datahive_score: 6
+    source: datahive
+  - name: Cyberwave
+    career_page: https://cyberwave.com
+    datahive_score: 6
+    source: datahive
+  - name: Digica
+    career_page: https://digica.com
+    datahive_score: 6
+    source: datahive
+  - name: FlexAI
+    career_page: https://flexai.io
+    datahive_score: 6
+    source: datahive
+  - name: Gravitate AI
+    career_page: https://gravitate.ai
+    datahive_score: 6
+    source: datahive
+  - name: Hardline
+    career_page: https://www.hardlineapp.com
+    industry: Adjacent
+    stage: Pre-Seed
+    datahive_score: 6
+    source: datahive
+  - name: Hearvana
+    career_page: https://hearvana.ai
+    industry: Adjacent
+    stage: Pre-Seed
+    datahive_score: 6
+    source: datahive
+  - name: Invisible Technologies
+    career_page: https://invisible.ai
+    datahive_score: 6
+    source: datahive
+  - name: Loopr AI
+    career_page: https://loopr.ai
+    datahive_score: 6
+    source: datahive
+  - name: Mad Street Den
+    career_page: https://www.madstreetden.com
+    datahive_score: 6
+    source: datahive
+  - name: Monta AI
+    career_page: https://monta.ai
+    datahive_score: 6
+    source: datahive
+  - name: Move AI
+    career_page: https://move.ai
+    datahive_score: 6
+    source: datahive
+  - name: Notta
+    career_page: https://www.notta.ai
+    industry: Adjacent
+    stage: Series B
+    datahive_score: 6
+    source: datahive
+  - name: Observe.ai
+    career_page: https://www.observe.ai
+    industry: Core Audio
+    stage: Series C
+    datahive_score: 6
+    source: datahive
+  - name: Ontra
+    career_page: https://ontra.ai
+    datahive_score: 6
+    source: datahive
+  - name: PicnicHealth
+    career_page: https://picnichealth.com
+    industry: Healthcare
+    datahive_score: 6
+    source: datahive
+  - name: Qlairvoyance
+    career_page: https://qlairvoyance.com
+    datahive_score: 6
+    source: datahive
+  - name: Qure.ai
+    career_page: https://www.qure.ai
+    datahive_score: 6
+    source: datahive
+  - name: RadiCAIT
+    career_page: https://radicait.com
+    datahive_score: 6
+    source: datahive
+  - name: RAIC Labs (formerly Synthetaic)
+    career_page: https://raiclabs.com
+    datahive_score: 6
+    source: datahive
+  - name: RapidFire AI
+    career_page: https://rapidfire.ai
+    datahive_score: 6
+    source: datahive
+  - name: Rhazes AI
+    career_page: https://rhazes.ai
+    datahive_score: 6
+    source: datahive
+  - name: RoadVision AI
+    career_page: https://roadvision.ai
+    datahive_score: 6
+    source: datahive
+  - name: Salt AI
+    career_page: https://salt.ai
+    datahive_score: 6
+    source: datahive
+  - name: Sight Machine
+    career_page: https://sightmachine.com
+    datahive_score: 6
+    source: datahive
+  - name: Spimed-AI
+    career_page: https://www.spimed-ai.com
+    datahive_score: 6
+    source: datahive
+  - name: SyntetIQ
+    career_page: https://syntetiq.com
+    datahive_score: 6
+    source: datahive
+  - name: Taut
+    career_page: https://taut.ai
+    datahive_score: 6
+    source: datahive
+  - name: Uniphore
+    career_page: https://uniphore.com
+    industry: Core Audio
+    stage: Multiple
+    datahive_score: 6
+    source: datahive
+  - name: VoiceLab
+    career_page: https://voicelab.ai
+    datahive_score: 6
+    source: datahive
+  - name: Sakana AI
+    career_page: https://sakana.ai
+    datahive_score: 5
+    source: datahive
+  - name: Algo8 AI
+    career_page: https://algo8.ai
+    datahive_score: 4
+    source: datahive
+  - name: eMoksha Consulting - Data Science and Machine Learning
+    career_page: https://emokshallc.com
+    datahive_score: 4
+    source: datahive
+  - name: Orcalex Technologies Llp
+    career_page: https://www.orcalex.ai
+    datahive_score: 4
+    source: datahive
+  - name: uc2c.ai
+    career_page: https://uc2c.ai
+    datahive_score: 4
+    source: datahive
+  - name: a3z AI
+    career_page: https://a3z.ai
+    datahive_score: 3
+    source: datahive
+  - name: Accordance
+    career_page: https://accordance.ai
+    datahive_score: 3
+    source: datahive
+  - name: Aidaptive, powered by Jarvis ML
+    career_page: https://aidaptive.com
+    datahive_score: 3
+    source: datahive
+  - name: AllRead Machine Learning Technologies
+    career_page: https://www.allread.ai
+    datahive_score: 3
+    source: datahive
+  - name: Altilia
+    career_page: https://altilia.ai
+    datahive_score: 3
+    source: datahive
+  - name: Ambient.ai
+    career_page: https://www.ambient.ai
+    industry: CV security
+    datahive_score: 3
+    source: datahive
+  - name: Arya.ai
+    career_page: https://arya.ai
+    datahive_score: 3
+    source: datahive
+  - name: Audioshake
+    career_page: https://audioshake.ai
+    industry: Adjacent
+    stage: Series A
+    datahive_score: 3
+    source: datahive
+  - name: Automotus
+    career_page: https://automotus.ai
+    datahive_score: 3
+    source: datahive
+  - name: BizTrip AI
+    career_page: https://biztrip.ai
+    datahive_score: 3
+    source: datahive
+  - name: Bland AI
+    career_page: https://bland.ai
+    industry: Core Audio
+    stage: Series A
+    datahive_score: 3
+    source: datahive
+  - name: Chooch AI
+    career_page: https://chooch.ai
+    datahive_score: 3
+    source: datahive
+  - name: Cognida.ai
+    career_page: https://www.cognida.ai
+    datahive_score: 3
+    source: datahive
+  - name: Cognii
+    career_page: https://cognii.com
+    datahive_score: 3
+    source: datahive
+  - name: CogniSure
+    career_page: https://cognisure.ai
+    datahive_score: 3
+    source: datahive
+  - name: Cohere
+    career_page: https://cohere.ai
+    industry: AI Infrastructure
+    datahive_score: 3
+    source: datahive
+    greenhouse_slug: cohere
+  - name: Collate
+    career_page: https://collate.com
+    datahive_score: 3
+    source: datahive
+  - name: Collectly
+    career_page: https://collectly.co
+    industry: Healthcare
+    datahive_score: 3
+    source: datahive
+  - name: Constructor
+    career_page: https://constructor.ai
+    datahive_score: 3
+    source: datahive
+  - name: Contextual AI
+    career_page: https://contextual.ai
+    datahive_score: 3
+    source: datahive
+  - name: ControlRooms.ai
+    career_page: https://www.controlrooms.ai
+    datahive_score: 3
+    source: datahive
+  - name: Corti
+    career_page: https://corti.ai
+    industry: Core Audio
+    stage: 3 rounds
+    datahive_score: 3
+    source: datahive
+  - name: Cresta
+    career_page: https://cresta.ai
+    datahive_score: 3
+    source: datahive
+  - name: Cusp Intelligence
+    career_page: https://www.cuspintel.com
+    datahive_score: 3
+    source: datahive
+  - name: Cynch AI
+    career_page: https://cynch.ai
+    datahive_score: 3
+    source: datahive
+  - name: CYTK
+    career_page: https://cytk.com
+    datahive_score: 3
+    source: datahive
+  - name: Dialpad
+    career_page: https://www.dialpad.com
+    industry: Adjacent
+    stage: Series E
+    datahive_score: 3
+    source: datahive
+  - name: Discovery Machine, Inc.
+    career_page: https://discoverymachine.com
+    datahive_score: 3
+    source: datahive
+  - name: eBay
+    career_page: https://ebay.ai
+    datahive_score: 3
+    source: datahive
+  - name: EdgeRunner AI
+    career_page: https://edgerunner.com
+    datahive_score: 3
+    source: datahive
+  - name: Eva
+    career_page: https://eva.ai
+    datahive_score: 3
+    source: datahive
+  - name: eXeX
+    career_page: https://exex.ai
+    datahive_score: 3
+    source: datahive
+  - name: EyePop.ai
+    career_page: https://www.eyepop.ai
+    datahive_score: 3
+    source: datahive
+  - name: Findability Sciences
+    career_page: https://www.findability.ai
+    datahive_score: 3
+    source: datahive
+  - name: Findem
+    career_page: https://findem.ai
+    datahive_score: 3
+    source: datahive
+  - name: FlyPix.AI
+    career_page: https://flypix.ai
+    datahive_score: 3
+    source: datahive
+  - name: Focoos AI
+    career_page: https://focoos.ai
+    datahive_score: 3
+    source: datahive
+  - name: Forethought
+    career_page: https://forethought.ai
+    datahive_score: 3
+    source: datahive
+  - name: Future AGI
+    career_page: https://futureagi.com
+    datahive_score: 3
+    source: datahive
+  - name: Gaia Dynamics
+    career_page: https://gaiadynamics.ai
+    datahive_score: 3
+    source: datahive
+  - name: Gauss Machine Learning GmbH
+    career_page: https://www.gauss-ml.com
+    datahive_score: 3
+    source: datahive
+  - name: GC AI
+    career_page: https://gcai.com
+    industry: Adjacent
+    stage: Series B
+    datahive_score: 3
+    source: datahive
+  - name: Geomagical Labs
+    career_page: https://geomagical.com
+    datahive_score: 3
+    source: datahive
+  - name: Gnani.AI
+    career_page: https://gnani.ai
+    industry: Core Audio
+    stage: Series B
+    datahive_score: 3
+    source: datahive
+  - name: Grain Data Solutions Inc.
+    career_page: https://graindatasolutions.com
+    datahive_score: 3
+    source: datahive
+  - name: GrottoAI
+    career_page: https://grottoai.com
+    datahive_score: 3
+    source: datahive
+  - name: Hayden AI
+    career_page: https://hayden.ai
+    datahive_score: 3
+    source: datahive
+  - name: HyperC
+    career_page: https://hyperc.com
+    datahive_score: 3
+    source: datahive
+  - name: Inflection AI
+    career_page: https://inflection.ai
+    industry: AI Assistants
+    datahive_score: 3
+    source: datahive
+  - name: Infrrd
+    career_page: https://infrrd.ai
+    datahive_score: 3
+    source: datahive
+  - name: interface.ai
+    career_page: https://interfaceai.com
+    datahive_score: 3
+    source: datahive
+  - name: Klarity
+    career_page: https://klarity.ai
+    industry: Accounting automation
+    datahive_score: 3
+    source: datahive
+  - name: Landing AI Startup
+    career_page: https://landing.ai
+    datahive_score: 3
+    source: datahive
+  - name: Legora
+    career_page: https://legora.com
+    industry: Adjacent
+    stage: Series B
+    datahive_score: 3
+    source: datahive
+  - name: Letta
+    career_page: https://letta.ai
+    datahive_score: 3
+    source: datahive
+  - name: LIV4
+    career_page: https://www.liv4.ai
+    industry: Adjacent
+    stage: Pre-Seed
+    datahive_score: 3
+    source: datahive
+  - name: LiveKit
+    career_page: https://livekit.com
+    industry: Adjacent
+    stage: Series C
+    datahive_score: 3
+    source: datahive
+  - name: Luca
+    career_page: https://luca.ai
+    datahive_score: 3
+    source: datahive
+  - name: Makarius Smart Learning
+    career_page: https://msmartlearning.com
+    datahive_score: 3
+    source: datahive
+  - name: Manex AI
+    career_page: https://manex.ai
+    datahive_score: 3
+    source: datahive
+  - name: Marble
+    career_page: https://marble.ai
+    datahive_score: 3
+    source: datahive
+  - name: Marqo
+    career_page: https://marqo.ai
+    datahive_score: 3
+    source: datahive
+  - name: Matroid
+    career_page: https://matroid.com
+    datahive_score: 3
+    source: datahive
+  - name: Mobiry
+    career_page: https://mobiry.com
+    datahive_score: 3
+    source: datahive
+  - name: Moksha AI
+    career_page: https://moksha.ai
+    datahive_score: 3
+    source: datahive
+  - name: Moveworks
+    career_page: https://moveworks.ai
+    industry: AI agent platform
+    datahive_score: 3
+    source: datahive
+  - name: NetoAI
+    career_page: https://netoai.ai
+    datahive_score: 3
+    source: datahive
+  - name: Neural
+    career_page: https://neural.io
+    datahive_score: 3
+    source: datahive
+  - name: NeuralX, Inc
+    career_page: https://neuralx.ai
+    datahive_score: 3
+    source: datahive
+  - name: NimbleEdge
+    career_page: https://nimbleedge.com
+    datahive_score: 3
+    source: datahive
+  - name: NOETIK
+    career_page: https://noetik.ai
+    datahive_score: 3
+    source: datahive
+  - name: NTechLab
+    career_page: https://ntechlab.com
+    datahive_score: 3
+    source: datahive
+  - name: Ocrolus
+    career_page: https://ocrolus.com
+    datahive_score: 3
+    source: datahive
+  - name: OneSource Solutions International
+    career_page: https://oss.international
+    datahive_score: 3
+    source: datahive
+  - name: Orbita
+    career_page: https://orbita.ai
+    industry: Adjacent
+    stage: 1 round
+    datahive_score: 3
+    source: datahive
+  - name: ORMAE (Operations Research Machine learning & Analytics Experts)
+    career_page: https://www.ormae.com
+    datahive_score: 3
+    source: datahive
+  - name: ParetoAI
+    career_page: https://paretoai.io
+    datahive_score: 3
+    source: datahive
+  - name: Pathway
+    career_page: https://pathway.com
+    datahive_score: 3
+    source: datahive
+  - name: Pecan - Deep Learning Predictive Analytics
+    career_page: https://www.pecan.ai
+    datahive_score: 3
+    source: datahive
+  - name: Personal AI
+    career_page: https://personal.ai
+    datahive_score: 3
+    source: datahive
+  - name: Pet Portal AI
+    career_page: https://petportal.ai
+    datahive_score: 3
+    source: datahive
+  - name: Phronetic AI
+    career_page: https://phronetic.ai
+    datahive_score: 3
+    source: datahive
+  - name: Pibit.ai
+    career_page: https://www.pibit.ai
+    datahive_score: 3
+    source: datahive
+  - name: Picterra
+    career_page: https://picterra.ai
+    datahive_score: 3
+    source: datahive
+  - name: Pindrop
+    career_page: https://pindrop.com
+    industry: Core Audio
+    stage: 5 rounds
+    datahive_score: 3
+    source: datahive
+  - name: Pix Force
+    career_page: https://pixforce.ai
+    datahive_score: 3
+    source: datahive
+  - name: plat.ai
+    career_page: https://plat.ai
+    datahive_score: 3
+    source: datahive
+  - name: Quark.ai
+    career_page: https://quarkai.ai
+    datahive_score: 3
+    source: datahive
+  - name: Remyx AI
+    career_page: https://remyx.ai
+    datahive_score: 3
+    source: datahive
+  - name: Replicant
+    career_page: https://replicant.ai
+    industry: Core Audio
+    stage: 3 rounds
+    datahive_score: 3
+    source: datahive
+  - name: Rifa AI
+    career_page: https://rifa.ai
+    industry: Adjacent
+    stage: Not specified
+    datahive_score: 3
+    source: datahive
+  - name: Rubber Ducky Labs (YC W23)
+    career_page: https://www.rubberduckylabs.io
+    datahive_score: 3
+    source: datahive
+  - name: Rwazi
+    career_page: https://rwazi.com
+    datahive_score: 3
+    source: datahive
+  - name: samvid.ai
+    career_page: https://www.samvid.ai
+    datahive_score: 3
+    source: datahive
+  - name: Sapience AI Corporation
+    career_page: https://www.sapienceai.co
+    datahive_score: 3
+    source: datahive
+  - name: Sapling Intelligence
+    career_page: https://sapling.ai
+    datahive_score: 3
+    source: datahive
+  - name: Scaled Cognition
+    career_page: https://scaledcognition.com
+    datahive_score: 3
+    source: datahive
+  - name: Sensely
+    career_page: https://sensely.com
+    industry: Adjacent
+    stage: 2 rounds
+    datahive_score: 3
+    source: datahive
+  - name: Shelf
+    career_page: https://shelf.ai
+    datahive_score: 3
+    source: datahive
+  - name: Songscription
+    career_page: https://songscription.ai
+    industry: Adjacent
+    stage: Seed
+    datahive_score: 3
+    source: datahive
+  - name: Squirro
+    career_page: https://squirro.com
+    datahive_score: 3
+    source: datahive
+  - name: StarSpark.AI
+    career_page: https://www.starspark.ai
+    datahive_score: 3
+    source: datahive
+  - name: Stratzi.ai
+    career_page: https://www.stratzi.ai
+    datahive_score: 3
+    source: datahive
+  - name: Suki
+    career_page: https://suki.ai
+    industry: Core Audio
+    stage: 4 rounds
+    datahive_score: 3
+    source: datahive
+  - name: Superlinked
+    career_page: https://superlinked.com
+    datahive_score: 3
+    source: datahive
+  - name: Synapsia-AI
+    career_page: https://synapsia.ai
+    datahive_score: 3
+    source: datahive
+  - name: Synerise
+    career_page: https://synerise.com
+    datahive_score: 3
+    source: datahive
+  - name: TalkIQ
+    career_page: https://talkiq.ai
+    industry: Core Audio
+    stage: 2 rounds
+    datahive_score: 3
+    source: datahive
+  - name: TAZI AI Systems
+    career_page: https://tazi.ai
+    datahive_score: 3
+    source: datahive
+  - name: Tech 42
+    career_page: https://www.42maru.ai
+    datahive_score: 3
+    source: datahive
+  - name: Theatro Labs
+    career_page: https://theatro.com
+    industry: Adjacent
+    stage: 2 rounds
+    datahive_score: 3
+    source: datahive
+  - name: theBlue.ai
+    career_page: https://theblue.ai
+    datahive_score: 3
+    source: datahive
+  - name: Thinking Machines Lab
+    career_page: https://thinkingmachines.ai
+    industry: Adjacent
+    stage: Series B
+    datahive_score: 3
+    source: datahive
+  - name: ThirdEye Data
+    career_page: https://thirdeyedata.ai
+    datahive_score: 3
+    source: datahive
+  - name: Thorian AI
+    career_page: https://thorian.ai
+    datahive_score: 3
+    source: datahive
+  - name: TieSet
+    career_page: https://tieset.com
+    datahive_score: 3
+    source: datahive
+  - name: VAL Property AI
+    career_page: https://valproperty.ai
+    datahive_score: 3
+    source: datahive
+  - name: Vidavox
+    career_page: https://vidavox.ai
+    datahive_score: 3
+    source: datahive
+  - name: Vikk AI
+    career_page: https://vikk.ai
+    datahive_score: 3
+    source: datahive
+  - name: Vosyn
+    career_page: https://vosyn.ai
+    datahive_score: 3
+    source: datahive
+  - name: WellSpoken
+    career_page: https://wellspoken.ai
+    datahive_score: 3
+    source: datahive
+  - name: Wobot.ai
+    career_page: https://wobot.ai
+    datahive_score: 3
+    source: datahive
+  - name: Yembo
+    career_page: https://yembo.ai
+    datahive_score: 3
+    source: datahive
+  - name: YesPlz AI
+    career_page: https://yesplz.ai
+    datahive_score: 3
+    source: datahive
+  - name: Yeti Confetti Kids!
+    career_page: https://yeticonfettikids.com
+    datahive_score: 3
+    source: datahive
+  - name: Yunzhi Mining Safety
+    career_page: https://www.strayos.com
+    industry: Adjacent
+    stage: Series A
+    datahive_score: 3
+    source: datahive
+  - name: ZestyAI
+    career_page: https://zestyai.com
+    datahive_score: 3
+    source: datahive
+  - name: 2075.ai
+    career_page: https://2075.ai
+    datahive_score: 2
+    source: datahive
+  - name: ACNetwork
+    career_page: https://acnetwork.ai
+    industry: Data Broker (Prospect)
+    stage: Not specified
+    datahive_score: 2
+    source: datahive
+  - name: Actable AI
+    career_page: https://actable.ai
+    datahive_score: 2
+    source: datahive
+  - name: Agara Labs
+    career_page: https://yourstory.com
+    industry: Core Audio
+    stage: 4 rounds
+    datahive_score: 2
+    source: datahive
+  - name: Aisera
+    career_page: https://aisera.com
+    datahive_score: 2
+    source: datahive
+  - name: Anoki Inc
+    career_page: https://www.anoki.ai
+    datahive_score: 2
+    source: datahive
+  - name: Aomni
+    career_page: https://aomni.com
+    datahive_score: 2
+    source: datahive
+  - name: AskSLM
+    career_page: https://askslm.com
+    datahive_score: 2
+    source: datahive
+  - name: Blueshift
+    career_page: https://blueshift.ai
+    datahive_score: 2
+    source: datahive
+  - name: Bobble AI
+    career_page: https://bobble.ai
+    datahive_score: 2
+    source: datahive
+  - name: Bolna
+    career_page: https://bolna.ai
+    industry: Core Audio
+    stage: Seed
+    datahive_score: 2
+    source: datahive
+  - name: Boson AI
+    career_page: https://boson.ai
+    datahive_score: 2
+    source: datahive
+  - name: BrainLytix
+    career_page: https://brainlytix.com
+    datahive_score: 2
+    source: datahive
+  - name: Breinify Inc.
+    career_page: https://breinify.ai
+    datahive_score: 2
+    source: datahive
+  - name: Centaur.AI
+    career_page: https://centaur.ai
+    datahive_score: 2
+    source: datahive
+  - name: Chalice AI
+    career_page: https://chalice.ai
+    datahive_score: 2
+    source: datahive
+  - name: Clarifai
+    career_page: https://clarifai.com
+    datahive_score: 2
+    source: datahive
+  - name: Clipto.AI
+    career_page: https://cliptoai.com
+    industry: Adjacent
+    stage: Venture
+    datahive_score: 2
+    source: datahive
+  - name: CommerceIQ
+    career_page: https://commerceiq.ai
+    datahive_score: 2
+    source: datahive
+  - name: Conversica
+    career_page: https://conversica.com
+    industry: AI agent platform
+    datahive_score: 2
+    source: datahive
+  - name: DataHive
+    career_page: https://datahive.ai
+    datahive_score: 2
+    source: datahive
+  - name: DDG AG
+    career_page: https://www.ddg.ag
+    datahive_score: 2
+    source: datahive
+  - name: Decagon
+    career_page: https://decagon.ai
+    industry: Adjacent
+    stage: Series D
+    datahive_score: 2
+    source: datahive
+  - name: DeepSee.ai
+    career_page: https://www.deepseek.com
+    datahive_score: 2
+    source: datahive
+  - name: Egnite
+    career_page: https://egnite.ai
+    datahive_score: 2
+    source: datahive
+  - name: eightfold.ai
+    career_page: https://eightfold.ai
+    datahive_score: 2
+    source: datahive
+  - name: Encord
+    career_page: https://encord.ai
+    datahive_score: 2
+    source: datahive
+  - name: Evisort
+    career_page: https://evisort.com
+    industry: Adjacent
+    stage: Series C
+    datahive_score: 2
+    source: datahive
+  - name: Fal
+    career_page: https://fal.ai
+    industry: Adjacent
+    stage: Series D
+    datahive_score: 2
+    source: datahive
+  - name: FileMarket AI
+    career_page: https://filemarket.ai
+    industry: Data Broker (Prospect)
+    stage: Not specified
+    datahive_score: 2
+    source: datahive
+  - name: Fortemedia
+    career_page: https://fortemedia.com
+    industry: Adjacent
+    stage: 1 round
+    datahive_score: 2
+    source: datahive
+  - name: Galileo AI
+    career_page: https://galileo.ai
+    datahive_score: 2
+    source: datahive
+  - name: Giga ML
+    career_page: https://gigaml.com
+    datahive_score: 2
+    source: datahive
+  - name: Gong.io
+    career_page: https://www.gong.io
+    industry: Core Audio
+    stage: Series E
+    datahive_score: 2
+    source: datahive
+  - name: Google
+    career_page: https://google.ai
+    industry: AI Research
+    datahive_score: 2
+    source: datahive
+  - name: Hume AI
+    career_page: https://hume.ai
+    industry: Core Audio
+    stage: Series B
+    datahive_score: 2
+    source: datahive
+  - name: HyperKurve
+    career_page: https://hyperkurve.com
+    datahive_score: 2
+    source: datahive
+  - name: Ideta
+    career_page: https://ideta.io
+    industry: Adjacent
+    stage: 1 round
+    datahive_score: 2
+    source: datahive
+  - name: Invictus
+    career_page: https://invictus.ai
+    datahive_score: 2
+    source: datahive
+  - name: Iterate.ai
+    career_page: https://iterate.ai
+    datahive_score: 2
+    source: datahive
+  - name: Jaxon, Inc.
+    career_page: https://jaxon.ai
+    datahive_score: 2
+    source: datahive
+  - name: Kodra Technologies
+    career_page: https://kodra.ai
+    datahive_score: 2
+    source: datahive
+  - name: LabsNow.ai
+    career_page: https://www.johnsnowlabs.com
+    datahive_score: 2
+    source: datahive
+  - name: Listen Labs
+    career_page: https://listen.com
+    industry: Core Audio
+    stage: Series A
+    datahive_score: 2
+    source: datahive
+  - name: Luel
+    career_page: https://luel.ai
+    industry: Data Marketplace (Prospect)
+    stage: YC W26
+    datahive_score: 2
+    source: datahive
+  - name: LXT
+    career_page: https://lxt.ai
+    industry: Data Broker (Prospect)
+    stage: Not specified
+    datahive_score: 2
+    source: datahive
+  - name: Microsoft
+    career_page: https://microsoft.ai
+    datahive_score: 2
+    source: datahive
+  - name: Minerva CQ
+    career_page: https://minervacq.com
+    datahive_score: 2
+    source: datahive
+  - name: Music AI (Moises)
+    career_page: https://moises.ai
+    industry: Adjacent
+    stage: Series A
+    datahive_score: 2
+    source: datahive
+  - name: Nexdata
+    career_page: https://nexdata.ai
+    industry: Data Broker (Prospect)
+    stage: Established (2011)
+    datahive_score: 2
+    source: datahive
+  - name: OmniSpeech
+    career_page: https://www.omni-speech.com
+    industry: Adjacent
+    stage: Pre-Seed
+    datahive_score: 2
+    source: datahive
+  - name: Orby AI
+    career_page: https://orby.ai
+    datahive_score: 2
+    source: datahive
+  - name: Play Cubed, Inc.
+    career_page: https://playcubed.io
+    datahive_score: 2
+    source: datahive
+  - name: Podcastle
+    career_page: https://podcastle.ai
+    industry: Adjacent
+    stage: Series A
+    datahive_score: 2
+    source: datahive
+  - name: Podium
+    career_page: https://podium.ai
+    industry: AI agent platform
+    datahive_score: 2
+    source: datahive
+  - name: Qui Intelligence Inc
+    career_page: https://www.qloo.com
+    datahive_score: 2
+    source: datahive
+  - name: Rad AI
+    career_page: https://radai.com
+    industry: Adjacent
+    stage: Series B
+    datahive_score: 2
+    source: datahive
+  - name: Reka AI
+    career_page: https://reka.ai
+    datahive_score: 2
+    source: datahive
+  - name: Sanas
+    career_page: https://sanas.ai
+    industry: Core Audio
+    stage: Series C+
+    datahive_score: 2
+    source: datahive
+  - name: SavantX, Inc.
+    career_page: https://savantx.com
+    datahive_score: 2
+    source: datahive
+  - name: Sendbird
+    career_page: https://sendbird.com
+    industry: AI agent platform
+    datahive_score: 2
+    source: datahive
+  - name: Sesame
+    career_page: https://sesame.com
+    industry: Core Audio
+    stage: Series B
+    datahive_score: 2
+    source: datahive
+  - name: Sigma AI
+    career_page: https://sigma.ai
+    datahive_score: 2
+    source: datahive
+  - name: Simporter
+    career_page: https://simporter.ai
+    datahive_score: 2
+    source: datahive
+  - name: SoundHound
+    career_page: https://soundhound.com
+    industry: Core Audio
+    stage: Series E+
+    datahive_score: 2
+    source: datahive
+  - name: Spangle
+    career_page: https://spangle.ai
+    datahive_score: 2
+    source: datahive
+  - name: TranscribeMe
+    career_page: https://transcribeme.com
+    datahive_score: 2
+    source: datahive
+  - name: TRUIFY.AI
+    career_page: https://truify.ai
+    datahive_score: 2
+    source: datahive
+  - name: Turing.com
+    career_page: https://www.turing.com
+    datahive_score: 2
+    source: datahive
+  - name: Twine AI
+    career_page: https://twine.ai
+    industry: AI data marketplace
+    datahive_score: 2
+    source: datahive
+  - name: Voiceflow
+    career_page: https://voiceflow.com
+    industry: Adjacent
+    stage: 3 rounds
+    datahive_score: 2
+    source: datahive
+  - name: Voxel51
+    career_page: https://voxel51.com
+    datahive_score: 2
+    source: datahive
+  - name: Vue.ai
+    career_page: https://www.vue.ai
+    datahive_score: 2
+    source: datahive
+  - name: weav.ai
+    career_page: https://weav.ai
+    datahive_score: 2
+    source: datahive
+  - name: WOW AI
+    career_page: https://wow-ai.com
+    datahive_score: 2
+    source: datahive
+  - name: 24x7Offshoring Private Limited.
+    career_page: https://24x7offshoring.com
+    datahive_score: 1
+    source: datahive
+  - name: Abaka.AI｜Data Annotation / Collection / Processing for AI
+    career_page: https://www.abaka.ai
+    datahive_score: 1
+    source: datahive
+  - name: Adept AI
+    career_page: https://adept.com
+    industry: AI Agents
+    datahive_score: 1
+    source: datahive
+  - name: AdGreetz
+    career_page: https://adgreetz.com
+    datahive_score: 1
+    source: datahive
+  - name: Advex AI (PearX S23)
+    career_page: https://theaiinsider.tech
+    datahive_score: 1
+    source: datahive
+  - name: Adwisely
+    career_page: https://adwisely.com
+    datahive_score: 1
+    source: datahive
+  - name: AEO Engine
+    career_page: https://aeoengine.ai
+    datahive_score: 1
+    source: datahive
+  - name: AgentGPT
+    career_page: https://agentgpt.io
+    datahive_score: 1
+    source: datahive
+  - name: AICU
+    career_page: https://aicu.ai
+    datahive_score: 1
+    source: datahive
+  - name: AIDC
+    career_page: https://aidc.ai
+    datahive_score: 1
+    source: datahive
+  - name: AIxBlock
+    career_page: https://aixblock.io
+    datahive_score: 1
+    source: datahive
+  - name: AIZEN
+    career_page: https://aizen.io
+    datahive_score: 1
+    source: datahive
+  - name: Aktus AI
+    career_page: https://aktus.ai
+    datahive_score: 1
+    source: datahive
+  - name: Alchemy Cloud, Inc.
+    career_page: https://www.alchemy.cloud
+    datahive_score: 1
+    source: datahive
+  - name: Animaker Inc.
+    career_page: https://animaker.com
+    datahive_score: 1
+    source: datahive
+  - name: Anomalo
+    career_page: https://anomalo.ai
+    datahive_score: 1
+    source: datahive
+  - name: Anthropic
+    career_page: https://anthropic.com
+    industry: AI Research
+    datahive_score: 1
+    source: datahive
+    lever_slug: anthropic
+  - name: Arize AI
+    career_page: https://arize.com
+    datahive_score: 1
+    source: datahive
+  - name: ASR.GE
+    career_page: https://www.apptek.ai
+    datahive_score: 1
+    source: datahive
+  - name: Athina AI (YC W23)
+    career_page: https://www.athina.ai
+    datahive_score: 1
+    source: datahive
+  - name: AudioStack
+    career_page: https://audiostack.ai
+    industry: Adjacent
+    stage: Seed
+    datahive_score: 1
+    source: datahive
+  - name: Ava
+    career_page: https://ava.ai
+    industry: Core Audio
+    stage: 6 rounds
+    datahive_score: 1
+    source: datahive
+  - name: AWS Data Exchange
+    career_page: https://boto3.amazonaws.com
+    industry: Data Marketplace (Prospect)
+    stage: Amazon subsidiary
+    datahive_score: 1
+    source: datahive
+  - name: Babel Technology
+    career_page: https://babel.ai
+    industry: Adjacent
+    stage: Series A
+    datahive_score: 1
+    source: datahive
+  - name: BasedLabs AI
+    career_page: https://basedlabs.ai
+    datahive_score: 1
+    source: datahive
+  - name: BasicAI Inc
+    career_page: https://www.basic.ai
+    datahive_score: 1
+    source: datahive
+  - name: Bauplan
+    career_page: https://www.bauplanlabs.com
+    datahive_score: 1
+    source: datahive
+  - name: Bayflex Solutions, LLC
+    career_page: https://bayflexsolutions.com
+    datahive_score: 1
+    source: datahive
+  - name: BigProfiles.ai
+    career_page: https://craft.co
+    datahive_score: 1
+    source: datahive
+  - name: Blu Artificial Intelligence
+    career_page: https://www.blu.ltd
+    datahive_score: 1
+    source: datahive
+  - name: Bold Metrics Inc.
+    career_page: https://boldmetrics.com
+    datahive_score: 1
+    source: datahive
+  - name: Book Summary AI
+    career_page: https://booksummary.io
+    datahive_score: 1
+    source: datahive
+  - name: BorderX Lab
+    career_page: https://borderxlab.com
+    datahive_score: 1
+    source: datahive
+  - name: BRIA AI
+    career_page: https://bria.ai
+    datahive_score: 1
+    source: datahive
+  - name: BSDXR
+    career_page: https://bsdxr.com
+    datahive_score: 1
+    source: datahive
+  - name: Buddy.ai
+    career_page: https://buddyai.com
+    datahive_score: 1
+    source: datahive
+  - name: C-Gen.AI
+    career_page: https://c-gen.ai
+    datahive_score: 1
+    source: datahive
+  - name: CamerEye
+    career_page: https://camereye.ai
+    datahive_score: 1
+    source: datahive
+  - name: Cartesia
+    career_page: https://cartesia.ai
+    datahive_score: 1
+    source: datahive
+  - name: Cerebras Systems
+    career_page: https://cerebras.ai
+    datahive_score: 1
+    source: datahive
+  - name: ChatSlide
+    career_page: https://chatslide.ai
+    datahive_score: 1
+    source: datahive
+  - name: Checkr
+    career_page: https://checkr.com
+    industry: HR
+    datahive_score: 1
+    source: datahive
+  - name: ChiVox Co., Ltd.
+    career_page: https://aithority.com
+    industry: Core Audio
+    stage: Series B
+    datahive_score: 1
+    source: datahive
+  - name: Claigrid
+    career_page: https://claigrid.com
+    datahive_score: 1
+    source: datahive
+  - name: ClaimPartner
+    career_page: https://claimpartner.com
+    datahive_score: 1
+    source: datahive
+  - name: Cleanlab
+    career_page: https://cleanlab.ai
+    datahive_score: 1
+    source: datahive
+  - name: Coframe
+    career_page: https://coframe.ai
+    datahive_score: 1
+    source: datahive
+  - name: Cogito
+    career_page: https://cogito.ai
+    industry: Core Audio
+    stage: 9 rounds
+    datahive_score: 1
+    source: datahive
+  - name: Cognaize
+    career_page: https://cognaize.com
+    datahive_score: 1
+    source: datahive
+  - name: Comet ML
+    career_page: https://www.comet.com
+    datahive_score: 1
+    source: datahive
+  - name: Competera Pricing Platform
+    career_page: https://competera.ai
+    datahive_score: 1
+    source: datahive
+  - name: Compressa.ai
+    career_page: http://compressa.ai
+    datahive_score: 1
+    source: datahive
+  - name: Congruent
+    career_page: https://congruent.ai
+    industry: Tangential
+    stage: Seed
+    datahive_score: 1
+    source: datahive
+  - name: Covalent API
+    career_page: https://covalentapi.com
+    datahive_score: 1
+    source: datahive
+  - name: Creao AI
+    career_page: https://creao.ai
+    datahive_score: 1
+    source: datahive
+  - name: CreatorIQ
+    career_page: https://creatoriq.com
+    datahive_score: 1
+    source: datahive
+  - name: Credtent
+    career_page: https://www.credtent.org
+    datahive_score: 1
+    source: datahive
+  - name: CrowdGen AI
+    career_page: https://crowdgen.com
+    datahive_score: 1
+    source: datahive
+  - name: CTGT
+    career_page: https://ctgt.ai
+    datahive_score: 1
+    source: datahive
+  - name: Curiouser AI
+    career_page: https://curiouser.ai
+    datahive_score: 1
+    source: datahive
+  - name: Cybever
+    career_page: https://cybever.ai
+    datahive_score: 1
+    source: datahive
+  - name: Daash Intelligence
+    career_page: https://www.daash.co
+    datahive_score: 1
+    source: datahive
+  - name: Data Alchemists
+    career_page: https://dataalchemists.co
+    datahive_score: 1
+    source: datahive
+  - name: DATA SWEEP
+    career_page: https://datasweep.ai
+    datahive_score: 1
+    source: datahive
+  - name: Databricks
+    career_page: https://databricks.com
+    industry: Data Marketplace (Prospect)
+    datahive_score: 1
+    source: datahive
+    greenhouse_slug: databricks
+  - name: Datacurve
+    career_page: https://datacurve.ai
+    datahive_score: 1
+    source: datahive
+  - name: Datafund
+    career_page: https://datafund.ai
+    datahive_score: 1
+    source: datahive
+  - name: Dataloop AI
+    career_page: https://dataloop.ai
+    datahive_score: 1
+    source: datahive
+  - name: Datasaur
+    career_page: https://datasaur.ai
+    datahive_score: 1
+    source: datahive
+  - name: DataVisor
+    career_page: https://datavisor.com
+    industry: AI Research
+    datahive_score: 1
+    source: datahive
+  - name: DatologyAI
+    career_page: https://datologyai.com
+    datahive_score: 1
+    source: datahive
+  - name: DATUMO, Inc.
+    career_page: https://datumo.com
+    datahive_score: 1
+    source: datahive
+  - name: Deccan AI
+    career_page: https://deccan.ai
+    datahive_score: 1
+    source: datahive
+  - name: Dedomena.AI
+    career_page: https://dedomena.ai
+    datahive_score: 1
+    source: datahive
+  - name: DeepMotion
+    career_page: https://deepmotion.com
+    datahive_score: 1
+    source: datahive
+  - name: DeepX, Inc.
+    career_page: https://deepx.ai
+    datahive_score: 1
+    source: datahive
+  - name: Defined.ai
+    career_page: https://definedai.io
+    industry: Data Marketplace (Partner)
+    stage: Series A+
+    datahive_score: 1
+    source: datahive
+  - name: Devant
+    career_page: https://devant.ai
+    datahive_score: 1
+    source: datahive
+  - name: DevTeam.Space
+    career_page: https://www.devteam.space
+    datahive_score: 1
+    source: datahive
+  - name: Diffbot
+    career_page: https://diffbot.com
+    datahive_score: 1
+    source: datahive
+  - name: DiffuseDrive
+    career_page: https://diffusedrive.com
+    datahive_score: 1
+    source: datahive
+  - name: Dify
+    career_page: https://dify.ai
+    datahive_score: 1
+    source: datahive
+  - name: Digitoo.ai
+    career_page: https://www.digitoo.ai
+    datahive_score: 1
+    source: datahive
+  - name: Draft & Goal
+    career_page: https://dng.ai
+    datahive_score: 1
+    source: datahive
+  - name: DSW | Data Science Wizards
+    career_page: https://www.datasciencewizards.ai
+    datahive_score: 1
+    source: datahive
+  - name: Dubverse
+    career_page: https://dubverse.ai
+    datahive_score: 1
+    source: datahive
+  - name: eBrain.ai
+    career_page: https://ebrainai.com
+    datahive_score: 1
+    source: datahive
+  - name: Eclo
+    career_page: https://eclo.io
+    datahive_score: 1
+    source: datahive
+  - name: Edra.ai
+    career_page: https://www.edra.ai
+    datahive_score: 1
+    source: datahive
+  - name: EKOS.AI | Techstars '23
+    career_page: https://ekos.ai
+    datahive_score: 1
+    source: datahive
+  - name: ElevenLabs
+    career_page: https://elevenlabs.io
+    industry: Core Audio
+    stage: Series D
+    datahive_score: 1
+    source: datahive
+    greenhouse_slug: elevenlabs
+  - name: ELSA
+    career_page: https://elsa.ai
+    industry: Core Audio
+    stage: 4 rounds
+    datahive_score: 1
+    source: datahive
+  - name: Engage3 Solutions, Inc.
+    career_page: https://www.engage3.com
+    datahive_score: 1
+    source: datahive
+  - name: Ensemble AI
+    career_page: https://ensemble.ai
+    datahive_score: 1
+    source: datahive
+  - name: Enterprise DNA
+    career_page: https://enterprisedna.co
+    datahive_score: 1
+    source: datahive
+  - name: ESG.AI Technologies
+    career_page: https://esg.ai
+    datahive_score: 1
+    source: datahive
+  - name: EveryBite
+    career_page: https://everybite.com
+    datahive_score: 1
+    source: datahive
+  - name: Evolution AI
+    career_page: https://evolution.ai
+    datahive_score: 1
+    source: datahive
+  - name: Evolv AI
+    career_page: https://evolv.ai
+    datahive_score: 1
+    source: datahive
+  - name: Exa
+    career_page: https://exa.ai
+    datahive_score: 1
+    source: datahive
+  - name: ExpertRec Custom search engine
+    career_page: https://www.expertrec.com
+    datahive_score: 1
+    source: datahive
+  - name: Explorium
+    career_page: https://explorium.ai
+    datahive_score: 1
+    source: datahive
+  - name: ExtractAlpha
+    career_page: https://extractalpha.com
+    datahive_score: 1
+    source: datahive
+  - name: EZAKO
+    career_page: https://ezako.com
+    datahive_score: 1
+    source: datahive
+  - name: Fairbrook AI
+    career_page: https://fairbrook.ai
+    datahive_score: 1
+    source: datahive
+  - name: Fanplayr
+    career_page: https://fanplayr.com
+    datahive_score: 1
+    source: datahive
+  - name: FastMoldTesting.com
+    career_page: https://fastmoldtesting.com
+    datahive_score: 1
+    source: datahive
+  - name: Featherless AI (also known as Recursal AI)
+    career_page: https://featherless.ai
+    datahive_score: 1
+    source: datahive
+  - name: featureform
+    career_page: https://featureform.com
+    datahive_score: 1
+    source: datahive
+  - name: Fegmo
+    career_page: https://fegmo.com
+    datahive_score: 1
+    source: datahive
+  - name: Fidelis AI
+    career_page: https://fidelis.ai
+    datahive_score: 1
+    source: datahive
+  - name: Filmustage
+    career_page: https://filmustage.com
+    datahive_score: 1
+    source: datahive
+  - name: Fintool.com [YC]
+    career_page: https://fintool.com
+    datahive_score: 1
+    source: datahive
+  - name: Fireworks AI
+    career_page: https://fireworks.ai
+    datahive_score: 1
+    source: datahive
+  - name: Fiskl.AI — The accounting intelligence platform.
+    career_page: https://fiskl.com
+    datahive_score: 1
+    source: datahive
+  - name: Fixensy
+    career_page: https://fixensy.com
+    datahive_score: 1
+    source: datahive
+  - name: FOTOhub
+    career_page: https://fotohub.com
+    industry: Tangential
+    stage: Pre-Seed
+    datahive_score: 1
+    source: datahive
+  - name: Frenzy.ai
+    career_page: https://www.frenzy.ai
+    datahive_score: 1
+    source: datahive
+  - name: FutureBeeAI
+    career_page: https://www.futurebeeai.com
+    datahive_score: 1
+    source: datahive
+  - name: 'Fytted: Fashion AI Stylist'
+    career_page: https://fytted.com
+    datahive_score: 1
+    source: datahive
+  - name: Gauge AI
+    career_page: https://gauge.ai
+    datahive_score: 1
+    source: datahive
+  - name: Gengage
+    career_page: https://gengage.ai
+    datahive_score: 1
+    source: datahive
+  - name: Genmo AI
+    career_page: https://genmo.ai
+    datahive_score: 1
+    source: datahive
+  - name: GeologicAI
+    career_page: https://geologicai.com
+    datahive_score: 1
+    source: datahive
+  - name: Giskard
+    career_page: https://giskard.ai
+    datahive_score: 1
+    source: datahive
+  - name: GliaCloud Co., Ltd.
+    career_page: https://www.gliacloud.com
+    datahive_score: 1
+    source: datahive
+  - name: Goalhanger
+    career_page: https://goalhanger.com
+    industry: Core Audio
+    stage: Private Equity
+    datahive_score: 1
+    source: datahive
+  - name: Golpo
+    career_page: https://video.golpoai.com
+    industry: Adjacent
+    stage: Seed
+    datahive_score: 1
+    source: datahive
+  - name: Gradium
+    career_page: https://gradium.ai
+    industry: Core Audio
+    stage: Seed
+    datahive_score: 1
+    source: datahive
+  - name: GRAIL
+    career_page: https://grail.ai
+    industry: Healthcare
+    datahive_score: 1
+    source: datahive
+  - name: Grw AI
+    career_page: https://grw.ai
+    datahive_score: 1
+    source: datahive
+  - name: HAIVO
+    career_page: https://haivo.ai
+    datahive_score: 1
+    source: datahive
+  - name: Hamming AI
+    career_page: https://hamming.ai
+    datahive_score: 1
+    source: datahive
+  - name: Harvey
+    career_page: https://harvey.ai
+    datahive_score: 1
+    source: datahive
+    ashby_slug: harvey
+  - name: Hawke AI
+    career_page: https://hawke.ai
+    datahive_score: 1
+    source: datahive
+  - name: Hedra
+    career_page: https://hedra.ai
+    datahive_score: 1
+    source: datahive
+  - name: HeyGen
+    career_page: https://heygen.ai
+    datahive_score: 1
+    source: datahive
+  - name: Higgsfield AI
+    career_page: https://higgsfield.ai
+    datahive_score: 1
+    source: datahive
+  - name: Hollo AI
+    career_page: https://hollo.ai
+    datahive_score: 1
+    source: datahive
+  - name: Hoopr
+    career_page: https://hoopr.ai
+    industry: Tangential
+    stage: Seed
+    datahive_score: 1
+    source: datahive
+  - name: Hoppn
+    career_page: https://hoppn.com
+    datahive_score: 1
+    source: datahive
+  - name: Hugging Face
+    career_page: https://huggingface.com
+    industry: AI Platform
+    datahive_score: 1
+    source: datahive
+    lever_slug: huggingface
+  - name: HumanSignal
+    career_page: https://humansignal.ai
+    datahive_score: 1
+    source: datahive
+  - name: HuumanLed
+    career_page: https://huumanled.ai
+    datahive_score: 1
+    source: datahive
+  - name: Hypersonix Inc.
+    career_page: https://hypersonix.ai
+    datahive_score: 1
+    source: datahive
+  - name: Inception Studio
+    career_page: https://inceptivestudio.com
+    datahive_score: 1
+    source: datahive
+  - name: InfoBay.AI (formerly EduGorilla)
+    career_page: https://leadiq.com
+    datahive_score: 1
+    source: datahive
+  - name: Innodata
+    career_page: https://innodata.com
+    industry: Data Marketplace (Prospect)
+    stage: 'Public (NASDAQ: INOD)'
+    datahive_score: 1
+    source: datahive
+  - name: Integrated Data Intelligence
+    career_page: https://integrateddataintelligence.com
+    datahive_score: 1
+    source: datahive
+  - name: Intellisane AI
+    career_page: https://intellisane.ai
+    datahive_score: 1
+    source: datahive
+  - name: InternetSpeech
+    career_page: https://internetspeech.com
+    datahive_score: 1
+    source: datahive
+  - name: Inventive AI
+    career_page: https://inventive.ai
+    datahive_score: 1
+    source: datahive
+  - name: InVideo
+    career_page: https://invideo.ai
+    datahive_score: 1
+    source: datahive
+  - name: Invoke Learning
+    career_page: https://invokelearning.com
+    datahive_score: 1
+    source: datahive
+  - name: Inworld AI
+    career_page: https://inworld.ai
+    datahive_score: 1
+    source: datahive
+  - name: iStat Sports
+    career_page: https://www.rithmm.com
+    datahive_score: 1
+    source: datahive
+  - name: ITSRAPID
+    career_page: https://itsrapid.ai
+    datahive_score: 1
+    source: datahive
+  - name: Ivy Insights
+    career_page: https://ivyinsights.ai
+    datahive_score: 1
+    source: datahive
+  - name: JARS AI
+    career_page: https://jars.ai
+    datahive_score: 1
+    source: datahive
+  - name: Jivox
+    career_page: https://jivox.com
+    datahive_score: 1
+    source: datahive
+  - name: Journify Learning
+    career_page: https://www.journify-learning.com
+    datahive_score: 1
+    source: datahive
+  - name: Julius AI
+    career_page: https://julius.ai
+    datahive_score: 1
+    source: datahive
+  - name: khub.ai
+    career_page: http://khub.ai
+    datahive_score: 1
+    source: datahive
+  - name: Kodezi
+    career_page: https://kodezi.com
+    datahive_score: 1
+    source: datahive
+  - name: Kodif
+    career_page: https://kodif.ai
+    datahive_score: 1
+    source: datahive
+  - name: Kollegio
+    career_page: https://kollegio.ai
+    datahive_score: 1
+    source: datahive
+  - name: krea.ai
+    career_page: https://kreaai.io
+    datahive_score: 1
+    source: datahive
+  - name: Krikey AI
+    career_page: https://krikey.ai
+    datahive_score: 1
+    source: datahive
+  - name: Kritik
+    career_page: https://kritik.ai
+    datahive_score: 1
+    source: datahive
+  - name: KrosAI (DraperU S24)
+    career_page: https://www.voiceaispace.com
+    datahive_score: 1
+    source: datahive
+  - name: KSI VISION
+    career_page: https://ksivision.com
+    datahive_score: 1
+    source: datahive
+  - name: Kuku FM
+    career_page: https://kukufm.com
+    industry: Tangential
+    stage: Series C
+    datahive_score: 1
+    source: datahive
+  - name: Kumo.AI
+    career_page: https://kumo.ai
+    datahive_score: 1
+    source: datahive
+  - name: Label Your Data
+    career_page: https://labelyourdata.com
+    datahive_score: 1
+    source: datahive
+  - name: Labellerr AI
+    career_page: https://labellerr.com
+    datahive_score: 1
+    source: datahive
+  - name: LAION
+    career_page: https://laion.ai
+    datahive_score: 1
+    source: datahive
+  - name: Lambda
+    career_page: https://lambda.ai
+    datahive_score: 1
+    source: datahive
+  - name: Laude Institute
+    career_page: https://www.laude.org
+    datahive_score: 1
+    source: datahive
+  - name: Lighthouse AI Academy
+    career_page: https://lighthouseacademy.ai
+    datahive_score: 1
+    source: datahive
+  - name: ListenHub
+    career_page: https://listenhub.ai
+    industry: Adjacent
+    stage: Seed
+    datahive_score: 1
+    source: datahive
+  - name: Little Dragon
+    career_page: https://www.minimax.io
+    datahive_score: 1
+    source: datahive
+  - name: Littlebird
+    career_page: https://littlebird.ai
+    datahive_score: 1
+    source: datahive
+  - name: LLM Arena
+    career_page: https://llmarena.ai
+    datahive_score: 1
+    source: datahive
+  - name: Lookbk
+    career_page: https://lookbk.com
+    datahive_score: 1
+    source: datahive
+  - name: LoveItAI
+    career_page: https://loveitai.com
+    datahive_score: 1
+    source: datahive
+  - name: Lucid Simulations, Corp
+    career_page: https://lucid.co
+    datahive_score: 1
+    source: datahive
+  - name: Lumi
+    career_page: https://www.lumi-ai.com
+    datahive_score: 1
+    source: datahive
+  - name: luminAIt.ai
+    career_page: https://www.luminait.ai
+    datahive_score: 1
+    source: datahive
+  - name: Mage
+    career_page: https://mage.ai
+    datahive_score: 1
+    source: datahive
+  - name: Magic Story
+    career_page: https://magicstory.ai
+    datahive_score: 1
+    source: datahive
+  - name: Maker
+    career_page: https://maker.ai
+    datahive_score: 1
+    source: datahive
+  - name: MakerSights
+    career_page: https://makersights.com
+    datahive_score: 1
+    source: datahive
+  - name: Mall IQ, Inc
+    career_page: https://www.avemeapp.com
+    datahive_score: 1
+    source: datahive
+  - name: Manas AI
+    career_page: https://manas.ai
+    datahive_score: 1
+    source: datahive
+  - name: Manifest AI
+    career_page: https://manifest.com
+    datahive_score: 1
+    source: datahive
+  - name: Marketecture
+    career_page: https://marketecture.io
+    industry: Tangential
+    stage: Seed
+    datahive_score: 1
+    source: datahive
+  - name: MarketMind™ Investor Relations
+    career_page: https://marketmind.live
+    datahive_score: 1
+    source: datahive
+  - name: Mashgin Inc.
+    career_page: https://mashgin.com
+    datahive_score: 1
+    source: datahive
+  - name: Masterpiece X
+    career_page: https://masterpiecex.com
+    datahive_score: 1
+    source: datahive
+  - name: Matchbox.io
+    career_page: https://artificial-intelligence.cioapplications.com
+    industry: Tangential
+    stage: 1 round
+    datahive_score: 1
+    source: datahive
+  - name: Mathos AI
+    career_page: https://mathos.ai
+    datahive_score: 1
+    source: datahive
+  - name: Mediar, Inc.
+    career_page: https://mediar.ai
+    datahive_score: 1
+    source: datahive
+  - name: Mercor
+    career_page: https://mercor.com
+    datahive_score: 1
+    source: datahive
+  - name: MicroCommerce.ai
+    career_page: https://www.microcommerce.ai
+    datahive_score: 1
+    source: datahive
+  - name: Mimiclone
+    career_page: https://mimiclone.com
+    datahive_score: 1
+    source: datahive
+  - name: Mind Over Media
+    career_page: https://mindovermedia.ai
+    datahive_score: 1
+    source: datahive
+  - name: Mindtrip, Inc.
+    career_page: https://mindtrip.ai
+    datahive_score: 1
+    source: datahive
+  - name: Mistral AI
+    career_page: https://mistral.ai
+    industry: AI Research
+    datahive_score: 1
+    source: datahive
+    lever_slug: mistralai
+  - name: MLtwist
+    career_page: https://mltwist.com
+    datahive_score: 1
+    source: datahive
+  - name: Modelbit
+    career_page: https://doc.modelbit.com
+    datahive_score: 1
+    source: datahive
+  - name: Monda
+    career_page: https://monda.ai
+    industry: Data Marketplace (Prospect)
+    stage: Not specified
+    datahive_score: 1
+    source: datahive
+  - name: MorphusAI
+    career_page: https://morphusai.com
+    datahive_score: 1
+    source: datahive
+  - name: MOSTLY AI
+    career_page: https://mostly.ai
+    datahive_score: 1
+    source: datahive
+  - name: Motley
+    career_page: https://motley.ai
+    datahive_score: 1
+    source: datahive
+  - name: Nami Technology
+    career_page: https://nami.ai
+    industry: Core Audio
+    stage: Seed
+    datahive_score: 1
+    source: datahive
+  - name: Native Labs
+    career_page: https://native.com
+    datahive_score: 1
+    source: datahive
+  - name: Navidence
+    career_page: https://navidence.com
+    datahive_score: 1
+    source: datahive
+  - name: Nearfleet
+    career_page: https://nearfleet.com
+    datahive_score: 1
+    source: datahive
+  - name: Neuralogics
+    career_page: https://neuralogics.ai
+    datahive_score: 1
+    source: datahive
+  - name: NeuralSpace
+    career_page: https://neuralspace.ai
+    industry: Core Audio
+    stage: Seed/Series A
+    datahive_score: 1
+    source: datahive
+  - name: Ninjatech-ai
+    career_page: https://ninjatechai.co
+    datahive_score: 1
+    source: datahive
+  - name: Nocall
+    career_page: https://nocall.ai
+    industry: Adjacent
+    stage: Venture
+    datahive_score: 1
+    source: datahive
+  - name: Nordoon
+    career_page: https://nordoon.ai
+    datahive_score: 1
+    source: datahive
+  - name: Numerade
+    career_page: https://numerade.ai
+    datahive_score: 1
+    source: datahive
+  - name: Octane AI
+    career_page: https://octane.ai
+    datahive_score: 1
+    source: datahive
+  - name: Olakai
+    career_page: https://olakai.ai
+    datahive_score: 1
+    source: datahive
+  - name: Olark
+    career_page: https://olark.com
+    datahive_score: 1
+    source: datahive
+  - name: Onfire AI
+    career_page: https://onfire.ai
+    datahive_score: 1
+    source: datahive
+  - name: Onton
+    career_page: https://onton.ai
+    datahive_score: 1
+    source: datahive
+  - name: OP.ai
+    career_page: https://openpowerai.org
+    datahive_score: 1
+    source: datahive
+  - name: Opaque Systems
+    career_page: https://opaque.ai
+    datahive_score: 1
+    source: datahive
+  - name: OpenArt AI
+    career_page: https://openart.ai
+    datahive_score: 1
+    source: datahive
+  - name: Opendatabay
+    career_page: https://opendatabay.com
+    industry: Data Marketplace (Prospect)
+    stage: Not specified
+    datahive_score: 1
+    source: datahive
+  - name: Optiwise.ai
+    career_page: https://www.optiwise.ai
+    datahive_score: 1
+    source: datahive
+  - name: Otherhalf
+    career_page: https://otherhalf.ai
+    datahive_score: 1
+    source: datahive
+  - name: Ovum - AI Startup Factory
+    career_page: https://ovum.ai
+    datahive_score: 1
+    source: datahive
+  - name: Ownit
+    career_page: https://ownit.co
+    datahive_score: 1
+    source: datahive
+  - name: Panjaya Inc.
+    career_page: https://panjaya.ai
+    datahive_score: 1
+    source: datahive
+  - name: Panorama AI
+    career_page: https://panorama.ai
+    datahive_score: 1
+    source: datahive
+  - name: PEARCH.AI
+    career_page: https://pearch.ai
+    datahive_score: 1
+    source: datahive
+  - name: PentoPix
+    career_page: https://pentopix.com
+    datahive_score: 1
+    source: datahive
+  - name: PersonalizerAI
+    career_page: https://personalizerai.com
+    datahive_score: 1
+    source: datahive
+  - name: Phaidra
+    career_page: https://phaidra.ai
+    datahive_score: 1
+    source: datahive
+  - name: Pheno.AI
+    career_page: https://www.pheno.ai
+    datahive_score: 1
+    source: datahive
+  - name: Photoroom
+    career_page: https://photoroom.com
+    datahive_score: 1
+    source: datahive
+  - name: Pickaxe
+    career_page: https://pickaxe.ai
+    datahive_score: 1
+    source: datahive
+  - name: Pinsight
+    career_page: https://pinsight.io
+    datahive_score: 1
+    source: datahive
+  - name: Pixeltable
+    career_page: https://pixeltable.com
+    datahive_score: 1
+    source: datahive
+  - name: Planette
+    career_page: https://planette.ai
+    datahive_score: 1
+    source: datahive
+  - name: Pocket FM
+    career_page: https://pocketfm.ai
+    industry: Tangential
+    stage: Series D
+    datahive_score: 1
+    source: datahive
+  - name: Podeo
+    career_page: https://podeo.io
+    industry: Adjacent
+    stage: Series A
+    datahive_score: 1
+    source: datahive
+  - name: Politecnico di Torino
+    career_page: https://www.polito.it
+    datahive_score: 1
+    source: datahive
+  - name: Prism Informatix
+    career_page: https://prisminformatix.com
+    datahive_score: 1
+    source: datahive
+  - name: Promise
+    career_page: https://promise.ai
+    datahive_score: 1
+    source: datahive
+  - name: ProPair
+    career_page: https://propair.ai
+    datahive_score: 1
+    source: datahive
+  - name: PropWise by Machine Wise
+    career_page: https://propwise.eu
+    datahive_score: 1
+    source: datahive
+  - name: Prospect AI
+    career_page: https://prospect.io
+    datahive_score: 1
+    source: datahive
+  - name: Purlin Co.
+    career_page: https://purlin.com
+    datahive_score: 1
+    source: datahive
+  - name: PwC Canada
+    career_page: https://www.pwc.com
+    datahive_score: 1
+    source: datahive
+  low_priority:
+  - name: '"ShowOff Radio" SiriusXM Radio Inc.'
+    source: linkedin_network
+  - name: /'gīdens/
+    source: linkedin_network
+  - name: 0G Labs
+    source: linkedin_network
+  - name: '0xb1'
+    source: linkedin_network
+  - name: 1 Second Everyday
+    source: linkedin_network
+  - name: 1-800-FLOWERS.COM, INC.
+    source: linkedin_network
+  - name: 1099 Partners
+    source: linkedin_network
+  - name: 10T Holdings
+    source: linkedin_network
+  - name: 10T Solutions
+    source: linkedin_network
+  - name: 10XBeta
+    source: linkedin_network
+  - name: 11 Investments
+    source: linkedin_network
+  - name: 123 Baby Box
+    source: linkedin_network
+  - name: '12:01'
+    source: linkedin_network
+  - name: 12N Family Capital
+    source: linkedin_network
+  - name: 150 Media
+    source: linkedin_network
+  - name: 18 Coffees
+    source: linkedin_network
+  - name: 18 Wellness
+    source: linkedin_network
+  - name: 1848 Ventures
+    source: linkedin_network
+  - name: 1bigthink
+    source: linkedin_network
+  - name: 1DOT
+    source: linkedin_network
+  - name: 1DROPWALLS
+    source: linkedin_network
+  - name: 1heart
+    source: linkedin_network
+  - name: 1Huddle
+    source: linkedin_network
+  - name: 1Password
+    source: linkedin_network
+  - name: 1x1 Studio
+    source: linkedin_network
+  - name: 212+Design
+    source: linkedin_network
+  - name: 2gnoMe (To know me)
+    source: linkedin_network
+  - name: 3 Leaf Realty
+    source: linkedin_network
+  - name: 33 Sticks
+    source: linkedin_network
+  - name: 351 Studios
+    source: linkedin_network
+  - name: 3DOS
+    source: linkedin_network
+  - name: 3Headed Monster
+    source: linkedin_network
+  - name: 3Lanes
+    source: linkedin_network
+  - name: 3P Commercial LLC
+    source: linkedin_network
+  - name: 3SPOKE
+    source: linkedin_network
+  - name: 3WCircle
+    source: linkedin_network
+  - name: 3x Capital
+    source: linkedin_network
+  - name: 4-Evergone Pest Control
+    source: linkedin_network
+  - name: 4P Capital
+    source: linkedin_network
+  - name: 500 Global
+    source: linkedin_network
+  - name: 51 | fiftyone.xyz
+    source: linkedin_network
+  - name: 555 Comic
+    source: linkedin_network
+  - name: 57 Maiden
+    source: linkedin_network
+  - name: 5eyes
+    source: linkedin_network
+  - name: 5thPivot
+    source: linkedin_network
+  - name: 6 Degrees Agency
+    source: linkedin_network
+  - name: 64 Squares
+    source: linkedin_network
+  - name: 6MV
+    source: linkedin_network
+  - name: 6th Man Ventures
+    source: linkedin_network
+  - name: 71 West
+    source: linkedin_network
+  - name: '7:47'
+    source: linkedin_network
+  - name: 7RCC Global
+    source: linkedin_network
+  - name: 8-Bit Capital
+    source: linkedin_network
+  - name: 8VC
+    source: linkedin_network
+  - name: 951 Marketing
+    source: linkedin_network
+  - name: 99 Capital
+    source: linkedin_network
+  - name: 9th Hour
+    source: linkedin_network
+  - name: '[BOUND]'
+    source: linkedin_network
+  - name: '[INVNT GROUP]'
+    source: linkedin_network
+  - name: '[L]earned Media'
+    source: linkedin_network
+  - name: '[self-employed]'
+    source: linkedin_network
+  - name: A Beautiful Mess .Org
+    source: linkedin_network
+  - name: A New Company
+    source: linkedin_network
+  - name: A Porter Company
+    source: linkedin_network
+  - name: A public school district
+    source: linkedin_network
+  - name: A Social Affair Event Management Inc.
+    source: linkedin_network
+  - name: A+E Global Media
+    source: linkedin_network
+  - name: A-Game Agency
+    source: linkedin_network
+  - name: A-List Search
+    source: linkedin_network
+  - name: A-squared Talent
+    source: linkedin_network
+  - name: A9i
+    source: linkedin_network
+  - name: AAF Austin
+    source: linkedin_network
+  - name: AB InBev
+    source: linkedin_network
+  - name: ABCMINT FOUNDATION
+    source: linkedin_network
+  - name: Able Made
+    source: linkedin_network
+  - name: Abound by The Times of India
+    source: linkedin_network
+  - name: Absolute Labs
+    source: linkedin_network
+  - name: Abstract
+    source: linkedin_network
+  - name: AC Lion Digital Executive Search
+    source: linkedin_network
+  - name: Academy of Television Arts & Sciences
+    source: linkedin_network
+  - name: AcadiumAI
+    source: linkedin_network
+  - name: Accelera Talent
+    source: linkedin_network
+  - name: Accelerated Information Systems
+    source: linkedin_network
+  - name: Accenture
+    source: linkedin_network
+  - name: Accenture Song
+    source: linkedin_network
+  - name: AccountingDepartment.com
+    source: linkedin_network
+  - name: Accreditation Council for Medical Affairs (ACMA)
+    source: linkedin_network
+  - name: ACCURATE DIAGNOSTIC LABS, INC
+    source: linkedin_network
+  - name: Ace Trading LLC
+    source: linkedin_network
+  - name: Acrisure
+    source: linkedin_network
+  - name: Acronym Venture Capital
+    source: linkedin_network
+  - name: Actijoy™
+    source: linkedin_network
+  - name: Activate the Magic
+    source: linkedin_network
+  - name: Active Link, Inc.
+    source: linkedin_network
+  - name: Activist Artists Management
+    source: linkedin_network
+  - name: Actual Markets LLC
+    source: linkedin_network
+  - name: Actual VC
+    source: linkedin_network
+  - name: ActualFood
+    source: linkedin_network
+  - name: Ad Age
+    source: linkedin_network
+  - name: Ad Council
+    source: linkedin_network
+  - name: Adaptive Financial Consulting
+    source: linkedin_network
+  - name: Addepar
+    source: linkedin_network
+  - name: Addicaid
+    source: linkedin_network
+  - name: Addressable.io
+    source: linkedin_network
+  - name: Adentro
+    source: linkedin_network
+  - name: AdeptAg
+    source: linkedin_network
+  - name: Adeso
+    source: linkedin_network
+  - name: ADF Accessories
+    source: linkedin_network
+  - name: adidas
+    source: linkedin_network
+  - name: Aditus Ventures
+    source: linkedin_network
+  - name: Adler & Stachenfeld LLP
+    source: linkedin_network
+  - name: Admetec
+    source: linkedin_network
+  - name: Adobe
+    source: linkedin_network
+  - name: Adoro
+    source: linkedin_network
+  - name: ADP
+    source: linkedin_network
+  - name: adQuadrant
+    source: linkedin_network
+  - name: Adroit Capital Partners LLC
+    source: linkedin_network
+  - name: Adsquare
+    source: linkedin_network
+  - name: AdTheorent
+    source: linkedin_network
+  - name: Advanced Metrix
+    source: linkedin_network
+  - name: Advent
+    source: linkedin_network
+  - name: Adviser Partner
+    source: linkedin_network
+  - name: AECC Group
+    source: linkedin_network
+  - name: Aequitas Tax
+    source: linkedin_network
+  - name: AetherWorks LLC.
+    source: linkedin_network
+  - name: Aethir
+    source: linkedin_network
+  - name: Affirm
+    source: linkedin_network
+    greenhouse_slug: affirm
+  - name: Affirma
+    source: linkedin_network
+  - name: African Women Entrepreneurship Cooperative
+    source: linkedin_network
+  - name: AFX Wealth - Invest with Confidence
+    source: linkedin_network
+  - name: AG1
+    source: linkedin_network
+  - name: Agape Strategy Consulting
+    source: linkedin_network
+  - name: Agate Hound Fund
+    source: linkedin_network
+  - name: AGB Real Estate
+    source: linkedin_network
+  - name: AGD Design Group
+    source: linkedin_network
+  - name: AgeGuide
+    source: linkedin_network
+  - name: Agency
+    source: linkedin_network
+  - name: Agency Match
+    source: linkedin_network
+  - name: AGENTIC GROUP
+    source: linkedin_network
+  - name: Agentsie
+    source: linkedin_network
+  - name: AgeTech Atlanta
+    source: linkedin_network
+  - name: AgiliTOP Consulting
+    source: linkedin_network
+  - name: Agilix Health
+    source: linkedin_network
+  - name: AGL Credit Management
+    source: linkedin_network
+  - name: Agoric
+    source: linkedin_network
+  - name: AGS - American Gaming Systems
+    source: linkedin_network
+  - name: AGS Speedy technologies- AUTOMATED GRADING SYSTEMS
+    source: linkedin_network
+  - name: AheadA
+    source: linkedin_network
+  - name: AHG Interiors
+    source: linkedin_network
+  - name: Ahold Delhaize USA
+    source: linkedin_network
+  - name: AI for Equity
+    source: linkedin_network
+  - name: Aidaly
+    source: linkedin_network
+  - name: AIG
+    source: linkedin_network
+  - name: Aigo.ai
+    source: linkedin_network
+  - name: AIM
+    source: linkedin_network
+  - name: Aimé Leon Dore Inc.
+    source: linkedin_network
+  - name: AIONROCK
+    source: linkedin_network
+  - name: Air Castle Entertainment
+    source: linkedin_network
+  - name: Air Fresh Marketing
+    source: linkedin_network
+  - name: Airbnb
+    source: linkedin_network
+  - name: AirHelp
+    source: linkedin_network
+  - name: Airlius
+    source: linkedin_network
+  - name: AirPlus International
+    source: linkedin_network
+  - name: Airspace
+    source: linkedin_network
+  - name: Airtable
+    source: linkedin_network
+    greenhouse_slug: airtable
+  - name: Aithon Ventures
+    source: linkedin_network
+  - name: ak capital
+    source: linkedin_network
+  - name: AKA Marketing, Inc.
+    source: linkedin_network
+  - name: Akamai Advisors
+    source: linkedin_network
+  - name: AKHAN Semiconductor, Inc.
+    source: linkedin_network
+  - name: Akin Gump Strauss Hauer & Feld LLP
+    source: linkedin_network
+  - name: Akkodis
+    source: linkedin_network
+  - name: AKQA
+    source: linkedin_network
+  - name: AKS Family Partners LP/AKS Family Foundation
+    source: linkedin_network
+  - name: AL's
+    source: linkedin_network
+  - name: ALAB GROUP
+    source: linkedin_network
+  - name: AlayaCare
+    source: linkedin_network
+  - name: Albert Einstein College of Medicine
+    source: linkedin_network
+  - name: Albertsons Companies
+    source: linkedin_network
+  - name: ALC Strategic Business Consulting
+    source: linkedin_network
+  - name: Alchemy
+    source: linkedin_network
+    lever_slug: alchemyplatform
+  - name: Alchemy Consulting
+    source: linkedin_network
+  - name: Alchemy of Grief
+    source: linkedin_network
+  - name: Aledade, Inc.
+    source: linkedin_network
+  - name: Alegre Homes USA
+    source: linkedin_network
+  - name: Alekka
+    source: linkedin_network
+  - name: Aleph
+    source: linkedin_network
+  - name: Aleph Farms
+    source: linkedin_network
+  - name: Aleph One Marketing
+    source: linkedin_network
+  - name: Alexandra Capital
+    source: linkedin_network
+  - name: Alfred
+    source: linkedin_network
+  - name: Algorand Accelerate
+    source: linkedin_network
+  - name: Alice Lab (Alice K Lab)
+    source: linkedin_network
+  - name: Align Ventures
+    source: linkedin_network
+  - name: All Day Coffee
+    source: linkedin_network
+  - name: all in all
+    source: linkedin_network
+  - name: All Points West Distillery
+    source: linkedin_network
+  - name: Allero Telecom
+    source: linkedin_network
+  - name: AlleyWatch
+    source: linkedin_network
+  - name: Alliance
+    source: linkedin_network
+  - name: AllianceChicago
+    source: linkedin_network
+  - name: Allied Grocers
+    source: linkedin_network
+  - name: ALLISON New York
+    source: linkedin_network
+  - name: Allora Labs
+    source: linkedin_network
+  - name: AllSet Turnover
+    source: linkedin_network
+  - name: AllStarLink, Inc
+    source: linkedin_network
+  - name: Alma
+    source: linkedin_network
+  - name: Almonds Ai
+    source: linkedin_network
+  - name: Almondz Global Securities Limited
+    source: linkedin_network
+  - name: Almost Real Things
+    source: linkedin_network
+  - name: Aloqia
+    source: linkedin_network
+  - name: Alpaca VC
+    source: linkedin_network
+  - name: Alpha JWC Ventures
+    source: linkedin_network
+  - name: Alpha Lead Academy
+    source: linkedin_network
+  - name: Alpha Strategy Consulting
+    source: linkedin_network
+  - name: AlphaLab Capital Group
+    source: linkedin_network
+  - name: Alphanatives
+    source: linkedin_network
+  - name: AlphaPoint
+    source: linkedin_network
+  - name: AlphaSense
+    source: linkedin_network
+  - name: Alpine Design Services
+    source: linkedin_network
+  - name: Alpine Formula One Team
+    source: linkedin_network
+  - name: Alps & Meters
+    source: linkedin_network
+  - name: AlquimiSoft Media & Entertainment
+    source: linkedin_network
+  - name: ALT LABS
+    source: linkedin_network
+  - name: Altada Technology Solutions
+    source: linkedin_network
+  - name: AltHub LLC
+    source: linkedin_network
+  - name: Alto Studios
+    source: linkedin_network
+  - name: Altra Venture Partners
+    source: linkedin_network
+  - name: Altria
+    source: linkedin_network
+  - name: ALTRUICITY
+    source: linkedin_network
+  - name: Altruix
+    source: linkedin_network
+  - name: Alzheimer Society of Canada
+    source: linkedin_network
+  - name: AM Creatives
+    source: linkedin_network
+  - name: AM PM hospice
+    source: linkedin_network
+  - name: Amanda Hanley Climate Justice Fund
+    source: linkedin_network
+  - name: Amazon Music
+    source: linkedin_network
+  - name: Amazon Web Services (AWS)
+    source: linkedin_network
+  - name: Ambush Capital
+    source: linkedin_network
+  - name: American Express
+    source: linkedin_network
+  - name: American Health Associates
+    source: linkedin_network
+  - name: American Life & Security Corp.
+    source: linkedin_network
+  - name: American Management Services, Inc
+    source: linkedin_network
+  - name: American Trust Investment Services, Inc.
+    source: linkedin_network
+  - name: American Water
+    source: linkedin_network
+  - name: Americans for Responsible Innovation
+    source: linkedin_network
+  - name: Americas Beautiful Florist
+    source: linkedin_network
+  - name: AmeriHealth Caritas
+    source: linkedin_network
+  - name: AmeriHealth Caritas Family of Companies
+    source: linkedin_network
+  - name: AMG
+    source: linkedin_network
+  - name: AMI for Mobility Innovation
+    source: linkedin_network
+  - name: AMIBA Consulting
+    source: linkedin_network
+  - name: Amigo
+    source: linkedin_network
+  - name: Amirah Jiwa
+    source: linkedin_network
+  - name: AMJ Capital
+    source: linkedin_network
+  - name: amp
+    source: linkedin_network
+  - name: Amp Studios
+    source: linkedin_network
+  - name: Amper Technologies, Inc.
+    source: linkedin_network
+  - name: Amperity
+    source: linkedin_network
+  - name: Amperon
+    source: linkedin_network
+  - name: Amphitheater at Poconos Park
+    source: linkedin_network
+  - name: Ampla
+    source: linkedin_network
+  - name: Amplify Partners
+    source: linkedin_network
+  - name: Amplifyher Ventures
+    source: linkedin_network
+  - name: AMPTAB, Inc.
+    source: linkedin_network
+  - name: Amtrak
+    source: linkedin_network
+  - name: Amy Levin Klein Consulting
+    source: linkedin_network
+  - name: Amynta Group
+    source: linkedin_network
+  - name: AnaOno
+    source: linkedin_network
+  - name: Anchorage Digital
+    source: linkedin_network
+    greenhouse_slug: anchoragebitcoin
+  - name: Anchorless Bangladesh
+    source: linkedin_network
+  - name: Andela
+    source: linkedin_network
+  - name: Andrea Marron
+    source: linkedin_network
+  - name: Andreessen Horowitz
+    source: linkedin_network
+  - name: Andrew Trust Company
+    source: linkedin_network
+  - name: Andrew's Roadmaps
+    source: linkedin_network
+  - name: Anduril Industries
+    source: linkedin_network
+  - name: Angel Investors Network
+    source: linkedin_network
+  - name: AngelList
+    source: linkedin_network
+  - name: Angry Gods®
+    source: linkedin_network
+  - name: Angular Ventures
+    source: linkedin_network
+  - name: Animoca Brands
+    source: linkedin_network
+    greenhouse_slug: animocabrands
+  - name: Ann Taylor
+    source: linkedin_network
+  - name: Annesia Allie New York
+    source: linkedin_network
+  - name: Anomaly
+    source: linkedin_network
+  - name: Anon
+    source: linkedin_network
+  - name: Anonymous
+    source: linkedin_network
+  - name: Ansel Health
+    source: linkedin_network
+  - name: Answerman Management
+    source: linkedin_network
+  - name: Antara Capital LP
+    source: linkedin_network
+  - name: Anthropocene Ventures
+    source: linkedin_network
+  - name: Antler
+    source: linkedin_network
+  - name: Anvaya Investments
+    source: linkedin_network
+  - name: ANY COLOUR YOU LIKE
+    source: linkedin_network
+  - name: Anything But Plain Vanilla
+    source: linkedin_network
+  - name: AnyTopic
+    source: linkedin_network
+  - name: Anywhere Ventures
+    source: linkedin_network
+  - name: Anzen
+    source: linkedin_network
+  - name: AOK Group
+    source: linkedin_network
+  - name: Aon
+    source: linkedin_network
+  - name: Aparti.AI
+    source: linkedin_network
