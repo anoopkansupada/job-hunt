@@ -1,8 +1,15 @@
 "use client"
 
-import { useState } from "react"
+import { useState, useEffect, useCallback } from "react"
 import { Textarea } from "@/components/ui/textarea"
 import { Button } from "@/components/ui/button"
+
+interface ResumeMeta {
+  id: string
+  name: string
+  createdAt: string
+  isDefault: boolean
+}
 
 const STRATEGIES = [
   { 
@@ -131,6 +138,100 @@ export default function Home() {
   const [selectedTab, setSelectedTab] = useState("tailor")
   const [showPrompt, setShowPrompt] = useState(false)
 
+  const [savedResumes, setSavedResumes] = useState<ResumeMeta[]>([])
+  const [activeResumeId, setActiveResumeId] = useState<string | null>(null)
+  const [showSaveDialog, setShowSaveDialog] = useState(false)
+  const [saveName, setSaveName] = useState("")
+  const [resumeLoading, setResumeLoading] = useState(false)
+
+  // Load saved resume list + auto-load default on mount
+  useEffect(() => {
+    async function init() {
+      try {
+        const [listRes, defaultRes] = await Promise.all([
+          fetch("/api/resume"),
+          fetch("/api/resume?default=true"),
+        ])
+        if (listRes.ok) {
+          const { resumes } = await listRes.json()
+          setSavedResumes(resumes || [])
+        }
+        if (defaultRes.ok) {
+          const { resume } = await defaultRes.json()
+          if (resume) {
+            setResumeText(resume.content)
+            setActiveResumeId(resume.id)
+            setResumeSource("text")
+          }
+        }
+      } catch {}
+    }
+    init()
+  }, [])
+
+  const loadResume = useCallback(async (id: string) => {
+    setResumeLoading(true)
+    try {
+      const res = await fetch(`/api/resume?id=${id}`)
+      if (res.ok) {
+        const { resume } = await res.json()
+        setResumeText(resume.content)
+        setActiveResumeId(resume.id)
+        setResumeSource("text")
+      }
+    } catch {}
+    setResumeLoading(false)
+  }, [])
+
+  const saveResume = useCallback(async () => {
+    if (!saveName.trim() || !resumeText.trim()) return
+    try {
+      const res = await fetch("/api/resume", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ name: saveName.trim(), content: resumeText }),
+      })
+      if (res.ok) {
+        const { resume } = await res.json()
+        setSavedResumes((prev) => [...prev, resume])
+        setActiveResumeId(resume.id)
+        setShowSaveDialog(false)
+        setSaveName("")
+      }
+    } catch {}
+  }, [saveName, resumeText])
+
+  const setDefaultResume = useCallback(async (id: string) => {
+    try {
+      const res = await fetch("/api/resume", {
+        method: "PUT",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ id, setDefault: true }),
+      })
+      if (res.ok) {
+        setSavedResumes((prev) =>
+          prev.map((r) => ({ ...r, isDefault: r.id === id }))
+        )
+      }
+    } catch {}
+  }, [])
+
+  const deleteResume = useCallback(async (id: string) => {
+    try {
+      const res = await fetch(`/api/resume?id=${id}`, { method: "DELETE" })
+      if (res.ok) {
+        setSavedResumes((prev) => {
+          const remaining = prev.filter((r) => r.id !== id)
+          // If deleted was default, first remaining becomes default
+          const hadDefault = prev.find((r) => r.id === id)?.isDefault
+          if (hadDefault && remaining.length > 0) remaining[0].isDefault = true
+          return remaining
+        })
+        if (activeResumeId === id) setActiveResumeId(null)
+      }
+    } catch {}
+  }, [activeResumeId])
+
   const handleCompareAll = async () => {
     let resume = resumeText
     let jobDesc = jobText
@@ -227,8 +328,84 @@ export default function Home() {
           <div className="space-y-6">
             {/* Resume Section */}
             <div className="bg-slate-900 border border-slate-800 rounded-lg p-6">
-              <h2 className="text-lg font-semibold text-white mb-4">Resume</h2>
-              
+              <div className="flex items-center justify-between mb-4">
+                <h2 className="text-lg font-semibold text-white">Resume</h2>
+                {resumeText.trim() && (
+                  <button
+                    onClick={() => setShowSaveDialog(true)}
+                    className="px-3 py-1 rounded text-sm bg-green-700 hover:bg-green-600 text-white"
+                  >
+                    Save Version
+                  </button>
+                )}
+              </div>
+
+              {/* Save Dialog */}
+              {showSaveDialog && (
+                <div className="mb-4 p-3 bg-slate-800 border border-slate-700 rounded-lg">
+                  <div className="flex gap-2">
+                    <input
+                      type="text"
+                      value={saveName}
+                      onChange={(e) => setSaveName(e.target.value)}
+                      onKeyDown={(e) => e.key === "Enter" && saveResume()}
+                      placeholder="Version name (e.g. Base Resume, Web3 Focus)..."
+                      className="flex-1 px-3 py-1 bg-slate-700 text-white rounded border border-slate-600 text-sm"
+                      autoFocus
+                    />
+                    <button onClick={saveResume} className="px-3 py-1 rounded text-sm bg-green-700 hover:bg-green-600 text-white">
+                      Save
+                    </button>
+                    <button onClick={() => { setShowSaveDialog(false); setSaveName("") }} className="px-3 py-1 rounded text-sm bg-slate-700 hover:bg-slate-600 text-slate-300">
+                      Cancel
+                    </button>
+                  </div>
+                </div>
+              )}
+
+              {/* Saved Versions */}
+              {savedResumes.length > 0 && (
+                <div className="mb-4">
+                  <div className="flex flex-wrap gap-2">
+                    {savedResumes.map((r) => (
+                      <div key={r.id} className="flex items-center gap-1">
+                        <button
+                          onClick={() => loadResume(r.id)}
+                          disabled={resumeLoading}
+                          className={`px-3 py-1 rounded text-sm transition ${
+                            activeResumeId === r.id
+                              ? "bg-blue-600 text-white"
+                              : "bg-slate-800 text-slate-300 hover:bg-slate-700"
+                          }`}
+                        >
+                          {r.isDefault && <span className="mr-1">*</span>}
+                          {r.name}
+                        </button>
+                        {activeResumeId === r.id && !r.isDefault && (
+                          <button
+                            onClick={() => setDefaultResume(r.id)}
+                            title="Set as default (auto-loads on start)"
+                            className="px-1 py-1 text-xs text-slate-500 hover:text-yellow-400"
+                          >
+                            Set Default
+                          </button>
+                        )}
+                        {activeResumeId === r.id && (
+                          <button
+                            onClick={() => deleteResume(r.id)}
+                            title="Delete this version"
+                            className="px-1 py-1 text-xs text-slate-500 hover:text-red-400"
+                          >
+                            x
+                          </button>
+                        )}
+                      </div>
+                    ))}
+                  </div>
+                  <p className="text-xs text-slate-600 mt-1">* = auto-loads on start</p>
+                </div>
+              )}
+
               <div className="flex gap-2 mb-4">
                 <button
                   onClick={() => setResumeSource("text")}
@@ -253,7 +430,7 @@ export default function Home() {
               {resumeSource === "text" && (
                 <Textarea
                   value={resumeText}
-                  onChange={(e) => setResumeText(e.target.value)}
+                  onChange={(e) => { setResumeText(e.target.value); setActiveResumeId(null) }}
                   placeholder="Paste resume..."
                   className="w-full min-h-[180px] bg-slate-800 border-slate-700 text-white rounded p-3 resize-none"
                 />

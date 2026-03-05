@@ -11,6 +11,9 @@ app/.env.local
 app/.env.*.local
 app/.env
 
+# Resume storage (contains personal data)
+data/resumes.json
+
 # Scraper runtime files
 scraper/seen_jobs.json
 scraper/jobs/
