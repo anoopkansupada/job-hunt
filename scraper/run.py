@@ -278,9 +278,20 @@ def cmd_apply(job_id: int):
     print(f"\n  Next: python3 run.py --update-app {app_id} preparing")
 
 
+VALID_STATUSES = ["interested", "preparing", "applied", "phone_screen",
+                  "interviewing", "final_round", "offer", "accepted",
+                  "rejected", "withdrawn", "ghosted"]
+
+
 def cmd_update_app(app_id: int, new_status: str):
     """Update an application's status."""
     from datetime import datetime
+
+    if new_status not in VALID_STATUSES:
+        print(f"  Invalid status: '{new_status}'")
+        print(f"  Valid: {', '.join(VALID_STATUSES)}")
+        return
+
     conn = get_conn()
     app = conn.execute("SELECT * FROM applications WHERE id=?", (app_id,)).fetchone()
     conn.close()

@@ -202,7 +202,7 @@ def insert_job(company_id: int, company_name: str, title: str, url: str,
                job_hash: str) -> int | None:
     """Insert a job if its hash doesn't exist. Returns job_id or None if dup."""
     conn = get_conn()
-    existing = conn.execute("SELECT id FROM seen_hashes WHERE hash=?", (job_hash,)).fetchone()
+    existing = conn.execute("SELECT hash FROM seen_hashes WHERE hash=?", (job_hash,)).fetchone()
     if existing:
         conn.execute("UPDATE seen_hashes SET last_seen=datetime('now') WHERE hash=?", (job_hash,))
         conn.commit()
