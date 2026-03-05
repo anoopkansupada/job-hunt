@@ -1,0 +1,101 @@
+# companies.yaml -- bulk company list for ATS resolution
+#
+# Just add name + domain. The resolver will find career pages
+# and detect which ATS platform they use (Greenhouse, Lever, Ashby, etc.)
+#
+# Usage:
+#   python3 run.py --import-companies companies.yaml
+#   python3 run.py --resolve                   # detect ATS for all unresolved
+#   python3 run.py --resolve --company "Stripe" # resolve one company
+#   python3 run.py --stage discover             # scrape using detected ATS
+#
+# You can also pre-fill ats_platform + ats_slug if you already know them.
+
+companies:
+  # Web3 / Crypto
+  - name: Coinbase
+    domain: coinbase.com
+  - name: Kraken
+    domain: kraken.com
+  - name: Chainalysis
+    domain: chainalysis.com
+  - name: Alchemy
+    domain: alchemy.com
+  - name: Consensys
+    domain: consensys.io
+  - name: Ripple
+    domain: ripple.com
+  - name: Uniswap Labs
+    domain: uniswap.org
+  - name: Polygon
+    domain: polygon.technology
+  - name: Arbitrum Foundation
+    domain: arbitrum.foundation
+  - name: OpenSea
+    domain: opensea.io
+  - name: Fireblocks
+    domain: fireblocks.com
+  - name: Circle
+    domain: circle.com
+  - name: Anchorage Digital
+    domain: anchorage.com
+  - name: Aave
+    domain: aave.com
+  - name: Dune Analytics
+    domain: dune.com
+
+  # Fintech
+  - name: Ramp
+    domain: ramp.com
+  - name: Brex
+    domain: brex.com
+  - name: Stripe
+    domain: stripe.com
+  - name: Plaid
+    domain: plaid.com
+  - name: Rippling
+    domain: rippling.com
+  - name: Mercury
+    domain: mercury.com
+  - name: Rho
+    domain: rho.co
+  - name: Navan
+    domain: navan.com
+  - name: Affirm
+    domain: affirm.com
+  - name: Marqeta
+    domain: marqeta.com
+
+  # Tech / Growth
+  - name: Notion
+    domain: notion.so
+  - name: Figma
+    domain: figma.com
+  - name: Whatnot
+    domain: whatnot.com
+  - name: Carta
+    domain: carta.com
+  - name: Vercel
+    domain: vercel.com
+  - name: Retool
+    domain: retool.com
+  - name: Postman
+    domain: postman.com
+  - name: Canva
+    domain: canva.com
+
+  # AI
+  - name: Anthropic
+    domain: anthropic.com
+  - name: OpenAI
+    domain: openai.com
+  - name: Hugging Face
+    domain: huggingface.co
+  - name: Scale AI
+    domain: scale.com
+  - name: Cohere
+    domain: cohere.com
+  - name: Runway
+    domain: runwayml.com
+  - name: Stability AI
+    domain: stability.ai

@@ -11,6 +11,9 @@ Usage:
   python3 run.py --dry-run --all                  # Discover + score, don't store
   python3 run.py --company "Stripe"               # Single company
 
+  python3 run.py --import-companies companies.yaml  # Bulk import company list
+  python3 run.py --resolve                         # Auto-detect ATS platforms
+  python3 run.py --resolve --company "Stripe"      # Resolve one company
   python3 run.py --apply JOB_ID                   # Start application for a job
   python3 run.py --update-app APP_ID STATUS        # Update application status
   python3 run.py --apps                            # Show all applications
@@ -43,6 +46,8 @@ from db import (get_conn, get_stats, init_db, upsert_company, insert_job, update
 from filter import score_job, passes_threshold, load_config
 from scrapers.lever_api import fetch_lever_jobs, parse_lever_job
 from scrapers.greenhouse_api import fetch_greenhouse_jobs, parse_greenhouse_job
+from scrapers.ashby_api import fetch_ashby_jobs, parse_ashby_job
+from scrapers.resolver import resolve_company, verify_ats_api
 
 
 def print_stats():
@@ -88,23 +93,90 @@ def print_stats():
     conn.close()
 
 
+def _get_company_scrape_config(comp: dict) -> dict:
+    """Merge config.yaml company entry with DB-resolved ATS info.
+
+    Priority: config.yaml explicit slugs > DB resolved ats_platform/ats_slug
+    """
+    name = comp["name"]
+    conn = get_conn()
+    row = conn.execute("SELECT * FROM companies WHERE name=?", (name,)).fetchone()
+    conn.close()
+
+    result = dict(comp)  # start with config values
+
+    if row:
+        row = dict(row)
+        platform = row.get("ats_platform")
+        slug = row.get("ats_slug")
+        resolved = row.get("resolved_at")
+
+        if platform and slug and resolved:
+            # Resolved ATS info overrides legacy/config slugs
+            # Clear legacy slugs that don't match the resolved platform
+            if platform != "greenhouse":
+                result.pop("greenhouse_slug", None)
+            if platform != "lever":
+                result.pop("lever_slug", None)
+            if platform != "ashby":
+                result.pop("ashby_slug", None)
+
+            if platform == "greenhouse":
+                result["greenhouse_slug"] = slug
+            elif platform == "lever":
+                result["lever_slug"] = slug
+            elif platform == "ashby":
+                result["ashby_slug"] = slug
+            result["_source"] = "resolved"
+        elif not (result.get("lever_slug") or result.get("greenhouse_slug") or result.get("ashby_slug")):
+            # No config slugs and no resolution — use DB slugs as fallback
+            if platform and slug:
+                if platform == "greenhouse":
+                    result["greenhouse_slug"] = slug
+                elif platform == "lever":
+                    result["lever_slug"] = slug
+                elif platform == "ashby":
+                    result["ashby_slug"] = slug
+
+    return result
+
+
 def stage_discover(config: dict, limit: int = None, company_name: str = None,
                    dry_run: bool = False):
-    """Stage 1: Fetch jobs from Lever + Greenhouse APIs."""
+    """Stage 1: Fetch jobs from Lever + Greenhouse APIs.
+
+    Uses both config.yaml slugs and DB-resolved ATS info.
+    """
     companies = config.get("companies", [])
+
+    # Also include DB-only companies (imported via --import-companies but not in config)
+    config_names = {c["name"].lower() for c in companies}
+    conn = get_conn()
+    db_companies = conn.execute(
+        "SELECT name, domain, ats_platform, ats_slug FROM companies WHERE ats_platform IS NOT NULL"
+    ).fetchall()
+    conn.close()
+    for row in db_companies:
+        if row["name"].lower() not in config_names:
+            companies.append({"name": row["name"], "domain": row["domain"]})
+
     if company_name:
         companies = [c for c in companies if c["name"].lower() == company_name.lower()]
         if not companies:
-            print(f"  Company '{company_name}' not found in config")
+            print(f"  Company '{company_name}' not found in config or DB")
             return
 
     total_new = 0
     total_seen = 0
     total_skipped = 0
+    total_no_scraper = 0
 
     for i, comp in enumerate(companies):
         name = comp["name"]
         print(f"  [{i+1}/{len(companies)}] {name}", end=" ... ", flush=True)
+
+        # Merge config + DB resolved info
+        comp = _get_company_scrape_config(comp)
 
         # Ensure company exists in DB
         company_id = upsert_company(
@@ -112,6 +184,7 @@ def stage_discover(config: dict, limit: int = None, company_name: str = None,
             lever_slug=comp.get("lever_slug"),
             greenhouse_slug=comp.get("greenhouse_slug"),
             career_url=comp.get("career_page"),
+            domain=comp.get("domain"),
         )
 
         jobs = []
@@ -127,6 +200,18 @@ def stage_discover(config: dict, limit: int = None, company_name: str = None,
             raw = fetch_greenhouse_jobs(comp["greenhouse_slug"])
             for posting in raw:
                 jobs.append(parse_greenhouse_job(posting, name))
+
+        # Ashby
+        if comp.get("ashby_slug"):
+            raw = fetch_ashby_jobs(comp["ashby_slug"])
+            for posting in raw:
+                jobs.append(parse_ashby_job(posting, name))
+
+        if not jobs and not comp.get("lever_slug") and not comp.get("greenhouse_slug") and not comp.get("ashby_slug"):
+            print("no scraper configured")
+            total_no_scraper += 1
+            time.sleep(0.3)
+            continue
 
         if not jobs:
             print("0 postings")
@@ -177,7 +262,10 @@ def stage_discover(config: dict, limit: int = None, company_name: str = None,
         time.sleep(0.5)
 
     prefix = "[DRY RUN] " if dry_run else ""
-    print(f"\n  {prefix}Discovery complete: {total_new} new, {total_seen} seen, {total_skipped} skipped")
+    no_scraper_msg = f", {total_no_scraper} no scraper" if total_no_scraper else ""
+    print(f"\n  {prefix}Discovery complete: {total_new} new, {total_seen} seen, {total_skipped} skipped{no_scraper_msg}")
+    if total_no_scraper:
+        print(f"  Tip: run --resolve to auto-detect ATS platforms for unconfigured companies")
 
 
 def stage_filter(config: dict, limit: int = 100):
@@ -248,6 +336,143 @@ def run_all(config: dict, limit: int = None, company_name: str = None,
         stage_notify(config)
     print("\nPipeline complete.")
     print_stats()
+
+
+def cmd_import_companies(filepath: str):
+    """Import companies from a YAML file into the DB."""
+    path = Path(filepath)
+    if not path.exists():
+        print(f"  File not found: {filepath}")
+        return
+
+    with open(path) as f:
+        data = yaml.safe_load(f)
+
+    companies = data.get("companies", [])
+    if not companies:
+        print("  No companies found in file")
+        return
+
+    imported = 0
+    updated = 0
+    for comp in companies:
+        name = comp.get("name")
+        if not name:
+            continue
+        conn = get_conn()
+        existing = conn.execute("SELECT id FROM companies WHERE name=?", (name,)).fetchone()
+        conn.close()
+
+        upsert_company(
+            name=name,
+            domain=comp.get("domain"),
+            lever_slug=comp.get("lever_slug"),
+            greenhouse_slug=comp.get("greenhouse_slug"),
+            career_url=comp.get("career_url"),
+            ats_platform=comp.get("ats_platform"),
+            ats_slug=comp.get("ats_slug"),
+        )
+        if existing:
+            updated += 1
+        else:
+            imported += 1
+
+    print(f"  Imported {imported} new, updated {updated} existing ({imported + updated} total)")
+
+    # Show unresolved count
+    conn = get_conn()
+    unresolved = conn.execute(
+        "SELECT COUNT(*) FROM companies WHERE domain IS NOT NULL AND ats_platform IS NULL"
+    ).fetchone()[0]
+    conn.close()
+    if unresolved:
+        print(f"  {unresolved} companies need ATS resolution")
+        print(f"  Run: python3 run.py --resolve")
+
+
+def cmd_resolve(company_name: str = None):
+    """Resolve ATS platform for companies by fetching their career pages."""
+    from datetime import datetime
+
+    conn = get_conn()
+    if company_name:
+        rows = conn.execute(
+            "SELECT * FROM companies WHERE name=? AND domain IS NOT NULL",
+            (company_name,)
+        ).fetchall()
+    else:
+        # Only resolve companies that have a domain but no ATS platform yet
+        rows = conn.execute(
+            "SELECT * FROM companies WHERE domain IS NOT NULL AND ats_platform IS NULL"
+        ).fetchall()
+    conn.close()
+
+    if not rows:
+        if company_name:
+            print(f"  Company '{company_name}' not found or has no domain set")
+        else:
+            print("  All companies with domains are already resolved")
+        return
+
+    print(f"  Resolving ATS for {len(rows)} companies\n")
+    resolved = 0
+    failed = 0
+
+    for i, row in enumerate(rows):
+        row = dict(row)
+        name = row["name"]
+        domain = row["domain"]
+        print(f"  [{i+1}/{len(rows)}] {name} ({domain})", end=" ... ", flush=True)
+
+        result = resolve_company(name, domain, delay=0.3)
+
+        if result.ats:
+            # Verify the API actually works before storing
+            api_works = verify_ats_api(result.ats) if result.ats.api_url else False
+            status_icon = "OK" if api_works else "detected (API unverified)"
+
+            upsert_company(
+                name=name,
+                ats_platform=result.ats.platform,
+                ats_slug=result.ats.slug,
+                ats_api_url=result.ats.api_url,
+                career_url=result.careers_url,
+                resolved_at=datetime.now().isoformat(),
+            )
+
+            # Also set the legacy slug fields for backward compat with stage_discover
+            if result.ats.platform == "greenhouse":
+                upsert_company(name=name, greenhouse_slug=result.ats.slug)
+            elif result.ats.platform == "lever":
+                upsert_company(name=name, lever_slug=result.ats.slug)
+
+            print(f"{result.ats.platform} ({result.ats.slug}) -- {status_icon}")
+            resolved += 1
+        elif result.careers_url:
+            upsert_company(name=name, career_url=result.careers_url,
+                           resolved_at=datetime.now().isoformat(),
+                           ats_platform="unknown")
+            print(f"careers page found but no known ATS ({result.careers_url})")
+            failed += 1
+        else:
+            print(f"FAILED ({result.error})")
+            failed += 1
+
+        time.sleep(0.3)
+
+    print(f"\n  Resolution complete: {resolved} resolved, {failed} failed")
+
+    # Summary by platform
+    conn = get_conn()
+    platforms = conn.execute(
+        "SELECT ats_platform, COUNT(*) as n FROM companies "
+        "WHERE ats_platform IS NOT NULL GROUP BY ats_platform ORDER BY n DESC"
+    ).fetchall()
+    conn.close()
+    if platforms:
+        print("\n  ATS Platform Breakdown:")
+        for p in platforms:
+            print(f"    {p['ats_platform']:<20}: {p['n']}")
 
 
 def cmd_apply(job_id: int):
@@ -436,6 +661,11 @@ if __name__ == "__main__":
     parser.add_argument("--company", type=str, help="Process single company by name")
     parser.add_argument("--limit", type=int, default=None, help="Max items to process")
     parser.add_argument("--dry-run", action="store_true", help="Preview without storing")
+    # Company import + ATS resolution
+    parser.add_argument("--import-companies", type=str, metavar="FILE",
+                        help="Import companies from YAML file")
+    parser.add_argument("--resolve", action="store_true",
+                        help="Auto-detect ATS platform for unresolved companies")
     # Application tracking
     parser.add_argument("--apply", type=int, metavar="JOB_ID",
                         help="Start tracking an application for a job")
@@ -454,7 +684,11 @@ if __name__ == "__main__":
 
     config = load_config()
 
-    if args.apply:
+    if args.import_companies:
+        cmd_import_companies(args.import_companies)
+    elif args.resolve:
+        cmd_resolve(company_name=args.company)
+    elif args.apply:
         cmd_apply(args.apply)
     elif args.update_app:
         cmd_update_app(int(args.update_app[0]), args.update_app[1])

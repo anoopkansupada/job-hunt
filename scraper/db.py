@@ -23,9 +23,14 @@ def init_db():
         CREATE TABLE IF NOT EXISTS companies (
             id INTEGER PRIMARY KEY AUTOINCREMENT,
             name TEXT UNIQUE NOT NULL,
+            domain TEXT,
             lever_slug TEXT,
             greenhouse_slug TEXT,
+            ats_platform TEXT,
+            ats_slug TEXT,
+            ats_api_url TEXT,
             career_url TEXT,
+            resolved_at TEXT,
             created_at TEXT DEFAULT (datetime('now'))
         );
 
@@ -139,6 +144,20 @@ def init_db():
         CREATE INDEX IF NOT EXISTS idx_outreach_application ON outreach(application_id);
     """)
     conn.commit()
+
+    # Migrate: add columns to companies if they don't exist yet (for existing DBs)
+    existing_cols = {row[1] for row in conn.execute("PRAGMA table_info(companies)").fetchall()}
+    migrations = [
+        ("domain", "TEXT"),
+        ("ats_platform", "TEXT"),
+        ("ats_slug", "TEXT"),
+        ("ats_api_url", "TEXT"),
+        ("resolved_at", "TEXT"),
+    ]
+    for col_name, col_type in migrations:
+        if col_name not in existing_cols:
+            conn.execute(f"ALTER TABLE companies ADD COLUMN {col_name} {col_type}")
+    conn.commit()
     conn.close()
 
 
@@ -166,18 +185,26 @@ def get_stats() -> dict:
 
 def upsert_company(name: str, lever_slug: str = None,
                    greenhouse_slug: str = None,
-                   career_url: str = None) -> int:
+                   career_url: str = None, domain: str = None,
+                   ats_platform: str = None, ats_slug: str = None,
+                   ats_api_url: str = None, resolved_at: str = None) -> int:
     conn = get_conn()
     existing = conn.execute("SELECT id FROM companies WHERE name=?", (name,)).fetchone()
+
+    optional_fields = {
+        "lever_slug": lever_slug,
+        "greenhouse_slug": greenhouse_slug,
+        "career_url": career_url,
+        "domain": domain,
+        "ats_platform": ats_platform,
+        "ats_slug": ats_slug,
+        "ats_api_url": ats_api_url,
+        "resolved_at": resolved_at,
+    }
+    updates = {k: v for k, v in optional_fields.items() if v is not None}
+
     if existing:
         company_id = existing["id"]
-        updates = {}
-        if lever_slug:
-            updates["lever_slug"] = lever_slug
-        if greenhouse_slug:
-            updates["greenhouse_slug"] = greenhouse_slug
-        if career_url:
-            updates["career_url"] = career_url
         if updates:
             set_clause = ", ".join(f"{k}=?" for k in updates)
             conn.execute(
@@ -186,9 +213,12 @@ def upsert_company(name: str, lever_slug: str = None,
             )
             conn.commit()
     else:
+        cols = ["name"] + list(updates.keys())
+        placeholders = ",".join(["?"] * len(cols))
+        vals = [name] + list(updates.values())
         cur = conn.execute(
-            "INSERT INTO companies (name, lever_slug, greenhouse_slug, career_url) VALUES (?,?,?,?)",
-            (name, lever_slug, greenhouse_slug, career_url)
+            f"INSERT INTO companies ({','.join(cols)}) VALUES ({placeholders})",
+            vals
         )
         company_id = cur.lastrowid
         conn.commit()
