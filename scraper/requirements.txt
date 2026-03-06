@@ -3,6 +3,9 @@ requests>=2.31.0
 pyyaml>=6.0
 python-slugify>=8.0.0
 
+# Board scout — NOTE: install as 'python-jobspy', NOT 'jobspy' (different package)
+python-jobspy>=1.1.0
+
 # API backend
 fastapi>=0.110.0
 uvicorn[standard]>=0.27.0

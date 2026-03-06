@@ -74,7 +74,7 @@ EXCLUDE_KEYWORDS = [
 CREATE_JOBS_TABLE = """
 CREATE TABLE IF NOT EXISTS jobs (
     id              TEXT PRIMARY KEY,       -- SHA256[:16] of URL
-    source          TEXT NOT NULL,          -- 'lever', 'greenhouse', 'wellfound', etc.
+    source          TEXT NOT NULL,          -- 'lever', 'greenhouse', 'linkedin', etc.
     company         TEXT,
     title           TEXT,
     url             TEXT UNIQUE NOT NULL,
@@ -84,10 +84,20 @@ CREATE TABLE IF NOT EXISTS jobs (
     posted_date     TEXT,
     match_score     INTEGER DEFAULT 0,
     match_keywords  TEXT,                   -- JSON array
+    salary_range    TEXT,                   -- e.g. '$180k–$220k/yr'
+    is_remote       INTEGER DEFAULT 0,      -- 1 if remote
+    job_level       TEXT,                   -- e.g. 'senior', 'director'
     created_at      TEXT DEFAULT (datetime('now')),
     notified        INTEGER DEFAULT 0       -- 1 = Slack alert sent
 );
 """
+
+# Columns added after initial schema — applied once via ALTER TABLE IF NOT EXISTS pattern
+MIGRATIONS = [
+    "ALTER TABLE jobs ADD COLUMN salary_range TEXT",
+    "ALTER TABLE jobs ADD COLUMN is_remote INTEGER DEFAULT 0",
+    "ALTER TABLE jobs ADD COLUMN job_level TEXT",
+]
 
 CREATE_RUNS_TABLE = """
 CREATE TABLE IF NOT EXISTS scout_runs (
@@ -102,13 +112,19 @@ CREATE TABLE IF NOT EXISTS scout_runs (
 
 
 def get_db() -> sqlite3.Connection:
-    """Return a connection to the jobs DB, creating tables if needed."""
+    """Return a connection to the jobs DB, creating tables and running migrations."""
     DB_PATH.parent.mkdir(parents=True, exist_ok=True)
     conn = sqlite3.connect(str(DB_PATH))
     conn.row_factory = sqlite3.Row
     conn.execute("PRAGMA journal_mode=WAL")
     conn.execute(CREATE_JOBS_TABLE)
     conn.execute(CREATE_RUNS_TABLE)
+    # Run migrations — silently skip if column already exists
+    for sql in MIGRATIONS:
+        try:
+            conn.execute(sql)
+        except sqlite3.OperationalError:
+            pass  # column already exists
     conn.commit()
     return conn
 
@@ -160,10 +176,12 @@ def insert_job(job_dict: dict) -> bool:
             """
             INSERT OR IGNORE INTO jobs
                 (id, source, company, title, url, location, team,
-                 description, posted_date, match_score, match_keywords)
+                 description, posted_date, match_score, match_keywords,
+                 salary_range, is_remote, job_level)
             VALUES
                 (:id, :source, :company, :title, :url, :location, :team,
-                 :description, :posted_date, :match_score, :match_keywords)
+                 :description, :posted_date, :match_score, :match_keywords,
+                 :salary_range, :is_remote, :job_level)
             """,
             {
                 "id": job_dict.get("id"),
@@ -173,10 +191,13 @@ def insert_job(job_dict: dict) -> bool:
                 "url": job_dict.get("url"),
                 "location": job_dict.get("location", ""),
                 "team": job_dict.get("team", ""),
-                "description": job_dict.get("description", "")[:8000],  # cap size
+                "description": job_dict.get("description", "")[:8000],
                 "posted_date": job_dict.get("posted_date", ""),
                 "match_score": job_dict.get("match_score", 0),
                 "match_keywords": job_dict.get("match_keywords", "[]"),
+                "salary_range": job_dict.get("salary_range", ""),
+                "is_remote": job_dict.get("is_remote", 0),
+                "job_level": job_dict.get("job_level", ""),
             },
         )
         inserted = conn.total_changes > 0

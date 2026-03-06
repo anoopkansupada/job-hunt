@@ -1,23 +1,34 @@
 #!/usr/bin/env python3
 """
-Board Scout — scrapes job boards using Crawl4AI (localhost:11234).
-Targets Wellfound, Built In NYC, and Web3.career.
+Board Scout — scrapes LinkedIn, Indeed, Glassdoor via JobSpy.
+Replaces the Crawl4AI-based Wellfound/BuiltInNYC approach.
+
+Runs multiple targeted searches for Anoop's Web3/BD profile,
+deduplicates by URL, scores each job, and inserts into the DB.
 
 Usage:
-    python board_scout.py             # live run, writes to DB
-    python board_scout.py --dry-run   # print boards to scrape, no HTTP
-    python board_scout.py --board wellfound   # scrape one board only
+    python board_scout.py               # live run, writes to DB
+    python board_scout.py --dry-run     # print results, no DB writes
+    python board_scout.py --term "VP BD crypto"  # single custom search
+    python board_scout.py --boards linkedin       # one board only
+    python board_scout.py --days 3     # limit to jobs posted in last N days
+
+Requirements:
+    pip install python-jobspy  (NOT 'jobspy' — different package)
 """
 
 import argparse
+import json
 import logging
-import re
 import sys
-import time
-from dataclasses import dataclass, field
+from datetime import datetime
 from typing import Optional
 
-import requests
+try:
+    from jobspy import scrape_jobs
+    JOBSPY_AVAILABLE = True
+except ImportError:
+    JOBSPY_AVAILABLE = False
 
 from utils import (
     complete_run,
@@ -31,420 +42,244 @@ from utils import (
 
 logger = logging.getLogger("scouts.board")
 
-# ─── Crawl4AI ────────────────────────────────────────────────────────────────
+# ─── Target searches (Anoop's Web3/BD profile) ────────────────────────────────
 
-CRAWL4AI_URL = "http://localhost:11234"
-CRAWL_TIMEOUT = 45  # boards can be slow with JS rendering
-RATE_LIMIT_DELAY = 2.0  # seconds between board crawls
-
-
-def crawl_page(url: str) -> str:
-    """
-    Crawl a URL via local Crawl4AI instance.
-    Returns markdown content, or empty string on failure.
-    """
-    payload = {
-        "url": url,
-        "priority": 8,
-        "word_count_threshold": 100,
-        "bypass_cache": True,
-    }
-    try:
-        resp = requests.post(
-            f"{CRAWL4AI_URL}/crawl",
-            json=payload,
-            timeout=CRAWL_TIMEOUT,
-        )
-        if resp.status_code == 200:
-            result = resp.json()
-            content = result.get("result", {}).get("markdown", "") or ""
-            logger.debug("crawl_page[%s]: %d chars", url, len(content))
-            return content
-        else:
-            logger.warning("crawl_page[%s]: HTTP %d", url, resp.status_code)
-            return ""
-    except requests.RequestException as e:
-        logger.error("crawl_page[%s]: %s", url, e)
-        return ""
-
-
-def check_crawl4ai() -> bool:
-    """Ping Crawl4AI health endpoint. Returns True if available."""
-    try:
-        resp = requests.get(f"{CRAWL4AI_URL}/health", timeout=5)
-        return resp.status_code == 200
-    except Exception:
-        return False
-
-
-# ─── Board Definitions ───────────────────────────────────────────────────────
-
-@dataclass
-class BoardConfig:
-    name: str
-    urls: list[str]
-    parser: str  # which parse function to use
-
-
-BOARDS: list[BoardConfig] = [
-    BoardConfig(
-        name="wellfound",
-        urls=[
-            "https://wellfound.com/jobs?role=business-development",
-            "https://wellfound.com/jobs?role=partnerships",
-        ],
-        parser="wellfound",
-    ),
-    BoardConfig(
-        name="builtinnyc",
-        urls=[
-            "https://www.builtinnyc.com/jobs/search?search=partnerships+director",
-        ],
-        parser="builtinnyc",
-    ),
-    BoardConfig(
-        name="web3career",
-        urls=[
-            "https://web3.career/partnerships-jobs",
-            "https://web3.career/business-development-jobs",
-        ],
-        parser="web3career",
-    ),
+DEFAULT_SEARCH_TERMS = [
+    "head of partnerships web3 crypto",
+    "VP business development blockchain",
+    "director of ecosystem crypto defi",
+    "VP growth web3 fintech",
+    "head of BD crypto protocol",
+    "director partnerships crypto",
+    "VP partnerships web3 NYC",
+    "ecosystem lead blockchain protocol",
 ]
 
+DEFAULT_BOARDS = ["linkedin", "indeed", "glassdoor"]
 
-# ─── Parsers ─────────────────────────────────────────────────────────────────
+DEFAULT_HOURS_OLD = 168   # 7 days — catch everything on first run
+RESULTS_PER_TERM  = 25   # per board per search term
 
-def _clean(text: str) -> str:
-    """Strip extra whitespace."""
-    return re.sub(r"\s+", " ", text).strip()
+# ─── Source normalizer ────────────────────────────────────────────────────────
 
-
-def parse_wellfound(markdown: str) -> list[dict]:
-    """
-    Extract job listings from Wellfound markdown.
-    Wellfound renders jobs as cards; typical markdown format:
-
-      ## [Job Title](https://wellfound.com/jobs/...)
-      Company Name · Location
-    """
-    jobs = []
-
-    # Pattern: markdown link followed by company/location info
-    # [Title](url) on its own line, then "Company · Location"
-    pattern = re.compile(
-        r"\[([^\]]+)\]\((https?://wellfound\.com/jobs/[^\)]+)\)"
-        r"[^\n]*\n"
-        r"([^\n•·\[\]]{3,80})",   # company + location line
-        re.MULTILINE,
-    )
-
-    for m in pattern.finditer(markdown):
-        title = _clean(m.group(1))
-        url = m.group(2).split("?")[0]  # drop query params for cleaner dedup
-        context_line = _clean(m.group(3))
-
-        # Try to split "Company · Location" or "Company - Location"
-        parts = re.split(r"[·\-–|]", context_line, maxsplit=1)
-        company = _clean(parts[0]) if parts else ""
-        location = _clean(parts[1]) if len(parts) > 1 else ""
-
-        if title and url and len(title) > 3:
-            jobs.append({
-                "title": title,
-                "company": company,
-                "url": url,
-                "location": location,
-            })
-
-    # Fallback: simpler link extraction if primary pattern yields nothing
-    if not jobs:
-        simple = re.compile(
-            r"\[([^\]]{5,80})\]\((https?://wellfound\.com/jobs/[^\)]+)\)"
-        )
-        for m in simple.finditer(markdown):
-            title = _clean(m.group(1))
-            url = m.group(2)
-            jobs.append({"title": title, "company": "", "url": url, "location": ""})
-
-    logger.debug("wellfound parser: %d jobs extracted", len(jobs))
-    return jobs
-
-
-def parse_builtinnyc(markdown: str) -> list[dict]:
-    """
-    Extract job listings from Built In NYC markdown.
-    Jobs typically appear as:
-
-      ### [Job Title](https://www.builtinnyc.com/job/...)
-      Company | Location
-    """
-    jobs = []
-
-    pattern = re.compile(
-        r"\[([^\]]+)\]\((https?://(?:www\.)?builtinnyc\.com/job[^\)]+)\)"
-        r"[^\n]*\n?"
-        r"([^\n\[\]]{0,100})",
-        re.MULTILINE,
-    )
-
-    for m in pattern.finditer(markdown):
-        title = _clean(m.group(1))
-        url = m.group(2)
-        context = _clean(m.group(3))
-
-        parts = re.split(r"[|·\-–]", context, maxsplit=1)
-        company = _clean(parts[0]) if parts else ""
-        location = _clean(parts[1]) if len(parts) > 1 else "New York"
-
-        if title and url and len(title) > 3:
-            jobs.append({
-                "title": title,
-                "company": company,
-                "url": url,
-                "location": location,
-            })
-
-    # Fallback
-    if not jobs:
-        simple = re.compile(
-            r"\[([^\]]{5,80})\]\((https?://(?:www\.)?builtinnyc\.com/job[^\)]+)\)"
-        )
-        for m in simple.finditer(markdown):
-            jobs.append({
-                "title": _clean(m.group(1)),
-                "company": "",
-                "url": m.group(2),
-                "location": "New York",
-            })
-
-    logger.debug("builtinnyc parser: %d jobs extracted", len(jobs))
-    return jobs
-
-
-def parse_web3career(markdown: str) -> list[dict]:
-    """
-    Extract job listings from Web3.career markdown.
-    Jobs typically appear as:
-
-      [Job Title](https://web3.career/...) — Company — Location
-    """
-    jobs = []
-
-    # Web3.career job URLs: /web3-job/... or /<slug>-<id>
-    pattern = re.compile(
-        r"\[([^\]]+)\]\((https?://web3\.career/[a-z0-9\-]+-\d+[^\)]*)\)"
-        r"([^\n]{0,120})",
-        re.MULTILINE,
-    )
-
-    for m in pattern.finditer(markdown):
-        title = _clean(m.group(1))
-        url = m.group(2)
-        suffix = _clean(m.group(3))
-
-        # Try to extract company/location from trailing text
-        # Format is often " — Company — Location" or " | Company | Location"
-        parts = re.split(r"[—\-–|·]", suffix)
-        parts = [_clean(p) for p in parts if _clean(p)]
-        company = parts[0] if parts else ""
-        location = parts[1] if len(parts) > 1 else ""
-
-        if title and url and len(title) > 3:
-            jobs.append({
-                "title": title,
-                "company": company,
-                "url": url,
-                "location": location,
-            })
-
-    # Fallback: broader URL pattern
-    if not jobs:
-        simple = re.compile(
-            r"\[([^\]]{5,80})\]\((https?://web3\.career/[^\)]+)\)"
-        )
-        for m in simple.finditer(markdown):
-            jobs.append({
-                "title": _clean(m.group(1)),
-                "company": "",
-                "url": m.group(2),
-                "location": "",
-            })
-
-    logger.debug("web3career parser: %d jobs extracted", len(jobs))
-    return jobs
-
-
-# ─── Parser registry ──────────────────────────────────────────────────────────
-
-PARSERS = {
-    "wellfound": parse_wellfound,
-    "builtinnyc": parse_builtinnyc,
-    "web3career": parse_web3career,
+BOARD_LABEL = {
+    "linkedin":     "linkedin",
+    "indeed":       "indeed",
+    "glassdoor":    "glassdoor",
+    "zip_recruiter":"ziprecruiter",
+    "google":       "google",
 }
 
 
-# ─── Main Scout Logic ─────────────────────────────────────────────────────────
+# ─── Main runner ──────────────────────────────────────────────────────────────
 
-def run(dry_run: bool = False, board_filter: Optional[str] = None) -> dict:
+def run(
+    dry_run: bool = False,
+    boards: Optional[list] = None,
+    search_terms: Optional[list] = None,
+    hours_old: int = DEFAULT_HOURS_OLD,
+) -> dict:
     """
-    Run the board scout across all configured boards.
+    Run all board searches, dedup, score, and insert into DB.
+    Returns stats dict: {jobs_found, jobs_new, jobs_skipped, errors}
+    """
+    if not JOBSPY_AVAILABLE:
+        logger.error(
+            "python-jobspy not installed. Run: pip install python-jobspy"
+        )
+        return {"error": "python-jobspy not installed", "jobs_found": 0, "jobs_new": 0}
 
-    Returns: {jobs_found, jobs_new, jobs_skipped_dedup, jobs_skipped_low_score, errors}
-    """
-    config = load_config()
-    min_score: int = config.get("min_store_score", 2)
+    if boards is None:
+        boards = DEFAULT_BOARDS
+    if search_terms is None:
+        search_terms = DEFAULT_SEARCH_TERMS
+
+    run_id = create_run("boards") if not dry_run else "dry-run"
 
     stats = {
         "jobs_found": 0,
         "jobs_new": 0,
-        "jobs_skipped_dedup": 0,
-        "jobs_skipped_low_score": 0,
-        "errors": 0,
-        "boards_scraped": 0,
+        "jobs_skipped": 0,
+        "jobs_excluded": 0,
+        "search_errors": 0,
+        "by_term": {},
+        "by_board": {},
     }
 
-    boards = BOARDS
-    if board_filter:
-        boards = [b for b in BOARDS if b.name == board_filter.lower()]
-        if not boards:
-            logger.error("Unknown board '%s'. Valid: %s", board_filter, [b.name for b in BOARDS])
-            sys.exit(1)
+    seen_urls: set[str] = set()   # in-memory dedup across search terms
 
-    if dry_run:
-        print("\n🌐 Board Scout — DRY RUN (no HTTP requests)\n")
-        print(f"{'─'*55}")
-        print(f"  Total boards:    {len(boards)}")
-        print(f"  Total URLs:      {sum(len(b.urls) for b in boards)}")
-        print(f"  Crawl4AI URL:    {CRAWL4AI_URL}")
-        print(f"  Min score:       {min_score}")
-        print(f"{'─'*55}\n")
-        for board in boards:
-            print(f"📌 {board.name} ({len(board.urls)} URL(s)):")
-            for url in board.urls:
-                print(f"   {url}")
-        print(f"\n✅ Dry run complete.\n")
-        return stats
-
-    # ── Live run ──────────────────────────────────────────────────────────────
-
-    if not check_crawl4ai():
-        logger.error(
-            "Crawl4AI not reachable at %s — is it running? "
-            "Start with: docker run -p 11234:11235 unclecode/crawl4ai",
-            CRAWL4AI_URL,
-        )
-        stats["errors"] += 1
-        return stats
-
-    run_id = create_run("boards")
-    logger.info("Board scout run_id=%s | %d boards", run_id, len(boards))
-
-    for board in boards:
-        parse_fn = PARSERS.get(board.parser)
-        if not parse_fn:
-            logger.error("No parser for board '%s'", board.name)
+    for term in search_terms:
+        logger.info("Searching: '%s' on %s", term, boards)
+        try:
+            df = scrape_jobs(
+                site_name=boards,
+                search_term=term,
+                results_wanted=RESULTS_PER_TERM,
+                hours_old=hours_old,
+                verbose=0,
+            )
+        except Exception as e:
+            logger.warning("Search failed for '%s': %s", term, e)
+            stats["search_errors"] += 1
+            stats["by_term"][term] = {"error": str(e)}
             continue
 
-        for url in board.urls:
-            logger.info("Crawling [%s] %s", board.name, url)
-            try:
-                markdown = crawl_page(url)
-                if not markdown:
-                    logger.warning("[%s] empty response for %s", board.name, url)
-                    stats["errors"] += 1
-                    continue
+        term_new = 0
+        term_found = len(df)
 
-                raw_jobs = parse_fn(markdown)
-                stats["boards_scraped"] += 1
-                logger.info("[%s] parsed %d raw jobs from %s", board.name, len(raw_jobs), url)
+        for _, row in df.iterrows():
+            url = str(row.get("job_url", "") or "").strip()
+            if not url:
+                continue
 
-                for raw in raw_jobs:
-                    job_url = raw.get("url") or ""
-                    job_title = raw.get("title") or ""
-                    job_company = raw.get("company") or ""
-                    job_location = raw.get("location") or ""
+            # ① In-memory cross-term dedup
+            if url in seen_urls:
+                stats["jobs_skipped"] += 1
+                continue
+            seen_urls.add(url)
 
-                    if not job_url or not job_title:
-                        continue
+            # ② DB dedup
+            if not dry_run and job_exists(url):
+                stats["jobs_skipped"] += 1
+                continue
 
-                    stats["jobs_found"] += 1
+            title    = str(row.get("title", "") or "").strip()
+            company  = str(row.get("company", "") or "").strip()
+            location = str(row.get("location", "") or "").strip()
+            desc     = str(row.get("description", "") or "").strip()
+            source   = BOARD_LABEL.get(str(row.get("site", "")), "board")
 
-                    score, keywords = score_job(job_title, "", job_location)
+            # ③ Score
+            score, keywords = score_job(title, desc, location)
+            if score < 0:
+                stats["jobs_excluded"] += 1
+                continue
 
-                    if score < min_score:
-                        stats["jobs_skipped_low_score"] += 1
-                        continue
+            # ④ Build salary string
+            salary_range = _build_salary(row)
 
-                    if job_exists(job_url):
-                        stats["jobs_skipped_dedup"] += 1
-                        continue
+            # ⑤ Posted date
+            posted = ""
+            raw_date = row.get("date_posted")
+            if raw_date and str(raw_date) not in ("nan", "None", ""):
+                posted = str(raw_date)
 
-                    job_dict = {
-                        "id": job_hash(job_url),
-                        "source": board.name,
-                        "company": job_company,
-                        "title": job_title,
-                        "url": job_url,
-                        "location": job_location,
-                        "team": "",
-                        "description": "",
-                        "posted_date": "",
-                        "match_score": score,
-                        "match_keywords": keywords,
-                    }
+            job = {
+                "id":             job_hash(url),
+                "source":         source,
+                "company":        company,
+                "title":          title,
+                "url":            url,
+                "location":       location,
+                "team":           str(row.get("job_function", "") or ""),
+                "description":    desc[:8000],
+                "posted_date":    posted,
+                "match_score":    score,
+                "match_keywords": json.dumps(keywords),
+                # Extra fields (may not be in base CREATE_JOBS_TABLE — no-op if absent)
+                "salary_range":   salary_range,
+                "is_remote":      _bool_val(row.get("is_remote")),
+                "job_level":      str(row.get("job_level", "") or ""),
+            }
 
-                    if insert_job(job_dict):
-                        stats["jobs_new"] += 1
-                        logger.info(
-                            "  ✅ NEW  [%d] %s — %s @ %s",
-                            score, board.name, job_title, job_company,
-                        )
-                    else:
-                        stats["errors"] += 1
+            if dry_run:
+                _print_job(job, keywords)
+            else:
+                inserted = insert_job(job)
+                if inserted:
+                    stats["jobs_new"] += 1
+                    term_new += 1
+                    # Track by board
+                    stats["by_board"][source] = stats["by_board"].get(source, 0) + 1
 
-            except Exception as e:
-                logger.error("[%s] unexpected error on %s: %s", board.name, url, e)
-                stats["errors"] += 1
+            stats["jobs_found"] += 1
 
-            time.sleep(RATE_LIMIT_DELAY)
+        stats["by_term"][term] = {"found": term_found, "new": term_new}
+        logger.info("  '%s' → %d found, %d new", term, term_found, term_new)
 
-    complete_run(run_id, stats)
-    logger.info(
-        "Board scout done | found=%d new=%d dedup=%d low_score=%d errors=%d",
-        stats["jobs_found"], stats["jobs_new"],
-        stats["jobs_skipped_dedup"], stats["jobs_skipped_low_score"],
-        stats["errors"],
-    )
+    if not dry_run:
+        complete_run(run_id, stats)
+
     return stats
 
 
-# ─── CLI ──────────────────────────────────────────────────────────────────────
+# ─── Helpers ─────────────────────────────────────────────────────────────────
 
-if __name__ == "__main__":
-    parser = argparse.ArgumentParser(description="Board Scout — Crawl4AI job board scraper")
-    parser.add_argument(
-        "--dry-run",
-        action="store_true",
-        help="Print boards and URLs; do not crawl",
+def _build_salary(row) -> str:
+    """Format min/max salary into a readable string, e.g. '$180k–$220k/yr'."""
+    try:
+        mn = row.get("min_amount")
+        mx = row.get("max_amount")
+        interval = str(row.get("interval", "") or "").lower()
+
+        def fmt(v):
+            if v is None or str(v) in ("nan", "None", ""):
+                return None
+            n = float(v)
+            return f"${int(n / 1000)}k" if n >= 1000 else f"${int(n)}"
+
+        lo, hi = fmt(mn), fmt(mx)
+        if not lo and not hi:
+            return ""
+        period = "/yr" if "year" in interval or "annual" in interval else (f"/{interval}" if interval else "")
+        if lo and hi:
+            return f"{lo}–{hi}{period}"
+        return f"{lo or hi}{period}"
+    except Exception:
+        return ""
+
+
+def _bool_val(v) -> int:
+    """Convert various truthy forms to 0/1."""
+    if v is None:
+        return 0
+    return 1 if str(v).lower() in ("true", "1", "yes") else 0
+
+
+def _print_job(job: dict, keywords: list) -> None:
+    print(
+        f"  [{job['source']:12s}] {job['company']:30s} | {job['title'][:50]}"
+        f" | score={job['match_score']} | {job['salary_range'] or 'no salary'}"
+        f" | keywords={keywords[:4]}"
     )
-    parser.add_argument(
-        "--board",
-        metavar="NAME",
-        help=f"Scrape a single board only. Valid: {[b.name for b in BOARDS]}",
-    )
-    parser.add_argument(
-        "--verbose", "-v",
-        action="store_true",
-        help="Enable DEBUG logging",
-    )
+
+
+# ─── CLI ─────────────────────────────────────────────────────────────────────
+
+def main():
+    parser = argparse.ArgumentParser(description="Board Scout via JobSpy")
+    parser.add_argument("--dry-run", action="store_true", help="Print results, no DB writes")
+    parser.add_argument("--boards", nargs="+", default=None,
+                        help="Boards to search (linkedin indeed glassdoor zip_recruiter)")
+    parser.add_argument("--term", help="Single custom search term (overrides defaults)")
+    parser.add_argument("--days", type=int, default=7,
+                        help="Max age of postings in days (default: 7)")
     args = parser.parse_args()
 
-    if args.verbose:
-        logging.getLogger().setLevel(logging.DEBUG)
+    logging.basicConfig(
+        level=logging.INFO,
+        format="%(asctime)s [%(levelname)s] %(name)s — %(message)s",
+        datefmt="%Y-%m-%d %H:%M:%S",
+    )
 
-    result = run(dry_run=args.dry_run, board_filter=args.board)
+    search_terms = [args.term] if args.term else None
 
-    if not args.dry_run:
-        import json
-        print(json.dumps(result, indent=2))
+    stats = run(
+        dry_run=args.dry_run,
+        boards=args.boards,
+        search_terms=search_terms,
+        hours_old=args.days * 24,
+    )
+
+    print(f"\n{'[DRY RUN] ' if args.dry_run else ''}Board Scout complete:")
+    print(f"  Found:    {stats['jobs_found']}")
+    print(f"  New:      {stats['jobs_new']}")
+    print(f"  Skipped:  {stats['jobs_skipped']} (duplicates)")
+    print(f"  Excluded: {stats['jobs_excluded']} (score < 0)")
+    print(f"  Errors:   {stats['search_errors']} search failures")
+    if stats.get("by_board"):
+        print(f"  By board: {stats['by_board']}")
+
+
+if __name__ == "__main__":
+    main()
