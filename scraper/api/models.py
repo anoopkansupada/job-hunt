@@ -20,7 +20,7 @@ class Job(BaseModel):
     salary_range: Optional[str] = None
     description: Optional[str] = None
     posted_date: Optional[str] = None
-    scraped_at: str
+    created_at: Optional[str] = None
     match_score: int = 0
     match_keywords: Optional[str] = None   # JSON string, parsed by caller if needed
     status: str = "NEW"
@@ -37,7 +37,7 @@ class JobSummary(BaseModel):
     location: Optional[str] = None
     salary_range: Optional[str] = None
     posted_date: Optional[str] = None
-    scraped_at: str
+    created_at: Optional[str] = None
     match_score: int = 0
     match_keywords: Optional[str] = None
     status: str = "NEW"

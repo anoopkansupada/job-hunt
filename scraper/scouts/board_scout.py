@@ -30,7 +30,7 @@ try:
 except ImportError:
     JOBSPY_AVAILABLE = False
 
-from utils import (
+from .utils import (
     complete_run,
     create_run,
     insert_job,

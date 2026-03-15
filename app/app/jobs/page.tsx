@@ -15,7 +15,7 @@ interface Job {
   location?: string
   salary_range?: string
   posted_date?: string
-  scraped_at: string
+  created_at: string
   match_score: number
   match_keywords?: string  // JSON string
   status: JobStatus
@@ -216,7 +216,7 @@ function JobCard({
             {job.salary_range && (
               <span>💰 {job.salary_range}</span>
             )}
-            <span>🕐 {formatRelative(job.scraped_at)}</span>
+            <span>🕐 {formatRelative(job.created_at)}</span>
             {job.posted_date && (
               <span>📅 Posted {formatDate(job.posted_date)}</span>
             )}
@@ -395,7 +395,7 @@ function FilterBar({
       {/* Clear */}
       {(filters.source || filters.status || filters.minScore > 0 || filters.search) && (
         <button
-          onClick={() => onChange({ source: "", status: "NEW", minScore: 0, search: "" })}
+          onClick={() => onChange({ source: "", status: "NEW", minScore: 6, search: "" })}
           className="px-3 py-1.5 rounded text-xs bg-slate-700 hover:bg-slate-600 text-slate-300 transition-colors"
         >
           ✕ Clear
@@ -416,7 +416,7 @@ export default function JobsPage() {
   const [filters, setFilters] = useState<Filters>({
     source: "",
     status: "NEW",
-    minScore: 0,
+    minScore: 6,
     search: "",
   })
   const [lastRefresh, setLastRefresh] = useState<Date | null>(null)

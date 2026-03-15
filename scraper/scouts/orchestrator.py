@@ -18,7 +18,7 @@ import threading
 from datetime import datetime
 from typing import Optional
 
-from utils import complete_run, create_run, get_db, load_config
+from .utils import complete_run, create_run, get_db, load_config
 
 logger = logging.getLogger("scouts.orchestrator")
 
@@ -28,7 +28,7 @@ logger = logging.getLogger("scouts.orchestrator")
 def run_ats_scout(dry_run: bool = False) -> dict:
     """Import and run the ATS scout. Returns its stats dict."""
     try:
-        import ats_scout
+        from . import ats_scout
         return ats_scout.run(dry_run=dry_run)
     except Exception as e:
         logger.error("ATS scout failed: %s", e)
@@ -38,7 +38,7 @@ def run_ats_scout(dry_run: bool = False) -> dict:
 def run_board_scout(dry_run: bool = False) -> dict:
     """Import and run the Board scout. Returns its stats dict."""
     try:
-        import board_scout
+        from . import board_scout
         return board_scout.run(dry_run=dry_run)
     except Exception as e:
         logger.error("Board scout failed: %s", e)
@@ -316,4 +316,12 @@ if __name__ == "__main__":
     )
 
     if not args.dry_run:
+        # Send Slack alerts for new high-score jobs
+        try:
+            import notify
+            notify_stats = notify.run(min_score=6, dry_run=False)
+            results["notify"] = notify_stats
+            logger.info("Slack notify: %s", notify_stats)
+        except Exception as e:
+            logger.warning("Notify failed (non-fatal): %s", e)
         print(json.dumps(results, indent=2))

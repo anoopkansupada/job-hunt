@@ -16,10 +16,11 @@ from typing import Any, Optional
 
 import requests
 
-from utils import (
+from .utils import (
     complete_run,
     create_run,
     insert_job,
+    is_us_relevant,
     job_exists,
     job_hash,
     load_config,
@@ -184,9 +185,13 @@ def run(dry_run: bool = False) -> dict:
         "jobs_new": 0,
         "jobs_skipped_dedup": 0,
         "jobs_skipped_low_score": 0,
+        "jobs_skipped_location": 0,
         "errors": 0,
         "companies_queried": 0,
     }
+
+    # Within-run dedup: (company, normalized_title) → skip regional dupes
+    seen_this_run: set[tuple[str, str]] = set()
 
     lever_companies = [(c["name"], c["lever_slug"]) for c in companies if "lever_slug" in c]
     gh_companies = [(c["name"], c["greenhouse_slug"]) for c in companies if "greenhouse_slug" in c]
@@ -220,15 +225,29 @@ def run(dry_run: bool = False) -> dict:
                 run_id, len(lever_companies), len(gh_companies))
 
     def _process_job(parsed: Optional[dict]) -> str:
-        """Returns 'new', 'dedup', 'low_score', or 'error'."""
+        """Returns 'new', 'dedup', 'low_score', 'location', or 'error'."""
         if not parsed:
             return "error"
         stats["jobs_found"] += 1
 
+        # ① Location filter — skip non-US postings
+        if not is_us_relevant(parsed.get("location", "")):
+            stats["jobs_skipped_location"] += 1
+            return "location"
+
         if parsed["match_score"] < min_score:
             return "low_score"
 
+        # ② Within-run title dedup — skip same role posted for multiple regions
+        title_key = (parsed["company"].lower(), parsed["title"].lower().strip())
+        if title_key in seen_this_run:
+            stats["jobs_skipped_dedup"] += 1
+            return "dedup"
+        seen_this_run.add(title_key)
+
+        # ③ DB-level URL dedup
         if job_exists(parsed["url"]):
+            stats["jobs_skipped_dedup"] += 1
             return "dedup"
 
         if insert_job(parsed):

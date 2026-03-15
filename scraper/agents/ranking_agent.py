@@ -83,11 +83,11 @@ def fetch_new_jobs(limit: int = 20) -> list[dict]:
         rows = conn.execute(
             """
             SELECT id, source, company, title, url, location,
-                   salary_range, description, posted_date, scraped_at,
-                   match_score, match_keywords, status, notes
+                   salary_range, description, posted_date, created_at,
+                   match_score, match_keywords, status
             FROM jobs
             WHERE status = 'NEW'
-              AND scraped_at >= ?
+              AND created_at >= ?
             ORDER BY match_score DESC
             LIMIT ?
             """,

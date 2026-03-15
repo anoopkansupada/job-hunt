@@ -61,6 +61,79 @@ LOCATION_KEYWORDS = [
     "hybrid",
 ]
 
+# Locations that indicate a non-US-based role — skip these
+EXCLUDE_LOCATIONS = [
+    "beijing", "shanghai", "shenzhen", "china",
+    "dubai", "uae", "abu dhabi",
+    "india", "bengaluru", "bangalore", "mumbai", "hyderabad", "delhi", "pune",
+    "london", "uk", "united kingdom", "england",
+    "germany", "berlin", "munich", "frankfurt",
+    "france", "paris",
+    "spain", "madrid", "barcelona",
+    "italy", "rome", "milan",
+    "netherlands", "amsterdam",
+    "sweden", "stockholm",
+    "norway", "oslo",
+    "denmark", "copenhagen",
+    "switzerland", "zurich",
+    "austria", "vienna",
+    "portugal", "lisbon",
+    "poland", "warsaw",
+    "czech republic", "prague",
+    "israel", "tel aviv",
+    "singapore", "hong kong",
+    "japan", "tokyo",
+    "south korea", "seoul",
+    "australia", "sydney", "melbourne",
+    "canada", "toronto", "vancouver", "montreal", "quebec",
+    "brazil", "são paulo", "sao paulo",
+    "mexico", "mexico city",
+    "argentina", "buenos aires",
+    "colombia", "bogota",
+    "latam", "apac", "emea", "dach", "benelux", "nordics", "mea", "semea",
+]
+
+
+def is_us_relevant(location: str) -> bool:
+    """
+    Return True if the location is US-relevant (US, Remote, empty) or False if
+    it's clearly an international-only posting.
+    Empty location = assume US (most ATS boards default to home country).
+
+    Order: check exclusions FIRST (so "Remote - Canada" is excluded before
+    "remote" triggers a US match).
+    """
+    if not location:
+        return True
+    loc_lower = location.lower()
+
+    # ① Hard exclude if location names a non-US country/region
+    for excl in EXCLUDE_LOCATIONS:
+        if excl in loc_lower:
+            return False
+
+    # ② Keep if any US-specific signal present
+    us_signals = [
+        "united states", ", us", "(us)", "us/", "u.s.", "usa",
+        "remote",  # after exclusion check — "Remote - Canada" already excluded above
+        "hybrid",
+        "new york", "nyc", "san francisco", "sf", "bay area",
+        "los angeles", "chicago", "boston", "seattle",
+        "austin", "denver", "miami", "atlanta",
+        "washington, dc", "washington dc",
+        "california", "texas", "florida", "illinois", "georgia",
+        "virginia", "maryland", "pennsylvania", "michigan", "ohio",
+        "massachusetts", "colorado", "arizona", "nevada", "oregon",
+        "nationwide", "north america",
+    ]
+    for sig in us_signals:
+        if sig in loc_lower:
+            return True
+
+    # ③ Unknown location — keep (better to over-include than miss)
+    return True
+
+
 EXCLUDE_KEYWORDS = [
     "junior",
     "entry level",
@@ -106,7 +179,22 @@ CREATE TABLE IF NOT EXISTS scout_runs (
     started_at      TEXT NOT NULL,
     completed_at    TEXT,
     status          TEXT DEFAULT 'running', -- 'running', 'done', 'error'
-    results         TEXT                    -- JSON blob
+    results         TEXT                    -- JSON blob (historical only)
+);
+"""
+
+# Canonical runs table (matches schema.sql) — new runs go here
+CREATE_CANONICAL_RUNS_TABLE = """
+CREATE TABLE IF NOT EXISTS runs (
+    id              TEXT PRIMARY KEY,
+    run_type        TEXT NOT NULL,
+    started_at      TEXT NOT NULL,
+    finished_at     TEXT,
+    status          TEXT DEFAULT 'RUNNING',
+    jobs_found      INTEGER DEFAULT 0,
+    jobs_new        INTEGER DEFAULT 0,
+    jobs_alerted    INTEGER DEFAULT 0,
+    error           TEXT
 );
 """
 
@@ -118,7 +206,8 @@ def get_db() -> sqlite3.Connection:
     conn.row_factory = sqlite3.Row
     conn.execute("PRAGMA journal_mode=WAL")
     conn.execute(CREATE_JOBS_TABLE)
-    conn.execute(CREATE_RUNS_TABLE)
+    conn.execute(CREATE_RUNS_TABLE)            # keep scout_runs for historical data
+    conn.execute(CREATE_CANONICAL_RUNS_TABLE)  # canonical runs table
     # Run migrations — silently skip if column already exists
     for sql in MIGRATIONS:
         try:
@@ -252,20 +341,24 @@ def score_job(title: str, description: str, location: str = "") -> tuple[int, li
             matched.append(f"location:{kw}")
             break  # only count once
 
-    return score, matched
+    # Cap at 10 so keyword scores stay on the same scale as Claude fit_scores (1-10)
+    return min(score, 10), matched
 
 
 # ─── Run Tracking ────────────────────────────────────────────────────────────
 
 def create_run(run_type: str) -> str:
-    """Insert a new scout_runs row. Returns run_id."""
+    """Insert a new row into the canonical `runs` table. Returns run id."""
     run_id = hashlib.sha256(
         f"{run_type}-{datetime.utcnow().isoformat()}".encode()
     ).hexdigest()[:12]
     try:
         conn = get_db()
         conn.execute(
-            "INSERT INTO scout_runs (run_id, run_type, started_at) VALUES (?, ?, ?)",
+            """
+            INSERT INTO runs (id, run_type, started_at, status)
+            VALUES (?, ?, ?, 'RUNNING')
+            """,
             (run_id, run_type, datetime.utcnow().isoformat()),
         )
         conn.commit()
@@ -275,20 +368,28 @@ def create_run(run_type: str) -> str:
     return run_id
 
 
-def complete_run(run_id: str, results: dict, status: str = "done") -> None:
-    """Mark a scout_runs row as complete with results JSON."""
+def complete_run(run_id: str, results: dict, status: str = "COMPLETE") -> None:
+    """Mark a `runs` row as complete with result counts."""
     try:
         conn = get_db()
         conn.execute(
             """
-            UPDATE scout_runs
-            SET completed_at = ?, status = ?, results = ?
-            WHERE run_id = ?
+            UPDATE runs
+            SET finished_at    = ?,
+                status         = ?,
+                jobs_found     = ?,
+                jobs_new       = ?,
+                jobs_alerted   = ?,
+                error          = ?
+            WHERE id = ?
             """,
             (
                 datetime.utcnow().isoformat(),
-                status,
-                json.dumps(results),
+                status.upper(),
+                results.get("jobs_found", 0),
+                results.get("jobs_new", 0),
+                results.get("jobs_alerted", 0),
+                results.get("error"),
                 run_id,
             ),
         )

@@ -104,7 +104,7 @@ def list_jobs(
     Filters: status (NEW/VIEWED/APPLYING/APPLIED/REJECTED/ARCHIVED),
              source (lever/greenhouse/linkedin/indeed/wellfound/career_page),
              min_score (0-12).
-    Sorted by match_score DESC, scraped_at DESC.
+    Sorted by match_score DESC, created_at DESC.
     """
     conn = get_conn()
     cursor = conn.cursor()
@@ -127,11 +127,11 @@ def list_jobs(
     cursor.execute(
         f"""
         SELECT id, source, company, title, url, location,
-               salary_range, posted_date, scraped_at,
+               salary_range, posted_date, created_at,
                match_score, match_keywords, status
         FROM jobs
         {where}
-        ORDER BY match_score DESC, scraped_at DESC
+        ORDER BY match_score DESC, created_at DESC
         LIMIT ? OFFSET ?
         """,
         params + [limit, offset],
@@ -153,7 +153,7 @@ def list_jobs(
             location=r["location"],
             salary_range=r["salary_range"],
             posted_date=r["posted_date"],
-            scraped_at=r["scraped_at"],
+            created_at=r["created_at"],
             match_score=r["match_score"],
             match_keywords=r["match_keywords"],
             status=r["status"],
@@ -308,7 +308,7 @@ def get_stats():
     cursor.execute("SELECT COUNT(*) FROM jobs")
     total_jobs = cursor.fetchone()[0]
 
-    cursor.execute("SELECT COUNT(*) FROM jobs WHERE DATE(scraped_at) = ?", (today,))
+    cursor.execute("SELECT COUNT(*) FROM jobs WHERE DATE(created_at) = ?", (today,))
     new_today = cursor.fetchone()[0]
 
     # By source

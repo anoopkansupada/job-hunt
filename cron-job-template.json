@@ -1,0 +1,12 @@
+{
+  "name": "Daily Job Hunt — Top 5 Matches",
+  "description": "Fetch new jobs from all sources, rank via Claude, post top 5 to #job-hunt",
+  "schedule": "cron 0 8 * * 1-5 @ America/New_York",
+  "target": "isolated",
+  "agentId": "main",
+  "payload": {
+    "model": "claude-haiku-4-5",
+    "timeoutSeconds": 300,
+    "message": "Run the daily job search orchestrator to find and rank new job opportunities for Anoop.\n\nScript location: ~/.openclaw/workspace/projects/job-hunt/scraper/daily_job_hunt_cron.py\n\nExpected behavior:\n1. Run job scouts (LinkedIn, Greenhouse, Lever, job boards)\n2. Rank new jobs using Claude ranking agent\n3. Filter for fit score 7+\n4. Post top 5 to #job-hunt with reasoning\n\nEnvironment setup:\n- ANTHROPIC_API_KEY: (from env)\n- SLACK_WEBHOOK_URL: (from env)\n- CWD: ~/.openclaw/workspace/projects/job-hunt/scraper\n\nReturn stats on number of jobs found, ranked, and posted."
+  }
+}

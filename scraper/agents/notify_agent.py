@@ -92,6 +92,7 @@ def fetch_stats_since(hours: int = 24) -> dict:
             SELECT id, company, title, match_score, source, location, url
             FROM jobs
             WHERE scraped_at >= ?
+              AND match_score >= 6
             ORDER BY match_score DESC
             LIMIT 5
             """,
@@ -165,6 +166,22 @@ def _post(text: str, blocks: list | None = None) -> bool:
     except requests.RequestException as e:
         print(f"[notify] ERROR posting to Slack: {e}")
         return False
+
+
+def post_to_slack(message: dict, channel: str = "job-hunt") -> bool:
+    """
+    Post a message to Slack.
+    
+    Args:
+        message: Dict with 'text' and optionally 'blocks' keys
+        channel: Slack channel name (default: job-hunt)
+        
+    Returns:
+        True if posted successfully
+    """
+    text = message.get("text", "")
+    blocks = message.get("blocks")
+    return _post(text, blocks)
 
 
 def _score_badge(score: int) -> str:

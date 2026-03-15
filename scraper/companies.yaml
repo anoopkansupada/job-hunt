@@ -1,12 +1,13 @@
-generated_at: '2026-03-05T15:56:29.186893'
-total: 6706
+generated_at: '2026-03-15T12:00:14.305226'
+total: 1527
 stats:
   high_priority: 37
   medium_priority: 1505
   low_priority: 5164
   ats_slugs_added: 13
   ats_injected: 103
-  total: 940
+  total: 1527
+  last_synced: '2026-03-15T12:00:14.305365'
 companies:
   high_priority:
   - name: Abridge
@@ -497,6 +498,127 @@ companies:
   - name: Veeva Systems
     source: ats_curated
     greenhouse_slug: veeva
+  - name: Amazon Web Services
+    source: datahive
+    datahive_score: 9
+    buyer_type: data_consumer
+  - name: Apple (Content & Siri)
+    source: datahive
+    datahive_score: 8
+    buyer_type: data_consumer
+  - name: Sentient Foundation
+    source: datahive
+    datahive_score: 7
+    buyer_type: data_consumer
+  - name: Omnisent
+    source: datahive
+    datahive_score: 7
+    career_page: https://omnisent.ai
+    industry: AI/ML
+    buyer_type: data_consumer
+  - name: Cochlear.ai
+    source: datahive
+    datahive_score: 7
+    career_page: https://cochlearai.com
+    industry: Core Audio
+    buyer_type: data_consumer
+  - name: precisionlife
+    source: datahive
+    datahive_score: 7
+    career_page: https://precisionlife.com
+    buyer_type: data_consumer
+  - name: xAI
+    source: datahive
+    datahive_score: 10
+    career_page: https://x.ai
+    buyer_type: frontier_ai_lab
+  - name: Sonix
+    source: datahive
+    datahive_score: 8
+    career_page: https://sonix.ai
+    buyer_type: data_consumer
+  - name: Gladia
+    source: datahive
+    datahive_score: 8
+    career_page: https://gladia.io
+    buyer_type: data_consumer
+  - name: Osaro
+    source: datahive
+    datahive_score: 7
+    career_page: https://osaro.ai
+    buyer_type: data_consumer
+  - name: Suno
+    source: datahive
+    datahive_score: 8
+    career_page: https://suno.ai
+    industry: Adjacent
+    buyer_type: voice_ai_developer
+  - name: Notable Health
+    source: datahive
+    datahive_score: 8
+    career_page: https://notablehealth.com
+    industry: Core Audio
+    buyer_type: data_consumer
+  - name: Resemble AI
+    source: datahive
+    datahive_score: 8
+    career_page: https://resemble.ai
+    industry: Core Audio
+    buyer_type: data_consumer
+  - name: Flip CX
+    source: datahive
+    datahive_score: 8
+    career_page: https://flipcx.com
+    industry: Core Audio
+    buyer_type: data_consumer
+  - name: Revl
+    source: datahive
+    datahive_score: 7
+    career_page: https://revl.com
+    industry: Video Understanding AI
+    buyer_type: data_consumer
+  - name: Invert
+    source: datahive
+    datahive_score: 7
+    career_page: https://www.inverted.ai
+    industry: Healthcare
+    buyer_type: data_consumer
+  - name: Humanloop
+    source: datahive
+    datahive_score: 7
+    career_page: https://humanloop.com
+    industry: LLM evals
+    buyer_type: data_consumer
+  - name: Amazon
+    source: datahive
+    datahive_score: 7
+    career_page: https://amazon.ai
+    industry: AI Research
+    buyer_type: data_consumer
+  - name: Runway ML
+    source: datahive
+    datahive_score: 7
+    career_page: https://runwayml.com
+    industry: Generative Video AI
+    buyer_type: data_consumer
+  - name: Datarade
+    source: datahive
+    datahive_score: 7
+    career_page: https://datarade.ai
+    industry: Data Marketplace (Prospect)
+    buyer_type: data_consumer
+  - name: Replica Studios
+    source: datahive
+    datahive_score: 7
+    career_page: https://www.replicastudios.com
+    industry: Core Audio
+    buyer_type: data_consumer
+  - name: Stationhead
+    source: datahive
+    datahive_score: 7
+    career_page: https://stationhead.com
+    industry: Core Audio
+    buyer_type: data_consumer
   medium_priority:
   - name: Adentris (YC X25)
     career_page: https://adentris.com
@@ -2679,6 +2801,2148 @@ companies:
     career_page: https://www.pwc.com
     datahive_score: 1
     source: datahive
+  - name: Suki AI
+    source: datahive
+    datahive_score: 6
+    career_page: https://suki.ai
+    industry: Core Audio
+    buyer_type: data_consumer
+  - name: Chooch
+    source: datahive
+    datahive_score: 6
+    career_page: https://chooch.ai
+    buyer_type: data_consumer
+  - name: Sapling.ai
+    source: datahive
+    datahive_score: 6
+    career_page: https://sapling.ai
+    industry: AI Research
+    buyer_type: data_consumer
+  - name: Atty.ai
+    source: datahive
+    datahive_score: 6
+    career_page: https://atty.ai
+    industry: Core Audio
+    buyer_type: data_consumer
+  - name: volubile.ai
+    source: second_brain
+    career_page: https://volubile.ai
+    location: Grenoble, Auvergne-Rhône-Alpes, France
+  - name: AI Fund
+    source: second_brain
+  - name: Lumi AI
+    source: second_brain
+    career_page: https://lumi-ai.com
+    location: Toronto, Ontario, Canada
+  - name: Stealth AI Start-up
+    source: second_brain
+    career_page: https://retechlabs.com
+    location: San Diego, California, United States
+  - name: Queenly
+    source: second_brain
+    career_page: https://queenly.com
+    location: San Francisco Bay Area
+  - name: Replika
+    source: second_brain
+    career_page: https://replika.ai
+    location: San Francisco, California, United States
+  - name: Layer H . Ai
+    source: second_brain
+    career_page: https://focusinsite.com
+    location: Greater Philadelphia
+  - name: Ann-Let's Reinvent Learning
+    source: second_brain
+    career_page: https://ann-education.com
+    location: Israel
+  - name: GOLD Health
+    source: second_brain
+    career_page: https://erpa.ai
+    location: Maui, United States
+  - name: BankTech Ventures
+    source: second_brain
+  - name: Brilliance Ventures
+    source: second_brain
+  - name: Goshsha
+    source: second_brain
+    career_page: https://goshsha.com
+    location: California, United States
+  - name: Anglera (YC S24)
+    source: second_brain
+    career_page: https://anglera.com
+    location: San Francisco, California, United States
+  - name: Riley AI
+    source: second_brain
+    career_page: https://askriley.io
+    location: San Francisco Bay Area
+  - name: Airband Communications, Inc.
+    source: second_brain
+  - name: Lily AI
+    source: second_brain
+    career_page: https://lilystyle.ai
+    location: San Francisco Bay Area
+  - name: Visual Bank inc.
+    source: second_brain
+    career_page: https://visual-bank.co.jp
+    location: Tokyo, Tokyo, Japan
+  - name: Mirror Mirror AI
+    source: second_brain
+    career_page: https://mirrormirrorai.com
+    location: San Francisco, California, United States
+  - name: RAD Intel
+    source: second_brain
+    career_page: https://radintel.ai
+    location: Agoura Hills, California, United States
+  - name: TinyFish
+    source: second_brain
+    career_page: https://inyfish.io
+    location: San Francisco Bay Area
+  - name: DCXPS Inc.
+    source: second_brain
+    career_page: https://dcxps.com
+    location: Palo Alto, California, United States
+  - name: Alumni Ventures
+    source: second_brain
+    career_page: https://ynthesis.ai
+    location: San Francisco Bay Area, United States
+  - name: Zapia AI
+    source: second_brain
+    career_page: https://zapia.com
+    location: San Francisco Bay Area
+  - name: Spotter, Inc
+    source: second_brain
+    career_page: https://otter.la
+    location: Los Angeles Metropolitan Area, United States
+  - name: Reken
+    source: second_brain
+    career_page: https://reken.ai
+    location: San Francisco Bay Area, United States
+  - name: Liga Ventures
+    source: second_brain
+  - name: Ghana NLP
+    source: second_brain
+    career_page: https://algorine.com
+    location: Austin, Texas, United States
+  - name: ALL3D.AI
+    source: second_brain
+    career_page: https://all3d.ai
+    location: San Francisco, California, United States
+  - name: Pier39.ai
+    source: second_brain
+    career_page: https://ersona3.io
+    location: San Francisco Bay Area
+  - name: PathPulse ai
+    source: second_brain
+    career_page: https://athpulse.ai
+    location: Mumbai, Maharashtra, India
+  - name: Educato AI (YC S24)
+    source: second_brain
+    career_page: https://educato.ai
+    location: San Francisco Bay Area
+  - name: ViralMoment
+    source: second_brain
+    career_page: https://viralmoment.com
+    location: Palo Alto, California, United States
+  - name: Mason
+    source: second_brain
+    career_page: https://getmason.io
+    location: Bengaluru Area, India · Remote
+  - name: Yidio
+    source: second_brain
+    career_page: https://yidio.com
+    location: San Francisco, California, United States
+  - name: Public AI
+    source: second_brain
+    career_page: https://anu.edu.au
+    location: Cambridge, Massachusetts, United States
+  - name: Fuel AI
+    source: second_brain
+    career_page: https://gofuel.ai
+    location: San Francisco Bay Area
+  - name: iPick.ai
+    source: second_brain
+    career_page: https://ipick.ai
+    location: Cupertino, California
+  - name: Arthashastra Intelligence
+    source: second_brain
+    career_page: https://arthashastra.ai
+    location: New Delhi, Delhi, India
+  - name: Repli5
+    source: second_brain
+    career_page: https://repli5.com
+    location: Gothenburg, Västra Götaland County, Sweden
+  - name: Club Alpbach Netherlands
+    source: second_brain
+    career_page: https://maaind.com
+    location: London, England, United Kingdom
+  - name: Speed Read AI
+    source: second_brain
+    career_page: https://gospeedread.com
+    location: Beverly Hills, California, United States
+  - name: SilverAI Startup
+    source: second_brain
+    career_page: https://ilverai.it
+    location: Cagliari, Sardinia, Italy
+  - name: MascotGO
+    source: second_brain
+    career_page: https://mascotgo.com
+    location: San Francisco Bay Area
+  - name: Zingle AI
+    source: second_brain
+    career_page: https://getzingle.in
+    location: San Francisco Bay Area
+  - name: Yololab AI
+    source: second_brain
+    career_page: https://yololab.ai
+    location: Zurich, Zurich, Switzerland
+  - name: AI Coaching
+    source: second_brain
+    career_page: https://aicoaching.us
+    location: Los Angeles, California, United States
+  - name: Sequen AI
+    source: second_brain
+    career_page: https://equen.ai
+    location: New York, New York, United States
+  - name: Winistry, Inc.
+    source: second_brain
+    career_page: https://winistry.com
+    location: San Francisco Bay Area
+  - name: Energy2Karma
+    source: second_brain
+    career_page: https://energy2karma.com
+    location: Mumbai, Maharashtra, India
+  - name: Atlas AI
+    source: second_brain
+    career_page: https://atlasai.co
+    location: San Francisco Bay Area
+  - name: SuperAnnotate
+    source: second_brain
+    career_page: https://uperannotate.com
+    location: San Francisco Bay Area
+  - name: Tern AI
+    source: second_brain
+    career_page: https://ern.ai
+    location: Chicago, Illinois, United States
+  - name: Self-employed
+    source: second_brain
+    location: Berkeley, California, United States
+  - name: Techstars
+    source: second_brain
+    career_page: https://zeroone.ai
+    location: Canada
+  - name: asgard.ai
+    source: second_brain
+    career_page: https://asgard.ai
+    location: Paris, Île-de-France, France
+  - name: Sandberg Bernthal Venture Partners
+    source: second_brain
+  - name: Twill
+    source: second_brain
+    career_page: https://will.ai
+    location: San Francisco, California, United States
+  - name: Bio-Stream Diagnostics Inc.
+    source: second_brain
+    career_page: https://bio-stream.ca
+    location: Canada
+  - name: 42 Capital
+    source: second_brain
+  - name: flawless
+    source: second_brain
+    career_page: https://flawlessai.com
+    location: Los Angeles, California, United States
+  - name: aiconix GmbH
+    source: second_brain
+    career_page: https://aiconix.ai
+    location: Freiburg, Baden-Württemberg, Germany
+  - name: Vyazhan Technologies
+    source: second_brain
+    career_page: https://ailwyndz.com
+    location: Dallas-Fort Worth Metroplex
+  - name: Innit Inc
+    source: second_brain
+    career_page: https://innit.com
+    location: Atherton, California, United States
+  - name: AI4Eyes
+    source: second_brain
+    career_page: https://aiforeyes.com
+    location: Montreal, Quebec, Canada
+  - name: DvSum
+    source: second_brain
+    career_page: https://dvsum.com
+    location: Sunnyvale, California, United States
+  - name: AirOps
+    source: second_brain
+  - name: Soopra.ai
+    source: second_brain
+    career_page: https://oopra.ai
+    location: San Francisco Bay Area
+  - name: ReFiBuy, Inc.
+    source: second_brain
+    career_page: https://refibuy.ai
+    location: Raleigh, North Carolina, United States
+  - name: tapestry®
+    source: second_brain
+    career_page: https://apestry.ai
+    location: Palo Alto, California, United States
+  - name: Hive
+    source: second_brain
+    career_page: https://ehive.ai
+    location: San Francisco Bay Area, United States
+  - name: Fairhaven Capital
+    source: second_brain
+  - name: dConstruct Technologies ( Vision, ML, Robotics )
+    source: second_brain
+    career_page: https://dconstruct.ai
+    location: Singapore
+  - name: Alpha3D
+    source: second_brain
+    career_page: https://alpha3d.io
+    location: San Francisco, California, United States
+  - name: Wispr
+    source: second_brain
+    location: San Francisco Bay Area, United States
+  - name: Hypersphere Ventures
+    source: second_brain
+  - name: OxyCloud Limited
+    source: second_brain
+    career_page: https://oxycloud.co.uk
+    location: Harrow, England, United Kingdom
+  - name: 'United Airlines Ventures.
+
+      ('
+    source: second_brain
+  - name: FAIM Holding B.V.
+    source: second_brain
+    career_page: https://it.com
+    location: Amsterdam, North Holland, Netherlands
+  - name: Juno
+    source: second_brain
+    career_page: https://rueprep.ai
+    location: San Diego, California, United States
+  - name: Anytime AI
+    source: second_brain
+    career_page: https://anytime-ai.com
+    location: Santa Clara, California, United States
+  - name: Heystack
+    source: second_brain
+    career_page: https://ey-stack.com
+    location: San Francisco Bay Area
+  - name: tabularis.ai
+    source: second_brain
+    career_page: https://abularis.ai
+    location: Tübingen, Baden-Württemberg, Germany
+  - name: UBIX.AI
+    source: second_brain
+    career_page: https://ubixlabs.com
+    location: Orange County, California, United States
+  - name: FMC Ventures
+    source: second_brain
+  - name: Reforged Labs (YC W22)
+    source: second_brain
+    career_page: https://reforgedlabs.com
+    location: San Francisco, California, United States
+  - name: Grr ithm Inc
+    source: second_brain
+    career_page: https://grr-ithm.com
+    location: Orinda, California
+  - name: Rypple.ai
+    source: second_brain
+    career_page: https://rypple.ai
+    location: San Francisco, California, United States
+  - name: Aesthetic
+    source: second_brain
+    career_page: https://unl.world
+    location: Los Angeles, California, United States
+  - name: UST
+    source: second_brain
+    career_page: https://ust.com
+    location: Aliso Viejo, California, United States
+  - name: Tapway
+    source: second_brain
+    career_page: https://gotapway.com
+    location: WP. Kuala Lumpur, Federal Territory of Kuala Lumpur, Malaysia
+  - name: mimic
+    source: second_brain
+    career_page: https://mimicrobotics.com
+    location: Zurich, Zurich, Switzerland
+  - name: Proserva
+    source: second_brain
+    career_page: https://roserva.co
+    location: Canada
+  - name: F2ai (Foundry and Forge AI)
+    source: second_brain
+    career_page: https://f2ai.us
+    location: Austin, Texas Metropolitan Area
+  - name: Airespace, Inc.
+    source: second_brain
+  - name: i-GENTIC AI
+    source: second_brain
+    career_page: https://oii.ai
+    location: San Francisco, California, United States
+  - name: HerculesAI
+    source: second_brain
+    career_page: https://zerosystems.com
+    location: San Jose, California, United States
+  - name: Knudsen Capital
+    source: second_brain
+  - name: ZippiAi Inc
+    source: second_brain
+    career_page: https://zippiai.com
+    location: San Francisco, California, United States
+  - name: Facebook
+    source: second_brain
+    career_page: https://nyu.edu
+    location: New York, New York, United States
+  - name: 'indicating no institutional investors .
+
+
+      Unknown'
+    source: second_brain
+  - name: LLC PREDICT SPACE
+    source: second_brain
+    career_page: https://redictspace.com
+    location: St Petersburg, St Petersburg City, Russia
+  - name: Vody
+    source: second_brain
+    career_page: https://vody.com
+    location: Los Angeles, California
+  - name: Respeecher
+    source: second_brain
+    career_page: https://respeecher.com
+    location: Kyiv, Kyiv City, Ukraine
+  - name: Zyra
+    source: second_brain
+    career_page: https://zyra-ai.com
+    location: Los Angeles, California, United States
+  - name: WAIR
+    source: second_brain
+    career_page: https://getwair.com
+    location: San Mateo, CA
+  - name: Altai.dev
+    source: second_brain
+    career_page: https://altai.dev
+    location: Ankara, Ankara, Türkiye
+  - name: EvolutionIQ
+    source: second_brain
+  - name: FARO
+    source: second_brain
+    career_page: https://faro.co
+    location: City of Cape Town, Western Cape, South Africa
+  - name: MarkeTeam.ai
+    source: second_brain
+    career_page: https://marketeam.ai
+    location: Tel Aviv District, Israel
+  - name: Yaw AI Shopping
+    source: second_brain
+    career_page: https://joinyaw.com
+    location: Palo Alto, California, United States
+  - name: SmartFin Capital
+    source: second_brain
+  - name: Cartesia, Inc.
+    source: second_brain
+    career_page: https://cartesia.com
+    location: Greenville, South Carolina, United States
+  - name: Reelgood Inc.
+    source: second_brain
+    career_page: https://reelgood.com
+    location: San Francisco, California, United States
+  - name: BrainScan.AI
+    source: second_brain
+    career_page: https://brainscan.ai
+    location: Gdańsk, Pomorskie, Poland
+  - name: Banyan Ventures (New York)
+    source: second_brain
+  - name: Unbridaled AI
+    source: second_brain
+    career_page: https://unbridaled.ai
+    location: Houston, Texas, United States
+  - name: P-1 AI
+    source: second_brain
+    career_page: https://-1.ai
+    location: Las Vegas Metropolitan Area
+  - name: Rubick AI
+    source: second_brain
+    career_page: https://rubick.ai
+    location: Bangalore Urban district, India
+  - name: BrandFluence AI
+    source: second_brain
+    career_page: https://brandfluence.xyz
+    location: San Francisco Bay Area
+  - name: Flyp
+    source: second_brain
+    career_page: https://joinflyp.com
+    location: San Francisco, California, United States
+  - name: Webscale Networks
+    source: second_brain
+    career_page: https://cartup.ai
+    location: Fremont, California, United States
+  - name: TwelveLabs
+    source: second_brain
+    career_page: https://welvelabs.io
+    location: San Francisco Bay Area
+  - name: Noitom Robotics
+    source: second_brain
+    career_page: https://noitomrobotics.com
+    location: Chaoyang District, Beijing, China
+  - name: Diskover Data
+    source: second_brain
+    career_page: https://diskoverdata.com
+    location: Zephyr Cove, Nevada, United States
+  - name: Fruits
+    source: second_brain
+    career_page: https://fruitsc.org
+    location: Singapore
+  - name: Apthletic
+    source: second_brain
+    career_page: https://apthletic.com
+    location: San Francisco Bay Area
+  - name: Kukun
+    source: second_brain
+    career_page: https://mykukun.com
+    location: Menlo Park, CA
+  - name: Omea™
+    source: second_brain
+    career_page: https://omea.ai
+    location: Warsaw, Mazowieckie, Poland
+  - name: QumulusAI
+    source: second_brain
+    career_page: https://qumulusai.com
+    location: Jupiter, Florida, United States
+  - name: Maverick
+    source: second_brain
+    career_page: https://rymaverick.com
+    location: San Francisco, California, United States
+  - name: ID Privacy AI
+    source: second_brain
+    career_page: https://idprivacy.ai
+    location: Cape Coral, Florida, United States
+  - name: Taskmonk
+    source: second_brain
+    career_page: https://askmonk.ai
+    location: Munich, Bavaria, Germany
+  - name: Sphere
+    source: second_brain
+    career_page: https://getsphere.com
+    location: San Francisco, California, United States
+  - name: Bambu AI
+    source: second_brain
+    career_page: https://getadology.com
+    location: San Rafael, California, United States
+  - name: Presteign
+    source: second_brain
+    career_page: https://resteign.group
+    location: Ireland
+  - name: RealAvatar
+    source: second_brain
+    career_page: https://rockrivermusic.com
+    location: San Francisco, California, United States
+  - name: Personal
+    source: second_brain
+    career_page: https://akeargmax.com
+    location: San Francisco Bay Area, United States
+  - name: Acorn Pacific Ventures
+    source: second_brain
+  - name: Karu
+    source: second_brain
+    career_page: https://karulabs.ai
+    location: San Francisco, California, United States
+  - name: RemixAI
+    source: second_brain
+    career_page: https://easy.me
+    location: San Francisco Bay Area, United States
+  - name: Reforge
+    source: second_brain
+    career_page: https://reforge.com
+    location: San Francisco Bay Area
+  - name: Sadiq
+    source: second_brain
+    career_page: https://adiq.ai
+    location: San Francisco Bay Area
+  - name: Rask AI
+    source: second_brain
+    career_page: https://rask.ai
+    location: New York, New York, United States
+  - name: Apple
+    source: second_brain
+    career_page: https://weavechain.com
+    location: San Francisco, California, United States
+  - name: Wand
+    source: second_brain
+    career_page: https://wand.ai
+    location: San Francisco Bay Area
+  - name: Global Technology Partners
+    source: second_brain
+  - name: First Star Ventures
+    source: second_brain
+  - name: Allegis Capital
+    source: second_brain
+  - name: Beyond Limits
+    source: second_brain
+    career_page: https://beyond.ai
+    location: Greater Los Angeles, California, United States
+  - name: DeepMake
+    source: second_brain
+    career_page: https://deepmake.com
+    location: Greater Los Angeles, California, United States
+  - name: Versos AI
+    source: second_brain
+    career_page: https://versos.ai
+    location: Canada
+  - name: Bedrock Analytics
+    source: second_brain
+    career_page: https://bedrockanalytics.com
+    location: Walnut Creek, California, United States
+  - name: Active.Ai - A Gupshup Inc Company
+    source: second_brain
+    career_page: https://gupshup.ai
+    location: Singapore
+  - name: Linkhome AI
+    source: second_brain
+    career_page: https://linkhomeholdings.com
+    location: Irvine, California, United States
+  - name: VoiceGenX.ai
+    source: second_brain
+    career_page: https://voicegenx.ai
+    location: United States
+  - name: AI Tech Packs formerly Muse
+    source: second_brain
+    career_page: https://muse.place
+    location: Los Angeles, California, United States
+  - name: Rork
+    source: second_brain
+    career_page: https://rorkai.com
+    location: San Francisco, California, United States
+  - name: Bold Metrics Inc
+    source: second_brain
+    location: San Francisco, California, United States
+  - name: Early stage startups in areas such as AI/ML, IoT and Cryptography.
+    source: second_brain
+    career_page: https://akka.io
+    location: United Kingdom
+  - name: Donkit
+    source: second_brain
+    career_page: https://donkit.ai
+    location: Tel Aviv-Yafo, Tel Aviv District, Israel
+  - name: UnstableML
+    source: second_brain
+    career_page: https://qbyte.ai
+    location: San Jose, California, United States
+  - name: Sama
+    source: second_brain
+    career_page: https://ama.com
+    location: Los Gatos, California, United States
+  - name: Unsloth AI
+    source: second_brain
+    career_page: https://unsloth.ai
+    location: Australia
+  - name: Thinkbuddy
+    source: second_brain
+    career_page: https://inkbuddy.ai
+    location: San Francisco Bay Area
+  - name: Meta
+    source: second_brain
+    career_page: https://meta.com
+    location: San Francisco, California, United States
+  - name: Skillsy
+    source: second_brain
+    career_page: https://2ndpilot.me
+    location: United States
+  - name: The Data Lodge
+    source: second_brain
+    career_page: https://edatalodge.com
+    location: Brant Lake, New York, United States
+  - name: Synthesized
+    source: second_brain
+    career_page: https://ynthesized.io
+    location: New York, New York, United States
+  - name: Digital Venture
+    source: second_brain
+  - name: Retrace
+    source: second_brain
+    career_page: https://retrace.ai
+    location: San Francisco, California
+  - name: Maxim AI
+    source: second_brain
+    career_page: https://getmaxim.ai
+    location: San Francisco, California, United States
+  - name: Afore Capital
+    source: second_brain
+  - name: Decompute
+    source: second_brain
+    career_page: https://decompute.run
+    location: Cupertino, California, United States
+  - name: Gabber
+    source: second_brain
+    career_page: https://gabber.dev
+    location: San Francisco, California, United States
+  - name: Eudia
+    source: second_brain
+    career_page: https://eudia.com
+    location: San Francisco Bay Area
+  - name: 2nd Set AI
+    source: second_brain
+    career_page: https://2ndset.ai
+    location: New York, New York, United States
+  - name: Kyros AI
+    source: second_brain
+    career_page: https://kyros.ai
+    location: Silicon Valley, California, United States
+  - name: Omni Business Intelligence Solutions
+    source: second_brain
+    career_page: https://omnibisolutions.com
+    location: New York, New York, United States
+  - name: Cherry-Pick.com
+    source: second_brain
+    career_page: https://cherry-pick.com
+    location: Beverly Hills, California, United States
+  - name: CarParts.com
+    source: second_brain
+    career_page: https://carparts.com
+    location: Long Beach, California, United States
+  - name: AlgoAnalytics
+    source: second_brain
+    career_page: https://algoanalytics.com
+    location: Pune, Maharashtra, India
+  - name: Wonders.ai Inc.
+    source: second_brain
+    career_page: https://wonders.ai
+    location: San Jose, California, United States
+  - name: Archetype AI
+    source: second_brain
+    career_page: https://archetypeai.team
+    location: San Jose, California, United States
+  - name: Voxr AI Corp
+    source: second_brain
+    career_page: https://voxr.ai
+    location: San Francisco, California, United States
+  - name: Your Easy AI GmbH
+    source: second_brain
+    career_page: https://youreasyai.de
+    location: Essen, North Rhine-Westphalia, Germany
+  - name: Stellaris AI
+    source: second_brain
+    career_page: https://ellaris-ai.com
+    location: Hong Kong SAR
+  - name: ROI Ventures
+    source: second_brain
+  - name: TechBuddy
+    source: second_brain
+    career_page: https://datasentics.com
+    location: Plzeň - město, Plzeň, Czechia
+  - name: Disfold
+    source: second_brain
+    career_page: https://eye3group.com
+    location: San Francisco, California, United States
+  - name: Readout AI
+    source: second_brain
+    career_page: https://readout.ai
+    location: Los Angeles, California, United States
+  - name: TriFetch
+    source: second_brain
+    career_page: https://rifetch.ai
+    location: San Francisco Bay Area
+  - name: The Untitled Ventures
+    source: second_brain
+  - name: Rubrical
+    source: second_brain
+    career_page: https://openkit.co.uk
+    location: London Area, United Kingdom
+  - name: PlayersOnly
+    source: second_brain
+    career_page: https://layersonly.ai
+    location: Los Angeles, California, United States
+  - name: ZELIG
+    source: second_brain
+    career_page: https://zelig.com
+    location: West Hollywood, California, United States
+  - name: Supervisely
+    source: second_brain
+    career_page: https://upervise.ly
+    location: Tallinn, Harjumaa, Estonia
+  - name: Common Good AI
+    source: second_brain
+    career_page: https://commongoodai.org
+    location: Half Moon Bay, California, United States
+  - name: ethica
+    source: second_brain
+    career_page: https://eyethica.com
+    location: Hybrid
+  - name: Telegamez
+    source: second_brain
+    career_page: https://elegames.ai
+    location: Greater Los Angeles, California, United States
+  - name: RichRelevance
+    source: second_brain
+    career_page: https://algonomy.com
+    location: Los Gatos, California, United States
+  - name: LUCA.ai
+    source: second_brain
+    career_page: https://luca.ai
+    location: Daytona Beach, Florida, United States
+  - name: Panda Capital
+    source: second_brain
+  - name: BAKUTAN Inc.
+    source: second_brain
+    career_page: https://brunswickgroup.com
+    location: Tokyo, Tokyo, Japan
+  - name: astral
+    source: second_brain
+    career_page: https://useastral.dev
+    location: New York, New York, United States
+  - name: Turing
+    source: second_brain
+    career_page: https://uring.com
+    location: Palo Alto, California, United States
+  - name: Daydream
+    source: second_brain
+    career_page: https://daydream.ing
+    location: San Francisco Bay Area, United States
+  - name: Veritem
+    source: second_brain
+    career_page: https://veritem.com
+    location: Irvine, California, United States
+  - name: Tika Data
+    source: second_brain
+    career_page: https://ika-data.com
+    location: Bengaluru, Karnataka, India
+  - name: Biscuit AI
+    source: second_brain
+    career_page: https://biscuit.ai
+    location: San Francisco Bay Area, United States
+  - name: Grably
+    source: second_brain
+    career_page: https://grably.us
+    location: Austin, Texas, United States
+  - name: Thankful
+    source: second_brain
+    career_page: https://ankful.ai
+    location: Los Angeles County, California, United States
+  - name: SHRED
+    source: second_brain
+    career_page: https://red.app
+    location: Los Angeles Metropolitan Area
+  - name: CellsBin™ Inc.
+    source: second_brain
+    career_page: https://cellsbin.com
+    location: New Haven, Connecticut, United States
+  - name: Scanit Technologies, Inc.
+    source: second_brain
+    career_page: https://canit-tech.com
+    location: San Francisco Bay Area
+  - name: integrate.ai
+    source: second_brain
+    career_page: https://integrate.ai
+    location: Toronto, Ontario, Canada
+  - name: Creative AI
+    source: second_brain
+    career_page: https://crtvai.com
+    location: Amman, Jordan
+  - name: Atlas
+    source: second_brain
+    career_page: https://useatlas.ai
+    location: San Francisco Bay Area, United States
+  - name: Smart rentics, Inc.
+    source: second_brain
+    career_page: https://martrentics.com
+    location: Sacramento, California, United States
+  - name: Bridges Rock Gym
+    source: second_brain
+    career_page: https://metric.al
+    location: San Francisco Bay Area
+  - name: Qualcomm Ventures
+    source: second_brain
+  - name: KudoAI
+    source: second_brain
+    career_page: https://kudoai.com
+    location: Oakland, California, United States
+  - name: Sigma360
+    source: second_brain
+    career_page: https://igma360.com
+    location: New York, New York, United States
+  - name: Aeon - Video AI
+    source: second_brain
+    career_page: https://roject-aeon.com
+    location: Beverly Hills, California, United States
+  - name: Andi
+    source: second_brain
+    career_page: https://andisearch.com
+    location: San Francisco, California, United States
+  - name: Postaga
+    source: second_brain
+    career_page: https://clickup.com
+    location: New York City Metropolitan Area
+  - name: EDM Association
+    source: second_brain
+    career_page: https://brightquery.com
+    location: Huntington Beach, California, United States
+  - name: FanSquad
+    source: second_brain
+    career_page: https://fansquad.xyz
+    location: Palm Springs, California, United States
+  - name: BarronKent Ventures
+    source: second_brain
+  - name: Tonic
+    source: second_brain
+    career_page: https://onic.ai
+    location: San Francisco Bay Area
+  - name: Datasembly
+    source: second_brain
+    career_page: https://datasembly.com
+    location: Berkeley, California, United States
+  - name: Rapidious
+    source: second_brain
+    career_page: https://nextorbit.com
+    location: Santa Clara, California, United States
+  - name: Bluesky
+    source: second_brain
+    career_page: https://getbluesky.io
+    location: Menlo Park, California, United States
+  - name: Cognizer Inc
+    source: second_brain
+    career_page: https://cognizer.ai
+    location: Alameda, California, United States
+  - name: Visional Commerce
+    source: second_brain
+    career_page: https://getvisional.com
+    location: California, United States
+  - name: Tera
+    source: second_brain
+    career_page: https://ellotera.com
+    location: Santa Monica, CA, United States
+  - name: Tenant Check AI
+    source: second_brain
+    career_page: https://bt.com
+    location: United Kingdom
+  - name: Adaya
+    source: second_brain
+    career_page: https://adaya.ai
+    location: Santa Barbara, California, United States
+  - name: AntiChat, Inc.
+    source: second_brain
+    career_page: https://antiland.com
+    location: San Francisco Bay Area
+  - name: iFly Venture Capital.
+    source: second_brain
+  - name: Adaptive ML
+    source: second_brain
+    career_page: https://adaptive-ml.com
+    location: New York, New York, United States
+  - name: SkySQL
+    source: second_brain
+    career_page: https://kysql.com
+    location: United States
+  - name: sign.mt
+    source: second_brain
+    career_page: https://nagish.com
+    location: Zurich, Zurich, Switzerland
+  - name: ixp - institute of experimental psychophysiology
+    source: second_brain
+    career_page: https://ixp-duesseldorf.de
+    location: Dortmund, North Rhine-Westphalia, Germany
+  - name: Wirestock
+    source: second_brain
+    career_page: https://wirestock.io
+    location: San Francisco, California, United States
+  - name: Retail AI Council
+    source: second_brain
+    career_page: https://egooddatafactory.com
+    location: United States
+  - name: FutureAGI
+    source: second_brain
+    location: San Francisco, California, United States
+  - name: AI Edtech Startup
+    source: second_brain
+    career_page: https://eyc.ai
+    location: San Francisco Bay Area
+  - name: vidIQ
+    source: second_brain
+    career_page: https://vidiq.com
+    location: San Francisco Bay Area
+  - name: Zingtree
+    source: second_brain
+    career_page: https://zingtree.com
+    location: Palo Alto, California, United States
+  - name: BEAM Transporter
+    source: second_brain
+    career_page: https://exelorbital.com
+    location: Florida, United States
+  - name: Simulacra Data
+    source: second_brain
+    career_page: https://imulacra-data.com
+    location: New York, New York, United States
+  - name: Riiwards, Inc.
+    source: second_brain
+    career_page: https://riiwards.com
+    location: Danville, California, United States
+  - name: SuperNova Labs AI
+    source: second_brain
+    career_page: https://upernovalabs.com
+    location: São Paulo, São Paulo, Brazil
+  - name: Wasabi Technologies, Inc.
+    source: second_brain
+    career_page: https://wasabi.com
+    location: Marblehead, Massachusetts, United States
+  - name: Signature
+    source: second_brain
+    career_page: https://grovn.com
+    location: Lisbon, Lisbon, Portugal
+  - name: DataSmith AI
+    source: second_brain
+    career_page: https://data-smith.ai
+    location: Maharashtra, India
+  - name: J.D. Irving, Limited
+    source: second_brain
+    career_page: https://zonguru.com
+    location: Santa Monica, California, United States
+  - name: Abwab.ai
+    source: second_brain
+    career_page: https://abwab.ai
+    location: Riyadh, Saudi Arabia
+  - name: Controlla, Inc.
+    source: second_brain
+    career_page: https://controlla.xyz
+    location: San Francisco Bay Area
+  - name: Parallel
+    source: second_brain
+  - name: TELMA AI
+    source: second_brain
+    career_page: https://emama.ai
+    location: Czechia
+  - name: Wolf Games
+    source: second_brain
+    career_page: https://wolfgames.net
+    location: Los Angeles Metropolitan Area
+  - name: Vans
+    source: second_brain
+    career_page: https://vfc.com
+    location: Costa Mesa, California, United States
+  - name: ProspexAI
+    source: second_brain
+    career_page: https://rospex-ai.com
+    location: Seattle, Washington, United States
+  - name: SKUmagic
+    source: second_brain
+    career_page: https://kumagic.com
+    location: San Francisco Bay Area
+  - name: Radix
+    source: second_brain
+    career_page: https://radixhaven.com
+    location: San Francisco Bay Area
+  - name: You.com
+    source: second_brain
+    career_page: https://you.com
+    location: United States
+  - name: REAI, Inc.
+    source: second_brain
+    career_page: https://reai.co
+    location: Palo Alto, California, United States
+  - name: InducedAI
+    source: second_brain
+    career_page: https://induced.com
+    location: Palo Alto, California, United States
+  - name: Hercules Capital
+    source: second_brain
+  - name: n8n.io
+    source: second_brain
+    career_page: https://n8n.io
+    location: Berlin, Berlin, Germany
+  - name: Quid
+    source: second_brain
+    career_page: https://quid.com
+    location: San Francisco Bay Area
+  - name: American Honda Motor Company, Inc.
+    source: second_brain
+    career_page: https://waly.io
+    location: Los Angeles Metropolitan Area
+  - name: thinkr
+    source: second_brain
+    career_page: https://inkr.pro
+    location: San Francisco, California, United States
+  - name: Futura
+    source: second_brain
+    career_page: https://wearefutura.com
+    location: Padua, Veneto, Italy
+  - name: Inovo Venture Partners
+    source: second_brain
+  - name: Park Partners
+    source: second_brain
+  - name: Coreworks AI
+    source: second_brain
+    career_page: https://coreworks.ai
+    location: San Francisco Bay Area
+  - name: Valence AI
+    source: second_brain
+    career_page: https://valencevibrations.com
+    location: San Francisco, California, United States
+  - name: Klickly
+    source: second_brain
+    career_page: https://klickly.com
+    location: Santa Monica
+  - name: Autone Solutions
+    source: second_brain
+    career_page: https://autone-solutions.com
+    location: United Kingdom
+  - name: Ta-da
+    source: second_brain
+    career_page: https://a-da.io
+    location: Surzur, Brittany, France
+  - name: Taelor
+    source: second_brain
+    career_page: https://aelor.ai
+    location: San Francisco Bay Area
+  - name: Atland Ventures
+    source: second_brain
+  - name: Assort Health
+    source: second_brain
+    career_page: https://assorthealth.com
+    location: San Francisco, California, United States
+  - name: TOURTECH
+    source: second_brain
+    career_page: https://ourtech.co.il
+    location: Tel Aviv District, Israel
+  - name: rumik.ai
+    source: second_brain
+    career_page: https://rumik.ai
+    location: Bengaluru, Karnataka, India
+  - name: Texas Economic Development Council (TEDC)
+    source: second_brain
+    career_page: https://ymeline.app
+    location: Austin, Texas, United States
+  - name: Turing Labs Inc.
+    source: second_brain
+    career_page: https://uringsaas.com
+    location: San Francisco Bay Area, United States
+  - name: vijil
+    source: second_brain
+    career_page: https://vijil.ai
+    location: San Francisco Bay Area, United States
+  - name: Vyrill Inc.
+    source: second_brain
+    career_page: https://vyrill.com
+    location: San Francisco, CA
+  - name: The vCon Foundation
+    source: second_brain
+    career_page: https://rofila.com
+    location: Orlando, Florida, United States
+  - name: NeuroBot
+    source: second_brain
+    career_page: https://neurobot.co
+    location: Sunnyvale, California, United States
+  - name: AmplifyMD
+    source: second_brain
+  - name: Nacelle
+    source: second_brain
+    career_page: https://nacelle.com
+    location: Santa Monica California
+  - name: DataEthics4Allᵀᴹ Foundation
+    source: second_brain
+    career_page: https://dataethics4all.org
+    location: San Jose, California, United States
+  - name: DataWalk
+    source: second_brain
+    career_page: https://datawalk.com
+    location: Wroclaw Metropolitan Area
+  - name: Strands Hair Care
+    source: second_brain
+    career_page: https://randshaircare.com
+    location: Greater Los Angeles Area
+  - name: Snorkel AI
+    source: second_brain
+    location: Menlo Park, California, United States
+  - name: Lanzadera
+    source: second_brain
+    career_page: https://butterflai.art
+    location: Greater Valencia Metropolitan Area
+  - name: Stealth Post-LLM Startup
+    source: second_brain
+    career_page: https://fb.com
+    location: San Francisco Bay Area
+  - name: Tigawok
+    source: second_brain
+    career_page: https://nextrobot.com
+    location: Los Angeles, California, United States
+  - name: DRINKS
+    source: second_brain
+    career_page: https://drinks.com
+    location: Los Angeles, California, United States
+  - name: My Wine Guide
+    source: second_brain
+    career_page: https://mywineguide.com
+    location: Woodside
+  - name: Numerai
+    source: second_brain
+    career_page: https://numer.ai
+    location: San Francisco, California, United States
+  - name: Field AI
+    source: second_brain
+    career_page: https://fieldai.com
+    location: Irvine, California, United States
+  - name: Shopsense AI
+    source: second_brain
+    career_page: https://opsense.ai
+    location: Austin, Texas, United States
+  - name: Finalytics.ai
+    source: second_brain
+    career_page: https://finalytics.ai
+    location: San Mateo, California, United States
+  - name: CAPSULE
+    source: second_brain
+    career_page: https://opcapsule.ai
+    location: San Francisco, CA
+  - name: Abacus.AI
+    source: second_brain
+    career_page: https://abacus.ai
+    location: San Francisco, California, United States
+  - name: Easel AI, Inc.
+    source: second_brain
+    career_page: https://easelapps.ai
+    location: Los Angeles, California, United States
+  - name: DroneXpert-IL
+    source: second_brain
+    career_page: https://dronexpert-il.com
+    location: Mevo Chama, Golan Subdistrict
+  - name: Zikora AI
+    source: second_brain
+    career_page: https://zikoraai.com
+    location: Port Harcourt, Rivers State, Nigeria
+  - name: Expert IEP
+    source: second_brain
+    career_page: https://ucdavis.edu
+    location: Sacramento, California, United States
+  - name: Boutiq
+    source: second_brain
+    career_page: https://getboutiq.com
+    location: San Francisco Bay Area, United States
+  - name: Kyron Learning
+    source: second_brain
+    career_page: https://kyronlearning.com
+    location: Boston, Massachusetts, United States
+  - name: BottleCap AI
+    source: second_brain
+    career_page: https://bottlecapai.com
+    location: Czechia
+  - name: Migam.org
+    source: second_brain
+    career_page: https://migam.org
+    location: Warsaw, Mazowieckie, Poland
+  - name: Sapien
+    source: second_brain
+    career_page: https://apien.team
+    location: New York, New York, United States
+  - name: National Small Business Association
+    source: second_brain
+    career_page: https://infinilytics.com
+    location: Pleasanton, California, United States
+  - name: EnergTech Solutions
+    source: second_brain
+    career_page: https://energts.com
+    location: Poland
+  - name: Capital One Ventures
+    source: second_brain
+  - name: GSV Ventures
+    source: second_brain
+  - name: SwingVision
+    source: second_brain
+    career_page: https://wing.vision
+    location: San Francisco, California
+  - name: It Just Works, Inc.
+    source: second_brain
+    career_page: https://ijw.fyi
+    location: Nicosia, Cyprus
+  - name: Demand.io
+    source: second_brain
+    career_page: https://demand.io
+    location: Los Angeles, CA
+  - name: Commerce.AI
+    source: second_brain
+    career_page: https://commerce.ai
+    location: San Francisco Bay Area
+  - name: Zams
+    source: second_brain
+    career_page: https://zams.com
+    location: San Francisco, California, United States
+  - name: infinitio AI
+    source: second_brain
+    career_page: https://oben.com
+    location: Pasadena, California, United States
+  - name: Agari Data, Inc.
+    source: second_brain
+  - name: Valar Labs
+    source: second_brain
+    career_page: https://valarlabs.com
+    location: San Francisco Bay Area, United States
+  - name: Fondu
+    source: second_brain
+    career_page: https://youfondu.com
+    location: San Francisco Bay Area
+  - name: TensorStax
+    source: second_brain
+    career_page: https://ensorstax.com
+    location: San Francisco Bay Area, United States
+  - name: Revscale AI
+    source: second_brain
+    career_page: https://getrevscale.com
+    location: North Miami Beach, Florida, United States
+  - name: Zipline AI
+    source: second_brain
+    career_page: https://zipline.ai
+    location: San Francisco, California, United States
+  - name: Drezily inc.
+    source: second_brain
+    career_page: https://drezily.com
+    location: SF Bay area
+  - name: SKAN Farming Logistics Pty Ltd
+    source: second_brain
+    career_page: https://kanfarming.com
+    location: Lathlain, Western Australia, Australia
+  - name: Rune Labs
+    source: second_brain
+    career_page: https://runelabs.io
+    location: San Francisco Bay Area
+  - name: Ultimate AI
+    source: second_brain
+    career_page: https://ultimate-ai-app.com
+    location: Los Angeles, California, United States
+  - name: Shega
+    source: second_brain
+    career_page: https://ega.org
+    location: Addis Ababa, Addis Ababa, Ethiopia
+  - name: YData
+    source: second_brain
+    career_page: https://ydata.ai
+    location: San Francisco, California, United States
+  - name: Raiinmaker
+    source: second_brain
+    career_page: https://raiinmaker.com
+    location: Santa Monica, California, United States
+  - name: tomtA
+    source: second_brain
+    career_page: https://omta.ai
+    location: Fremont, California, United States
+  - name: Eminence AI
+    source: second_brain
+    career_page: https://getsuper.ai
+    location: San Francisco Bay Area
+  - name: 2C Ventures
+    source: second_brain
+  - name: Zooly.Ai
+    source: second_brain
+    career_page: https://zooly.ai
+    location: Palo Alto, California, United States
+  - name: Learn.MachineLearning
+    source: second_brain
+    career_page: https://aiplanet.com
+    location: Leuven, Flemish Region, Belgium
+  - name: '*   MS&AD Insurance VC arm (MS&AD Ventures)'
+    source: second_brain
+  - name: Sarafan Technology Inc.
+    source: second_brain
+    career_page: https://arafan.tech
+    location: New York, New York, United States
+  - name: Infra Motion Labs
+    source: second_brain
+    career_page: https://inframotionlabs.com
+    location: Stockholm, Stockholm County, Sweden
+  - name: GetMyHome.ai
+    source: second_brain
+    career_page: https://getmyhome.ai
+    location: Los Angeles, California, United States
+  - name: Curate
+    source: second_brain
+    career_page: https://getcurate.com
+    location: Los Angeles, California, United States
+  - name: Reya.ai
+    source: second_brain
+    career_page: https://cura.tech
+    location: Saratoga, California, United States
+  - name: Kolena
+    source: second_brain
+    career_page: https://kolena.com
+    location: San Francisco Bay Area
+  - name: Wald, Inc
+    source: second_brain
+    career_page: https://wald.ai
+    location: Mountain View, California, United States
+  - name: 97212 Ventures
+    source: second_brain
+  - name: Swytchcode
+    source: second_brain
+    career_page: https://wytchcode.com
+    location: San Francisco Bay Area
+  - name: NGL Ventures
+    source: second_brain
+  - name: Zazmic Inc
+    source: second_brain
+    career_page: https://zazmic.com
+    location: San Francisco Bay Area
+  - name: Simplify
+    source: second_brain
+    career_page: https://implify.jobs
+    location: San Francisco, California, United States
+  - name: JoggAI
+    source: second_brain
+    career_page: https://jogg.ai
+    location: Irvine, California, United States
+  - name: Panacea-ml
+    source: second_brain
+    career_page: https://anacea-ml.com
+    location: Israel
+  - name: Protege
+    source: second_brain
+    career_page: https://withprotege.ai
+    location: Greater New Orleans Region
+  - name: sgl-project
+    source: second_brain
+    career_page: https://ensoic.com
+    location: Mumbai, Maharashtra, India
+  - name: Kray
+    source: second_brain
+    career_page: https://kray.ai
+    location: India
+  - name: Humma.AI
+    source: second_brain
+    career_page: https://ubs.is
+    location: Los Angeles, California, United States
+  - name: Flow AI
+    source: second_brain
+    career_page: https://flowrite.com
+    location: San Francisco, California, United States
+  - name: Pulse
+    source: second_brain
+    career_page: https://rypulse.ai
+    location: San Francisco, California, United States
+  - name: pleias
+    source: second_brain
+    career_page: https://leias.fr
+    location: Greater Paris Metropolitan Region
+  - name: Conversant
+    source: second_brain
+    career_page: https://conversant.ai
+    location: San Francisco Bay Area
+  - name: Shofo (YC W26)
+    source: second_brain
+    career_page: https://ofo.ai
+    location: Fremont, California, United States
+  - name: California State Senate
+    source: second_brain
+    career_page: https://ersonabots.com
+    location: United States
+  - name: Hippocratic AI
+    source: second_brain
+    career_page: https://ippocraticai.com
+    location: Sunnyvale, California, United States
+  - name: GenAI.Works
+    source: second_brain
+    career_page: https://genai.works
+    location: San Francisco Bay Area
+  - name: Luiss Guido Carli University
+    source: second_brain
+    career_page: https://continualist.ai
+    location: Rome, Latium, Italy
+  - name: Platonor
+    source: second_brain
+    career_page: https://latonor.com
+    location: Geneva, Geneva, Switzerland
+  - name: DeepX
+    source: second_brain
+    career_page: https://deepxhub.com
+    location: San Francisco Bay Area
+  - name: VR Motion Learning GmbH & Co KG
+    source: second_brain
+    career_page: https://vr-motion-learning.com
+    location: Vienna, Vienna, Austria
+  - name: Kognic
+    source: second_brain
+    career_page: https://kognic.com
+    location: Greater Gothenburg Metropolitan Area
+  - name: Cassandra
+    source: second_brain
+    career_page: https://ybrida.io
+    location: Rome, Latium, Italy
+  - name: Arcee.ai
+    source: second_brain
+    career_page: https://aol.com
+    location: Wrocław, Dolnośląskie, Poland
+  - name: Synaptic AI Lab
+    source: second_brain
+    career_page: https://ynapticailab.com
+    location: Kolkata, West Bengal, India
+  - name: Clover Health
+    source: second_brain
+  - name: Forbes Technology Council
+    source: second_brain
+    career_page: https://virtualitics.com
+    location: Los Angeles Metropolitan Area, United States
+  - name: Velesium Labs
+    source: second_brain
+    career_page: https://velesium.ai
+    location: Bangalore Urban, Karnataka, India
+  - name: Speak
+    source: second_brain
+    career_page: https://eak.com
+    location: San Francisco Bay Area
+  - name: DeepVu
+    source: second_brain
+    career_page: https://deepvu.co
+    location: San Francisco Bay Area
+  - name: 株式会社LiftBase
+    source: second_brain
+    career_page: https://liftbaseinc.com
+    location: Kanagawa, Japan
+  - name: DinoDigest
+    source: second_brain
+    career_page: https://dinodigest.news
+    location: 美国 加利福尼亚 洛杉矶
+  - name: Flexport
+    source: second_brain
+  - name: Encore (YC F24)
+    source: second_brain
+    career_page: https://opencore.ai
+    location: Palo Alto, California, United States
+  - name: Vogent
+    source: second_brain
+    career_page: https://vogent.ai
+    location: Fremont, California, United States
+  - name: Controlla
+    source: second_brain
+    location: Sunnyvale, California, United States
+  - name: Kopman Capital
+    source: second_brain
+  - name: TWINA
+    source: second_brain
+    career_page: https://wina.ai
+    location: Orange County, California, United States
+  - name: PRIYA
+    source: second_brain
+    career_page: https://riya.ai
+    location: Miami, Florida, United States
+  - name: Markov ML
+    source: second_brain
+    career_page: https://markovml.com
+    location: San Francisco Bay Area, United States
+  - name: 中孚創聯科技股份有限公司
+    source: second_brain
+    career_page: https://make2real.com
+    location: New Taipei City, New Taipei City, Taiwan
+  - name: Olib AI
+    source: second_brain
+    career_page: https://olib.ai
+    location: Stone Mountain, Georgia, United States
+  - name: Dropla
+    source: second_brain
+    career_page: https://dropla.tech
+    location: Dnipro, Dnipropetrovsk, Ukraine
+  - name: Stealth AI Startup
+    source: second_brain
+    career_page: https://dplace.ai
+    location: San Francisco, California, United States
+  - name: Bluwhale
+    source: second_brain
+    career_page: https://bluwhale.com
+    location: San Francisco Bay Area
+  - name: Cognetry Labs Inc.
+    source: second_brain
+    career_page: https://cognetry.com
+    location: El Dorado Hills, California, United States
+  - name: Rising Team
+    source: second_brain
+    career_page: https://risingteam.com
+    location: Palo Alto, California, United States
+  - name: Snyk angels
+    source: second_brain
+  - name: Automated Consulting Group
+    source: second_brain
+    career_page: https://automated.co
+    location: Durham, North Carolina, United States
+  - name: and other investors (unspecified) according to  and .
+    source: second_brain
+  - name: ShopOS
+    source: second_brain
+    career_page: https://opos.ai
+    location: San Francisco Bay Area · On-site
+  - name: Lanp Srl
+    source: second_brain
+    career_page: https://ulisse.tech
+    location: Singapore
+  - name: Decile Group
+    source: second_brain
+    career_page: https://decilegroup.com
+    location: Los Altos, California, United States
+  - name: QuantHub
+    source: second_brain
+    career_page: https://quanthub.com
+    location: Birmingham, Alabama, United States
+  - name: MIT Sloan Club of Northern California
+    source: second_brain
+    career_page: https://wiftly.com
+    location: San Francisco, California, United States
+  - name: Automaton AI Infosystem Pvt. Ltd.
+    source: second_brain
+    career_page: https://automatonai.com
+    location: Pune, Maharashtra, India
+  - name: Stealth Startup
+    source: second_brain
+    career_page: https://outoftheblue.ai
+    location: San Carlos, California, United States
+  - name: Parable Ventures
+    source: second_brain
+  - name: Nordics
+    source: second_brain
+    career_page: https://nordics.io
+    location: Kosice, Slovakia
+  - name: Snowfire.AI
+    source: second_brain
+    career_page: https://nowfire.ai
+    location: Austin, Texas Metropolitan Area
+  - name: AI Verse
+    source: second_brain
+    career_page: https://ai-verse.com
+    location: Greater Nice Metropolitan Area
+  - name: Ax3.Ai Inc
+    source: second_brain
+    career_page: https://ax3.ai
+    location: San Francisco Bay Area
+  - name: Tortoise AI
+    source: second_brain
+    career_page: https://ortoiseai.co.uk
+    location: New York, New York, United States
+  - name: Aware.ai
+    source: second_brain
+    career_page: https://awareai-usa.com
+    location: Boston, Massachusetts, United States
+  - name: Simcode, Inc.
+    source: second_brain
+    career_page: https://imcode.ai
+    location: San Francisco Bay Area
+  - name: Tahoe Therapeutics
+    source: second_brain
+    career_page: https://vevo.ai
+    location: United States
+  - name: PatternAI
+    source: second_brain
+    career_page: https://getpattern.ai
+    location: San Francisco Bay Area, United States
+  - name: Realm Capital Ventures
+    source: second_brain
+  - name: HostBuddy AI
+    source: second_brain
+    career_page: https://ostbuddy.ai
+    location: San Diego, California, United States
+  - name: Marketing Research Education Foundation MREF
+    source: second_brain
+    career_page: https://quantifyai.co
+    location: San Diego, California, United States
+  - name: HOMI.AI
+    source: second_brain
+    career_page: https://omilabs.ai
+    location: San Francisco, California, United States
+  - name: Safari AI
+    source: second_brain
+    career_page: https://getsafari.ai
+    location: Miami, Florida, United States
+  - name: Luma AI
+    source: second_brain
+    career_page: https://lumalabs.ai
+    location: San Francisco Bay Area
+  - name: Everypixel
+    source: second_brain
+    career_page: https://everypixel.com
+    location: San Francisco Bay Area
+  - name: PINE AI
+    source: second_brain
+    career_page: https://19pine.ai
+    location: Singapore
+  - name: DeepSeek AI
+    source: second_brain
+    career_page: https://gabeio.com
+    location: Los Angeles, California, United States
+  - name: Info Edge Ventures
+    source: second_brain
+  - name: MS&AD Ventures
+    source: second_brain
+  - name: Lumient
+    source: second_brain
+    career_page: https://lumient.la
+    location: Los Angeles Metropolitan Area
+  - name: Machine Translate | machinetranslate.org
+    source: second_brain
+    career_page: https://modelfront.com
+    location: Palo Alto, California, United States
+  - name: PROVEN Skincare
+    source: second_brain
+    career_page: https://rovenskincare.com
+    location: San Francisco Bay Area
+  - name: Third Ear Labs
+    source: second_brain
+    career_page: https://irdear.co
+    location: San Francisco, California, United States
+  - name: Eagle AI Labs
+    source: second_brain
+    career_page: https://eagleailabs.com
+    location: Dubai, United Arab Emirates
+  - name: Wildfire Systems, Inc
+    source: second_brain
+    career_page: https://wildfire-corp.com
+    location: San Diego County, California, United States
+  - name: Everlit
+    source: second_brain
+    career_page: https://everlit.audio
+    location: Santa Monica, California, United States
+  - name: ReflectionAI
+    source: second_brain
+    career_page: https://reflection.ai
+    location: Brooklyn, New York, United States
+  - name: Perplexity
+    source: second_brain
+    career_page: https://erplexity.ai
+    location: San Francisco, California, United States
+  - name: Sapien AI, Inc.
+    source: second_brain
+    career_page: https://apien.ai
+    location: San Francisco, California, United States
+  - name: SiteAgent.AI
+    source: second_brain
+    career_page: https://iteagent.ai
+    location: San Francisco Bay Area
+  - name: Agito Networks, Inc.
+    source: second_brain
+  - name: MindX
+    source: second_brain
+    career_page: https://mindplm.com
+    location: San Francisco, California, United States
+  - name: Career-9
+    source: second_brain
+    career_page: https://career-9.com
+    location: Cupertino, California, United States
+  - name: AcuityAI
+    source: second_brain
+    career_page: https://acuityai.com
+    location: San Francisco Bay Area
+  - name: Magic Data
+    source: second_brain
+    career_page: https://magicdatatech.com
+    location: Haidian District, Beijing, China
+  - name: rapt AI
+    source: second_brain
+    career_page: https://rapt.ai
+    location: Santa Clara, California, United States
+  - name: AllegisCyber Capital
+    source: second_brain
+  - name: AdalFlow
+    source: second_brain
+    career_page: https://ylph.ai
+    location: San Francisco Bay Area, United States
+  - name: Fundamental Ventures
+    source: second_brain
+  - name: Wayvia (formerly PriceSpider)
+    source: second_brain
+    career_page: https://ricespider.com
+    location: Irvine, California, United States
+  - name: YourMirror
+    source: second_brain
+    career_page: https://yourmirror.io
+    location: Milan, Lombardy, Italy
+  - name: Stanford University
+    source: second_brain
+    career_page: https://getaptly.com
+    location: San Francisco, California, United States
+  - name: ILLUIN Technology
+    source: second_brain
+    career_page: https://illuin.tech
+    location: Greater Paris Metropolitan Region
+  - name: ASSERTION
+    source: second_brain
+    career_page: https://assertion.cloud
+    location: Pune, Maharashtra, India
+  - name: SolvedBy.Ai
+    source: second_brain
+    career_page: https://olvedby.ai
+    location: London, England, United Kingdom
+  - name: Retentics
+    source: second_brain
+    career_page: https://fridayslab.com
+    location: Los Angeles, California, United States
+  - name: SproutsAI
+    source: second_brain
+    career_page: https://routsai.com
+    location: Los Altos, California, United States
+  - name: Necessary Ventures
+    source: second_brain
+  - name: Final Round AI
+    source: second_brain
+    career_page: https://finalroundai.com
+    location: San Francisco Bay Area, United States
+  - name: Vidoso
+    source: second_brain
+    career_page: https://vidoso.ai
+    location: Menlo Park, California, United States
+  - name: Neuralk AI
+    source: second_brain
+    career_page: https://neuralk-ai.com
+    location: Paris, Île-de-France, France
+  - name: Focal Systems
+    source: second_brain
+    career_page: https://lobby.vc
+    location: San Francisco Bay Area
+  - name: Vocal Image
+    source: second_brain
+    career_page: https://vocalimage.app
+    location: Tallinn, Harjumaa, Estonia
+  - name: Orca AI
+    source: second_brain
+    career_page: https://orca-ai.io
+    location: United Kingdom
+  - name: Relyance AI
+    source: second_brain
+    career_page: https://relyance.ai
+    location: San Francisco Bay Area, United States
+  - name: Apiiro
+    source: second_brain
+  - name: New System Ventures
+    source: second_brain
+  - name: Trustwise
+    source: second_brain
+    career_page: https://rustwise.ai
+    location: Austin, Texas, United States
+  - name: Flikforge
+    source: second_brain
+    career_page: https://flikforge.com
+    location: Los Angeles, California
+  - name: Rollers.ai
+    source: second_brain
+    career_page: https://rollers.ai
+    location: Mountain View, California, United States
+  - name: regie.ai
+    source: second_brain
+    career_page: https://regie.ai
+    location: San Francisco, California, United States
+  - name: Vase.ai
+    source: second_brain
+    career_page: https://vase.ai
+    location: WP. Kuala Lumpur, Federal Territory of Kuala Lumpur, Malaysia
+  - name: Troveo AI
+    source: second_brain
+    career_page: https://roveo.ai
+    location: United States
+  - name: AllyIn.ai
+    source: second_brain
+    career_page: https://aidash.com
+    location: San Ramon, California, United States
+  - name: TwinMind
+    source: second_brain
+    career_page: https://irdear.ai
+    location: Palo Alto, California, United States
+  - name: Meet-Ting
+    source: second_brain
+    career_page: https://is-ting.com
+    location: Copenhagen, Capital Region of Denmark, Denmark
+  - name: Sensory
+    source: second_brain
+    career_page: https://ensory.com
+    location: San Francisco Bay Area, United States
+  - name: HealthBridge AI
+    source: second_brain
+    career_page: https://ealthbridgeai.com
+    location: Irvine, California, United States
+  - name: Dr. Lisa AI
+    source: second_brain
+    career_page: https://drlisa.ai
+    location: Tulsa Metropolitan Area
+  - name: Quanted
+    source: second_brain
+    career_page: https://quanted.com
+    location: Greater Livorno(Leghorn) Metropolitan Area
+  - name: diib
+    source: second_brain
+    career_page: https://diib.com
+    location: Salt Lake City, Utah, United States
+  - name: Voilà!
+    source: second_brain
+    career_page: https://voila.love
+    location: Los Angeles, California, United States
+  - name: Ultipa
+    source: second_brain
+    career_page: https://ultipa.com
+    location: SF Bay Area
+  - name: Hirey AI
+    source: second_brain
+    career_page: https://irey.com
+    location: Palo Alto, California, United States
+  - name: Tango
+    source: second_brain
+    career_page: https://angotrips.com
+    location: San Francisco Bay Area
+  - name: olive
+    source: second_brain
+    career_page: https://olive.travel
+    location: Los Angeles, California, United States
+  - name: Fiction.com
+    source: second_brain
+    career_page: https://fiction.com
+    location: Los Angeles Metropolitan Area
+  - name: Freeform
+    source: second_brain
+    career_page: https://freeformfuture.com
+    location: Los Angeles Metropolitan Area
+  - name: Numetri
+    source: second_brain
+    career_page: https://numetri.com
+    location: Los Angeles County, California, United States
+  - name: Spindle AI (spindle.ai)
+    source: second_brain
+    career_page: https://indle.ai
+    location: San Francisco Bay Area
+  - name: PolyAI
+    source: second_brain
+    career_page: https://oly.ai
+    location: London, England, United Kingdom
+  - name: ZEFR
+    source: second_brain
+    career_page: https://zefr.com
+    location: Los Angeles Metropolitan Area, United States
+  - name: Upfort
+    source: second_brain
+    career_page: https://upfort.com
+    location: San Francisco, California, United States
+  - name: teramot
+    source: second_brain
+    career_page: https://alleypreds.com
+    location: San Francisco Bay Area
+  - name: Planetary Systems AI
+    source: second_brain
+    career_page: https://lanetarysystems.ai
+    location: New York City Metropolitan Area
+  - name: RubyData - Use Data To Increase Conversion Rates
+    source: second_brain
+    career_page: https://rubydata.ai
+    location: Costa Mesa, California, United States
+  - name: Tendereno Inc.
+    source: second_brain
+    career_page: https://endereno.com
+    location: Toronto, Ontario, Canada
+  - name: Silencespeaks
+    source: second_brain
+    career_page: https://ilencespeaks.io
+    location: Norwich, England, United Kingdom
+  - name: Tidepool Labs
+    source: second_brain
+    career_page: https://idepoollabs.com
+    location: Palo Alto, California, United States
+  - name: Sprouts.ai
+    source: second_brain
+    career_page: https://routs.ai
+    location: San Francisco Bay Area, United States
+  - name: phi & co
+    source: second_brain
+    career_page: https://iand.co
+    location: United States
+  - name: Waydev
+    source: second_brain
+    career_page: https://waydev.com
+    location: San Francisco Bay Area, United States
+  - name: I'll list investors for each company separately
+    source: second_brain
+  - name: Rivin.ai
+    source: second_brain
+    career_page: https://rivin.ai
+    location: San Francisco, California, United States
+  - name: Synthium
+    source: second_brain
+    career_page: https://ynthium.xyz
+    location: Singapore
+  - name: Voc.AI
+    source: second_brain
+    career_page: https://voc.ai
+    location: Palo Alto, California, United States
+  - name: Gumloop
+    source: second_brain
+  - name: Voicera.io
+    source: second_brain
+    career_page: https://voicera.io
+    location: Delaware, United States
+  - name: N/A
+    source: second_brain
+    career_page: https://omezada.com
+    location: Folsom, California, United States
+  - name: Type W Inc
+    source: second_brain
+    career_page: https://ypew.com
+    location: Redondo Beach, California, United States
+  - name: Operand
+    source: second_brain
+    career_page: https://operand.com
+    location: San Francisco, California, United States
+  - name: Mentox
+    source: second_brain
+    career_page: https://mentox.in
+    location: Jaipur, Rajasthan, India
+  - name: Evolve Machine Learners
+    source: second_brain
+    career_page: https://evolvemachinelearners.com
+    location: San Francisco, California, United States
+  - name: ReachifyAI
+    source: second_brain
+    career_page: https://reachify.io
+    location: San Diego County, California, United States · Hybrid
+  - name: K.I.E.Z. Künstliche Intelligenz Entrepreneurship Zentrum
+    source: second_brain
+    career_page: https://zebracat.ai
+    location: Berlin, Berlin, Germany
+  - name: Multimodal
+    source: second_brain
+    career_page: https://multimodal.dev
+    location: New York, New York, United States
+  - name: Inception Labs
+    source: second_brain
+    career_page: https://inceptionlabs.ai
+    location: United States
+  - name: Chop Finance
+    source: second_brain
+    career_page: https://chopfinance.ai
+    location: Guwahati, Assam, India
+  - name: Akamai Technologies, Inc.
+    source: second_brain
+  - name: Qii.AI
+    source: second_brain
+    career_page: https://qii.ai
+    location: Toronto, Ontario, Canada
+  - name: UnitX
+    source: second_brain
+    career_page: https://unitxlabs.com
+    location: San Jose, CA
+  - name: Arcade
+    source: second_brain
+    career_page: https://arcade.ai
+    location: San Francisco Bay Area
+  - name: Ecommerce startups
+    source: second_brain
+    career_page: https://kendall.ai
+    location: San Francisco Bay Area
+  - name: Colossyan
+    source: second_brain
+    location: New York City Metropolitan Area
+  - name: Angel (individual)
+    source: second_brain
+  - name: SpreeAI
+    source: second_brain
+    career_page: https://reeai.com
+    location: Remote
+  - name: AI ML etc. (AI + Gen AI courses for senior IT professionals)
+    source: second_brain
+    career_page: https://aimletc.com
+    location: India
+  - name: Logic Arts
+    source: second_brain
+    career_page: https://logicarts.ai
+    location: United States
+  - name: D-Camp
+    source: second_brain
+  - name: Tecton
+    source: second_brain
+    career_page: https://ecton.ai
+    location: San Francisco, California, United States
+  - name: IceCream Labs
+    source: second_brain
+    career_page: https://icecreamlabs.com
+    location: San Francisco Bay Area
+  - name: ENSAE Paris
+    source: second_brain
+    career_page: https://eklia.com
+    location: Paris, Île-de-France, France
+  - name: David AI
+    source: second_brain
+    career_page: https://withdavid.ai
+    location: San Francisco, California, United States
+  - name: Sieve
+    source: second_brain
+    career_page: https://ievedata.com
+    location: San Francisco Bay Area
+  - name: Nexusflow AI
+    source: second_brain
+    career_page: https://nexusflow.ai
+    location: Sunnyvale, California, United States
+  - name: Disco
+    source: second_brain
+    career_page: https://disconetwork.com
+    location: San Francisco Bay Area
+  - name: Lear AI
+    source: second_brain
+    career_page: https://getlear.com
+    location: Mountain View, California, United States
+  - name: Vetted
+    source: second_brain
+    career_page: https://yahooinc.com
+    location: San Francisco, California, United States
+  - name: Tesfa AI
+    source: second_brain
+    career_page: https://esfa.ai
+    location: Addis Ababa, Ethiopia
+  - name: Replicate
+    source: second_brain
+    career_page: https://replicate.com
+    location: San Francisco, California, United States
+  - name: Engage3
+    source: second_brain
+    location: San Diego, California, United States
+  - name: SambaNova Systems
+    source: second_brain
+    career_page: https://ambanova.ai
+    location: Palo Alto, California, United States
+  - name: Checkmate
+    source: second_brain
+    career_page: https://joincheckmate.com
+    location: Los Angeles, California, United States
+  - name: TRG Capital
+    source: second_brain
+  - name: Gierd
+    source: second_brain
+    career_page: https://gierd.com
+    location: Los Angeles, California
+  - name: Miriel AI
+    source: second_brain
+    career_page: https://miriel.ai
+    location: Redwood City, California, United States
+  - name: Sussex Place Ventures
+    source: second_brain
+    career_page: https://ventures.com
+    location: London, England, United Kingdom
+  - name: Human Native AI
+    source: second_brain
+    career_page: https://cloudflare.com
+    location: Greater London, England, United Kingdom
+  - name: Trusty (YC W22)
+    source: second_brain
+    career_page: https://rustyhomes.com
+    location: San Francisco Bay Area
+  - name: ForClassmates
+    source: second_brain
+    career_page: https://forclassmates.com
+    location: Hradec Králové, Hradec Králové, Czechia
+  - name: Aura Health
+    source: second_brain
+    career_page: https://aurahealth.io
+    location: San Francisco
+  - name: Toloka
+    source: datahive
+    datahive_score: 6
+    career_page: https://toloka.ai
+    industry: data_services
+    buyer_type: platform
+  - name: RAIC Labs
+    source: datahive
+    datahive_score: 6
+    career_page: https://raiclabs.com
+    buyer_type: data_consumer
+  - name: Tali
+    source: datahive
+    datahive_score: 6
+    career_page: https://tali.ai
+    buyer_type: data_consumer
+  - name: Retell
+    source: datahive
+    datahive_score: 6
+    career_page: https://retell.ai
+    industry: Adjacent Verticals
+    buyer_type: data_consumer
   low_priority:
   - name: '"ShowOff Radio" SiriusXM Radio Inc.'
     source: linkedin_network
