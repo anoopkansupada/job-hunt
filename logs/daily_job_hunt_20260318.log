@@ -1,0 +1,1625 @@
+=== Daily Job Hunt Cron Start: Wed Mar 18 08:15:11 EDT 2026 ===
+Activating venv...
+Running daily job hunt orchestrator...
+2026-03-18 08:15:11 [INFO] __main__ — Starting daily job hunt orchestration...
+2026-03-18 08:15:11 [INFO] __main__ — Running job scouts...
+2026-03-18 08:15:11 [INFO] scouts.orchestrator — Orchestrator start | type=full dry_run=False parallel=True
+2026-03-18 08:15:11 [INFO] scouts.orchestrator — Running scouts in parallel (threads)
+2026-03-18 08:15:11 [INFO] scouts.utils — Loading config from /Users/jarvis/.openclaw/workspace/projects/job-hunt/scraper/config.yaml
+2026-03-18 08:15:11 [INFO] scouts.ats — ATS scout run_id=1c4a83d7f5bf | 31 Lever + 72 GH companies
+2026-03-18 08:15:11 [INFO] scouts.ats — Lever → AssemblyAI (assemblyai)
+2026-03-18 08:15:12 [INFO] scouts.board — Searching: 'head of partnerships web3 crypto' on ['linkedin', 'indeed', 'glassdoor']
+2026-03-18 08:15:12,699 - ERROR - JobSpy:Glassdoor - Glassdoor: Error encountered in API response
+2026-03-18 08:15:15 [ERROR] scouts.ats — Lever[assemblyai] fetch error: 404 Client Error: Not Found for url: https://api.lever.co/v0/postings/assemblyai?mode=json
+2026-03-18 08:15:15 [INFO] scouts.ats — Lever → Ondo Finance (ondo)
+2026-03-18 08:15:16 [ERROR] scouts.ats — Lever[ondo] fetch error: 404 Client Error: Not Found for url: https://api.lever.co/v0/postings/ondo?mode=json
+2026-03-18 08:15:16 [INFO] scouts.ats — Lever → Blockdaemon (blockdaemon)
+2026-03-18 08:15:16 [ERROR] scouts.ats — Lever[blockdaemon] fetch error: 404 Client Error: Not Found for url: https://api.lever.co/v0/postings/blockdaemon?mode=json
+2026-03-18 08:15:17 [INFO] scouts.ats — Lever → Arbitrum Foundation (arbitrumfoundation)
+2026-03-18 08:15:18 [INFO] scouts.ats — Lever → Optimism (optimism)
+2026-03-18 08:15:18 [ERROR] scouts.ats — Lever[optimism] fetch error: 404 Client Error: Not Found for url: https://api.lever.co/v0/postings/optimism?mode=json
+2026-03-18 08:15:19 [INFO] scouts.ats — Lever → Solana Foundation (solana)
+2026-03-18 08:15:19,433 - INFO - JobSpy:Linkedin - finished scraping
+2026-03-18 08:15:19 [INFO] scouts.board —   'head of partnerships web3 crypto' → 3 found, 2 new
+2026-03-18 08:15:19 [INFO] scouts.board — Searching: 'VP business development blockchain' on ['linkedin', 'indeed', 'glassdoor']
+2026-03-18 08:15:19 [ERROR] scouts.ats — Lever[solana] fetch error: 404 Client Error: Not Found for url: https://api.lever.co/v0/postings/solana?mode=json
+2026-03-18 08:15:19,821 - ERROR - JobSpy:Glassdoor - Glassdoor: Error encountered in API response
+2026-03-18 08:15:20 [INFO] scouts.ats — Lever → Chainlink Labs (chainlink)
+2026-03-18 08:15:20 [ERROR] scouts.ats — Lever[chainlink] fetch error: 404 Client Error: Not Found for url: https://api.lever.co/v0/postings/chainlink?mode=json
+2026-03-18 08:15:21 [INFO] scouts.ats — Lever → MoonPay (moonpay)
+2026-03-18 08:15:22 [INFO] scouts.ats —   ✅ NEW  [3] MoonPay — HR Admin
+2026-03-18 08:15:22 [INFO] scouts.ats — Lever → Transak (transak)
+2026-03-18 08:15:29 [INFO] scouts.board —   'VP business development blockchain' → 23 found, 18 new
+2026-03-18 08:15:29 [INFO] scouts.board — Searching: 'director of ecosystem crypto defi' on ['linkedin', 'indeed', 'glassdoor']
+2026-03-18 08:15:29,741 - ERROR - JobSpy:Glassdoor - Glassdoor: Error encountered in API response
+2026-03-18 08:15:30 [ERROR] scouts.ats — Lever[transak] fetch error: 404 Client Error: Not Found for url: https://api.lever.co/v0/postings/transak?mode=json
+2026-03-18 08:15:31 [INFO] scouts.ats — Lever → Yuga Labs (yugalabs)
+2026-03-18 08:15:31 [ERROR] scouts.ats — Lever[yugalabs] fetch error: 404 Client Error: Not Found for url: https://api.lever.co/v0/postings/yugalabs?mode=json
+2026-03-18 08:15:32 [INFO] scouts.ats — Lever → OpenSea (opensea)
+2026-03-18 08:15:32 [ERROR] scouts.ats — Lever[opensea] fetch error: 404 Client Error: Not Found for url: https://api.lever.co/v0/postings/opensea?mode=json
+2026-03-18 08:15:33 [INFO] scouts.ats — Lever → Manifold (manifold)
+2026-03-18 08:15:33 [ERROR] scouts.ats — Lever[manifold] fetch error: 404 Client Error: Not Found for url: https://api.lever.co/v0/postings/manifold?mode=json
+2026-03-18 08:15:33 [INFO] scouts.ats — Lever → Stripe (stripe)
+2026-03-18 08:15:34 [ERROR] scouts.ats — Lever[stripe] fetch error: 404 Client Error: Not Found for url: https://api.lever.co/v0/postings/stripe?mode=json
+2026-03-18 08:15:34 [INFO] scouts.board —   'director of ecosystem crypto defi' → 3 found, 1 new
+2026-03-18 08:15:34 [INFO] scouts.board — Searching: 'VP growth web3 fintech' on ['linkedin', 'indeed', 'glassdoor']
+2026-03-18 08:15:34 [INFO] scouts.ats — Lever → Rippling (rippling)
+2026-03-18 08:15:34,764 - ERROR - JobSpy:Glassdoor - Glassdoor: Error encountered in API response
+2026-03-18 08:15:34 [ERROR] scouts.ats — Lever[rippling] fetch error: 404 Client Error: Not Found for url: https://api.lever.co/v0/postings/rippling?mode=json
+2026-03-18 08:15:35 [INFO] scouts.ats — Lever → Mercury (mercury)
+2026-03-18 08:15:42 [ERROR] scouts.ats — Lever[mercury] fetch error: 404 Client Error: Not Found for url: https://api.lever.co/v0/postings/mercury?mode=json
+2026-03-18 08:15:42 [INFO] scouts.ats — Lever → Arc (arc)
+2026-03-18 08:15:45 [INFO] scouts.board —   'VP growth web3 fintech' → 20 found, 20 new
+2026-03-18 08:15:45 [INFO] scouts.board — Searching: 'head of BD crypto protocol' on ['linkedin', 'indeed', 'glassdoor']
+2026-03-18 08:15:46,054 - ERROR - JobSpy:Glassdoor - Glassdoor: Error encountered in API response
+2026-03-18 08:15:46 [INFO] scouts.board —   'head of BD crypto protocol' → 0 found, 0 new
+2026-03-18 08:15:46 [INFO] scouts.board — Searching: 'director partnerships crypto' on ['linkedin', 'indeed', 'glassdoor']
+2026-03-18 08:15:46,450 - ERROR - JobSpy:Glassdoor - Glassdoor: Error encountered in API response
+2026-03-18 08:15:47 [ERROR] scouts.ats — Lever[arc] fetch error: 404 Client Error: Not Found for url: https://api.lever.co/v0/postings/arc?mode=json
+2026-03-18 08:15:47 [INFO] scouts.ats — Lever → Deel (deel)
+2026-03-18 08:15:48 [ERROR] scouts.ats — Lever[deel] fetch error: 404 Client Error: Not Found for url: https://api.lever.co/v0/postings/deel?mode=json
+2026-03-18 08:15:48 [INFO] scouts.ats — Lever → Weights & Biases (wandb)
+2026-03-18 08:15:49 [ERROR] scouts.ats — Lever[wandb] fetch error: 404 Client Error: Not Found for url: https://api.lever.co/v0/postings/wandb?mode=json
+2026-03-18 08:15:49 [INFO] scouts.ats — Lever → Pinecone (pinecone)
+2026-03-18 08:15:49 [ERROR] scouts.ats — Lever[pinecone] fetch error: 404 Client Error: Not Found for url: https://api.lever.co/v0/postings/pinecone?mode=json
+2026-03-18 08:15:50 [INFO] scouts.ats — Lever → Weaviate (weaviate)
+2026-03-18 08:15:50 [ERROR] scouts.ats — Lever[weaviate] fetch error: 404 Client Error: Not Found for url: https://api.lever.co/v0/postings/weaviate?mode=json
+2026-03-18 08:15:50 [INFO] scouts.ats — Lever → LangChain (langchain)
+2026-03-18 08:15:52 [ERROR] scouts.ats — Lever[langchain] fetch error: 404 Client Error: Not Found for url: https://api.lever.co/v0/postings/langchain?mode=json
+2026-03-18 08:15:52 [INFO] scouts.ats — Lever → Pika Labs (pikalabs)
+2026-03-18 08:15:52 [ERROR] scouts.ats — Lever[pikalabs] fetch error: 404 Client Error: Not Found for url: https://api.lever.co/v0/postings/pikalabs?mode=json
+2026-03-18 08:15:53 [INFO] scouts.ats — Lever → Vercel (vercel)
+2026-03-18 08:15:55 [INFO] scouts.board —   'director partnerships crypto' → 23 found, 17 new
+2026-03-18 08:15:55 [INFO] scouts.board — Searching: 'VP partnerships web3 NYC' on ['linkedin', 'indeed', 'glassdoor']
+2026-03-18 08:15:55,984 - ERROR - JobSpy:Glassdoor - Glassdoor: Error encountered in API response
+2026-03-18 08:15:56 [INFO] scouts.board —   'VP partnerships web3 NYC' → 0 found, 0 new
+2026-03-18 08:15:56 [INFO] scouts.board — Searching: 'ecosystem lead blockchain protocol' on ['linkedin', 'indeed', 'glassdoor']
+2026-03-18 08:15:56,474 - ERROR - JobSpy:Glassdoor - Glassdoor: Error encountered in API response
+2026-03-18 08:16:01 [INFO] scouts.board —   'ecosystem lead blockchain protocol' → 7 found, 6 new
+2026-03-18 08:16:08 [ERROR] scouts.ats — Lever[vercel] fetch error: HTTPSConnectionPool(host='api.lever.co', port=443): Read timed out. (read timeout=15)
+2026-03-18 08:16:09 [INFO] scouts.ats — Lever → Coda (coda)
+2026-03-18 08:16:09 [ERROR] scouts.ats — Lever[coda] fetch error: 404 Client Error: Not Found for url: https://api.lever.co/v0/postings/coda?mode=json
+2026-03-18 08:16:09 [INFO] scouts.ats — Lever → PlanetScale (planetscale)
+2026-03-18 08:16:10 [ERROR] scouts.ats — Lever[planetscale] fetch error: 404 Client Error: Not Found for url: https://api.lever.co/v0/postings/planetscale?mode=json
+2026-03-18 08:16:10 [INFO] scouts.ats — Lever → Neon (neon)
+2026-03-18 08:16:12 [INFO] scouts.ats — Lever → Petal (petal)
+2026-03-18 08:16:12 [ERROR] scouts.ats — Lever[petal] fetch error: 404 Client Error: Not Found for url: https://api.lever.co/v0/postings/petal?mode=json
+2026-03-18 08:16:12 [INFO] scouts.ats — Lever → Attentive (attentive)
+2026-03-18 08:16:13 [INFO] scouts.ats — Lever → Anthropic (anthropic)
+2026-03-18 08:16:14 [ERROR] scouts.ats — Lever[anthropic] fetch error: 404 Client Error: Not Found for url: https://api.lever.co/v0/postings/anthropic?mode=json
+2026-03-18 08:16:14 [INFO] scouts.ats — Lever → Hugging Face (huggingface)
+2026-03-18 08:16:15 [ERROR] scouts.ats — Lever[huggingface] fetch error: 404 Client Error: Not Found for url: https://api.lever.co/v0/postings/huggingface?mode=json
+2026-03-18 08:16:16 [INFO] scouts.ats — Lever → Mistral AI (mistralai)
+2026-03-18 08:16:16 [ERROR] scouts.ats — Lever[mistralai] fetch error: 404 Client Error: Not Found for url: https://api.lever.co/v0/postings/mistralai?mode=json
+2026-03-18 08:16:16 [INFO] scouts.ats — Greenhouse → Coinbase (coinbase)
+2026-03-18 08:16:17 [INFO] scouts.ats —   ✅ NEW  [8] Coinbase — Compliance Manager (Strategic Execution Lead)
+2026-03-18 08:16:17 [INFO] scouts.ats —   ✅ NEW  [5] Coinbase — Data Protection Engineer
+2026-03-18 08:16:17 [INFO] scouts.ats —   ✅ NEW  [5] Coinbase — EDD Compliance Analyst III
+2026-03-18 08:16:17 [INFO] scouts.ats —   ✅ NEW  [6] Coinbase — Principal Software Engineer, AI Automation
+2026-03-18 08:16:17 [INFO] scouts.ats —   ✅ NEW  [4] Coinbase — Senior Engineering Manager (Consumer - Growth App & Infra)
+2026-03-18 08:16:17 [INFO] scouts.ats —   ✅ NEW  [8] Coinbase — Senior Manager, Adversary Management
+2026-03-18 08:16:17 [INFO] scouts.ats —   ✅ NEW  [8] Coinbase — Senior Software Engineer, Developer (Money Movement - Risk) 
+2026-03-18 08:16:17 [INFO] scouts.ats —   ✅ NEW  [5] Coinbase — Technical Program Manager
+2026-03-18 08:16:17 [INFO] scouts.ats — Greenhouse → Kraken (kraken)
+2026-03-18 08:16:17 [ERROR] scouts.ats — Greenhouse[kraken] fetch error: 404 Client Error: Not Found for url: https://boards-api.greenhouse.io/v1/boards/kraken/jobs?content=true
+2026-03-18 08:16:18 [INFO] scouts.ats — Greenhouse → Chainalysis (chainalysis)
+2026-03-18 08:16:18 [ERROR] scouts.ats — Greenhouse[chainalysis] fetch error: 404 Client Error: Not Found for url: https://boards-api.greenhouse.io/v1/boards/chainalysis/jobs?content=true
+2026-03-18 08:16:18 [INFO] scouts.ats — Greenhouse → Consensys (consensys)
+2026-03-18 08:16:19 [INFO] scouts.ats — Greenhouse → Ripple (ripple)
+2026-03-18 08:16:19 [INFO] scouts.ats —   ✅ NEW  [2] Ripple — Professional Services Consultant
+2026-03-18 08:16:19 [INFO] scouts.ats —   ✅ NEW  [5] Ripple — Senior Manager, Controllership Scalability & AI Execution
+2026-03-18 08:16:19 [INFO] scouts.ats —   ✅ NEW  [2] Ripple — Senior Software Engineer (Full Stack)
+2026-03-18 08:16:19 [INFO] scouts.ats —   ✅ NEW  [2] Ripple — Senior Staff Software Engineer, Data
+2026-03-18 08:16:19 [INFO] scouts.ats — Greenhouse → Uniswap Labs (uniswaplabs)
+2026-03-18 08:16:20 [ERROR] scouts.ats — Greenhouse[uniswaplabs] fetch error: 404 Client Error: Not Found for url: https://boards-api.greenhouse.io/v1/boards/uniswaplabs/jobs?content=true
+2026-03-18 08:16:20 [INFO] scouts.ats — Greenhouse → Fireblocks (fireblocks)
+2026-03-18 08:16:20 [INFO] scouts.ats —   ✅ NEW  [8] Fireblocks — Customer Success Manager ,Tres 
+2026-03-18 08:16:20 [INFO] scouts.ats —   ✅ NEW  [8] Fireblocks — Policy Director, U.S.
+2026-03-18 08:16:21 [INFO] scouts.ats — Greenhouse → dYdX (dydx)
+2026-03-18 08:16:21 [ERROR] scouts.ats — Greenhouse[dydx] fetch error: 404 Client Error: Not Found for url: https://boards-api.greenhouse.io/v1/boards/dydx/jobs?content=true
+2026-03-18 08:16:21 [INFO] scouts.ats — Greenhouse → Bitpanda (bitpanda)
+2026-03-18 08:16:22 [INFO] scouts.ats — Greenhouse → Gemini (gemini)
+2026-03-18 08:16:22 [INFO] scouts.ats —   ✅ NEW  [7] Gemini — Lead, Marketing Analytics
+2026-03-18 08:16:23 [INFO] scouts.ats — Greenhouse → Galaxy Digital (galaxydigital)
+2026-03-18 08:16:23 [ERROR] scouts.ats — Greenhouse[galaxydigital] fetch error: 404 Client Error: Not Found for url: https://boards-api.greenhouse.io/v1/boards/galaxydigital/jobs?content=true
+2026-03-18 08:16:23 [INFO] scouts.ats — Greenhouse → Paxos (paxos)
+2026-03-18 08:16:23 [ERROR] scouts.ats — Greenhouse[paxos] fetch error: 404 Client Error: Not Found for url: https://boards-api.greenhouse.io/v1/boards/paxos/jobs?content=true
+2026-03-18 08:16:24 [INFO] scouts.ats — Greenhouse → BitGo (bitgo)
+2026-03-18 08:16:24 [INFO] scouts.ats —   ✅ NEW  [6] BitGo — Business Development Representative - Ecosystem
+2026-03-18 08:16:24 [INFO] scouts.ats —   ✅ NEW  [6] BitGo — Senior Software Engineer - HSM
+2026-03-18 08:16:24 [INFO] scouts.ats —   ✅ NEW  [4] BitGo — Senior Software Engineer - Mobile (React Native)
+2026-03-18 08:16:24 [INFO] scouts.ats — Greenhouse → Aptos Labs (aptoslabs)
+2026-03-18 08:16:25 [INFO] scouts.ats — Greenhouse → Sui Foundation (mysten)
+2026-03-18 08:16:25 [ERROR] scouts.ats — Greenhouse[mysten] fetch error: 404 Client Error: Not Found for url: https://boards-api.greenhouse.io/v1/boards/mysten/jobs?content=true
+2026-03-18 08:16:25 [INFO] scouts.ats — Greenhouse → Starkware (starkware)
+2026-03-18 08:16:25 [ERROR] scouts.ats — Greenhouse[starkware] fetch error: 404 Client Error: Not Found for url: https://boards-api.greenhouse.io/v1/boards/starkware/jobs?content=true
+2026-03-18 08:16:26 [INFO] scouts.ats — Greenhouse → Polygon (polygontechnology)
+2026-03-18 08:16:26 [ERROR] scouts.ats — Greenhouse[polygontechnology] fetch error: 404 Client Error: Not Found for url: https://boards-api.greenhouse.io/v1/boards/polygontechnology/jobs?content=true
+2026-03-18 08:16:26 [INFO] scouts.ats — Greenhouse → Ava Labs (avalabs)
+2026-03-18 08:16:27 [INFO] scouts.ats — Greenhouse → Near Protocol (near)
+2026-03-18 08:16:27 [ERROR] scouts.ats — Greenhouse[near] fetch error: 404 Client Error: Not Found for url: https://boards-api.greenhouse.io/v1/boards/near/jobs?content=true
+2026-03-18 08:16:27 [INFO] scouts.ats — Greenhouse → Hedera (swirldslabs)
+2026-03-18 08:16:27 [ERROR] scouts.ats — Greenhouse[swirldslabs] fetch error: 404 Client Error: Not Found for url: https://boards-api.greenhouse.io/v1/boards/swirldslabs/jobs?content=true
+2026-03-18 08:16:28 [INFO] scouts.ats — Greenhouse → The Graph (thegraph)
+2026-03-18 08:16:28 [ERROR] scouts.ats — Greenhouse[thegraph] fetch error: 404 Client Error: Not Found for url: https://boards-api.greenhouse.io/v1/boards/thegraph/jobs?content=true
+2026-03-18 08:16:28 [INFO] scouts.ats — Greenhouse → Immutable (immutable)
+2026-03-18 08:16:28 [ERROR] scouts.ats — Greenhouse[immutable] fetch error: 404 Client Error: Not Found for url: https://boards-api.greenhouse.io/v1/boards/immutable/jobs?content=true
+2026-03-18 08:16:29 [INFO] scouts.ats — Greenhouse → Sky Mavis (skymavis)
+2026-03-18 08:16:29 [ERROR] scouts.ats — Greenhouse[skymavis] fetch error: 404 Client Error: Not Found for url: https://boards-api.greenhouse.io/v1/boards/skymavis/jobs?content=true
+2026-03-18 08:16:29 [INFO] scouts.ats — Greenhouse → Magic Eden (magiceden)
+2026-03-18 08:16:30 [ERROR] scouts.ats — Greenhouse[magiceden] fetch error: 404 Client Error: Not Found for url: https://boards-api.greenhouse.io/v1/boards/magiceden/jobs?content=true
+2026-03-18 08:16:30 [INFO] scouts.ats — Greenhouse → Blur (blur)
+2026-03-18 08:16:30 [ERROR] scouts.ats — Greenhouse[blur] fetch error: 404 Client Error: Not Found for url: https://boards-api.greenhouse.io/v1/boards/blur/jobs?content=true
+2026-03-18 08:16:31 [INFO] scouts.ats — Greenhouse → Brex (brex)
+2026-03-18 08:16:31 [INFO] scouts.ats —   ✅ NEW  [5] Brex — Commercial Account Executive
+2026-03-18 08:16:31 [INFO] scouts.ats —   ✅ NEW  [2] Brex — Commercial SaaS Client Sales Executive
+2026-03-18 08:16:31 [INFO] scouts.ats —   ✅ NEW  [5] Brex — Customer Experience Enablement Lead
+2026-03-18 08:16:31 [INFO] scouts.ats —   ✅ NEW  [3] Brex — Customer Success Enablement Manager
+2026-03-18 08:16:31 [INFO] scouts.ats —   ✅ NEW  [3] Brex — Data Analyst II
+2026-03-18 08:16:31 [INFO] scouts.ats —   ✅ NEW  [3] Brex — Data Analyst III
+2026-03-18 08:16:31 [INFO] scouts.ats —   ✅ NEW  [6] Brex — Director, Client Sales
+2026-03-18 08:16:31 [INFO] scouts.ats —   ✅ NEW  [6] Brex — Director, Enterprise Sales
+2026-03-18 08:16:31 [INFO] scouts.ats —   ✅ NEW  [4] Brex — Engineering Manager, Onboarding
+2026-03-18 08:16:31 [INFO] scouts.ats —   ✅ NEW  [3] Brex — Post Sales Enablement Manager
+2026-03-18 08:16:31 [INFO] scouts.ats —   ✅ NEW  [3] Brex — Product and Regulatory Counsel
+2026-03-18 08:16:31 [INFO] scouts.ats —   ✅ NEW  [4] Brex — Senior Design Recruiter
+2026-03-18 08:16:31 [INFO] scouts.ats —   ✅ NEW  [3] Brex — Senior GTM Recruiter
+2026-03-18 08:16:31 [INFO] scouts.ats —   ✅ NEW  [9] Brex — Senior Manager, Small Business Partnerships
+2026-03-18 08:16:31 [INFO] scouts.ats —   ✅ NEW  [2] Brex — Senior Security Operations Engineer 
+2026-03-18 08:16:31 [INFO] scouts.ats —   ✅ NEW  [4] Brex — Senior Technical Recruiter
+2026-03-18 08:16:31 [INFO] scouts.ats — Greenhouse → Ramp (ramp)
+2026-03-18 08:16:31 [ERROR] scouts.ats — Greenhouse[ramp] fetch error: 404 Client Error: Not Found for url: https://boards-api.greenhouse.io/v1/boards/ramp/jobs?content=true
+2026-03-18 08:16:32 [INFO] scouts.ats — Greenhouse → Plaid (plaid)
+2026-03-18 08:16:32 [ERROR] scouts.ats — Greenhouse[plaid] fetch error: 404 Client Error: Not Found for url: https://boards-api.greenhouse.io/v1/boards/plaid/jobs?content=true
+2026-03-18 08:16:32 [INFO] scouts.ats — Greenhouse → Carta (carta)
+2026-03-18 08:16:33 [INFO] scouts.ats — Greenhouse → Chime (chime)
+2026-03-18 08:16:33 [INFO] scouts.ats —   ✅ NEW  [2] Chime — Offline Media Manager
+2026-03-18 08:16:33 [INFO] scouts.ats —   ✅ NEW  [2] Chime — Paid Social Media Manager
+2026-03-18 08:16:33 [INFO] scouts.ats —   ✅ NEW  [6] Chime — Principal, Web Platform & Experience Strategy
+2026-03-18 08:16:33 [INFO] scouts.ats —   ✅ NEW  [7] Chime — Sr. Director, Strategic Partnerships & Branded Entertainment
+2026-03-18 08:16:33 [INFO] scouts.ats — Greenhouse → Marqeta (marqeta)
+2026-03-18 08:16:34 [INFO] scouts.ats —   ✅ NEW  [4] Marqeta — Senior Manager, Software Engineering - Risk, Fraud and Disputes
+2026-03-18 08:16:34 [INFO] scouts.ats —   ✅ NEW  [5] Marqeta — Senior Product Manager, Tokenization
+2026-03-18 08:16:34 [INFO] scouts.ats — Greenhouse → Adyen (adyen)
+2026-03-18 08:16:34 [INFO] scouts.ats —   ✅ NEW  [4] Adyen — Regulatory Licensing and Affairs Team Lead - North America
+2026-03-18 08:16:34 [INFO] scouts.ats —   ✅ NEW  [7] Adyen — Senior Payment Partnership Manager - Partner Growth
+2026-03-18 08:16:35 [INFO] scouts.ats — Greenhouse → Klarna (klarna)
+2026-03-18 08:16:35 [ERROR] scouts.ats — Greenhouse[klarna] fetch error: 404 Client Error: Not Found for url: https://boards-api.greenhouse.io/v1/boards/klarna/jobs?content=true
+2026-03-18 08:16:35 [INFO] scouts.ats — Greenhouse → Pipe (pipe)
+2026-03-18 08:16:35 [ERROR] scouts.ats — Greenhouse[pipe] fetch error: 404 Client Error: Not Found for url: https://boards-api.greenhouse.io/v1/boards/pipe/jobs?content=true
+2026-03-18 08:16:36 [INFO] scouts.ats — Greenhouse → Payoneer (payoneer)
+2026-03-18 08:16:36 [INFO] scouts.ats —   ✅ NEW  [6] Payoneer — Senior Manager, Market Development PK.
+2026-03-18 08:16:36 [INFO] scouts.ats —   ✅ NEW  [4] Payoneer — Sr Business Development Manager, Pakistan
+2026-03-18 08:16:36 [INFO] scouts.ats — Greenhouse → OpenAI (openai)
+2026-03-18 08:16:37 [ERROR] scouts.ats — Greenhouse[openai] fetch error: 404 Client Error: Not Found for url: https://boards-api.greenhouse.io/v1/boards/openai/jobs?content=true
+2026-03-18 08:16:37 [INFO] scouts.ats — Greenhouse → Scale AI (scaleai)
+2026-03-18 08:16:37 [INFO] scouts.ats —   ✅ NEW  [2] Scale AI — Analytics & Systems Lead, Finance
+2026-03-18 08:16:37 [INFO] scouts.ats —   ✅ NEW  [3] Scale AI — Forward Deployed Product Manager, Enterprise
+2026-03-18 08:16:37 [INFO] scouts.ats —   ✅ NEW  [5] Scale AI — Head of Legal Operations & Chief of Staff
+2026-03-18 08:16:37 [INFO] scouts.ats —   ✅ NEW  [4] Scale AI — Product Manager of AI Applications, Global Public Sector
+2026-03-18 08:16:37 [INFO] scouts.ats —   ✅ NEW  [2] Scale AI — Software Engineer, ARC Team
+2026-03-18 08:16:38 [INFO] scouts.ats — Greenhouse → Snowflake (snowflake)
+2026-03-18 08:16:38 [ERROR] scouts.ats — Greenhouse[snowflake] fetch error: 404 Client Error: Not Found for url: https://boards-api.greenhouse.io/v1/boards/snowflake/jobs?content=true
+2026-03-18 08:16:38 [INFO] scouts.ats — Greenhouse → Eleven Labs (elevenlabs)
+2026-03-18 08:16:38 [ERROR] scouts.ats — Greenhouse[elevenlabs] fetch error: 404 Client Error: Not Found for url: https://boards-api.greenhouse.io/v1/boards/elevenlabs/jobs?content=true
+2026-03-18 08:16:39 [INFO] scouts.ats — Greenhouse → Perplexity AI (perplexityai)
+2026-03-18 08:16:39 [ERROR] scouts.ats — Greenhouse[perplexityai] fetch error: 404 Client Error: Not Found for url: https://boards-api.greenhouse.io/v1/boards/perplexityai/jobs?content=true
+2026-03-18 08:16:39 [INFO] scouts.ats — Greenhouse → Midjourney (midjourney)
+2026-03-18 08:16:39 [ERROR] scouts.ats — Greenhouse[midjourney] fetch error: 404 Client Error: Not Found for url: https://boards-api.greenhouse.io/v1/boards/midjourney/jobs?content=true
+2026-03-18 08:16:40 [INFO] scouts.ats — Greenhouse → Stability AI (stabilityai)
+2026-03-18 08:16:40 [INFO] scouts.ats — Greenhouse → Runway (runwayml)
+2026-03-18 08:16:40 [INFO] scouts.ats —   ✅ NEW  [2] Runway — Creative Support Specialist, Enterprise
+2026-03-18 08:16:40 [INFO] scouts.ats —   ✅ NEW  [2] Runway — Scaled Success Manager
+2026-03-18 08:16:40 [INFO] scouts.ats —   ✅ NEW  [3] Runway — Technical Accounting Manager
+2026-03-18 08:16:41 [INFO] scouts.ats — Greenhouse → Replit (replit)
+2026-03-18 08:16:41 [ERROR] scouts.ats — Greenhouse[replit] fetch error: 404 Client Error: Not Found for url: https://boards-api.greenhouse.io/v1/boards/replit/jobs?content=true
+2026-03-18 08:16:41 [INFO] scouts.ats — Greenhouse → Notion (notion)
+2026-03-18 08:16:41 [ERROR] scouts.ats — Greenhouse[notion] fetch error: 404 Client Error: Not Found for url: https://boards-api.greenhouse.io/v1/boards/notion/jobs?content=true
+2026-03-18 08:16:42 [INFO] scouts.ats — Greenhouse → Figma (figma)
+2026-03-18 08:16:42 [INFO] scouts.ats — Greenhouse → Retool (retool)
+2026-03-18 08:16:43 [ERROR] scouts.ats — Greenhouse[retool] fetch error: 404 Client Error: Not Found for url: https://boards-api.greenhouse.io/v1/boards/retool/jobs?content=true
+2026-03-18 08:16:43 [INFO] scouts.ats — Greenhouse → Whatnot (whatnot)
+2026-03-18 08:16:43 [ERROR] scouts.ats — Greenhouse[whatnot] fetch error: 404 Client Error: Not Found for url: https://boards-api.greenhouse.io/v1/boards/whatnot/jobs?content=true
+2026-03-18 08:16:44 [INFO] scouts.ats — Greenhouse → Vanta (vanta)
+2026-03-18 08:16:44 [ERROR] scouts.ats — Greenhouse[vanta] fetch error: 404 Client Error: Not Found for url: https://boards-api.greenhouse.io/v1/boards/vanta/jobs?content=true
+2026-03-18 08:16:44 [INFO] scouts.ats — Greenhouse → Persona (persona)
+2026-03-18 08:16:44 [ERROR] scouts.ats — Greenhouse[persona] fetch error: 404 Client Error: Not Found for url: https://boards-api.greenhouse.io/v1/boards/persona/jobs?content=true
+2026-03-18 08:16:45 [INFO] scouts.ats — Greenhouse → Segment (segment)
+2026-03-18 08:16:45 [ERROR] scouts.ats — Greenhouse[segment] fetch error: 404 Client Error: Not Found for url: https://boards-api.greenhouse.io/v1/boards/segment/jobs?content=true
+2026-03-18 08:16:45 [INFO] scouts.ats — Greenhouse → Amplitude (amplitude)
+2026-03-18 08:16:45 [INFO] scouts.ats —   ✅ NEW  [4] Amplitude — Director, Technical Accounting & Reporting
+2026-03-18 08:16:45 [INFO] scouts.ats —   ✅ NEW  [2] Amplitude — Emerging Enterprise Account Executive
+2026-03-18 08:16:45 [INFO] scouts.ats —   ✅ NEW  [2] Amplitude — Emerging Enterprise Account Executive (Middle East & Israel)
+2026-03-18 08:16:45 [INFO] scouts.ats —   ✅ NEW  [2] Amplitude — Renewal Success Specialist (Customer Success Manager)
+2026-03-18 08:16:45 [INFO] scouts.ats —   ✅ NEW  [3] Amplitude — Senior Solutions Engineer (Sales Engineer) - West
+2026-03-18 08:16:46 [INFO] scouts.ats — Greenhouse → Mixpanel (mixpanel)
+2026-03-18 08:16:46 [INFO] scouts.ats —   ✅ NEW  [3] Mixpanel — Account Executive, Mid Market
+2026-03-18 08:16:46 [INFO] scouts.ats —   ✅ NEW  [2] Mixpanel — Manager, Solutions Engineering 
+2026-03-18 08:16:46 [INFO] scouts.ats —   ✅ NEW  [3] Mixpanel — Senior Account Executive, Enterprise 
+2026-03-18 08:16:46 [INFO] scouts.ats —   ✅ NEW  [2] Mixpanel — Software Engineer, Fullstack
+2026-03-18 08:16:46 [INFO] scouts.ats — Greenhouse → Intercom (intercom)
+2026-03-18 08:16:47 [INFO] scouts.ats —   ✅ NEW  [2] Intercom — Growth Data Scientist 
+2026-03-18 08:16:47 [INFO] scouts.ats —   ✅ NEW  [3] Intercom — GTM Finance Manager
+2026-03-18 08:16:47 [INFO] scouts.ats —   ✅ NEW  [3] Intercom — Solutions Operations Manager - Professional Services/Solutions Engineering
+2026-03-18 08:16:47 [INFO] scouts.ats — Greenhouse → Zendesk (zendesk)
+2026-03-18 08:16:47 [ERROR] scouts.ats — Greenhouse[zendesk] fetch error: 404 Client Error: Not Found for url: https://boards-api.greenhouse.io/v1/boards/zendesk/jobs?content=true
+2026-03-18 08:16:48 [INFO] scouts.ats — Greenhouse → HubSpot (hubspot)
+2026-03-18 08:16:48 [INFO] scouts.ats — Greenhouse → Salesforce (salesforce)
+2026-03-18 08:16:48 [ERROR] scouts.ats — Greenhouse[salesforce] fetch error: 404 Client Error: Not Found for url: https://boards-api.greenhouse.io/v1/boards/salesforce/jobs?content=true
+2026-03-18 08:16:49 [INFO] scouts.ats — Greenhouse → Cloudflare (cloudflare)
+2026-03-18 08:16:49 [INFO] scouts.ats —   ✅ NEW  [3] Cloudflare — Commercial Account Executive, Benelux
+2026-03-18 08:16:49 [INFO] scouts.ats —   ✅ NEW  [2] Cloudflare — Customer Solutions Engineer
+2026-03-18 08:16:49 [INFO] scouts.ats —   ✅ NEW  [2] Cloudflare — Senior Customer Solutions Engineer
+2026-03-18 08:16:49 [INFO] scouts.ats —   ✅ NEW  [4] Cloudflare — Senior Dev GTM
+2026-03-18 08:16:49 [INFO] scouts.ats —   ✅ NEW  [4] Cloudflare — Senior Sales Manager, SLED
+2026-03-18 08:16:49 [INFO] scouts.ats —   ✅ NEW  [2] Cloudflare — Senior Solutions Engineer
+2026-03-18 08:16:50 [INFO] scouts.ats — Greenhouse → HashiCorp (hashicorp)
+2026-03-18 08:16:50 [ERROR] scouts.ats — Greenhouse[hashicorp] fetch error: 404 Client Error: Not Found for url: https://boards-api.greenhouse.io/v1/boards/hashicorp/jobs?content=true
+2026-03-18 08:16:50 [INFO] scouts.ats — Greenhouse → Confluent (confluent)
+2026-03-18 08:16:51 [ERROR] scouts.ats — Greenhouse[confluent] fetch error: 404 Client Error: Not Found for url: https://boards-api.greenhouse.io/v1/boards/confluent/jobs?content=true
+2026-03-18 08:16:51 [INFO] scouts.ats — Greenhouse → Elastic (elastic)
+2026-03-18 08:16:51 [INFO] scouts.ats —   ✅ NEW  [3] Elastic — Account Executive - Pursuit
+2026-03-18 08:16:51 [INFO] scouts.ats —   ✅ NEW  [4] Elastic — Account Executive - Pursuit, East
+2026-03-18 08:16:51 [INFO] scouts.ats —   ✅ NEW  [2] Elastic — Enterprise Account Executive, Expand East
+2026-03-18 08:16:51 [INFO] scouts.ats —   ✅ NEW  [3] Elastic — Enterprise Account Executive - Pursuit - Bay Area
+2026-03-18 08:16:51 [INFO] scouts.ats —   ✅ NEW  [3] Elastic — Enterprise Account Executive - Pursuit, East
+2026-03-18 08:16:51 [INFO] scouts.ats —   ✅ NEW  [3] Elastic — Enterprise Account Executive - Pursuit - Texas
+2026-03-18 08:16:51 [INFO] scouts.ats —   ✅ NEW  [3] Elastic — Enterprise Account Executive - Socal - Pursuit
+2026-03-18 08:16:51 [INFO] scouts.ats —   ✅ NEW  [2] Elastic — Enterprise Account Executive - Texas
+2026-03-18 08:16:51 [INFO] scouts.ats —   ✅ NEW  [3] Elastic — Enterprise Account Executive - West
+2026-03-18 08:16:51 [INFO] scouts.ats —   ✅ NEW  [2] Elastic — Inside Account Executive
+2026-03-18 08:16:51 [INFO] scouts.ats —   ✅ NEW  [4] Elastic — Partner Marketing Manager, GSI
+2026-03-18 08:16:51 [INFO] scouts.ats —   ✅ NEW  [2] Elastic — Senior Software Engineer - Vector Search - Elasticsearch
+2026-03-18 08:16:51 [INFO] scouts.ats —   ✅ NEW  [2] Elastic — Visual Designer, Social
+2026-03-18 08:16:52 [INFO] scouts.ats — Greenhouse → MongoDB (mongodb)
+2026-03-18 08:16:52 [INFO] scouts.ats —   ✅ NEW  [5] MongoDB — Commercial Growth Account Executive
+2026-03-18 08:16:52 [INFO] scouts.ats —   ✅ NEW  [3] MongoDB — Enterprise Account Executive, Growth
+2026-03-18 08:16:52 [INFO] scouts.ats —   ✅ NEW  [4] MongoDB — Escalation Manager, FedRamp - 2nd Shift
+2026-03-18 08:16:52 [INFO] scouts.ats —   ✅ NEW  [4] MongoDB — Escalation Manager, FedRAMP - 3rd Shift
+2026-03-18 08:16:52 [INFO] scouts.ats —   ✅ NEW  [3] MongoDB — Senior Data Analyst
+2026-03-18 08:16:52 [INFO] scouts.ats —   ✅ NEW  [8] MongoDB — Senior Director, Data Product Management
+2026-03-18 08:16:52 [INFO] scouts.ats —   ✅ NEW  [3] MongoDB — Senior Executive Assistant
+2026-03-18 08:16:52 [INFO] scouts.ats —   ✅ NEW  [5] MongoDB — Senior Financial Analyst
+2026-03-18 08:16:52 [INFO] scouts.ats —   ✅ NEW  [3] MongoDB — Senior Sales Operations Analyst
+2026-03-18 08:16:52 [INFO] scouts.ats —   ✅ NEW  [4] MongoDB — Senior Site Reliability Engineer, Deployments
+2026-03-18 08:16:52 [INFO] scouts.ats —   ✅ NEW  [4] MongoDB — Senior Specialist 2, Accounting
+2026-03-18 08:16:52 [INFO] scouts.ats —   ✅ NEW  [5] MongoDB — Software Engineer 3, Customer Observability
+2026-03-18 08:16:52 [INFO] scouts.ats —   ✅ NEW  [3] MongoDB — Staff Security Engineer, Detection Engineering
+2026-03-18 08:16:52 [INFO] scouts.ats — Greenhouse → Supabase (supabase)
+2026-03-18 08:16:53 [ERROR] scouts.ats — Greenhouse[supabase] fetch error: 404 Client Error: Not Found for url: https://boards-api.greenhouse.io/v1/boards/supabase/jobs?content=true
+2026-03-18 08:16:53 [INFO] scouts.ats — Greenhouse → Oscar Health (oscar)
+2026-03-18 08:16:53 [INFO] scouts.ats —   ✅ NEW  [2] Oscar Health — Bilingual NP/PA - Virtual Urgent Care
+2026-03-18 08:16:53 [INFO] scouts.ats —   ✅ NEW  [2] Oscar Health — Bilingual NP/PA - Virtual Urgent Care (Part-time)
+2026-03-18 08:16:53 [INFO] scouts.ats —   ✅ NEW  [3] Oscar Health — Operations Analyst, Plan Loading
+2026-03-18 08:16:53 [INFO] scouts.ats —   ✅ NEW  [2] Oscar Health — Physician Assistant (Bilingual - Spanish) - Virtual Urgent Care
+2026-03-18 08:16:53 [INFO] scouts.ats —   ✅ NEW  [2] Oscar Health — Physician (Bilingual) - Virtual Urgent Care
+2026-03-18 08:16:53 [INFO] scouts.ats —   ✅ NEW  [2] Oscar Health — Physician - Virtual Health Assessment
+2026-03-18 08:16:53 [INFO] scouts.ats —   ✅ NEW  [2] Oscar Health — Physician - Virtual Health Assessment (Bilingual - Spanish)
+2026-03-18 08:16:53 [INFO] scouts.ats —   ✅ NEW  [2] Oscar Health — Physician - Virtual Urgent Care
+2026-03-18 08:16:53 [INFO] scouts.ats —   ✅ NEW  [2] Oscar Health — Physician - Virtual Urgent Care (Part-time)
+2026-03-18 08:16:53 [INFO] scouts.ats —   ✅ NEW  [2] Oscar Health — Sales Executive
+2026-03-18 08:16:53 [INFO] scouts.ats —   ✅ NEW  [3] Oscar Health — Senior Analyst, Individual and Family Plan Insurance Solutions
+2026-03-18 08:16:53 [INFO] scouts.ats —   ✅ NEW  [3] Oscar Health — Senior Manager, Technical Accounting
+2026-03-18 08:16:53 [INFO] scouts.ats —   ✅ NEW  [2] Oscar Health — Senior Software Engineer, Cloud Infrastructure / SRE
+2026-03-18 08:16:53 [INFO] scouts.ats —   ✅ NEW  [2] Oscar Health — Senior Specialist, Marketing
+2026-03-18 08:16:54 [INFO] scouts.ats — Greenhouse → Squarespace (squarespace)
+2026-03-18 08:16:54 [INFO] scouts.ats —   ✅ NEW  [2] Squarespace — Product Design Manager, Websites 
+2026-03-18 08:16:54 [INFO] scouts.ats — Greenhouse → Justworks (justworks)
+2026-03-18 08:16:55 [INFO] scouts.ats —   ✅ NEW  [6] Justworks — Director, Health Underwriting
+2026-03-18 08:16:55 [INFO] scouts.ats —   ✅ NEW  [6] Justworks — Head of Pricing and Packaging, PMM
+2026-03-18 08:16:55 [INFO] scouts.ats —   ✅ NEW  [2] Justworks — Project Manager, Risk & Insurance
+2026-03-18 08:16:55 [INFO] scouts.ats —   ✅ NEW  [4] Justworks — Sales Analyst, Funnel & Revenue Optimization
+2026-03-18 08:16:55 [INFO] scouts.ats —   ✅ NEW  [2] Justworks — Software Engineer
+2026-03-18 08:16:55 [INFO] scouts.ats — Greenhouse → Betterment (betterment)
+2026-03-18 08:16:56 [INFO] scouts.ats — Greenhouse → Spring Health (springhealth)
+2026-03-18 08:16:56 [ERROR] scouts.ats — Greenhouse[springhealth] fetch error: 404 Client Error: Not Found for url: https://boards-api.greenhouse.io/v1/boards/springhealth/jobs?content=true
+2026-03-18 08:16:56 [INFO] scouts.ats — Greenhouse → Yotpo (yotpo)
+2026-03-18 08:16:57 [INFO] scouts.ats —   ✅ NEW  [4] Yotpo — Implementation Engineer
+2026-03-18 08:16:57 [INFO] scouts.ats — Greenhouse → Veeva Systems (veeva)
+2026-03-18 08:16:57 [ERROR] scouts.ats — Greenhouse[veeva] fetch error: 404 Client Error: Not Found for url: https://boards-api.greenhouse.io/v1/boards/veeva/jobs?content=true
+2026-03-18 08:16:58 [INFO] scouts.ats — Greenhouse → Cohere (cohere)
+2026-03-18 08:16:58 [ERROR] scouts.ats — Greenhouse[cohere] fetch error: 404 Client Error: Not Found for url: https://boards-api.greenhouse.io/v1/boards/cohere/jobs?content=true
+2026-03-18 08:16:58 [INFO] scouts.ats — Greenhouse → Databricks (databricks)
+2026-03-18 08:16:58 [INFO] scouts.ats —   ✅ NEW  [3] Databricks — Commercial Counsel
+2026-03-18 08:16:58 [INFO] scouts.ats —   ✅ NEW  [2] Databricks — Delivery Solutions Architect
+2026-03-18 08:16:58 [INFO] scouts.ats —   ✅ NEW  [3] Databricks — Director, Strategy & Execution
+2026-03-18 08:16:58 [INFO] scouts.ats —   ✅ NEW  [5] Databricks — Lakebase Account Executive
+2026-03-18 08:16:58 [INFO] scouts.ats —   ✅ NEW  [2] Databricks — Named Core Account Executive
+2026-03-18 08:16:58 [INFO] scouts.ats —   ✅ NEW  [2] Databricks — Resident Solutions Architect - Financial Services
+2026-03-18 08:16:59 [INFO] scouts.ats —   ✅ NEW  [6] Databricks — Senior Manager, Partner Strategy 
+2026-03-18 08:16:59 [INFO] scouts.ats —   ✅ NEW  [2] Databricks — Solutions Architect - Emerging Enterprise (Startups) 
+2026-03-18 08:16:59 [INFO] scouts.ats —   ✅ NEW  [2] Databricks — Sr. Solutions Architect - Financial Services (Strategic Data Providers)
+2026-03-18 08:16:59 [INFO] scouts.ats —   ✅ NEW  [2] Databricks — Sr. Solutions Architect - Financial Services (Wealth & Asset Management)
+2026-03-18 08:16:59 [INFO] scouts.ats —   ✅ NEW  [2] Databricks — Sr. Staff People Partner
+2026-03-18 08:16:59 [INFO] scouts.ats —   ✅ NEW  [3] Databricks — Strategic Core Account Executive
+2026-03-18 08:16:59 [INFO] scouts.ats — ATS scout done | found=4732 new=130 dedup=4226 low_score=925 errors=0
+2026-03-18 08:16:59 [INFO] scouts.orchestrator — Orchestrator done | run_id=056aef5710f3 total_found=4796 total_new=194
+2026-03-18 08:16:59 [INFO] __main__ — Scout results: {'boards': {'jobs_found': 64, 'jobs_new': 64, 'jobs_skipped': 14, 'jobs_excluded': 1, 'search_errors': 0, 'by_term': {'head of partnerships web3 crypto': {'found': 3, 'new': 2}, 'VP business development blockchain': {'found': 23, 'new': 18}, 'director of ecosystem crypto defi': {'found': 3, 'new': 1}, 'VP growth web3 fintech': {'found': 20, 'new': 20}, 'head of BD crypto protocol': {'found': 0, 'new': 0}, 'director partnerships crypto': {'found': 23, 'new': 17}, 'VP partnerships web3 NYC': {'found': 0, 'new': 0}, 'ecosystem lead blockchain protocol': {'found': 7, 'new': 6}}, 'by_board': {'linkedin': 59, 'indeed': 5}}, 'ats': {'jobs_found': 4732, 'jobs_new': 130, 'jobs_skipped_dedup': 4226, 'jobs_skipped_low_score': 925, 'jobs_skipped_location': 1564, 'errors': 0, 'companies_queried': 103}, '_summary': {'run_id': '056aef5710f3', 'run_type': 'full', 'total_found': 4796, 'total_new': 194, 'completed_at': '2026-03-18T12:16:59.434632'}}
+2026-03-18 08:16:59 [INFO] __main__ — Ranking new jobs...
+2026-03-18 08:16:59 [ERROR] __main__ — Error during orchestration: "Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted"
+Traceback (most recent call last):
+  File "/Users/jarvis/.openclaw/workspace/projects/job-hunt/scraper/daily_job_hunt_cron.py", line 132, in main
+    ranked = rank_new_jobs(limit=args.limit)
+  File "/Users/jarvis/.openclaw/workspace/projects/job-hunt/scraper/agents/ranking_agent.py", line 203, in rank_new_jobs
+    rankings = call_claude(jobs)
+  File "/Users/jarvis/.openclaw/workspace/projects/job-hunt/scraper/agents/ranking_agent.py", line 155, in call_claude
+    response = client.messages.create(
+        model="claude-haiku-4-5",
+        max_tokens=2048,
+        messages=[{"role": "user", "content": prompt}],
+    )
+  File "/Users/jarvis/.openclaw/workspace/projects/job-hunt/.venv/lib/python3.14/site-packages/anthropic/_utils/_utils.py", line 282, in wrapper
+    return func(*args, **kwargs)
+  File "/Users/jarvis/.openclaw/workspace/projects/job-hunt/.venv/lib/python3.14/site-packages/anthropic/resources/messages/messages.py", line 996, in create
+    return self._post(
+           ~~~~~~~~~~^
+        "/v1/messages",
+        ^^^^^^^^^^^^^^^
+    ...<30 lines>...
+        stream_cls=Stream[RawMessageStreamEvent],
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/jarvis/.openclaw/workspace/projects/job-hunt/.venv/lib/python3.14/site-packages/anthropic/_base_client.py", line 1364, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+                           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jarvis/.openclaw/workspace/projects/job-hunt/.venv/lib/python3.14/site-packages/anthropic/_base_client.py", line 1058, in request
+    request = self._build_request(options, retries_taken=retries_taken)
+  File "/Users/jarvis/.openclaw/workspace/projects/job-hunt/.venv/lib/python3.14/site-packages/anthropic/_base_client.py", line 521, in _build_request
+    headers = self._build_headers(options, retries_taken=retries_taken)
+  File "/Users/jarvis/.openclaw/workspace/projects/job-hunt/.venv/lib/python3.14/site-packages/anthropic/_base_client.py", line 451, in _build_headers
+    self._validate_headers(headers_dict, custom_headers)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jarvis/.openclaw/workspace/projects/job-hunt/.venv/lib/python3.14/site-packages/anthropic/_client.py", line 196, in _validate_headers
+    raise TypeError(
+        '"Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted"'
+    )
+TypeError: "Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted"
+[ranking] Fetching up to 20 new jobs from last 24h…
+[ranking] Found 20 new jobs. Ranking with Claude…
+[ranking] Sending 20 jobs to Claude haiku-4-5…
+[notify] ⚠️  No SLACK_WEBHOOK_URL configured.
+[notify] Message (not sent):
+❌ Job Hunt Error: "Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted"
+Traceback (most recent call last):
+  File "/Users/jarvis/.openclaw/workspace/projects/job-hunt/scraper/daily_job_hunt_cron.py", line 185, in <module>
+    main(args)
+    ~~~~^^^^^^
+  File "/Users/jarvis/.openclaw/workspace/projects/job-hunt/scraper/daily_job_hunt_cron.py", line 132, in main
+    ranked = rank_new_jobs(limit=args.limit)
+  File "/Users/jarvis/.openclaw/workspace/projects/job-hunt/scraper/agents/ranking_agent.py", line 203, in rank_new_jobs
+    rankings = call_claude(jobs)
+  File "/Users/jarvis/.openclaw/workspace/projects/job-hunt/scraper/agents/ranking_agent.py", line 155, in call_claude
+    response = client.messages.create(
+        model="claude-haiku-4-5",
+        max_tokens=2048,
+        messages=[{"role": "user", "content": prompt}],
+    )
+  File "/Users/jarvis/.openclaw/workspace/projects/job-hunt/.venv/lib/python3.14/site-packages/anthropic/_utils/_utils.py", line 282, in wrapper
+    return func(*args, **kwargs)
+  File "/Users/jarvis/.openclaw/workspace/projects/job-hunt/.venv/lib/python3.14/site-packages/anthropic/resources/messages/messages.py", line 996, in create
+    return self._post(
+           ~~~~~~~~~~^
+        "/v1/messages",
+        ^^^^^^^^^^^^^^^
+    ...<30 lines>...
+        stream_cls=Stream[RawMessageStreamEvent],
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/jarvis/.openclaw/workspace/projects/job-hunt/.venv/lib/python3.14/site-packages/anthropic/_base_client.py", line 1364, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+                           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jarvis/.openclaw/workspace/projects/job-hunt/.venv/lib/python3.14/site-packages/anthropic/_base_client.py", line 1058, in request
+    request = self._build_request(options, retries_taken=retries_taken)
+  File "/Users/jarvis/.openclaw/workspace/projects/job-hunt/.venv/lib/python3.14/site-packages/anthropic/_base_client.py", line 521, in _build_request
+    headers = self._build_headers(options, retries_taken=retries_taken)
+  File "/Users/jarvis/.openclaw/workspace/projects/job-hunt/.venv/lib/python3.14/site-packages/anthropic/_base_client.py", line 451, in _build_headers
+    self._validate_headers(headers_dict, custom_headers)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jarvis/.openclaw/workspace/projects/job-hunt/.venv/lib/python3.14/site-packages/anthropic/_client.py", line 196, in _validate_headers
+    raise TypeError(
+        '"Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted"'
+    )
+TypeError: "Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted"
+=== Daily Job Hunt Cron Start: Wed Mar 18 08:19:15 EDT 2026 ===
+Activating venv...
+Running daily job hunt orchestrator...
+2026-03-18 08:19:16 [INFO] __main__ — Starting daily job hunt orchestration...
+2026-03-18 08:19:16 [INFO] __main__ — Running job scouts...
+2026-03-18 08:19:16 [INFO] scouts.orchestrator — Orchestrator start | type=full dry_run=False parallel=True
+2026-03-18 08:19:16 [INFO] scouts.orchestrator — Running scouts in parallel (threads)
+2026-03-18 08:19:16 [INFO] scouts.utils — Loading config from /Users/jarvis/.openclaw/workspace/projects/job-hunt/scraper/config.yaml
+2026-03-18 08:19:16 [INFO] scouts.ats — ATS scout run_id=43d055f168ac | 31 Lever + 72 GH companies
+2026-03-18 08:19:16 [INFO] scouts.ats — Lever → AssemblyAI (assemblyai)
+2026-03-18 08:19:16 [INFO] scouts.board — Searching: 'head of partnerships web3 crypto' on ['linkedin', 'indeed', 'glassdoor']
+2026-03-18 08:19:16 [ERROR] scouts.ats — Lever[assemblyai] fetch error: 404 Client Error: Not Found for url: https://api.lever.co/v0/postings/assemblyai?mode=json
+2026-03-18 08:19:16,740 - ERROR - JobSpy:Glassdoor - Glassdoor: Error encountered in API response
+2026-03-18 08:19:16 [INFO] scouts.ats — Lever → Ondo Finance (ondo)
+2026-03-18 08:19:20,727 - INFO - JobSpy:Linkedin - finished scraping
+2026-03-18 08:19:20 [INFO] scouts.board —   'head of partnerships web3 crypto' → 3 found, 0 new
+2026-03-18 08:19:20 [INFO] scouts.board — Searching: 'VP business development blockchain' on ['linkedin', 'indeed', 'glassdoor']
+2026-03-18 08:19:21,089 - ERROR - JobSpy:Glassdoor - Glassdoor: Error encountered in API response
+2026-03-18 08:19:22 [ERROR] scouts.ats — Lever[ondo] fetch error: 404 Client Error: Not Found for url: https://api.lever.co/v0/postings/ondo?mode=json
+2026-03-18 08:19:22 [INFO] scouts.ats — Lever → Blockdaemon (blockdaemon)
+2026-03-18 08:19:23 [ERROR] scouts.ats — Lever[blockdaemon] fetch error: 404 Client Error: Not Found for url: https://api.lever.co/v0/postings/blockdaemon?mode=json
+2026-03-18 08:19:23 [INFO] scouts.ats — Lever → Arbitrum Foundation (arbitrumfoundation)
+2026-03-18 08:19:30 [INFO] scouts.ats — Lever → Optimism (optimism)
+2026-03-18 08:19:30 [ERROR] scouts.ats — Lever[optimism] fetch error: 404 Client Error: Not Found for url: https://api.lever.co/v0/postings/optimism?mode=json
+2026-03-18 08:19:30 [INFO] scouts.board —   'VP business development blockchain' → 23 found, 1 new
+2026-03-18 08:19:30 [INFO] scouts.board — Searching: 'director of ecosystem crypto defi' on ['linkedin', 'indeed', 'glassdoor']
+2026-03-18 08:19:31 [INFO] scouts.ats — Lever → Solana Foundation (solana)
+2026-03-18 08:19:31,288 - ERROR - JobSpy:Glassdoor - Glassdoor: Error encountered in API response
+2026-03-18 08:19:31 [ERROR] scouts.ats — Lever[solana] fetch error: 404 Client Error: Not Found for url: https://api.lever.co/v0/postings/solana?mode=json
+2026-03-18 08:19:31 [INFO] scouts.ats — Lever → Chainlink Labs (chainlink)
+2026-03-18 08:19:32 [ERROR] scouts.ats — Lever[chainlink] fetch error: 404 Client Error: Not Found for url: https://api.lever.co/v0/postings/chainlink?mode=json
+2026-03-18 08:19:32 [INFO] scouts.ats — Lever → MoonPay (moonpay)
+2026-03-18 08:19:34 [INFO] scouts.ats — Lever → Transak (transak)
+2026-03-18 08:19:35 [ERROR] scouts.ats — Lever[transak] fetch error: 404 Client Error: Not Found for url: https://api.lever.co/v0/postings/transak?mode=json
+2026-03-18 08:19:35 [INFO] scouts.ats — Lever → Yuga Labs (yugalabs)
+2026-03-18 08:19:36 [ERROR] scouts.ats — Lever[yugalabs] fetch error: 404 Client Error: Not Found for url: https://api.lever.co/v0/postings/yugalabs?mode=json
+2026-03-18 08:19:36 [INFO] scouts.board —   'director of ecosystem crypto defi' → 3 found, 0 new
+2026-03-18 08:19:36 [INFO] scouts.board — Searching: 'VP growth web3 fintech' on ['linkedin', 'indeed', 'glassdoor']
+2026-03-18 08:19:36 [INFO] scouts.ats — Lever → OpenSea (opensea)
+2026-03-18 08:19:36,751 - ERROR - JobSpy:Glassdoor - Glassdoor: Error encountered in API response
+2026-03-18 08:19:37 [ERROR] scouts.ats — Lever[opensea] fetch error: 404 Client Error: Not Found for url: https://api.lever.co/v0/postings/opensea?mode=json
+2026-03-18 08:19:37 [INFO] scouts.ats — Lever → Manifold (manifold)
+2026-03-18 08:19:37 [ERROR] scouts.ats — Lever[manifold] fetch error: 404 Client Error: Not Found for url: https://api.lever.co/v0/postings/manifold?mode=json
+2026-03-18 08:19:38 [INFO] scouts.ats — Lever → Stripe (stripe)
+2026-03-18 08:19:40 [ERROR] scouts.ats — Lever[stripe] fetch error: 404 Client Error: Not Found for url: https://api.lever.co/v0/postings/stripe?mode=json
+2026-03-18 08:19:40 [INFO] scouts.ats — Lever → Rippling (rippling)
+2026-03-18 08:19:40 [ERROR] scouts.ats — Lever[rippling] fetch error: 404 Client Error: Not Found for url: https://api.lever.co/v0/postings/rippling?mode=json
+2026-03-18 08:19:41 [INFO] scouts.ats — Lever → Mercury (mercury)
+2026-03-18 08:19:41 [ERROR] scouts.ats — Lever[mercury] fetch error: 404 Client Error: Not Found for url: https://api.lever.co/v0/postings/mercury?mode=json
+2026-03-18 08:19:42 [INFO] scouts.ats — Lever → Arc (arc)
+2026-03-18 08:19:42 [ERROR] scouts.ats — Lever[arc] fetch error: 404 Client Error: Not Found for url: https://api.lever.co/v0/postings/arc?mode=json
+2026-03-18 08:19:42 [INFO] scouts.ats — Lever → Deel (deel)
+2026-03-18 08:19:43 [ERROR] scouts.ats — Lever[deel] fetch error: 404 Client Error: Not Found for url: https://api.lever.co/v0/postings/deel?mode=json
+2026-03-18 08:19:43 [INFO] scouts.ats — Lever → Weights & Biases (wandb)
+2026-03-18 08:19:44 [ERROR] scouts.ats — Lever[wandb] fetch error: 404 Client Error: Not Found for url: https://api.lever.co/v0/postings/wandb?mode=json
+2026-03-18 08:19:44 [INFO] scouts.ats — Lever → Pinecone (pinecone)
+2026-03-18 08:19:44 [ERROR] scouts.ats — Lever[pinecone] fetch error: 404 Client Error: Not Found for url: https://api.lever.co/v0/postings/pinecone?mode=json
+2026-03-18 08:19:45 [INFO] scouts.ats — Lever → Weaviate (weaviate)
+2026-03-18 08:19:45 [ERROR] scouts.ats — Lever[weaviate] fetch error: 404 Client Error: Not Found for url: https://api.lever.co/v0/postings/weaviate?mode=json
+2026-03-18 08:19:46 [INFO] scouts.ats — Lever → LangChain (langchain)
+2026-03-18 08:19:46 [ERROR] scouts.ats — Lever[langchain] fetch error: 404 Client Error: Not Found for url: https://api.lever.co/v0/postings/langchain?mode=json
+2026-03-18 08:19:47 [INFO] scouts.ats — Lever → Pika Labs (pikalabs)
+2026-03-18 08:19:47 [ERROR] scouts.ats — Lever[pikalabs] fetch error: 404 Client Error: Not Found for url: https://api.lever.co/v0/postings/pikalabs?mode=json
+2026-03-18 08:19:47 [INFO] scouts.ats — Lever → Vercel (vercel)
+2026-03-18 08:19:48 [INFO] scouts.board —   'VP growth web3 fintech' → 20 found, 0 new
+2026-03-18 08:19:48 [INFO] scouts.board — Searching: 'head of BD crypto protocol' on ['linkedin', 'indeed', 'glassdoor']
+2026-03-18 08:19:48 [ERROR] scouts.ats — Lever[vercel] fetch error: 404 Client Error: Not Found for url: https://api.lever.co/v0/postings/vercel?mode=json
+2026-03-18 08:19:48,444 - ERROR - JobSpy:Glassdoor - Glassdoor: Error encountered in API response
+2026-03-18 08:19:48 [INFO] scouts.board —   'head of BD crypto protocol' → 0 found, 0 new
+2026-03-18 08:19:48 [INFO] scouts.board — Searching: 'director partnerships crypto' on ['linkedin', 'indeed', 'glassdoor']
+2026-03-18 08:19:48 [INFO] scouts.ats — Lever → Coda (coda)
+2026-03-18 08:19:48,843 - ERROR - JobSpy:Glassdoor - Glassdoor: Error encountered in API response
+2026-03-18 08:19:49 [ERROR] scouts.ats — Lever[coda] fetch error: 404 Client Error: Not Found for url: https://api.lever.co/v0/postings/coda?mode=json
+2026-03-18 08:19:49 [INFO] scouts.ats — Lever → PlanetScale (planetscale)
+2026-03-18 08:19:50 [ERROR] scouts.ats — Lever[planetscale] fetch error: 404 Client Error: Not Found for url: https://api.lever.co/v0/postings/planetscale?mode=json
+2026-03-18 08:19:50 [INFO] scouts.ats — Lever → Neon (neon)
+2026-03-18 08:19:52 [INFO] scouts.ats — Lever → Petal (petal)
+2026-03-18 08:19:58 [ERROR] scouts.ats — Lever[petal] fetch error: 404 Client Error: Not Found for url: https://api.lever.co/v0/postings/petal?mode=json
+2026-03-18 08:19:58 [INFO] scouts.ats — Lever → Attentive (attentive)
+2026-03-18 08:19:59 [INFO] scouts.ats — Lever → Anthropic (anthropic)
+2026-03-18 08:20:00 [ERROR] scouts.ats — Lever[anthropic] fetch error: 404 Client Error: Not Found for url: https://api.lever.co/v0/postings/anthropic?mode=json
+2026-03-18 08:20:00 [INFO] scouts.ats — Lever → Hugging Face (huggingface)
+2026-03-18 08:20:01 [ERROR] scouts.ats — Lever[huggingface] fetch error: 404 Client Error: Not Found for url: https://api.lever.co/v0/postings/huggingface?mode=json
+2026-03-18 08:20:01 [INFO] scouts.ats — Lever → Mistral AI (mistralai)
+2026-03-18 08:20:01 [ERROR] scouts.ats — Lever[mistralai] fetch error: 404 Client Error: Not Found for url: https://api.lever.co/v0/postings/mistralai?mode=json
+2026-03-18 08:20:02 [INFO] scouts.board —   'director partnerships crypto' → 23 found, 0 new
+2026-03-18 08:20:02 [INFO] scouts.board — Searching: 'VP partnerships web3 NYC' on ['linkedin', 'indeed', 'glassdoor']
+2026-03-18 08:20:02 [INFO] scouts.ats — Greenhouse → Coinbase (coinbase)
+2026-03-18 08:20:02,643 - ERROR - JobSpy:Glassdoor - Glassdoor: Error encountered in API response
+2026-03-18 08:20:02 [INFO] scouts.board —   'VP partnerships web3 NYC' → 0 found, 0 new
+2026-03-18 08:20:02 [INFO] scouts.board — Searching: 'ecosystem lead blockchain protocol' on ['linkedin', 'indeed', 'glassdoor']
+2026-03-18 08:20:02,991 - ERROR - JobSpy:Glassdoor - Glassdoor: Error encountered in API response
+2026-03-18 08:20:03 [INFO] scouts.ats — Greenhouse → Kraken (kraken)
+2026-03-18 08:20:03 [ERROR] scouts.ats — Greenhouse[kraken] fetch error: 404 Client Error: Not Found for url: https://boards-api.greenhouse.io/v1/boards/kraken/jobs?content=true
+2026-03-18 08:20:03 [INFO] scouts.ats — Greenhouse → Chainalysis (chainalysis)
+2026-03-18 08:20:03 [ERROR] scouts.ats — Greenhouse[chainalysis] fetch error: 404 Client Error: Not Found for url: https://boards-api.greenhouse.io/v1/boards/chainalysis/jobs?content=true
+2026-03-18 08:20:04 [INFO] scouts.ats — Greenhouse → Consensys (consensys)
+2026-03-18 08:20:04 [INFO] scouts.ats — Greenhouse → Ripple (ripple)
+2026-03-18 08:20:05 [INFO] scouts.ats — Greenhouse → Uniswap Labs (uniswaplabs)
+2026-03-18 08:20:05 [ERROR] scouts.ats — Greenhouse[uniswaplabs] fetch error: 404 Client Error: Not Found for url: https://boards-api.greenhouse.io/v1/boards/uniswaplabs/jobs?content=true
+2026-03-18 08:20:06 [INFO] scouts.ats — Greenhouse → Fireblocks (fireblocks)
+2026-03-18 08:20:06 [INFO] scouts.ats — Greenhouse → dYdX (dydx)
+2026-03-18 08:20:06 [ERROR] scouts.ats — Greenhouse[dydx] fetch error: 404 Client Error: Not Found for url: https://boards-api.greenhouse.io/v1/boards/dydx/jobs?content=true
+2026-03-18 08:20:07 [INFO] scouts.ats — Greenhouse → Bitpanda (bitpanda)
+2026-03-18 08:20:07 [INFO] scouts.board —   'ecosystem lead blockchain protocol' → 7 found, 0 new
+2026-03-18 08:20:08 [INFO] scouts.ats — Greenhouse → Gemini (gemini)
+2026-03-18 08:20:08 [INFO] scouts.ats — Greenhouse → Galaxy Digital (galaxydigital)
+2026-03-18 08:20:08 [ERROR] scouts.ats — Greenhouse[galaxydigital] fetch error: 404 Client Error: Not Found for url: https://boards-api.greenhouse.io/v1/boards/galaxydigital/jobs?content=true
+2026-03-18 08:20:09 [INFO] scouts.ats — Greenhouse → Paxos (paxos)
+2026-03-18 08:20:09 [ERROR] scouts.ats — Greenhouse[paxos] fetch error: 404 Client Error: Not Found for url: https://boards-api.greenhouse.io/v1/boards/paxos/jobs?content=true
+2026-03-18 08:20:09 [INFO] scouts.ats — Greenhouse → BitGo (bitgo)
+2026-03-18 08:20:10 [INFO] scouts.ats — Greenhouse → Aptos Labs (aptoslabs)
+2026-03-18 08:20:11 [INFO] scouts.ats — Greenhouse → Sui Foundation (mysten)
+2026-03-18 08:20:11 [ERROR] scouts.ats — Greenhouse[mysten] fetch error: 404 Client Error: Not Found for url: https://boards-api.greenhouse.io/v1/boards/mysten/jobs?content=true
+2026-03-18 08:20:12 [INFO] scouts.ats — Greenhouse → Starkware (starkware)
+2026-03-18 08:20:12 [ERROR] scouts.ats — Greenhouse[starkware] fetch error: 404 Client Error: Not Found for url: https://boards-api.greenhouse.io/v1/boards/starkware/jobs?content=true
+2026-03-18 08:20:12 [INFO] scouts.ats — Greenhouse → Polygon (polygontechnology)
+2026-03-18 08:20:12 [ERROR] scouts.ats — Greenhouse[polygontechnology] fetch error: 404 Client Error: Not Found for url: https://boards-api.greenhouse.io/v1/boards/polygontechnology/jobs?content=true
+2026-03-18 08:20:13 [INFO] scouts.ats — Greenhouse → Ava Labs (avalabs)
+2026-03-18 08:20:13 [INFO] scouts.ats — Greenhouse → Near Protocol (near)
+2026-03-18 08:20:13 [ERROR] scouts.ats — Greenhouse[near] fetch error: 404 Client Error: Not Found for url: https://boards-api.greenhouse.io/v1/boards/near/jobs?content=true
+2026-03-18 08:20:14 [INFO] scouts.ats — Greenhouse → Hedera (swirldslabs)
+2026-03-18 08:20:14 [ERROR] scouts.ats — Greenhouse[swirldslabs] fetch error: 404 Client Error: Not Found for url: https://boards-api.greenhouse.io/v1/boards/swirldslabs/jobs?content=true
+2026-03-18 08:20:14 [INFO] scouts.ats — Greenhouse → The Graph (thegraph)
+2026-03-18 08:20:15 [ERROR] scouts.ats — Greenhouse[thegraph] fetch error: 404 Client Error: Not Found for url: https://boards-api.greenhouse.io/v1/boards/thegraph/jobs?content=true
+2026-03-18 08:20:15 [INFO] scouts.ats — Greenhouse → Immutable (immutable)
+2026-03-18 08:20:15 [ERROR] scouts.ats — Greenhouse[immutable] fetch error: 404 Client Error: Not Found for url: https://boards-api.greenhouse.io/v1/boards/immutable/jobs?content=true
+2026-03-18 08:20:16 [INFO] scouts.ats — Greenhouse → Sky Mavis (skymavis)
+2026-03-18 08:20:16 [ERROR] scouts.ats — Greenhouse[skymavis] fetch error: 404 Client Error: Not Found for url: https://boards-api.greenhouse.io/v1/boards/skymavis/jobs?content=true
+2026-03-18 08:20:16 [INFO] scouts.ats — Greenhouse → Magic Eden (magiceden)
+2026-03-18 08:20:16 [ERROR] scouts.ats — Greenhouse[magiceden] fetch error: 404 Client Error: Not Found for url: https://boards-api.greenhouse.io/v1/boards/magiceden/jobs?content=true
+2026-03-18 08:20:17 [INFO] scouts.ats — Greenhouse → Blur (blur)
+2026-03-18 08:20:17 [ERROR] scouts.ats — Greenhouse[blur] fetch error: 404 Client Error: Not Found for url: https://boards-api.greenhouse.io/v1/boards/blur/jobs?content=true
+2026-03-18 08:20:17 [INFO] scouts.ats — Greenhouse → Brex (brex)
+2026-03-18 08:20:18 [INFO] scouts.ats — Greenhouse → Ramp (ramp)
+2026-03-18 08:20:19 [ERROR] scouts.ats — Greenhouse[ramp] fetch error: 404 Client Error: Not Found for url: https://boards-api.greenhouse.io/v1/boards/ramp/jobs?content=true
+2026-03-18 08:20:19 [INFO] scouts.ats — Greenhouse → Plaid (plaid)
+2026-03-18 08:20:19 [ERROR] scouts.ats — Greenhouse[plaid] fetch error: 404 Client Error: Not Found for url: https://boards-api.greenhouse.io/v1/boards/plaid/jobs?content=true
+2026-03-18 08:20:20 [INFO] scouts.ats — Greenhouse → Carta (carta)
+2026-03-18 08:20:20 [INFO] scouts.ats — Greenhouse → Chime (chime)
+2026-03-18 08:20:21 [INFO] scouts.ats — Greenhouse → Marqeta (marqeta)
+2026-03-18 08:20:21 [INFO] scouts.ats — Greenhouse → Adyen (adyen)
+2026-03-18 08:20:23 [INFO] scouts.ats —   ✅ NEW  [8] Adyen — Commercial Lead - Agentic Commerce
+2026-03-18 08:20:23 [INFO] scouts.ats —   ✅ NEW  [6] Adyen — Head of Product Analytics, Customer Experience
+2026-03-18 08:20:23 [INFO] scouts.ats — Greenhouse → Klarna (klarna)
+2026-03-18 08:20:23 [ERROR] scouts.ats — Greenhouse[klarna] fetch error: 404 Client Error: Not Found for url: https://boards-api.greenhouse.io/v1/boards/klarna/jobs?content=true
+2026-03-18 08:20:24 [INFO] scouts.ats — Greenhouse → Pipe (pipe)
+2026-03-18 08:20:25 [ERROR] scouts.ats — Greenhouse[pipe] fetch error: 404 Client Error: Not Found for url: https://boards-api.greenhouse.io/v1/boards/pipe/jobs?content=true
+2026-03-18 08:20:26 [INFO] scouts.ats — Greenhouse → Payoneer (payoneer)
+2026-03-18 08:20:27 [INFO] scouts.ats — Greenhouse → OpenAI (openai)
+2026-03-18 08:20:27 [ERROR] scouts.ats — Greenhouse[openai] fetch error: 404 Client Error: Not Found for url: https://boards-api.greenhouse.io/v1/boards/openai/jobs?content=true
+2026-03-18 08:20:27 [INFO] scouts.ats — Greenhouse → Scale AI (scaleai)
+2026-03-18 08:20:28 [INFO] scouts.ats — Greenhouse → Snowflake (snowflake)
+2026-03-18 08:20:28 [ERROR] scouts.ats — Greenhouse[snowflake] fetch error: 404 Client Error: Not Found for url: https://boards-api.greenhouse.io/v1/boards/snowflake/jobs?content=true
+2026-03-18 08:20:28 [INFO] scouts.ats — Greenhouse → Eleven Labs (elevenlabs)
+2026-03-18 08:20:28 [ERROR] scouts.ats — Greenhouse[elevenlabs] fetch error: 404 Client Error: Not Found for url: https://boards-api.greenhouse.io/v1/boards/elevenlabs/jobs?content=true
+2026-03-18 08:20:29 [INFO] scouts.ats — Greenhouse → Perplexity AI (perplexityai)
+2026-03-18 08:20:29 [ERROR] scouts.ats — Greenhouse[perplexityai] fetch error: 404 Client Error: Not Found for url: https://boards-api.greenhouse.io/v1/boards/perplexityai/jobs?content=true
+2026-03-18 08:20:29 [INFO] scouts.ats — Greenhouse → Midjourney (midjourney)
+2026-03-18 08:20:29 [ERROR] scouts.ats — Greenhouse[midjourney] fetch error: 404 Client Error: Not Found for url: https://boards-api.greenhouse.io/v1/boards/midjourney/jobs?content=true
+2026-03-18 08:20:30 [INFO] scouts.ats — Greenhouse → Stability AI (stabilityai)
+2026-03-18 08:20:30 [INFO] scouts.ats — Greenhouse → Runway (runwayml)
+2026-03-18 08:20:33 [INFO] scouts.ats — Greenhouse → Replit (replit)
+2026-03-18 08:20:34 [ERROR] scouts.ats — Greenhouse[replit] fetch error: 404 Client Error: Not Found for url: https://boards-api.greenhouse.io/v1/boards/replit/jobs?content=true
+2026-03-18 08:20:34 [INFO] scouts.ats — Greenhouse → Notion (notion)
+2026-03-18 08:20:34 [ERROR] scouts.ats — Greenhouse[notion] fetch error: 404 Client Error: Not Found for url: https://boards-api.greenhouse.io/v1/boards/notion/jobs?content=true
+2026-03-18 08:20:35 [INFO] scouts.ats — Greenhouse → Figma (figma)
+2026-03-18 08:20:35 [INFO] scouts.ats — Greenhouse → Retool (retool)
+2026-03-18 08:20:35 [ERROR] scouts.ats — Greenhouse[retool] fetch error: 404 Client Error: Not Found for url: https://boards-api.greenhouse.io/v1/boards/retool/jobs?content=true
+2026-03-18 08:20:36 [INFO] scouts.ats — Greenhouse → Whatnot (whatnot)
+2026-03-18 08:20:36 [ERROR] scouts.ats — Greenhouse[whatnot] fetch error: 404 Client Error: Not Found for url: https://boards-api.greenhouse.io/v1/boards/whatnot/jobs?content=true
+2026-03-18 08:20:36 [INFO] scouts.ats — Greenhouse → Vanta (vanta)
+2026-03-18 08:20:36 [ERROR] scouts.ats — Greenhouse[vanta] fetch error: 404 Client Error: Not Found for url: https://boards-api.greenhouse.io/v1/boards/vanta/jobs?content=true
+2026-03-18 08:20:37 [INFO] scouts.ats — Greenhouse → Persona (persona)
+2026-03-18 08:20:37 [ERROR] scouts.ats — Greenhouse[persona] fetch error: 404 Client Error: Not Found for url: https://boards-api.greenhouse.io/v1/boards/persona/jobs?content=true
+2026-03-18 08:20:37 [INFO] scouts.ats — Greenhouse → Segment (segment)
+2026-03-18 08:20:37 [ERROR] scouts.ats — Greenhouse[segment] fetch error: 404 Client Error: Not Found for url: https://boards-api.greenhouse.io/v1/boards/segment/jobs?content=true
+2026-03-18 08:20:38 [INFO] scouts.ats — Greenhouse → Amplitude (amplitude)
+2026-03-18 08:20:38 [INFO] scouts.ats — Greenhouse → Mixpanel (mixpanel)
+2026-03-18 08:20:39 [INFO] scouts.ats — Greenhouse → Intercom (intercom)
+2026-03-18 08:20:40 [INFO] scouts.ats — Greenhouse → Zendesk (zendesk)
+2026-03-18 08:20:40 [ERROR] scouts.ats — Greenhouse[zendesk] fetch error: 404 Client Error: Not Found for url: https://boards-api.greenhouse.io/v1/boards/zendesk/jobs?content=true
+2026-03-18 08:20:40 [INFO] scouts.ats — Greenhouse → HubSpot (hubspot)
+2026-03-18 08:20:41 [INFO] scouts.ats — Greenhouse → Salesforce (salesforce)
+2026-03-18 08:20:41 [ERROR] scouts.ats — Greenhouse[salesforce] fetch error: 404 Client Error: Not Found for url: https://boards-api.greenhouse.io/v1/boards/salesforce/jobs?content=true
+2026-03-18 08:20:41 [INFO] scouts.ats — Greenhouse → Cloudflare (cloudflare)
+2026-03-18 08:20:42 [INFO] scouts.ats — Greenhouse → HashiCorp (hashicorp)
+2026-03-18 08:20:43 [ERROR] scouts.ats — Greenhouse[hashicorp] fetch error: 404 Client Error: Not Found for url: https://boards-api.greenhouse.io/v1/boards/hashicorp/jobs?content=true
+2026-03-18 08:20:43 [INFO] scouts.ats — Greenhouse → Confluent (confluent)
+2026-03-18 08:20:43 [ERROR] scouts.ats — Greenhouse[confluent] fetch error: 404 Client Error: Not Found for url: https://boards-api.greenhouse.io/v1/boards/confluent/jobs?content=true
+2026-03-18 08:20:43 [INFO] scouts.ats — Greenhouse → Elastic (elastic)
+2026-03-18 08:20:44 [INFO] scouts.ats — Greenhouse → MongoDB (mongodb)
+2026-03-18 08:20:45 [INFO] scouts.ats — Greenhouse → Supabase (supabase)
+2026-03-18 08:20:45 [ERROR] scouts.ats — Greenhouse[supabase] fetch error: 404 Client Error: Not Found for url: https://boards-api.greenhouse.io/v1/boards/supabase/jobs?content=true
+=== Daily Job Hunt Cron Start: Wed Mar 18 08:20:45 EDT 2026 ===
+Activating venv...
+Running daily job hunt orchestrator...
+2026-03-18 08:20:45 [INFO] scouts.ats — Greenhouse → Oscar Health (oscar)
+2026-03-18 08:20:46 [INFO] __main__ — Starting daily job hunt orchestration...
+2026-03-18 08:20:46 [INFO] __main__ — Running job scouts...
+2026-03-18 08:20:46 [INFO] scouts.orchestrator — Orchestrator start | type=full dry_run=False parallel=True
+2026-03-18 08:20:46 [INFO] scouts.orchestrator — Running scouts in parallel (threads)
+2026-03-18 08:20:46 [INFO] scouts.utils — Loading config from /Users/jarvis/.openclaw/workspace/projects/job-hunt/scraper/config.yaml
+2026-03-18 08:20:46 [INFO] scouts.ats — ATS scout run_id=1eac752207ab | 31 Lever + 72 GH companies
+2026-03-18 08:20:46 [INFO] scouts.ats — Lever → AssemblyAI (assemblyai)
+2026-03-18 08:20:46 [INFO] scouts.board — Searching: 'head of partnerships web3 crypto' on ['linkedin', 'indeed', 'glassdoor']
+2026-03-18 08:20:46 [INFO] scouts.ats — Greenhouse → Squarespace (squarespace)
+2026-03-18 08:20:46 [ERROR] scouts.ats — Lever[assemblyai] fetch error: 404 Client Error: Not Found for url: https://api.lever.co/v0/postings/assemblyai?mode=json
+2026-03-18 08:20:46,657 - ERROR - JobSpy:Glassdoor - Glassdoor: Error encountered in API response
+2026-03-18 08:20:46 [INFO] scouts.ats — Lever → Ondo Finance (ondo)
+2026-03-18 08:20:47 [INFO] scouts.ats — Greenhouse → Justworks (justworks)
+2026-03-18 08:20:47 [INFO] scouts.ats — Greenhouse → Betterment (betterment)
+2026-03-18 08:20:48 [INFO] scouts.ats — Greenhouse → Spring Health (springhealth)
+2026-03-18 08:20:48 [ERROR] scouts.ats — Greenhouse[springhealth] fetch error: 404 Client Error: Not Found for url: https://boards-api.greenhouse.io/v1/boards/springhealth/jobs?content=true
+2026-03-18 08:20:48 [INFO] scouts.ats — Greenhouse → Yotpo (yotpo)
+2026-03-18 08:20:51,046 - INFO - JobSpy:Linkedin - finished scraping
+2026-03-18 08:20:51 [INFO] scouts.board —   'head of partnerships web3 crypto' → 3 found, 0 new
+2026-03-18 08:20:51 [INFO] scouts.board — Searching: 'VP business development blockchain' on ['linkedin', 'indeed', 'glassdoor']
+2026-03-18 08:20:51,404 - ERROR - JobSpy:Glassdoor - Glassdoor: Error encountered in API response
+2026-03-18 08:20:51 [INFO] scouts.ats — Greenhouse → Veeva Systems (veeva)
+2026-03-18 08:20:51 [ERROR] scouts.ats — Greenhouse[veeva] fetch error: 404 Client Error: Not Found for url: https://boards-api.greenhouse.io/v1/boards/veeva/jobs?content=true
+2026-03-18 08:20:52 [INFO] scouts.ats — Greenhouse → Cohere (cohere)
+2026-03-18 08:20:52 [ERROR] scouts.ats — Greenhouse[cohere] fetch error: 404 Client Error: Not Found for url: https://boards-api.greenhouse.io/v1/boards/cohere/jobs?content=true
+2026-03-18 08:20:52 [INFO] scouts.ats — Greenhouse → Databricks (databricks)
+2026-03-18 08:20:52 [ERROR] scouts.ats — Lever[ondo] fetch error: 404 Client Error: Not Found for url: https://api.lever.co/v0/postings/ondo?mode=json
+2026-03-18 08:20:53 [INFO] scouts.ats — Lever → Blockdaemon (blockdaemon)
+2026-03-18 08:20:53 [ERROR] scouts.ats — Lever[blockdaemon] fetch error: 404 Client Error: Not Found for url: https://api.lever.co/v0/postings/blockdaemon?mode=json
+2026-03-18 08:20:54 [INFO] scouts.ats — Lever → Arbitrum Foundation (arbitrumfoundation)
+2026-03-18 08:20:55 [INFO] scouts.ats — ATS scout done | found=4736 new=2 dedup=4482 low_score=926 errors=0
+2026-03-18 08:20:55 [INFO] scouts.orchestrator — Orchestrator done | run_id=e7a7489d2645 total_found=4737 total_new=3
+2026-03-18 08:20:55 [INFO] __main__ — Scout results: {'boards': {'jobs_found': 1, 'jobs_new': 1, 'jobs_skipped': 77, 'jobs_excluded': 1, 'search_errors': 0, 'by_term': {'head of partnerships web3 crypto': {'found': 3, 'new': 0}, 'VP business development blockchain': {'found': 23, 'new': 1}, 'director of ecosystem crypto defi': {'found': 3, 'new': 0}, 'VP growth web3 fintech': {'found': 20, 'new': 0}, 'head of BD crypto protocol': {'found': 0, 'new': 0}, 'director partnerships crypto': {'found': 23, 'new': 0}, 'VP partnerships web3 NYC': {'found': 0, 'new': 0}, 'ecosystem lead blockchain protocol': {'found': 7, 'new': 0}}, 'by_board': {'linkedin': 1}}, 'ats': {'jobs_found': 4736, 'jobs_new': 2, 'jobs_skipped_dedup': 4482, 'jobs_skipped_low_score': 926, 'jobs_skipped_location': 1567, 'errors': 0, 'companies_queried': 103}, '_summary': {'run_id': 'e7a7489d2645', 'run_type': 'full', 'total_found': 4737, 'total_new': 3, 'completed_at': '2026-03-18T12:20:55.679659'}}
+2026-03-18 08:20:55 [INFO] __main__ — Ranking new jobs...
+2026-03-18 08:20:55 [ERROR] __main__ — Error during orchestration: "Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted"
+Traceback (most recent call last):
+  File "/Users/jarvis/.openclaw/workspace/projects/job-hunt/scraper/daily_job_hunt_cron.py", line 132, in main
+    ranked = rank_new_jobs(limit=args.limit)
+  File "/Users/jarvis/.openclaw/workspace/projects/job-hunt/scraper/agents/ranking_agent.py", line 203, in rank_new_jobs
+    rankings = call_claude(jobs)
+  File "/Users/jarvis/.openclaw/workspace/projects/job-hunt/scraper/agents/ranking_agent.py", line 155, in call_claude
+    response = client.messages.create(
+        model="claude-haiku-4-5",
+        max_tokens=2048,
+        messages=[{"role": "user", "content": prompt}],
+    )
+  File "/Users/jarvis/.openclaw/workspace/projects/job-hunt/.venv/lib/python3.14/site-packages/anthropic/_utils/_utils.py", line 282, in wrapper
+    return func(*args, **kwargs)
+  File "/Users/jarvis/.openclaw/workspace/projects/job-hunt/.venv/lib/python3.14/site-packages/anthropic/resources/messages/messages.py", line 996, in create
+    return self._post(
+           ~~~~~~~~~~^
+        "/v1/messages",
+        ^^^^^^^^^^^^^^^
+    ...<30 lines>...
+        stream_cls=Stream[RawMessageStreamEvent],
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/jarvis/.openclaw/workspace/projects/job-hunt/.venv/lib/python3.14/site-packages/anthropic/_base_client.py", line 1364, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+                           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jarvis/.openclaw/workspace/projects/job-hunt/.venv/lib/python3.14/site-packages/anthropic/_base_client.py", line 1058, in request
+    request = self._build_request(options, retries_taken=retries_taken)
+  File "/Users/jarvis/.openclaw/workspace/projects/job-hunt/.venv/lib/python3.14/site-packages/anthropic/_base_client.py", line 521, in _build_request
+    headers = self._build_headers(options, retries_taken=retries_taken)
+  File "/Users/jarvis/.openclaw/workspace/projects/job-hunt/.venv/lib/python3.14/site-packages/anthropic/_base_client.py", line 451, in _build_headers
+    self._validate_headers(headers_dict, custom_headers)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jarvis/.openclaw/workspace/projects/job-hunt/.venv/lib/python3.14/site-packages/anthropic/_client.py", line 196, in _validate_headers
+    raise TypeError(
+        '"Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted"'
+    )
+TypeError: "Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted"
+[ranking] Fetching up to 20 new jobs from last 24h…
+[ranking] Found 20 new jobs. Ranking with Claude…
+[ranking] Sending 20 jobs to Claude haiku-4-5…
+[notify] ⚠️  No SLACK_WEBHOOK_URL configured.
+[notify] Message (not sent):
+❌ Job Hunt Error: "Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted"
+Traceback (most recent call last):
+  File "/Users/jarvis/.openclaw/workspace/projects/job-hunt/scraper/daily_job_hunt_cron.py", line 185, in <module>
+    main(args)
+    ~~~~^^^^^^
+  File "/Users/jarvis/.openclaw/workspace/projects/job-hunt/scraper/daily_job_hunt_cron.py", line 132, in main
+    ranked = rank_new_jobs(limit=args.limit)
+  File "/Users/jarvis/.openclaw/workspace/projects/job-hunt/scraper/agents/ranking_agent.py", line 203, in rank_new_jobs
+    rankings = call_claude(jobs)
+  File "/Users/jarvis/.openclaw/workspace/projects/job-hunt/scraper/agents/ranking_agent.py", line 155, in call_claude
+    response = client.messages.create(
+        model="claude-haiku-4-5",
+        max_tokens=2048,
+        messages=[{"role": "user", "content": prompt}],
+    )
+  File "/Users/jarvis/.openclaw/workspace/projects/job-hunt/.venv/lib/python3.14/site-packages/anthropic/_utils/_utils.py", line 282, in wrapper
+    return func(*args, **kwargs)
+  File "/Users/jarvis/.openclaw/workspace/projects/job-hunt/.venv/lib/python3.14/site-packages/anthropic/resources/messages/messages.py", line 996, in create
+    return self._post(
+           ~~~~~~~~~~^
+        "/v1/messages",
+        ^^^^^^^^^^^^^^^
+    ...<30 lines>...
+        stream_cls=Stream[RawMessageStreamEvent],
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/jarvis/.openclaw/workspace/projects/job-hunt/.venv/lib/python3.14/site-packages/anthropic/_base_client.py", line 1364, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+                           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jarvis/.openclaw/workspace/projects/job-hunt/.venv/lib/python3.14/site-packages/anthropic/_base_client.py", line 1058, in request
+    request = self._build_request(options, retries_taken=retries_taken)
+  File "/Users/jarvis/.openclaw/workspace/projects/job-hunt/.venv/lib/python3.14/site-packages/anthropic/_base_client.py", line 521, in _build_request
+    headers = self._build_headers(options, retries_taken=retries_taken)
+  File "/Users/jarvis/.openclaw/workspace/projects/job-hunt/.venv/lib/python3.14/site-packages/anthropic/_base_client.py", line 451, in _build_headers
+    self._validate_headers(headers_dict, custom_headers)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jarvis/.openclaw/workspace/projects/job-hunt/.venv/lib/python3.14/site-packages/anthropic/_client.py", line 196, in _validate_headers
+    raise TypeError(
+        '"Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted"'
+    )
+TypeError: "Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted"
+2026-03-18 08:20:56 [INFO] scouts.ats — Lever → Optimism (optimism)
+2026-03-18 08:20:57 [ERROR] scouts.ats — Lever[optimism] fetch error: 404 Client Error: Not Found for url: https://api.lever.co/v0/postings/optimism?mode=json
+2026-03-18 08:20:57 [INFO] scouts.ats — Lever → Solana Foundation (solana)
+2026-03-18 08:20:58 [ERROR] scouts.ats — Lever[solana] fetch error: 404 Client Error: Not Found for url: https://api.lever.co/v0/postings/solana?mode=json
+2026-03-18 08:20:58 [INFO] scouts.ats — Lever → Chainlink Labs (chainlink)
+2026-03-18 08:20:59 [INFO] scouts.board —   'VP business development blockchain' → 23 found, 0 new
+2026-03-18 08:20:59 [INFO] scouts.board — Searching: 'director of ecosystem crypto defi' on ['linkedin', 'indeed', 'glassdoor']
+2026-03-18 08:20:59 [ERROR] scouts.ats — Lever[chainlink] fetch error: 404 Client Error: Not Found for url: https://api.lever.co/v0/postings/chainlink?mode=json
+2026-03-18 08:20:59,938 - ERROR - JobSpy:Glassdoor - Glassdoor: Error encountered in API response
+2026-03-18 08:21:00 [INFO] scouts.ats — Lever → MoonPay (moonpay)
+2026-03-18 08:21:01 [INFO] scouts.ats — Lever → Transak (transak)
+2026-03-18 08:21:02 [ERROR] scouts.ats — Lever[transak] fetch error: 404 Client Error: Not Found for url: https://api.lever.co/v0/postings/transak?mode=json
+2026-03-18 08:21:02 [INFO] scouts.ats — Lever → Yuga Labs (yugalabs)
+2026-03-18 08:21:04 [ERROR] scouts.ats — Lever[yugalabs] fetch error: 404 Client Error: Not Found for url: https://api.lever.co/v0/postings/yugalabs?mode=json
+2026-03-18 08:21:04 [INFO] scouts.ats — Lever → OpenSea (opensea)
+2026-03-18 08:21:04 [INFO] scouts.board —   'director of ecosystem crypto defi' → 3 found, 0 new
+2026-03-18 08:21:04 [INFO] scouts.board — Searching: 'VP growth web3 fintech' on ['linkedin', 'indeed', 'glassdoor']
+2026-03-18 08:21:04 [ERROR] scouts.ats — Lever[opensea] fetch error: 404 Client Error: Not Found for url: https://api.lever.co/v0/postings/opensea?mode=json
+2026-03-18 08:21:05,114 - ERROR - JobSpy:Glassdoor - Glassdoor: Error encountered in API response
+2026-03-18 08:21:05 [INFO] scouts.ats — Lever → Manifold (manifold)
+2026-03-18 08:21:05 [ERROR] scouts.ats — Lever[manifold] fetch error: 404 Client Error: Not Found for url: https://api.lever.co/v0/postings/manifold?mode=json
+2026-03-18 08:21:06 [INFO] scouts.ats — Lever → Stripe (stripe)
+2026-03-18 08:21:07 [ERROR] scouts.ats — Lever[stripe] fetch error: 404 Client Error: Not Found for url: https://api.lever.co/v0/postings/stripe?mode=json
+2026-03-18 08:21:07 [INFO] scouts.ats — Lever → Rippling (rippling)
+2026-03-18 08:21:07 [ERROR] scouts.ats — Lever[rippling] fetch error: 404 Client Error: Not Found for url: https://api.lever.co/v0/postings/rippling?mode=json
+2026-03-18 08:21:08 [INFO] scouts.ats — Lever → Mercury (mercury)
+2026-03-18 08:21:11 [ERROR] scouts.ats — Lever[mercury] fetch error: 404 Client Error: Not Found for url: https://api.lever.co/v0/postings/mercury?mode=json
+2026-03-18 08:21:12 [INFO] scouts.ats — Lever → Arc (arc)
+2026-03-18 08:21:12 [ERROR] scouts.ats — Lever[arc] fetch error: 404 Client Error: Not Found for url: https://api.lever.co/v0/postings/arc?mode=json
+2026-03-18 08:21:13 [INFO] scouts.ats — Lever → Deel (deel)
+2026-03-18 08:21:13 [ERROR] scouts.ats — Lever[deel] fetch error: 404 Client Error: Not Found for url: https://api.lever.co/v0/postings/deel?mode=json
+2026-03-18 08:21:14 [INFO] scouts.ats — Lever → Weights & Biases (wandb)
+2026-03-18 08:21:15 [ERROR] scouts.ats — Lever[wandb] fetch error: 404 Client Error: Not Found for url: https://api.lever.co/v0/postings/wandb?mode=json
+2026-03-18 08:21:15 [INFO] scouts.ats — Lever → Pinecone (pinecone)
+2026-03-18 08:21:15 [ERROR] scouts.ats — Lever[pinecone] fetch error: 404 Client Error: Not Found for url: https://api.lever.co/v0/postings/pinecone?mode=json
+2026-03-18 08:21:16 [INFO] scouts.ats — Lever → Weaviate (weaviate)
+2026-03-18 08:21:16 [ERROR] scouts.ats — Lever[weaviate] fetch error: 404 Client Error: Not Found for url: https://api.lever.co/v0/postings/weaviate?mode=json
+2026-03-18 08:21:17 [INFO] scouts.ats — Lever → LangChain (langchain)
+2026-03-18 08:21:17 [ERROR] scouts.ats — Lever[langchain] fetch error: 404 Client Error: Not Found for url: https://api.lever.co/v0/postings/langchain?mode=json
+2026-03-18 08:21:17 [INFO] scouts.ats — Lever → Pika Labs (pikalabs)
+2026-03-18 08:21:18 [ERROR] scouts.ats — Lever[pikalabs] fetch error: 404 Client Error: Not Found for url: https://api.lever.co/v0/postings/pikalabs?mode=json
+2026-03-18 08:21:18 [INFO] scouts.ats — Lever → Vercel (vercel)
+2026-03-18 08:21:19 [ERROR] scouts.ats — Lever[vercel] fetch error: 404 Client Error: Not Found for url: https://api.lever.co/v0/postings/vercel?mode=json
+2026-03-18 08:21:19 [INFO] scouts.ats — Lever → Coda (coda)
+2026-03-18 08:21:19 [INFO] scouts.board —   'VP growth web3 fintech' → 20 found, 0 new
+2026-03-18 08:21:19 [INFO] scouts.board — Searching: 'head of BD crypto protocol' on ['linkedin', 'indeed', 'glassdoor']
+2026-03-18 08:21:19,855 - ERROR - JobSpy:Glassdoor - Glassdoor: Error encountered in API response
+2026-03-18 08:21:19 [INFO] scouts.board —   'head of BD crypto protocol' → 0 found, 0 new
+2026-03-18 08:21:19 [INFO] scouts.board — Searching: 'director partnerships crypto' on ['linkedin', 'indeed', 'glassdoor']
+2026-03-18 08:21:20 [ERROR] scouts.ats — Lever[coda] fetch error: 404 Client Error: Not Found for url: https://api.lever.co/v0/postings/coda?mode=json
+2026-03-18 08:21:20,229 - ERROR - JobSpy:Glassdoor - Glassdoor: Error encountered in API response
+2026-03-18 08:21:20 [INFO] scouts.ats — Lever → PlanetScale (planetscale)
+2026-03-18 08:21:20 [ERROR] scouts.ats — Lever[planetscale] fetch error: 404 Client Error: Not Found for url: https://api.lever.co/v0/postings/planetscale?mode=json
+2026-03-18 08:21:21 [INFO] scouts.ats — Lever → Neon (neon)
+2026-03-18 08:21:22 [INFO] scouts.ats — Lever → Petal (petal)
+2026-03-18 08:21:25 [ERROR] scouts.ats — Lever[petal] fetch error: 404 Client Error: Not Found for url: https://api.lever.co/v0/postings/petal?mode=json
+2026-03-18 08:21:25 [INFO] scouts.ats — Lever → Attentive (attentive)
+2026-03-18 08:21:29 [INFO] scouts.ats — Lever → Anthropic (anthropic)
+2026-03-18 08:21:30 [ERROR] scouts.ats — Lever[anthropic] fetch error: 404 Client Error: Not Found for url: https://api.lever.co/v0/postings/anthropic?mode=json
+2026-03-18 08:21:30 [INFO] scouts.board —   'director partnerships crypto' → 23 found, 0 new
+2026-03-18 08:21:30 [INFO] scouts.board — Searching: 'VP partnerships web3 NYC' on ['linkedin', 'indeed', 'glassdoor']
+2026-03-18 08:21:30 [INFO] scouts.ats — Lever → Hugging Face (huggingface)
+2026-03-18 08:21:30,994 - ERROR - JobSpy:Glassdoor - Glassdoor: Error encountered in API response
+2026-03-18 08:21:30 [INFO] scouts.board —   'VP partnerships web3 NYC' → 0 found, 0 new
+2026-03-18 08:21:30 [INFO] scouts.board — Searching: 'ecosystem lead blockchain protocol' on ['linkedin', 'indeed', 'glassdoor']
+2026-03-18 08:21:31 [ERROR] scouts.ats — Lever[huggingface] fetch error: 404 Client Error: Not Found for url: https://api.lever.co/v0/postings/huggingface?mode=json
+2026-03-18 08:21:31,338 - ERROR - JobSpy:Glassdoor - Glassdoor: Error encountered in API response
+2026-03-18 08:21:31 [INFO] scouts.ats — Lever → Mistral AI (mistralai)
+2026-03-18 08:21:31 [ERROR] scouts.ats — Lever[mistralai] fetch error: 404 Client Error: Not Found for url: https://api.lever.co/v0/postings/mistralai?mode=json
+2026-03-18 08:21:32 [INFO] scouts.ats — Greenhouse → Coinbase (coinbase)
+2026-03-18 08:21:33 [INFO] scouts.ats — Greenhouse → Kraken (kraken)
+2026-03-18 08:21:33 [ERROR] scouts.ats — Greenhouse[kraken] fetch error: 404 Client Error: Not Found for url: https://boards-api.greenhouse.io/v1/boards/kraken/jobs?content=true
+2026-03-18 08:21:33 [INFO] scouts.ats — Greenhouse → Chainalysis (chainalysis)
+2026-03-18 08:21:33 [ERROR] scouts.ats — Greenhouse[chainalysis] fetch error: 404 Client Error: Not Found for url: https://boards-api.greenhouse.io/v1/boards/chainalysis/jobs?content=true
+2026-03-18 08:21:34 [INFO] scouts.ats — Greenhouse → Consensys (consensys)
+2026-03-18 08:21:34 [INFO] scouts.ats — Greenhouse → Ripple (ripple)
+2026-03-18 08:21:35 [INFO] scouts.ats — Greenhouse → Uniswap Labs (uniswaplabs)
+2026-03-18 08:21:35 [ERROR] scouts.ats — Greenhouse[uniswaplabs] fetch error: 404 Client Error: Not Found for url: https://boards-api.greenhouse.io/v1/boards/uniswaplabs/jobs?content=true
+2026-03-18 08:21:35 [INFO] scouts.board —   'ecosystem lead blockchain protocol' → 7 found, 0 new
+2026-03-18 08:21:36 [INFO] scouts.ats — Greenhouse → Fireblocks (fireblocks)
+2026-03-18 08:21:36 [INFO] scouts.ats — Greenhouse → dYdX (dydx)
+2026-03-18 08:21:36 [ERROR] scouts.ats — Greenhouse[dydx] fetch error: 404 Client Error: Not Found for url: https://boards-api.greenhouse.io/v1/boards/dydx/jobs?content=true
+2026-03-18 08:21:37 [INFO] scouts.ats — Greenhouse → Bitpanda (bitpanda)
+2026-03-18 08:21:37 [INFO] scouts.ats — Greenhouse → Gemini (gemini)
+2026-03-18 08:21:38 [INFO] scouts.ats — Greenhouse → Galaxy Digital (galaxydigital)
+2026-03-18 08:21:38 [ERROR] scouts.ats — Greenhouse[galaxydigital] fetch error: 404 Client Error: Not Found for url: https://boards-api.greenhouse.io/v1/boards/galaxydigital/jobs?content=true
+2026-03-18 08:21:38 [INFO] scouts.ats — Greenhouse → Paxos (paxos)
+2026-03-18 08:21:39 [ERROR] scouts.ats — Greenhouse[paxos] fetch error: 404 Client Error: Not Found for url: https://boards-api.greenhouse.io/v1/boards/paxos/jobs?content=true
+2026-03-18 08:21:39 [INFO] scouts.ats — Greenhouse → BitGo (bitgo)
+2026-03-18 08:21:40 [INFO] scouts.ats — Greenhouse → Aptos Labs (aptoslabs)
+2026-03-18 08:21:40 [INFO] scouts.ats — Greenhouse → Sui Foundation (mysten)
+2026-03-18 08:21:40 [ERROR] scouts.ats — Greenhouse[mysten] fetch error: 404 Client Error: Not Found for url: https://boards-api.greenhouse.io/v1/boards/mysten/jobs?content=true
+2026-03-18 08:21:41 [INFO] scouts.ats — Greenhouse → Starkware (starkware)
+2026-03-18 08:21:41 [ERROR] scouts.ats — Greenhouse[starkware] fetch error: 404 Client Error: Not Found for url: https://boards-api.greenhouse.io/v1/boards/starkware/jobs?content=true
+2026-03-18 08:21:41 [INFO] scouts.ats — Greenhouse → Polygon (polygontechnology)
+2026-03-18 08:21:42 [ERROR] scouts.ats — Greenhouse[polygontechnology] fetch error: 404 Client Error: Not Found for url: https://boards-api.greenhouse.io/v1/boards/polygontechnology/jobs?content=true
+2026-03-18 08:21:42 [INFO] scouts.ats — Greenhouse → Ava Labs (avalabs)
+2026-03-18 08:21:42 [INFO] scouts.ats — Greenhouse → Near Protocol (near)
+2026-03-18 08:21:43 [ERROR] scouts.ats — Greenhouse[near] fetch error: 404 Client Error: Not Found for url: https://boards-api.greenhouse.io/v1/boards/near/jobs?content=true
+2026-03-18 08:21:43 [INFO] scouts.ats — Greenhouse → Hedera (swirldslabs)
+2026-03-18 08:21:43 [ERROR] scouts.ats — Greenhouse[swirldslabs] fetch error: 404 Client Error: Not Found for url: https://boards-api.greenhouse.io/v1/boards/swirldslabs/jobs?content=true
+2026-03-18 08:21:44 [INFO] scouts.ats — Greenhouse → The Graph (thegraph)
+2026-03-18 08:21:44 [ERROR] scouts.ats — Greenhouse[thegraph] fetch error: 404 Client Error: Not Found for url: https://boards-api.greenhouse.io/v1/boards/thegraph/jobs?content=true
+2026-03-18 08:21:44 [INFO] scouts.ats — Greenhouse → Immutable (immutable)
+2026-03-18 08:21:44 [ERROR] scouts.ats — Greenhouse[immutable] fetch error: 404 Client Error: Not Found for url: https://boards-api.greenhouse.io/v1/boards/immutable/jobs?content=true
+2026-03-18 08:21:45 [INFO] scouts.ats — Greenhouse → Sky Mavis (skymavis)
+2026-03-18 08:21:45 [ERROR] scouts.ats — Greenhouse[skymavis] fetch error: 404 Client Error: Not Found for url: https://boards-api.greenhouse.io/v1/boards/skymavis/jobs?content=true
+2026-03-18 08:21:45 [INFO] scouts.ats — Greenhouse → Magic Eden (magiceden)
+2026-03-18 08:21:45 [ERROR] scouts.ats — Greenhouse[magiceden] fetch error: 404 Client Error: Not Found for url: https://boards-api.greenhouse.io/v1/boards/magiceden/jobs?content=true
+2026-03-18 08:21:46 [INFO] scouts.ats — Greenhouse → Blur (blur)
+2026-03-18 08:21:46 [ERROR] scouts.ats — Greenhouse[blur] fetch error: 404 Client Error: Not Found for url: https://boards-api.greenhouse.io/v1/boards/blur/jobs?content=true
+2026-03-18 08:21:46 [INFO] scouts.ats — Greenhouse → Brex (brex)
+2026-03-18 08:21:47 [INFO] scouts.ats — Greenhouse → Ramp (ramp)
+2026-03-18 08:21:47 [ERROR] scouts.ats — Greenhouse[ramp] fetch error: 404 Client Error: Not Found for url: https://boards-api.greenhouse.io/v1/boards/ramp/jobs?content=true
+2026-03-18 08:21:48 [INFO] scouts.ats — Greenhouse → Plaid (plaid)
+2026-03-18 08:21:48 [ERROR] scouts.ats — Greenhouse[plaid] fetch error: 404 Client Error: Not Found for url: https://boards-api.greenhouse.io/v1/boards/plaid/jobs?content=true
+2026-03-18 08:21:48 [INFO] scouts.ats — Greenhouse → Carta (carta)
+2026-03-18 08:21:49 [INFO] scouts.ats — Greenhouse → Chime (chime)
+2026-03-18 08:21:49 [INFO] scouts.ats — Greenhouse → Marqeta (marqeta)
+2026-03-18 08:21:50 [INFO] scouts.ats — Greenhouse → Adyen (adyen)
+2026-03-18 08:21:51 [INFO] scouts.ats — Greenhouse → Klarna (klarna)
+2026-03-18 08:21:51 [ERROR] scouts.ats — Greenhouse[klarna] fetch error: 404 Client Error: Not Found for url: https://boards-api.greenhouse.io/v1/boards/klarna/jobs?content=true
+2026-03-18 08:21:51 [INFO] scouts.ats — Greenhouse → Pipe (pipe)
+2026-03-18 08:21:51 [ERROR] scouts.ats — Greenhouse[pipe] fetch error: 404 Client Error: Not Found for url: https://boards-api.greenhouse.io/v1/boards/pipe/jobs?content=true
+2026-03-18 08:21:52 [INFO] scouts.ats — Greenhouse → Payoneer (payoneer)
+2026-03-18 08:21:52 [INFO] scouts.ats — Greenhouse → OpenAI (openai)
+2026-03-18 08:21:52 [ERROR] scouts.ats — Greenhouse[openai] fetch error: 404 Client Error: Not Found for url: https://boards-api.greenhouse.io/v1/boards/openai/jobs?content=true
+2026-03-18 08:21:53 [INFO] scouts.ats — Greenhouse → Scale AI (scaleai)
+2026-03-18 08:21:54 [INFO] scouts.ats — Greenhouse → Snowflake (snowflake)
+2026-03-18 08:21:54 [ERROR] scouts.ats — Greenhouse[snowflake] fetch error: 404 Client Error: Not Found for url: https://boards-api.greenhouse.io/v1/boards/snowflake/jobs?content=true
+2026-03-18 08:21:54 [INFO] scouts.ats — Greenhouse → Eleven Labs (elevenlabs)
+2026-03-18 08:21:54 [ERROR] scouts.ats — Greenhouse[elevenlabs] fetch error: 404 Client Error: Not Found for url: https://boards-api.greenhouse.io/v1/boards/elevenlabs/jobs?content=true
+2026-03-18 08:21:55 [INFO] scouts.ats — Greenhouse → Perplexity AI (perplexityai)
+2026-03-18 08:21:55 [ERROR] scouts.ats — Greenhouse[perplexityai] fetch error: 404 Client Error: Not Found for url: https://boards-api.greenhouse.io/v1/boards/perplexityai/jobs?content=true
+2026-03-18 08:21:55 [INFO] scouts.ats — Greenhouse → Midjourney (midjourney)
+2026-03-18 08:21:55 [ERROR] scouts.ats — Greenhouse[midjourney] fetch error: 404 Client Error: Not Found for url: https://boards-api.greenhouse.io/v1/boards/midjourney/jobs?content=true
+2026-03-18 08:21:56 [INFO] scouts.ats — Greenhouse → Stability AI (stabilityai)
+2026-03-18 08:21:56 [INFO] scouts.ats — Greenhouse → Runway (runwayml)
+2026-03-18 08:21:57 [INFO] scouts.ats — Greenhouse → Replit (replit)
+2026-03-18 08:21:57 [ERROR] scouts.ats — Greenhouse[replit] fetch error: 404 Client Error: Not Found for url: https://boards-api.greenhouse.io/v1/boards/replit/jobs?content=true
+2026-03-18 08:21:57 [INFO] scouts.ats — Greenhouse → Notion (notion)
+2026-03-18 08:21:57 [ERROR] scouts.ats — Greenhouse[notion] fetch error: 404 Client Error: Not Found for url: https://boards-api.greenhouse.io/v1/boards/notion/jobs?content=true
+2026-03-18 08:21:58 [INFO] scouts.ats — Greenhouse → Figma (figma)
+2026-03-18 08:21:58 [INFO] scouts.ats — Greenhouse → Retool (retool)
+2026-03-18 08:21:59 [ERROR] scouts.ats — Greenhouse[retool] fetch error: 404 Client Error: Not Found for url: https://boards-api.greenhouse.io/v1/boards/retool/jobs?content=true
+2026-03-18 08:21:59 [INFO] scouts.ats — Greenhouse → Whatnot (whatnot)
+2026-03-18 08:21:59 [ERROR] scouts.ats — Greenhouse[whatnot] fetch error: 404 Client Error: Not Found for url: https://boards-api.greenhouse.io/v1/boards/whatnot/jobs?content=true
+2026-03-18 08:22:00 [INFO] scouts.ats — Greenhouse → Vanta (vanta)
+2026-03-18 08:22:00 [ERROR] scouts.ats — Greenhouse[vanta] fetch error: 404 Client Error: Not Found for url: https://boards-api.greenhouse.io/v1/boards/vanta/jobs?content=true
+2026-03-18 08:22:00 [INFO] scouts.ats — Greenhouse → Persona (persona)
+2026-03-18 08:22:00 [ERROR] scouts.ats — Greenhouse[persona] fetch error: 404 Client Error: Not Found for url: https://boards-api.greenhouse.io/v1/boards/persona/jobs?content=true
+2026-03-18 08:22:01 [INFO] scouts.ats — Greenhouse → Segment (segment)
+2026-03-18 08:22:01 [ERROR] scouts.ats — Greenhouse[segment] fetch error: 404 Client Error: Not Found for url: https://boards-api.greenhouse.io/v1/boards/segment/jobs?content=true
+2026-03-18 08:22:01 [INFO] scouts.ats — Greenhouse → Amplitude (amplitude)
+2026-03-18 08:22:02 [INFO] scouts.ats — Greenhouse → Mixpanel (mixpanel)
+2026-03-18 08:22:02 [INFO] scouts.ats — Greenhouse → Intercom (intercom)
+2026-03-18 08:22:03 [INFO] scouts.ats — Greenhouse → Zendesk (zendesk)
+2026-03-18 08:22:03 [ERROR] scouts.ats — Greenhouse[zendesk] fetch error: 404 Client Error: Not Found for url: https://boards-api.greenhouse.io/v1/boards/zendesk/jobs?content=true
+2026-03-18 08:22:04 [INFO] scouts.ats — Greenhouse → HubSpot (hubspot)
+2026-03-18 08:22:04 [INFO] scouts.ats — Greenhouse → Salesforce (salesforce)
+2026-03-18 08:22:04 [ERROR] scouts.ats — Greenhouse[salesforce] fetch error: 404 Client Error: Not Found for url: https://boards-api.greenhouse.io/v1/boards/salesforce/jobs?content=true
+2026-03-18 08:22:05 [INFO] scouts.ats — Greenhouse → Cloudflare (cloudflare)
+2026-03-18 08:22:06 [INFO] scouts.ats — Greenhouse → HashiCorp (hashicorp)
+2026-03-18 08:22:06 [ERROR] scouts.ats — Greenhouse[hashicorp] fetch error: 404 Client Error: Not Found for url: https://boards-api.greenhouse.io/v1/boards/hashicorp/jobs?content=true
+2026-03-18 08:22:06 [INFO] scouts.ats — Greenhouse → Confluent (confluent)
+2026-03-18 08:22:06 [ERROR] scouts.ats — Greenhouse[confluent] fetch error: 404 Client Error: Not Found for url: https://boards-api.greenhouse.io/v1/boards/confluent/jobs?content=true
+2026-03-18 08:22:07 [INFO] scouts.ats — Greenhouse → Elastic (elastic)
+2026-03-18 08:22:08 [INFO] scouts.ats — Greenhouse → MongoDB (mongodb)
+2026-03-18 08:22:10 [INFO] scouts.ats — Greenhouse → Supabase (supabase)
+2026-03-18 08:22:10 [ERROR] scouts.ats — Greenhouse[supabase] fetch error: 404 Client Error: Not Found for url: https://boards-api.greenhouse.io/v1/boards/supabase/jobs?content=true
+2026-03-18 08:22:11 [INFO] scouts.ats — Greenhouse → Oscar Health (oscar)
+2026-03-18 08:22:11 [INFO] scouts.ats — Greenhouse → Squarespace (squarespace)
+2026-03-18 08:22:12 [INFO] scouts.ats — Greenhouse → Justworks (justworks)
+2026-03-18 08:22:15 [INFO] scouts.ats — Greenhouse → Betterment (betterment)
+2026-03-18 08:22:16 [INFO] scouts.ats — Greenhouse → Spring Health (springhealth)
+2026-03-18 08:22:16 [ERROR] scouts.ats — Greenhouse[springhealth] fetch error: 404 Client Error: Not Found for url: https://boards-api.greenhouse.io/v1/boards/springhealth/jobs?content=true
+2026-03-18 08:22:17 [INFO] scouts.ats — Greenhouse → Yotpo (yotpo)
+2026-03-18 08:22:17 [INFO] scouts.ats — Greenhouse → Veeva Systems (veeva)
+2026-03-18 08:22:17 [ERROR] scouts.ats — Greenhouse[veeva] fetch error: 404 Client Error: Not Found for url: https://boards-api.greenhouse.io/v1/boards/veeva/jobs?content=true
+2026-03-18 08:22:18 [INFO] scouts.ats — Greenhouse → Cohere (cohere)
+2026-03-18 08:22:18 [ERROR] scouts.ats — Greenhouse[cohere] fetch error: 404 Client Error: Not Found for url: https://boards-api.greenhouse.io/v1/boards/cohere/jobs?content=true
+2026-03-18 08:22:18 [INFO] scouts.ats — Greenhouse → Databricks (databricks)
+2026-03-18 08:22:19 [INFO] scouts.ats — ATS scout done | found=4736 new=0 dedup=4486 low_score=926 errors=0
+2026-03-18 08:22:19 [INFO] scouts.orchestrator — Orchestrator done | run_id=af09616cf30f total_found=4736 total_new=0
+2026-03-18 08:22:19 [INFO] __main__ — Scout results: {'boards': {'jobs_found': 0, 'jobs_new': 0, 'jobs_skipped': 78, 'jobs_excluded': 1, 'search_errors': 0, 'by_term': {'head of partnerships web3 crypto': {'found': 3, 'new': 0}, 'VP business development blockchain': {'found': 23, 'new': 0}, 'director of ecosystem crypto defi': {'found': 3, 'new': 0}, 'VP growth web3 fintech': {'found': 20, 'new': 0}, 'head of BD crypto protocol': {'found': 0, 'new': 0}, 'director partnerships crypto': {'found': 23, 'new': 0}, 'VP partnerships web3 NYC': {'found': 0, 'new': 0}, 'ecosystem lead blockchain protocol': {'found': 7, 'new': 0}}, 'by_board': {}}, 'ats': {'jobs_found': 4736, 'jobs_new': 0, 'jobs_skipped_dedup': 4486, 'jobs_skipped_low_score': 926, 'jobs_skipped_location': 1567, 'errors': 0, 'companies_queried': 103}, '_summary': {'run_id': 'af09616cf30f', 'run_type': 'full', 'total_found': 4736, 'total_new': 0, 'completed_at': '2026-03-18T12:22:19.636224'}}
+2026-03-18 08:22:19 [INFO] __main__ — Ranking new jobs...
+2026-03-18 08:22:19 [ERROR] __main__ — Error during orchestration: "Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted"
+Traceback (most recent call last):
+  File "/Users/jarvis/.openclaw/workspace/projects/job-hunt/scraper/daily_job_hunt_cron.py", line 132, in main
+    ranked = rank_new_jobs(limit=args.limit)
+  File "/Users/jarvis/.openclaw/workspace/projects/job-hunt/scraper/agents/ranking_agent.py", line 203, in rank_new_jobs
+    rankings = call_claude(jobs)
+  File "/Users/jarvis/.openclaw/workspace/projects/job-hunt/scraper/agents/ranking_agent.py", line 155, in call_claude
+    response = client.messages.create(
+        model="claude-haiku-4-5",
+        max_tokens=2048,
+        messages=[{"role": "user", "content": prompt}],
+    )
+  File "/Users/jarvis/.openclaw/workspace/projects/job-hunt/.venv/lib/python3.14/site-packages/anthropic/_utils/_utils.py", line 282, in wrapper
+    return func(*args, **kwargs)
+  File "/Users/jarvis/.openclaw/workspace/projects/job-hunt/.venv/lib/python3.14/site-packages/anthropic/resources/messages/messages.py", line 996, in create
+    return self._post(
+           ~~~~~~~~~~^
+        "/v1/messages",
+        ^^^^^^^^^^^^^^^
+    ...<30 lines>...
+        stream_cls=Stream[RawMessageStreamEvent],
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/jarvis/.openclaw/workspace/projects/job-hunt/.venv/lib/python3.14/site-packages/anthropic/_base_client.py", line 1364, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+                           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jarvis/.openclaw/workspace/projects/job-hunt/.venv/lib/python3.14/site-packages/anthropic/_base_client.py", line 1058, in request
+    request = self._build_request(options, retries_taken=retries_taken)
+  File "/Users/jarvis/.openclaw/workspace/projects/job-hunt/.venv/lib/python3.14/site-packages/anthropic/_base_client.py", line 521, in _build_request
+    headers = self._build_headers(options, retries_taken=retries_taken)
+  File "/Users/jarvis/.openclaw/workspace/projects/job-hunt/.venv/lib/python3.14/site-packages/anthropic/_base_client.py", line 451, in _build_headers
+    self._validate_headers(headers_dict, custom_headers)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jarvis/.openclaw/workspace/projects/job-hunt/.venv/lib/python3.14/site-packages/anthropic/_client.py", line 196, in _validate_headers
+    raise TypeError(
+        '"Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted"'
+    )
+TypeError: "Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted"
+[ranking] Fetching up to 20 new jobs from last 24h…
+[ranking] Found 20 new jobs. Ranking with Claude…
+[ranking] Sending 20 jobs to Claude haiku-4-5…
+[notify] ⚠️  No SLACK_WEBHOOK_URL configured.
+[notify] Message (not sent):
+❌ Job Hunt Error: "Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted"
+Traceback (most recent call last):
+  File "/Users/jarvis/.openclaw/workspace/projects/job-hunt/scraper/daily_job_hunt_cron.py", line 185, in <module>
+    main(args)
+    ~~~~^^^^^^
+  File "/Users/jarvis/.openclaw/workspace/projects/job-hunt/scraper/daily_job_hunt_cron.py", line 132, in main
+    ranked = rank_new_jobs(limit=args.limit)
+  File "/Users/jarvis/.openclaw/workspace/projects/job-hunt/scraper/agents/ranking_agent.py", line 203, in rank_new_jobs
+    rankings = call_claude(jobs)
+  File "/Users/jarvis/.openclaw/workspace/projects/job-hunt/scraper/agents/ranking_agent.py", line 155, in call_claude
+    response = client.messages.create(
+        model="claude-haiku-4-5",
+        max_tokens=2048,
+        messages=[{"role": "user", "content": prompt}],
+    )
+  File "/Users/jarvis/.openclaw/workspace/projects/job-hunt/.venv/lib/python3.14/site-packages/anthropic/_utils/_utils.py", line 282, in wrapper
+    return func(*args, **kwargs)
+  File "/Users/jarvis/.openclaw/workspace/projects/job-hunt/.venv/lib/python3.14/site-packages/anthropic/resources/messages/messages.py", line 996, in create
+    return self._post(
+           ~~~~~~~~~~^
+        "/v1/messages",
+        ^^^^^^^^^^^^^^^
+    ...<30 lines>...
+        stream_cls=Stream[RawMessageStreamEvent],
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/jarvis/.openclaw/workspace/projects/job-hunt/.venv/lib/python3.14/site-packages/anthropic/_base_client.py", line 1364, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+                           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jarvis/.openclaw/workspace/projects/job-hunt/.venv/lib/python3.14/site-packages/anthropic/_base_client.py", line 1058, in request
+    request = self._build_request(options, retries_taken=retries_taken)
+  File "/Users/jarvis/.openclaw/workspace/projects/job-hunt/.venv/lib/python3.14/site-packages/anthropic/_base_client.py", line 521, in _build_request
+    headers = self._build_headers(options, retries_taken=retries_taken)
+  File "/Users/jarvis/.openclaw/workspace/projects/job-hunt/.venv/lib/python3.14/site-packages/anthropic/_base_client.py", line 451, in _build_headers
+    self._validate_headers(headers_dict, custom_headers)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jarvis/.openclaw/workspace/projects/job-hunt/.venv/lib/python3.14/site-packages/anthropic/_client.py", line 196, in _validate_headers
+    raise TypeError(
+        '"Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted"'
+    )
+TypeError: "Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted"
+=== Daily Job Hunt Cron Start: Wed Mar 18 12:00:11 EDT 2026 ===
+Activating venv...
+Running daily job hunt orchestrator...
+2026-03-18 12:00:12 [INFO] __main__ — Starting daily job hunt orchestration...
+2026-03-18 12:00:12 [INFO] __main__ — Running job scouts...
+2026-03-18 12:00:12 [INFO] scouts.orchestrator — Orchestrator start | type=full dry_run=False parallel=True
+2026-03-18 12:00:12 [INFO] scouts.orchestrator — Running scouts in parallel (threads)
+2026-03-18 12:00:12 [INFO] scouts.utils — Loading config from /Users/jarvis/.openclaw/workspace/projects/job-hunt/scraper/config.yaml
+2026-03-18 12:00:12 [INFO] scouts.ats — ATS scout run_id=1ec7c4f10fcd | 31 Lever + 72 GH companies
+2026-03-18 12:00:12 [INFO] scouts.ats — Lever → AssemblyAI (assemblyai)
+2026-03-18 12:00:12 [INFO] scouts.board — Searching: 'head of partnerships web3 crypto' on ['linkedin', 'indeed', 'glassdoor']
+2026-03-18 12:00:13,270 - ERROR - JobSpy:Glassdoor - Glassdoor: Error encountered in API response
+2026-03-18 12:00:16 [ERROR] scouts.ats — Lever[assemblyai] fetch error: 404 Client Error: Not Found for url: https://api.lever.co/v0/postings/assemblyai?mode=json
+2026-03-18 12:00:16 [INFO] scouts.ats — Lever → Ondo Finance (ondo)
+2026-03-18 12:00:17,660 - INFO - JobSpy:Linkedin - finished scraping
+2026-03-18 12:00:17 [INFO] scouts.board —   'head of partnerships web3 crypto' → 3 found, 0 new
+2026-03-18 12:00:17 [INFO] scouts.board — Searching: 'VP business development blockchain' on ['linkedin', 'indeed', 'glassdoor']
+2026-03-18 12:00:18,024 - ERROR - JobSpy:Glassdoor - Glassdoor: Error encountered in API response
+2026-03-18 12:00:23 [ERROR] scouts.ats — Lever[ondo] fetch error: 404 Client Error: Not Found for url: https://api.lever.co/v0/postings/ondo?mode=json
+2026-03-18 12:00:24 [INFO] scouts.ats — Lever → Blockdaemon (blockdaemon)
+2026-03-18 12:00:24 [ERROR] scouts.ats — Lever[blockdaemon] fetch error: 404 Client Error: Not Found for url: https://api.lever.co/v0/postings/blockdaemon?mode=json
+2026-03-18 12:00:24 [INFO] scouts.ats — Lever → Arbitrum Foundation (arbitrumfoundation)
+2026-03-18 12:00:30 [INFO] scouts.ats — Lever → Optimism (optimism)
+2026-03-18 12:00:33 [ERROR] scouts.ats — Lever[optimism] fetch error: 404 Client Error: Not Found for url: https://api.lever.co/v0/postings/optimism?mode=json
+2026-03-18 12:00:33 [INFO] scouts.ats — Lever → Solana Foundation (solana)
+2026-03-18 12:00:34 [ERROR] scouts.ats — Lever[solana] fetch error: 404 Client Error: Not Found for url: https://api.lever.co/v0/postings/solana?mode=json
+2026-03-18 12:00:34 [INFO] scouts.ats — Lever → Chainlink Labs (chainlink)
+2026-03-18 12:00:35 [ERROR] scouts.ats — Lever[chainlink] fetch error: 404 Client Error: Not Found for url: https://api.lever.co/v0/postings/chainlink?mode=json
+2026-03-18 12:00:35 [INFO] scouts.ats — Lever → MoonPay (moonpay)
+2026-03-18 12:00:37 [INFO] scouts.board —   'VP business development blockchain' → 22 found, 8 new
+2026-03-18 12:00:37 [INFO] scouts.board — Searching: 'director of ecosystem crypto defi' on ['linkedin', 'indeed', 'glassdoor']
+2026-03-18 12:00:37 [INFO] scouts.ats —   ✅ NEW  [2] MoonPay — Senior Designer - Otherlife
+2026-03-18 12:00:38 [INFO] scouts.ats — Lever → Transak (transak)
+2026-03-18 12:00:39,013 - ERROR - JobSpy:Glassdoor - Glassdoor: Error encountered in API response
+2026-03-18 12:00:41 [INFO] scouts.board —   'director of ecosystem crypto defi' → 3 found, 1 new
+2026-03-18 12:00:41 [INFO] scouts.board — Searching: 'VP growth web3 fintech' on ['linkedin', 'indeed', 'glassdoor']
+2026-03-18 12:00:42 [ERROR] scouts.ats — Lever[transak] fetch error: 404 Client Error: Not Found for url: https://api.lever.co/v0/postings/transak?mode=json
+2026-03-18 12:00:42,354 - ERROR - JobSpy:Glassdoor - Glassdoor: Error encountered in API response
+2026-03-18 12:00:42 [INFO] scouts.ats — Lever → Yuga Labs (yugalabs)
+2026-03-18 12:00:47 [ERROR] scouts.ats — Lever[yugalabs] fetch error: 404 Client Error: Not Found for url: https://api.lever.co/v0/postings/yugalabs?mode=json
+2026-03-18 12:00:48 [INFO] scouts.ats — Lever → OpenSea (opensea)
+2026-03-18 12:00:48 [ERROR] scouts.ats — Lever[opensea] fetch error: 404 Client Error: Not Found for url: https://api.lever.co/v0/postings/opensea?mode=json
+2026-03-18 12:00:49 [INFO] scouts.ats — Lever → Manifold (manifold)
+2026-03-18 12:00:50 [ERROR] scouts.ats — Lever[manifold] fetch error: 404 Client Error: Not Found for url: https://api.lever.co/v0/postings/manifold?mode=json
+2026-03-18 12:00:50 [INFO] scouts.ats — Lever → Stripe (stripe)
+2026-03-18 12:00:54 [INFO] scouts.board —   'VP growth web3 fintech' → 20 found, 0 new
+2026-03-18 12:00:54 [INFO] scouts.board — Searching: 'head of BD crypto protocol' on ['linkedin', 'indeed', 'glassdoor']
+2026-03-18 12:00:55,028 - ERROR - JobSpy:Glassdoor - Glassdoor: Error encountered in API response
+2026-03-18 12:00:55 [INFO] scouts.board —   'head of BD crypto protocol' → 0 found, 0 new
+2026-03-18 12:00:55 [INFO] scouts.board — Searching: 'director partnerships crypto' on ['linkedin', 'indeed', 'glassdoor']
+2026-03-18 12:00:55,415 - ERROR - JobSpy:Glassdoor - Glassdoor: Error encountered in API response
+2026-03-18 12:00:58 [ERROR] scouts.ats — Lever[stripe] fetch error: 404 Client Error: Not Found for url: https://api.lever.co/v0/postings/stripe?mode=json
+2026-03-18 12:00:58 [INFO] scouts.ats — Lever → Rippling (rippling)
+2026-03-18 12:01:00 [ERROR] scouts.ats — Lever[rippling] fetch error: 404 Client Error: Not Found for url: https://api.lever.co/v0/postings/rippling?mode=json
+2026-03-18 12:01:00 [INFO] scouts.ats — Lever → Mercury (mercury)
+2026-03-18 12:01:00 [ERROR] scouts.ats — Lever[mercury] fetch error: 404 Client Error: Not Found for url: https://api.lever.co/v0/postings/mercury?mode=json
+2026-03-18 12:01:01 [INFO] scouts.ats — Lever → Arc (arc)
+2026-03-18 12:01:02 [ERROR] scouts.ats — Lever[arc] fetch error: 404 Client Error: Not Found for url: https://api.lever.co/v0/postings/arc?mode=json
+2026-03-18 12:01:02 [INFO] scouts.ats — Lever → Deel (deel)
+2026-03-18 12:01:04 [INFO] scouts.board —   'director partnerships crypto' → 28 found, 6 new
+2026-03-18 12:01:04 [INFO] scouts.board — Searching: 'VP partnerships web3 NYC' on ['linkedin', 'indeed', 'glassdoor']
+2026-03-18 12:01:04,516 - ERROR - JobSpy:Glassdoor - Glassdoor: Error encountered in API response
+2026-03-18 12:01:04 [INFO] scouts.board —   'VP partnerships web3 NYC' → 0 found, 0 new
+2026-03-18 12:01:04 [INFO] scouts.board — Searching: 'ecosystem lead blockchain protocol' on ['linkedin', 'indeed', 'glassdoor']
+2026-03-18 12:01:04,867 - ERROR - JobSpy:Glassdoor - Glassdoor: Error encountered in API response
+2026-03-18 12:01:05 [ERROR] scouts.ats — Lever[deel] fetch error: 404 Client Error: Not Found for url: https://api.lever.co/v0/postings/deel?mode=json
+2026-03-18 12:01:05 [INFO] scouts.ats — Lever → Weights & Biases (wandb)
+2026-03-18 12:01:07 [ERROR] scouts.ats — Lever[wandb] fetch error: 404 Client Error: Not Found for url: https://api.lever.co/v0/postings/wandb?mode=json
+2026-03-18 12:01:07 [INFO] scouts.ats — Lever → Pinecone (pinecone)
+2026-03-18 12:01:08 [INFO] scouts.board —   'ecosystem lead blockchain protocol' → 8 found, 1 new
+2026-03-18 12:01:09 [ERROR] scouts.ats — Lever[pinecone] fetch error: 404 Client Error: Not Found for url: https://api.lever.co/v0/postings/pinecone?mode=json
+2026-03-18 12:01:09 [INFO] scouts.ats — Lever → Weaviate (weaviate)
+2026-03-18 12:01:10 [ERROR] scouts.ats — Lever[weaviate] fetch error: 404 Client Error: Not Found for url: https://api.lever.co/v0/postings/weaviate?mode=json
+2026-03-18 12:01:10 [INFO] scouts.ats — Lever → LangChain (langchain)
+2026-03-18 12:01:10 [ERROR] scouts.ats — Lever[langchain] fetch error: 404 Client Error: Not Found for url: https://api.lever.co/v0/postings/langchain?mode=json
+2026-03-18 12:01:11 [INFO] scouts.ats — Lever → Pika Labs (pikalabs)
+2026-03-18 12:01:21 [ERROR] scouts.ats — Lever[pikalabs] fetch error: 404 Client Error: Not Found for url: https://api.lever.co/v0/postings/pikalabs?mode=json
+2026-03-18 12:01:22 [INFO] scouts.ats — Lever → Vercel (vercel)
+=== Daily Job Hunt Cron Start: Wed Mar 18 12:01:29 EDT 2026 ===
+Activating venv...
+Running daily job hunt orchestrator...
+2026-03-18 12:01:29 [INFO] __main__ — Starting daily job hunt orchestration...
+2026-03-18 12:01:29 [INFO] __main__ — Running job scouts...
+2026-03-18 12:01:29 [INFO] scouts.orchestrator — Orchestrator start | type=full dry_run=False parallel=True
+2026-03-18 12:01:29 [INFO] scouts.orchestrator — Running scouts in parallel (threads)
+2026-03-18 12:01:29 [INFO] scouts.utils — Loading config from /Users/jarvis/.openclaw/workspace/projects/job-hunt/scraper/config.yaml
+2026-03-18 12:01:29 [INFO] scouts.ats — ATS scout run_id=961f926652ce | 31 Lever + 72 GH companies
+2026-03-18 12:01:29 [INFO] scouts.ats — Lever → AssemblyAI (assemblyai)
+2026-03-18 12:01:29 [INFO] scouts.board — Searching: 'head of partnerships web3 crypto' on ['linkedin', 'indeed', 'glassdoor']
+2026-03-18 12:01:30 [ERROR] scouts.ats — Lever[assemblyai] fetch error: 404 Client Error: Not Found for url: https://api.lever.co/v0/postings/assemblyai?mode=json
+2026-03-18 12:01:30,123 - ERROR - JobSpy:Glassdoor - Glassdoor: Error encountered in API response
+2026-03-18 12:01:30 [INFO] scouts.ats — Lever → Ondo Finance (ondo)
+2026-03-18 12:01:30 [ERROR] scouts.ats — Lever[ondo] fetch error: 404 Client Error: Not Found for url: https://api.lever.co/v0/postings/ondo?mode=json
+2026-03-18 12:01:31 [INFO] scouts.ats — Lever → Blockdaemon (blockdaemon)
+2026-03-18 12:01:32 [ERROR] scouts.ats — Lever[blockdaemon] fetch error: 404 Client Error: Not Found for url: https://api.lever.co/v0/postings/blockdaemon?mode=json
+2026-03-18 12:01:32 [INFO] scouts.ats — Lever → Arbitrum Foundation (arbitrumfoundation)
+2026-03-18 12:01:35 [INFO] scouts.ats — Lever → Optimism (optimism)
+2026-03-18 12:01:36,050 - INFO - JobSpy:Linkedin - finished scraping
+2026-03-18 12:01:36 [INFO] scouts.board —   'head of partnerships web3 crypto' → 3 found, 0 new
+2026-03-18 12:01:36 [INFO] scouts.board — Searching: 'VP business development blockchain' on ['linkedin', 'indeed', 'glassdoor']
+2026-03-18 12:01:36,433 - ERROR - JobSpy:Glassdoor - Glassdoor: Error encountered in API response
+2026-03-18 12:01:37 [ERROR] scouts.ats — Lever[vercel] fetch error: HTTPSConnectionPool(host='api.lever.co', port=443): Read timed out. (read timeout=15)
+2026-03-18 12:01:38 [INFO] scouts.ats — Lever → Coda (coda)
+2026-03-18 12:01:38 [ERROR] scouts.ats — Lever[coda] fetch error: 404 Client Error: Not Found for url: https://api.lever.co/v0/postings/coda?mode=json
+2026-03-18 12:01:38 [INFO] scouts.ats — Lever → PlanetScale (planetscale)
+2026-03-18 12:01:40 [ERROR] scouts.ats — Lever[optimism] fetch error: 404 Client Error: Not Found for url: https://api.lever.co/v0/postings/optimism?mode=json
+2026-03-18 12:01:40 [INFO] scouts.ats — Lever → Solana Foundation (solana)
+2026-03-18 12:01:41 [ERROR] scouts.ats — Lever[solana] fetch error: 404 Client Error: Not Found for url: https://api.lever.co/v0/postings/solana?mode=json
+2026-03-18 12:01:41 [INFO] scouts.ats — Lever → Chainlink Labs (chainlink)
+2026-03-18 12:01:41 [ERROR] scouts.ats — Lever[planetscale] fetch error: 404 Client Error: Not Found for url: https://api.lever.co/v0/postings/planetscale?mode=json
+2026-03-18 12:01:42 [ERROR] scouts.ats — Lever[chainlink] fetch error: 404 Client Error: Not Found for url: https://api.lever.co/v0/postings/chainlink?mode=json
+2026-03-18 12:01:42 [INFO] scouts.ats — Lever → Neon (neon)
+2026-03-18 12:01:42 [INFO] scouts.ats — Lever → MoonPay (moonpay)
+2026-03-18 12:01:43 [INFO] scouts.ats — Lever → Petal (petal)
+2026-03-18 12:01:44 [ERROR] scouts.ats — Lever[petal] fetch error: 404 Client Error: Not Found for url: https://api.lever.co/v0/postings/petal?mode=json
+2026-03-18 12:01:44 [INFO] scouts.ats — Lever → Attentive (attentive)
+2026-03-18 12:01:45 [INFO] scouts.ats — Lever → Anthropic (anthropic)
+2026-03-18 12:01:50 [ERROR] scouts.ats — Lever[anthropic] fetch error: 404 Client Error: Not Found for url: https://api.lever.co/v0/postings/anthropic?mode=json
+2026-03-18 12:01:50 [INFO] scouts.ats — Lever → Hugging Face (huggingface)
+2026-03-18 12:01:51 [INFO] scouts.board —   'VP business development blockchain' → 24 found, 0 new
+2026-03-18 12:01:51 [INFO] scouts.board — Searching: 'director of ecosystem crypto defi' on ['linkedin', 'indeed', 'glassdoor']
+2026-03-18 12:01:51,951 - ERROR - JobSpy:Glassdoor - Glassdoor: Error encountered in API response
+2026-03-18 12:01:55 [INFO] scouts.board —   'director of ecosystem crypto defi' → 3 found, 0 new
+2026-03-18 12:01:55 [INFO] scouts.board — Searching: 'VP growth web3 fintech' on ['linkedin', 'indeed', 'glassdoor']
+2026-03-18 12:01:56,045 - ERROR - JobSpy:Glassdoor - Glassdoor: Error encountered in API response
+2026-03-18 12:01:57 [ERROR] scouts.ats — Lever[huggingface] fetch error: 404 Client Error: Not Found for url: https://api.lever.co/v0/postings/huggingface?mode=json
+2026-03-18 12:01:57 [INFO] scouts.ats — Lever → Mistral AI (mistralai)
+2026-03-18 12:01:57 [ERROR] scouts.ats — Lever[moonpay] fetch error: HTTPSConnectionPool(host='api.lever.co', port=443): Read timed out. (read timeout=15)
+2026-03-18 12:01:58 [ERROR] scouts.ats — Lever[mistralai] fetch error: 404 Client Error: Not Found for url: https://api.lever.co/v0/postings/mistralai?mode=json
+2026-03-18 12:01:58 [INFO] scouts.ats — Lever → Transak (transak)
+2026-03-18 12:01:58 [INFO] scouts.ats — Greenhouse → Coinbase (coinbase)
+2026-03-18 12:01:59 [INFO] scouts.ats — Greenhouse → Kraken (kraken)
+2026-03-18 12:01:59 [ERROR] scouts.ats — Greenhouse[kraken] fetch error: 404 Client Error: Not Found for url: https://boards-api.greenhouse.io/v1/boards/kraken/jobs?content=true
+2026-03-18 12:01:59 [ERROR] scouts.ats — Lever[transak] fetch error: 404 Client Error: Not Found for url: https://api.lever.co/v0/postings/transak?mode=json
+2026-03-18 12:01:59 [INFO] scouts.ats — Greenhouse → Chainalysis (chainalysis)
+2026-03-18 12:01:59 [ERROR] scouts.ats — Greenhouse[chainalysis] fetch error: 404 Client Error: Not Found for url: https://boards-api.greenhouse.io/v1/boards/chainalysis/jobs?content=true
+2026-03-18 12:02:00 [INFO] scouts.ats — Lever → Yuga Labs (yugalabs)
+2026-03-18 12:02:00 [INFO] scouts.ats — Greenhouse → Consensys (consensys)
+2026-03-18 12:02:01 [INFO] scouts.ats — Greenhouse → Ripple (ripple)
+2026-03-18 12:02:01 [INFO] scouts.ats — Greenhouse → Uniswap Labs (uniswaplabs)
+2026-03-18 12:02:02 [ERROR] scouts.ats — Greenhouse[uniswaplabs] fetch error: 404 Client Error: Not Found for url: https://boards-api.greenhouse.io/v1/boards/uniswaplabs/jobs?content=true
+2026-03-18 12:02:02 [INFO] scouts.ats — Greenhouse → Fireblocks (fireblocks)
+2026-03-18 12:02:02 [INFO] scouts.ats —   ✅ NEW  [6] Fireblocks — Incident Response Engineer (Pacific time)
+2026-03-18 12:02:02 [ERROR] scouts.ats — Lever[yugalabs] fetch error: 404 Client Error: Not Found for url: https://api.lever.co/v0/postings/yugalabs?mode=json
+2026-03-18 12:02:03 [INFO] scouts.ats — Greenhouse → dYdX (dydx)
+2026-03-18 12:02:03 [ERROR] scouts.ats — Greenhouse[dydx] fetch error: 404 Client Error: Not Found for url: https://boards-api.greenhouse.io/v1/boards/dydx/jobs?content=true
+2026-03-18 12:02:03 [INFO] scouts.ats — Lever → OpenSea (opensea)
+2026-03-18 12:02:03 [INFO] scouts.ats — Greenhouse → Bitpanda (bitpanda)
+2026-03-18 12:02:04 [INFO] scouts.ats — Greenhouse → Gemini (gemini)
+2026-03-18 12:02:04 [ERROR] scouts.ats — Lever[opensea] fetch error: 404 Client Error: Not Found for url: https://api.lever.co/v0/postings/opensea?mode=json
+2026-03-18 12:02:04 [INFO] scouts.ats — Lever → Manifold (manifold)
+2026-03-18 12:02:04 [INFO] scouts.ats — Greenhouse → Galaxy Digital (galaxydigital)
+2026-03-18 12:02:04 [ERROR] scouts.ats — Greenhouse[galaxydigital] fetch error: 404 Client Error: Not Found for url: https://boards-api.greenhouse.io/v1/boards/galaxydigital/jobs?content=true
+2026-03-18 12:02:05 [ERROR] scouts.ats — Lever[manifold] fetch error: 404 Client Error: Not Found for url: https://api.lever.co/v0/postings/manifold?mode=json
+2026-03-18 12:02:05 [INFO] scouts.ats — Greenhouse → Paxos (paxos)
+2026-03-18 12:02:05 [ERROR] scouts.ats — Greenhouse[paxos] fetch error: 404 Client Error: Not Found for url: https://boards-api.greenhouse.io/v1/boards/paxos/jobs?content=true
+2026-03-18 12:02:05 [INFO] scouts.ats — Lever → Stripe (stripe)
+2026-03-18 12:02:05 [INFO] scouts.ats — Greenhouse → BitGo (bitgo)
+2026-03-18 12:02:05 [INFO] scouts.board —   'VP growth web3 fintech' → 20 found, 0 new
+2026-03-18 12:02:05 [INFO] scouts.board — Searching: 'head of BD crypto protocol' on ['linkedin', 'indeed', 'glassdoor']
+2026-03-18 12:02:06 [ERROR] scouts.ats — Lever[stripe] fetch error: 404 Client Error: Not Found for url: https://api.lever.co/v0/postings/stripe?mode=json
+2026-03-18 12:02:06,339 - ERROR - JobSpy:Glassdoor - Glassdoor: Error encountered in API response
+2026-03-18 12:02:06 [INFO] scouts.board —   'head of BD crypto protocol' → 0 found, 0 new
+2026-03-18 12:02:06 [INFO] scouts.board — Searching: 'director partnerships crypto' on ['linkedin', 'indeed', 'glassdoor']
+2026-03-18 12:02:06 [INFO] scouts.ats — Greenhouse → Aptos Labs (aptoslabs)
+2026-03-18 12:02:06 [INFO] scouts.ats — Lever → Rippling (rippling)
+2026-03-18 12:02:06,796 - ERROR - JobSpy:Glassdoor - Glassdoor: Error encountered in API response
+2026-03-18 12:02:07 [INFO] scouts.ats — Greenhouse → Sui Foundation (mysten)
+2026-03-18 12:02:07 [ERROR] scouts.ats — Greenhouse[mysten] fetch error: 404 Client Error: Not Found for url: https://boards-api.greenhouse.io/v1/boards/mysten/jobs?content=true
+2026-03-18 12:02:07 [ERROR] scouts.ats — Lever[rippling] fetch error: 404 Client Error: Not Found for url: https://api.lever.co/v0/postings/rippling?mode=json
+2026-03-18 12:02:07 [INFO] scouts.ats — Greenhouse → Starkware (starkware)
+2026-03-18 12:02:07 [INFO] scouts.ats — Lever → Mercury (mercury)
+2026-03-18 12:02:07 [ERROR] scouts.ats — Greenhouse[starkware] fetch error: 404 Client Error: Not Found for url: https://boards-api.greenhouse.io/v1/boards/starkware/jobs?content=true
+2026-03-18 12:02:08 [INFO] scouts.ats — Greenhouse → Polygon (polygontechnology)
+2026-03-18 12:02:08 [ERROR] scouts.ats — Greenhouse[polygontechnology] fetch error: 404 Client Error: Not Found for url: https://boards-api.greenhouse.io/v1/boards/polygontechnology/jobs?content=true
+2026-03-18 12:02:08 [INFO] scouts.ats — Greenhouse → Ava Labs (avalabs)
+2026-03-18 12:02:09 [INFO] scouts.ats — Greenhouse → Near Protocol (near)
+2026-03-18 12:02:09 [ERROR] scouts.ats — Greenhouse[near] fetch error: 404 Client Error: Not Found for url: https://boards-api.greenhouse.io/v1/boards/near/jobs?content=true
+2026-03-18 12:02:09 [INFO] scouts.ats — Greenhouse → Hedera (swirldslabs)
+2026-03-18 12:02:10 [ERROR] scouts.ats — Greenhouse[swirldslabs] fetch error: 404 Client Error: Not Found for url: https://boards-api.greenhouse.io/v1/boards/swirldslabs/jobs?content=true
+2026-03-18 12:02:10 [INFO] scouts.ats — Greenhouse → The Graph (thegraph)
+2026-03-18 12:02:10 [ERROR] scouts.ats — Greenhouse[thegraph] fetch error: 404 Client Error: Not Found for url: https://boards-api.greenhouse.io/v1/boards/thegraph/jobs?content=true
+2026-03-18 12:02:11 [INFO] scouts.ats — Greenhouse → Immutable (immutable)
+2026-03-18 12:02:11 [ERROR] scouts.ats — Greenhouse[immutable] fetch error: 404 Client Error: Not Found for url: https://boards-api.greenhouse.io/v1/boards/immutable/jobs?content=true
+2026-03-18 12:02:11 [ERROR] scouts.ats — Lever[mercury] fetch error: 404 Client Error: Not Found for url: https://api.lever.co/v0/postings/mercury?mode=json
+2026-03-18 12:02:11 [INFO] scouts.ats — Greenhouse → Sky Mavis (skymavis)
+2026-03-18 12:02:11 [ERROR] scouts.ats — Greenhouse[skymavis] fetch error: 404 Client Error: Not Found for url: https://boards-api.greenhouse.io/v1/boards/skymavis/jobs?content=true
+2026-03-18 12:02:11 [INFO] scouts.ats — Lever → Arc (arc)
+2026-03-18 12:02:12 [INFO] scouts.ats — Greenhouse → Magic Eden (magiceden)
+2026-03-18 12:02:12 [ERROR] scouts.ats — Greenhouse[magiceden] fetch error: 404 Client Error: Not Found for url: https://boards-api.greenhouse.io/v1/boards/magiceden/jobs?content=true
+2026-03-18 12:02:12 [INFO] scouts.ats — Greenhouse → Blur (blur)
+2026-03-18 12:02:12 [ERROR] scouts.ats — Greenhouse[blur] fetch error: 404 Client Error: Not Found for url: https://boards-api.greenhouse.io/v1/boards/blur/jobs?content=true
+2026-03-18 12:02:13 [INFO] scouts.ats — Greenhouse → Brex (brex)
+2026-03-18 12:02:13 [INFO] scouts.ats — Greenhouse → Ramp (ramp)
+2026-03-18 12:02:14 [ERROR] scouts.ats — Greenhouse[ramp] fetch error: 404 Client Error: Not Found for url: https://boards-api.greenhouse.io/v1/boards/ramp/jobs?content=true
+2026-03-18 12:02:14 [ERROR] scouts.ats — Lever[arc] fetch error: 404 Client Error: Not Found for url: https://api.lever.co/v0/postings/arc?mode=json
+2026-03-18 12:02:14 [INFO] scouts.ats — Greenhouse → Plaid (plaid)
+2026-03-18 12:02:14 [INFO] scouts.ats — Lever → Deel (deel)
+2026-03-18 12:02:14 [ERROR] scouts.ats — Greenhouse[plaid] fetch error: 404 Client Error: Not Found for url: https://boards-api.greenhouse.io/v1/boards/plaid/jobs?content=true
+2026-03-18 12:02:15 [INFO] scouts.ats — Greenhouse → Carta (carta)
+2026-03-18 12:02:15 [ERROR] scouts.ats — Lever[deel] fetch error: 404 Client Error: Not Found for url: https://api.lever.co/v0/postings/deel?mode=json
+2026-03-18 12:02:15 [INFO] scouts.board —   'director partnerships crypto' → 28 found, 0 new
+2026-03-18 12:02:15 [INFO] scouts.board — Searching: 'VP partnerships web3 NYC' on ['linkedin', 'indeed', 'glassdoor']
+2026-03-18 12:02:15 [INFO] scouts.ats — Lever → Weights & Biases (wandb)
+2026-03-18 12:02:15 [INFO] scouts.ats — Greenhouse → Chime (chime)
+2026-03-18 12:02:15,772 - ERROR - JobSpy:Glassdoor - Glassdoor: Error encountered in API response
+2026-03-18 12:02:15 [INFO] scouts.board —   'VP partnerships web3 NYC' → 0 found, 0 new
+2026-03-18 12:02:15 [INFO] scouts.board — Searching: 'ecosystem lead blockchain protocol' on ['linkedin', 'indeed', 'glassdoor']
+2026-03-18 12:02:16 [INFO] scouts.ats — Greenhouse → Marqeta (marqeta)
+2026-03-18 12:02:16,172 - ERROR - JobSpy:Glassdoor - Glassdoor: Error encountered in API response
+2026-03-18 12:02:16 [INFO] scouts.ats — Greenhouse → Adyen (adyen)
+2026-03-18 12:02:16 [INFO] scouts.ats —   ✅ NEW  [4] Adyen — Team Lead, Regulatory Product Counsel - North America
+2026-03-18 12:02:17 [INFO] scouts.ats — Greenhouse → Klarna (klarna)
+2026-03-18 12:02:17 [ERROR] scouts.ats — Greenhouse[klarna] fetch error: 404 Client Error: Not Found for url: https://boards-api.greenhouse.io/v1/boards/klarna/jobs?content=true
+2026-03-18 12:02:17 [INFO] scouts.ats — Greenhouse → Pipe (pipe)
+2026-03-18 12:02:17 [ERROR] scouts.ats — Greenhouse[pipe] fetch error: 404 Client Error: Not Found for url: https://boards-api.greenhouse.io/v1/boards/pipe/jobs?content=true
+2026-03-18 12:02:18 [INFO] scouts.ats — Greenhouse → Payoneer (payoneer)
+2026-03-18 12:02:18 [INFO] scouts.ats — Greenhouse → OpenAI (openai)
+2026-03-18 12:02:19 [ERROR] scouts.ats — Greenhouse[openai] fetch error: 404 Client Error: Not Found for url: https://boards-api.greenhouse.io/v1/boards/openai/jobs?content=true
+2026-03-18 12:02:19 [INFO] scouts.ats — Greenhouse → Scale AI (scaleai)
+2026-03-18 12:02:19 [INFO] scouts.board —   'ecosystem lead blockchain protocol' → 8 found, 0 new
+2026-03-18 12:02:20 [INFO] scouts.ats — Greenhouse → Snowflake (snowflake)
+2026-03-18 12:02:22 [ERROR] scouts.ats — Greenhouse[snowflake] fetch error: 404 Client Error: Not Found for url: https://boards-api.greenhouse.io/v1/boards/snowflake/jobs?content=true
+2026-03-18 12:02:22 [INFO] scouts.ats — Greenhouse → Eleven Labs (elevenlabs)
+2026-03-18 12:02:22 [ERROR] scouts.ats — Greenhouse[elevenlabs] fetch error: 404 Client Error: Not Found for url: https://boards-api.greenhouse.io/v1/boards/elevenlabs/jobs?content=true
+2026-03-18 12:02:23 [INFO] scouts.ats — Greenhouse → Perplexity AI (perplexityai)
+2026-03-18 12:02:23 [ERROR] scouts.ats — Greenhouse[perplexityai] fetch error: 404 Client Error: Not Found for url: https://boards-api.greenhouse.io/v1/boards/perplexityai/jobs?content=true
+2026-03-18 12:02:23 [INFO] scouts.ats — Greenhouse → Midjourney (midjourney)
+2026-03-18 12:02:23 [ERROR] scouts.ats — Greenhouse[midjourney] fetch error: 404 Client Error: Not Found for url: https://boards-api.greenhouse.io/v1/boards/midjourney/jobs?content=true
+2026-03-18 12:02:24 [INFO] scouts.ats — Greenhouse → Stability AI (stabilityai)
+2026-03-18 12:02:24 [INFO] scouts.ats — Greenhouse → Runway (runwayml)
+2026-03-18 12:02:25 [INFO] scouts.ats — Greenhouse → Replit (replit)
+2026-03-18 12:02:25 [ERROR] scouts.ats — Greenhouse[replit] fetch error: 404 Client Error: Not Found for url: https://boards-api.greenhouse.io/v1/boards/replit/jobs?content=true
+2026-03-18 12:02:25 [INFO] scouts.ats — Greenhouse → Notion (notion)
+2026-03-18 12:02:26 [ERROR] scouts.ats — Greenhouse[notion] fetch error: 404 Client Error: Not Found for url: https://boards-api.greenhouse.io/v1/boards/notion/jobs?content=true
+2026-03-18 12:02:26 [INFO] scouts.ats — Greenhouse → Figma (figma)
+2026-03-18 12:02:27 [INFO] scouts.ats — Greenhouse → Retool (retool)
+2026-03-18 12:02:27 [ERROR] scouts.ats — Greenhouse[retool] fetch error: 404 Client Error: Not Found for url: https://boards-api.greenhouse.io/v1/boards/retool/jobs?content=true
+2026-03-18 12:02:27 [INFO] scouts.ats — Greenhouse → Whatnot (whatnot)
+2026-03-18 12:02:27 [ERROR] scouts.ats — Greenhouse[whatnot] fetch error: 404 Client Error: Not Found for url: https://boards-api.greenhouse.io/v1/boards/whatnot/jobs?content=true
+2026-03-18 12:02:28 [INFO] scouts.ats — Greenhouse → Vanta (vanta)
+2026-03-18 12:02:28 [ERROR] scouts.ats — Greenhouse[vanta] fetch error: 404 Client Error: Not Found for url: https://boards-api.greenhouse.io/v1/boards/vanta/jobs?content=true
+2026-03-18 12:02:28 [ERROR] scouts.ats — Lever[wandb] fetch error: 404 Client Error: Not Found for url: https://api.lever.co/v0/postings/wandb?mode=json
+2026-03-18 12:02:28 [INFO] scouts.ats — Greenhouse → Persona (persona)
+2026-03-18 12:02:28 [INFO] scouts.ats — Lever → Pinecone (pinecone)
+2026-03-18 12:02:28 [ERROR] scouts.ats — Greenhouse[persona] fetch error: 404 Client Error: Not Found for url: https://boards-api.greenhouse.io/v1/boards/persona/jobs?content=true
+2026-03-18 12:02:29 [INFO] scouts.ats — Greenhouse → Segment (segment)
+2026-03-18 12:02:29 [ERROR] scouts.ats — Greenhouse[segment] fetch error: 404 Client Error: Not Found for url: https://boards-api.greenhouse.io/v1/boards/segment/jobs?content=true
+2026-03-18 12:02:29 [ERROR] scouts.ats — Lever[pinecone] fetch error: 404 Client Error: Not Found for url: https://api.lever.co/v0/postings/pinecone?mode=json
+2026-03-18 12:02:29 [INFO] scouts.ats — Greenhouse → Amplitude (amplitude)
+2026-03-18 12:02:29 [INFO] scouts.ats — Lever → Weaviate (weaviate)
+2026-03-18 12:02:30 [ERROR] scouts.ats — Lever[weaviate] fetch error: 404 Client Error: Not Found for url: https://api.lever.co/v0/postings/weaviate?mode=json
+2026-03-18 12:02:30 [INFO] scouts.ats — Greenhouse → Mixpanel (mixpanel)
+2026-03-18 12:02:30 [INFO] scouts.ats —   ✅ NEW  [5] Mixpanel — Manager, Revenue Strategy & Operations 
+2026-03-18 12:02:30 [INFO] scouts.ats —   ✅ NEW  [6] Mixpanel — Manager, Revenue Strategy & Operations (Leadership)
+2026-03-18 12:02:30 [INFO] scouts.ats —   ✅ NEW  [3] Mixpanel — Senior Account Executive, Enterprise 
+2026-03-18 12:02:30 [INFO] scouts.ats — Lever → LangChain (langchain)
+2026-03-18 12:02:31 [INFO] scouts.ats — Greenhouse → Intercom (intercom)
+2026-03-18 12:02:31 [INFO] scouts.ats —   ✅ NEW  [2] Intercom — Account Executive, Senior MidMarket
+2026-03-18 12:02:31 [INFO] scouts.ats — Greenhouse → Zendesk (zendesk)
+2026-03-18 12:02:31 [ERROR] scouts.ats — Greenhouse[zendesk] fetch error: 404 Client Error: Not Found for url: https://boards-api.greenhouse.io/v1/boards/zendesk/jobs?content=true
+2026-03-18 12:02:32 [INFO] scouts.ats — Greenhouse → HubSpot (hubspot)
+2026-03-18 12:02:32 [INFO] scouts.ats — Greenhouse → Salesforce (salesforce)
+2026-03-18 12:02:32 [ERROR] scouts.ats — Greenhouse[salesforce] fetch error: 404 Client Error: Not Found for url: https://boards-api.greenhouse.io/v1/boards/salesforce/jobs?content=true
+2026-03-18 12:02:33 [INFO] scouts.ats — Greenhouse → Cloudflare (cloudflare)
+2026-03-18 12:02:33 [INFO] scouts.ats —   ✅ NEW  [4] Cloudflare — Forward Deployed Engineer
+2026-03-18 12:02:33 [INFO] scouts.ats —   ✅ NEW  [3] Cloudflare — Senior Cloudflare One GTM Specialist
+2026-03-18 12:02:33 [INFO] scouts.ats —   ✅ NEW  [3] Cloudflare — Senior Solution Engineer - Mid Market - San Francisco
+2026-03-18 12:02:34 [INFO] scouts.ats — Greenhouse → HashiCorp (hashicorp)
+2026-03-18 12:02:34 [ERROR] scouts.ats — Greenhouse[hashicorp] fetch error: 404 Client Error: Not Found for url: https://boards-api.greenhouse.io/v1/boards/hashicorp/jobs?content=true
+2026-03-18 12:02:35 [INFO] scouts.ats — Greenhouse → Confluent (confluent)
+2026-03-18 12:02:35 [ERROR] scouts.ats — Greenhouse[confluent] fetch error: 404 Client Error: Not Found for url: https://boards-api.greenhouse.io/v1/boards/confluent/jobs?content=true
+2026-03-18 12:02:35 [INFO] scouts.ats — Greenhouse → Elastic (elastic)
+2026-03-18 12:02:35 [INFO] scouts.ats —   ✅ NEW  [2] Elastic — Enterprise Account Executive, Expand East
+2026-03-18 12:02:35 [INFO] scouts.ats —   ✅ NEW  [3] Elastic — Enterprise Account Executive - West
+2026-03-18 12:02:36 [INFO] scouts.ats — Greenhouse → MongoDB (mongodb)
+2026-03-18 12:02:38 [INFO] scouts.ats —   ✅ NEW  [4] MongoDB — Account Development Representative
+2026-03-18 12:02:38 [INFO] scouts.ats —   ✅ NEW  [3] MongoDB — Cloud Operations Engineer
+2026-03-18 12:02:38 [INFO] scouts.ats —   ✅ NEW  [4] MongoDB — Escalation Manager, FedRamp - Swing Shift
+2026-03-18 12:02:39 [INFO] scouts.ats —   ✅ NEW  [4] MongoDB — Senior Software Engineer
+2026-03-18 12:02:39 [INFO] scouts.ats —   ✅ NEW  [4] MongoDB — Software Engineer 3
+2026-03-18 12:02:39 [INFO] scouts.ats —   ✅ NEW  [4] MongoDB — Solutions Architect
+2026-03-18 12:02:39 [INFO] scouts.ats — Greenhouse → Supabase (supabase)
+2026-03-18 12:02:39 [ERROR] scouts.ats — Greenhouse[supabase] fetch error: 404 Client Error: Not Found for url: https://boards-api.greenhouse.io/v1/boards/supabase/jobs?content=true
+2026-03-18 12:02:40 [INFO] scouts.ats — Greenhouse → Oscar Health (oscar)
+2026-03-18 12:02:40 [ERROR] scouts.ats — Lever[langchain] fetch error: 404 Client Error: Not Found for url: https://api.lever.co/v0/postings/langchain?mode=json
+2026-03-18 12:02:40 [INFO] scouts.ats — Lever → Pika Labs (pikalabs)
+2026-03-18 12:02:40 [INFO] scouts.ats — Greenhouse → Squarespace (squarespace)
+2026-03-18 12:02:41 [ERROR] scouts.ats — Lever[pikalabs] fetch error: 404 Client Error: Not Found for url: https://api.lever.co/v0/postings/pikalabs?mode=json
+2026-03-18 12:02:41 [INFO] scouts.ats — Greenhouse → Justworks (justworks)
+2026-03-18 12:02:41 [INFO] scouts.ats —   ✅ NEW  [6] Justworks — Director, Health Underwriting
+2026-03-18 12:02:41 [INFO] scouts.ats — Lever → Vercel (vercel)
+2026-03-18 12:02:42 [INFO] scouts.ats — Greenhouse → Betterment (betterment)
+2026-03-18 12:02:42 [ERROR] scouts.ats — Lever[vercel] fetch error: 404 Client Error: Not Found for url: https://api.lever.co/v0/postings/vercel?mode=json
+2026-03-18 12:02:42 [INFO] scouts.ats — Lever → Coda (coda)
+2026-03-18 12:02:42 [INFO] scouts.ats — Greenhouse → Spring Health (springhealth)
+2026-03-18 12:02:42 [ERROR] scouts.ats — Greenhouse[springhealth] fetch error: 404 Client Error: Not Found for url: https://boards-api.greenhouse.io/v1/boards/springhealth/jobs?content=true
+2026-03-18 12:02:42 [ERROR] scouts.ats — Lever[coda] fetch error: 404 Client Error: Not Found for url: https://api.lever.co/v0/postings/coda?mode=json
+2026-03-18 12:02:43 [INFO] scouts.ats — Greenhouse → Yotpo (yotpo)
+2026-03-18 12:02:43 [INFO] scouts.ats — Lever → PlanetScale (planetscale)
+2026-03-18 12:02:43 [INFO] scouts.ats — Greenhouse → Veeva Systems (veeva)
+2026-03-18 12:02:43 [ERROR] scouts.ats — Greenhouse[veeva] fetch error: 404 Client Error: Not Found for url: https://boards-api.greenhouse.io/v1/boards/veeva/jobs?content=true
+2026-03-18 12:02:44 [INFO] scouts.ats — Greenhouse → Cohere (cohere)
+2026-03-18 12:02:44 [ERROR] scouts.ats — Lever[planetscale] fetch error: 404 Client Error: Not Found for url: https://api.lever.co/v0/postings/planetscale?mode=json
+2026-03-18 12:02:44 [ERROR] scouts.ats — Greenhouse[cohere] fetch error: 404 Client Error: Not Found for url: https://boards-api.greenhouse.io/v1/boards/cohere/jobs?content=true
+2026-03-18 12:02:44 [INFO] scouts.ats — Lever → Neon (neon)
+2026-03-18 12:02:44 [INFO] scouts.ats — Greenhouse → Databricks (databricks)
+2026-03-18 12:02:45 [INFO] scouts.ats —   ✅ NEW  [2] Databricks — Delivery Solutions Architect
+2026-03-18 12:02:45 [INFO] scouts.ats —   ✅ NEW  [2] Databricks — Enterprise Account Executive, State and Local
+2026-03-18 12:02:45 [INFO] scouts.ats —   ✅ NEW  [2] Databricks — Resident Solutions Architect - Financial Services
+2026-03-18 12:02:45 [INFO] scouts.ats — ATS scout done | found=4725 new=22 dedup=4434 low_score=922 errors=0
+2026-03-18 12:02:45 [INFO] scouts.orchestrator — Orchestrator done | run_id=a57cf67fc477 total_found=4741 total_new=38
+2026-03-18 12:02:45 [INFO] __main__ — Scout results: {'boards': {'jobs_found': 16, 'jobs_new': 16, 'jobs_skipped': 68, 'jobs_excluded': 0, 'search_errors': 0, 'by_term': {'head of partnerships web3 crypto': {'found': 3, 'new': 0}, 'VP business development blockchain': {'found': 22, 'new': 8}, 'director of ecosystem crypto defi': {'found': 3, 'new': 1}, 'VP growth web3 fintech': {'found': 20, 'new': 0}, 'head of BD crypto protocol': {'found': 0, 'new': 0}, 'director partnerships crypto': {'found': 28, 'new': 6}, 'VP partnerships web3 NYC': {'found': 0, 'new': 0}, 'ecosystem lead blockchain protocol': {'found': 8, 'new': 1}}, 'by_board': {'linkedin': 15, 'indeed': 1}}, 'ats': {'jobs_found': 4725, 'jobs_new': 22, 'jobs_skipped_dedup': 4434, 'jobs_skipped_low_score': 922, 'jobs_skipped_location': 1564, 'errors': 0, 'companies_queried': 103}, '_summary': {'run_id': 'a57cf67fc477', 'run_type': 'full', 'total_found': 4741, 'total_new': 38, 'completed_at': '2026-03-18T16:02:45.885046'}}
+2026-03-18 12:02:45 [INFO] __main__ — Ranking new jobs...
+2026-03-18 12:02:46 [INFO] scouts.ats — Lever → Petal (petal)
+2026-03-18 12:02:46 [ERROR] __main__ — Error during orchestration: "Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted"
+Traceback (most recent call last):
+  File "/Users/jarvis/.openclaw/workspace/projects/job-hunt/scraper/daily_job_hunt_cron.py", line 132, in main
+    ranked = rank_new_jobs(limit=args.limit)
+  File "/Users/jarvis/.openclaw/workspace/projects/job-hunt/scraper/agents/ranking_agent.py", line 203, in rank_new_jobs
+    rankings = call_claude(jobs)
+  File "/Users/jarvis/.openclaw/workspace/projects/job-hunt/scraper/agents/ranking_agent.py", line 155, in call_claude
+    response = client.messages.create(
+        model="claude-haiku-4-5",
+        max_tokens=2048,
+        messages=[{"role": "user", "content": prompt}],
+    )
+  File "/Users/jarvis/.openclaw/workspace/projects/job-hunt/.venv/lib/python3.14/site-packages/anthropic/_utils/_utils.py", line 282, in wrapper
+    return func(*args, **kwargs)
+  File "/Users/jarvis/.openclaw/workspace/projects/job-hunt/.venv/lib/python3.14/site-packages/anthropic/resources/messages/messages.py", line 996, in create
+    return self._post(
+           ~~~~~~~~~~^
+        "/v1/messages",
+        ^^^^^^^^^^^^^^^
+    ...<30 lines>...
+        stream_cls=Stream[RawMessageStreamEvent],
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/jarvis/.openclaw/workspace/projects/job-hunt/.venv/lib/python3.14/site-packages/anthropic/_base_client.py", line 1364, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+                           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jarvis/.openclaw/workspace/projects/job-hunt/.venv/lib/python3.14/site-packages/anthropic/_base_client.py", line 1058, in request
+    request = self._build_request(options, retries_taken=retries_taken)
+  File "/Users/jarvis/.openclaw/workspace/projects/job-hunt/.venv/lib/python3.14/site-packages/anthropic/_base_client.py", line 521, in _build_request
+    headers = self._build_headers(options, retries_taken=retries_taken)
+  File "/Users/jarvis/.openclaw/workspace/projects/job-hunt/.venv/lib/python3.14/site-packages/anthropic/_base_client.py", line 451, in _build_headers
+    self._validate_headers(headers_dict, custom_headers)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jarvis/.openclaw/workspace/projects/job-hunt/.venv/lib/python3.14/site-packages/anthropic/_client.py", line 196, in _validate_headers
+    raise TypeError(
+        '"Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted"'
+    )
+TypeError: "Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted"
+[ranking] Fetching up to 20 new jobs from last 24h…
+[ranking] Found 20 new jobs. Ranking with Claude…
+[ranking] Sending 20 jobs to Claude haiku-4-5…
+[notify] ⚠️  No SLACK_WEBHOOK_URL configured.
+[notify] Message (not sent):
+❌ Job Hunt Error: "Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted"
+Traceback (most recent call last):
+  File "/Users/jarvis/.openclaw/workspace/projects/job-hunt/scraper/daily_job_hunt_cron.py", line 185, in <module>
+    main(args)
+    ~~~~^^^^^^
+  File "/Users/jarvis/.openclaw/workspace/projects/job-hunt/scraper/daily_job_hunt_cron.py", line 132, in main
+    ranked = rank_new_jobs(limit=args.limit)
+  File "/Users/jarvis/.openclaw/workspace/projects/job-hunt/scraper/agents/ranking_agent.py", line 203, in rank_new_jobs
+    rankings = call_claude(jobs)
+  File "/Users/jarvis/.openclaw/workspace/projects/job-hunt/scraper/agents/ranking_agent.py", line 155, in call_claude
+    response = client.messages.create(
+        model="claude-haiku-4-5",
+        max_tokens=2048,
+        messages=[{"role": "user", "content": prompt}],
+    )
+  File "/Users/jarvis/.openclaw/workspace/projects/job-hunt/.venv/lib/python3.14/site-packages/anthropic/_utils/_utils.py", line 282, in wrapper
+    return func(*args, **kwargs)
+  File "/Users/jarvis/.openclaw/workspace/projects/job-hunt/.venv/lib/python3.14/site-packages/anthropic/resources/messages/messages.py", line 996, in create
+    return self._post(
+           ~~~~~~~~~~^
+        "/v1/messages",
+        ^^^^^^^^^^^^^^^
+    ...<30 lines>...
+        stream_cls=Stream[RawMessageStreamEvent],
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/jarvis/.openclaw/workspace/projects/job-hunt/.venv/lib/python3.14/site-packages/anthropic/_base_client.py", line 1364, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+                           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jarvis/.openclaw/workspace/projects/job-hunt/.venv/lib/python3.14/site-packages/anthropic/_base_client.py", line 1058, in request
+    request = self._build_request(options, retries_taken=retries_taken)
+  File "/Users/jarvis/.openclaw/workspace/projects/job-hunt/.venv/lib/python3.14/site-packages/anthropic/_base_client.py", line 521, in _build_request
+    headers = self._build_headers(options, retries_taken=retries_taken)
+  File "/Users/jarvis/.openclaw/workspace/projects/job-hunt/.venv/lib/python3.14/site-packages/anthropic/_base_client.py", line 451, in _build_headers
+    self._validate_headers(headers_dict, custom_headers)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jarvis/.openclaw/workspace/projects/job-hunt/.venv/lib/python3.14/site-packages/anthropic/_client.py", line 196, in _validate_headers
+    raise TypeError(
+        '"Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted"'
+    )
+TypeError: "Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted"
+2026-03-18 12:02:46 [ERROR] scouts.ats — Lever[petal] fetch error: 404 Client Error: Not Found for url: https://api.lever.co/v0/postings/petal?mode=json
+2026-03-18 12:02:46 [INFO] scouts.ats — Lever → Attentive (attentive)
+2026-03-18 12:02:50 [INFO] scouts.ats — Lever → Anthropic (anthropic)
+2026-03-18 12:02:53 [ERROR] scouts.ats — Lever[anthropic] fetch error: 404 Client Error: Not Found for url: https://api.lever.co/v0/postings/anthropic?mode=json
+2026-03-18 12:02:53 [INFO] scouts.ats — Lever → Hugging Face (huggingface)
+2026-03-18 12:02:54 [ERROR] scouts.ats — Lever[huggingface] fetch error: 404 Client Error: Not Found for url: https://api.lever.co/v0/postings/huggingface?mode=json
+2026-03-18 12:02:54 [INFO] scouts.ats — Lever → Mistral AI (mistralai)
+2026-03-18 12:02:54 [ERROR] scouts.ats — Lever[mistralai] fetch error: 404 Client Error: Not Found for url: https://api.lever.co/v0/postings/mistralai?mode=json
+2026-03-18 12:02:55 [INFO] scouts.ats — Greenhouse → Coinbase (coinbase)
+2026-03-18 12:02:56 [INFO] scouts.ats — Greenhouse → Kraken (kraken)
+2026-03-18 12:02:56 [ERROR] scouts.ats — Greenhouse[kraken] fetch error: 404 Client Error: Not Found for url: https://boards-api.greenhouse.io/v1/boards/kraken/jobs?content=true
+2026-03-18 12:02:56 [INFO] scouts.ats — Greenhouse → Chainalysis (chainalysis)
+2026-03-18 12:02:56 [ERROR] scouts.ats — Greenhouse[chainalysis] fetch error: 404 Client Error: Not Found for url: https://boards-api.greenhouse.io/v1/boards/chainalysis/jobs?content=true
+2026-03-18 12:02:57 [INFO] scouts.ats — Greenhouse → Consensys (consensys)
+2026-03-18 12:02:57 [INFO] scouts.ats — Greenhouse → Ripple (ripple)
+2026-03-18 12:02:58 [INFO] scouts.ats — Greenhouse → Uniswap Labs (uniswaplabs)
+2026-03-18 12:02:58 [ERROR] scouts.ats — Greenhouse[uniswaplabs] fetch error: 404 Client Error: Not Found for url: https://boards-api.greenhouse.io/v1/boards/uniswaplabs/jobs?content=true
+2026-03-18 12:02:59 [INFO] scouts.ats — Greenhouse → Fireblocks (fireblocks)
+2026-03-18 12:02:59 [INFO] scouts.ats — Greenhouse → dYdX (dydx)
+2026-03-18 12:02:59 [ERROR] scouts.ats — Greenhouse[dydx] fetch error: 404 Client Error: Not Found for url: https://boards-api.greenhouse.io/v1/boards/dydx/jobs?content=true
+2026-03-18 12:03:00 [INFO] scouts.ats — Greenhouse → Bitpanda (bitpanda)
+2026-03-18 12:03:00 [INFO] scouts.ats — Greenhouse → Gemini (gemini)
+2026-03-18 12:03:01 [INFO] scouts.ats — Greenhouse → Galaxy Digital (galaxydigital)
+2026-03-18 12:03:01 [ERROR] scouts.ats — Greenhouse[galaxydigital] fetch error: 404 Client Error: Not Found for url: https://boards-api.greenhouse.io/v1/boards/galaxydigital/jobs?content=true
+2026-03-18 12:03:01 [INFO] scouts.ats — Greenhouse → Paxos (paxos)
+2026-03-18 12:03:05 [ERROR] scouts.ats — Greenhouse[paxos] fetch error: 404 Client Error: Not Found for url: https://boards-api.greenhouse.io/v1/boards/paxos/jobs?content=true
+2026-03-18 12:03:06 [INFO] scouts.ats — Greenhouse → BitGo (bitgo)
+2026-03-18 12:03:06 [INFO] scouts.ats — Greenhouse → Aptos Labs (aptoslabs)
+2026-03-18 12:03:07 [INFO] scouts.ats — Greenhouse → Sui Foundation (mysten)
+2026-03-18 12:03:07 [ERROR] scouts.ats — Greenhouse[mysten] fetch error: 404 Client Error: Not Found for url: https://boards-api.greenhouse.io/v1/boards/mysten/jobs?content=true
+2026-03-18 12:03:07 [INFO] scouts.ats — Greenhouse → Starkware (starkware)
+2026-03-18 12:03:07 [ERROR] scouts.ats — Greenhouse[starkware] fetch error: 404 Client Error: Not Found for url: https://boards-api.greenhouse.io/v1/boards/starkware/jobs?content=true
+2026-03-18 12:03:08 [INFO] scouts.ats — Greenhouse → Polygon (polygontechnology)
+2026-03-18 12:03:08 [ERROR] scouts.ats — Greenhouse[polygontechnology] fetch error: 404 Client Error: Not Found for url: https://boards-api.greenhouse.io/v1/boards/polygontechnology/jobs?content=true
+2026-03-18 12:03:08 [INFO] scouts.ats — Greenhouse → Ava Labs (avalabs)
+2026-03-18 12:03:09 [INFO] scouts.ats — Greenhouse → Near Protocol (near)
+2026-03-18 12:03:09 [ERROR] scouts.ats — Greenhouse[near] fetch error: 404 Client Error: Not Found for url: https://boards-api.greenhouse.io/v1/boards/near/jobs?content=true
+2026-03-18 12:03:10 [INFO] scouts.ats — Greenhouse → Hedera (swirldslabs)
+2026-03-18 12:03:10 [ERROR] scouts.ats — Greenhouse[swirldslabs] fetch error: 404 Client Error: Not Found for url: https://boards-api.greenhouse.io/v1/boards/swirldslabs/jobs?content=true
+2026-03-18 12:03:10 [INFO] scouts.ats — Greenhouse → The Graph (thegraph)
+2026-03-18 12:03:10 [ERROR] scouts.ats — Greenhouse[thegraph] fetch error: 404 Client Error: Not Found for url: https://boards-api.greenhouse.io/v1/boards/thegraph/jobs?content=true
+2026-03-18 12:03:11 [INFO] scouts.ats — Greenhouse → Immutable (immutable)
+2026-03-18 12:03:11 [ERROR] scouts.ats — Greenhouse[immutable] fetch error: 404 Client Error: Not Found for url: https://boards-api.greenhouse.io/v1/boards/immutable/jobs?content=true
+2026-03-18 12:03:11 [INFO] scouts.ats — Greenhouse → Sky Mavis (skymavis)
+2026-03-18 12:03:11 [ERROR] scouts.ats — Greenhouse[skymavis] fetch error: 404 Client Error: Not Found for url: https://boards-api.greenhouse.io/v1/boards/skymavis/jobs?content=true
+2026-03-18 12:03:12 [INFO] scouts.ats — Greenhouse → Magic Eden (magiceden)
+2026-03-18 12:03:12 [ERROR] scouts.ats — Greenhouse[magiceden] fetch error: 404 Client Error: Not Found for url: https://boards-api.greenhouse.io/v1/boards/magiceden/jobs?content=true
+2026-03-18 12:03:12 [INFO] scouts.ats — Greenhouse → Blur (blur)
+2026-03-18 12:03:13 [ERROR] scouts.ats — Greenhouse[blur] fetch error: 404 Client Error: Not Found for url: https://boards-api.greenhouse.io/v1/boards/blur/jobs?content=true
+2026-03-18 12:03:13 [INFO] scouts.ats — Greenhouse → Brex (brex)
+2026-03-18 12:03:14 [INFO] scouts.ats — Greenhouse → Ramp (ramp)
+2026-03-18 12:03:14 [ERROR] scouts.ats — Greenhouse[ramp] fetch error: 404 Client Error: Not Found for url: https://boards-api.greenhouse.io/v1/boards/ramp/jobs?content=true
+2026-03-18 12:03:14 [INFO] scouts.ats — Greenhouse → Plaid (plaid)
+2026-03-18 12:03:14 [ERROR] scouts.ats — Greenhouse[plaid] fetch error: 404 Client Error: Not Found for url: https://boards-api.greenhouse.io/v1/boards/plaid/jobs?content=true
+2026-03-18 12:03:15 [INFO] scouts.ats — Greenhouse → Carta (carta)
+2026-03-18 12:03:15 [INFO] scouts.ats — Greenhouse → Chime (chime)
+2026-03-18 12:03:16 [INFO] scouts.ats — Greenhouse → Marqeta (marqeta)
+2026-03-18 12:03:17 [INFO] scouts.ats — Greenhouse → Adyen (adyen)
+2026-03-18 12:03:17 [INFO] scouts.ats — Greenhouse → Klarna (klarna)
+2026-03-18 12:03:17 [ERROR] scouts.ats — Greenhouse[klarna] fetch error: 404 Client Error: Not Found for url: https://boards-api.greenhouse.io/v1/boards/klarna/jobs?content=true
+2026-03-18 12:03:18 [INFO] scouts.ats — Greenhouse → Pipe (pipe)
+2026-03-18 12:03:18 [ERROR] scouts.ats — Greenhouse[pipe] fetch error: 404 Client Error: Not Found for url: https://boards-api.greenhouse.io/v1/boards/pipe/jobs?content=true
+2026-03-18 12:03:18 [INFO] scouts.ats — Greenhouse → Payoneer (payoneer)
+2026-03-18 12:03:19 [INFO] scouts.ats — Greenhouse → OpenAI (openai)
+2026-03-18 12:03:19 [ERROR] scouts.ats — Greenhouse[openai] fetch error: 404 Client Error: Not Found for url: https://boards-api.greenhouse.io/v1/boards/openai/jobs?content=true
+2026-03-18 12:03:20 [INFO] scouts.ats — Greenhouse → Scale AI (scaleai)
+2026-03-18 12:03:20 [INFO] scouts.ats — Greenhouse → Snowflake (snowflake)
+2026-03-18 12:03:20 [ERROR] scouts.ats — Greenhouse[snowflake] fetch error: 404 Client Error: Not Found for url: https://boards-api.greenhouse.io/v1/boards/snowflake/jobs?content=true
+2026-03-18 12:03:21 [INFO] scouts.ats — Greenhouse → Eleven Labs (elevenlabs)
+2026-03-18 12:03:21 [ERROR] scouts.ats — Greenhouse[elevenlabs] fetch error: 404 Client Error: Not Found for url: https://boards-api.greenhouse.io/v1/boards/elevenlabs/jobs?content=true
+2026-03-18 12:03:21 [INFO] scouts.ats — Greenhouse → Perplexity AI (perplexityai)
+2026-03-18 12:03:21 [ERROR] scouts.ats — Greenhouse[perplexityai] fetch error: 404 Client Error: Not Found for url: https://boards-api.greenhouse.io/v1/boards/perplexityai/jobs?content=true
+2026-03-18 12:03:22 [INFO] scouts.ats — Greenhouse → Midjourney (midjourney)
+2026-03-18 12:03:22 [ERROR] scouts.ats — Greenhouse[midjourney] fetch error: 404 Client Error: Not Found for url: https://boards-api.greenhouse.io/v1/boards/midjourney/jobs?content=true
+2026-03-18 12:03:22 [INFO] scouts.ats — Greenhouse → Stability AI (stabilityai)
+2026-03-18 12:03:23 [INFO] scouts.ats — Greenhouse → Runway (runwayml)
+2026-03-18 12:03:24 [INFO] scouts.ats — Greenhouse → Replit (replit)
+2026-03-18 12:03:24 [ERROR] scouts.ats — Greenhouse[replit] fetch error: 404 Client Error: Not Found for url: https://boards-api.greenhouse.io/v1/boards/replit/jobs?content=true
+2026-03-18 12:03:24 [INFO] scouts.ats — Greenhouse → Notion (notion)
+2026-03-18 12:03:24 [ERROR] scouts.ats — Greenhouse[notion] fetch error: 404 Client Error: Not Found for url: https://boards-api.greenhouse.io/v1/boards/notion/jobs?content=true
+2026-03-18 12:03:25 [INFO] scouts.ats — Greenhouse → Figma (figma)
+2026-03-18 12:03:25 [INFO] scouts.ats — Greenhouse → Retool (retool)
+2026-03-18 12:03:26 [ERROR] scouts.ats — Greenhouse[retool] fetch error: 404 Client Error: Not Found for url: https://boards-api.greenhouse.io/v1/boards/retool/jobs?content=true
+2026-03-18 12:03:26 [INFO] scouts.ats — Greenhouse → Whatnot (whatnot)
+2026-03-18 12:03:26 [ERROR] scouts.ats — Greenhouse[whatnot] fetch error: 404 Client Error: Not Found for url: https://boards-api.greenhouse.io/v1/boards/whatnot/jobs?content=true
+2026-03-18 12:03:27 [INFO] scouts.ats — Greenhouse → Vanta (vanta)
+2026-03-18 12:03:27 [ERROR] scouts.ats — Greenhouse[vanta] fetch error: 404 Client Error: Not Found for url: https://boards-api.greenhouse.io/v1/boards/vanta/jobs?content=true
+2026-03-18 12:03:27 [INFO] scouts.ats — Greenhouse → Persona (persona)
+2026-03-18 12:03:27 [ERROR] scouts.ats — Greenhouse[persona] fetch error: 404 Client Error: Not Found for url: https://boards-api.greenhouse.io/v1/boards/persona/jobs?content=true
+2026-03-18 12:03:28 [INFO] scouts.ats — Greenhouse → Segment (segment)
+2026-03-18 12:03:28 [ERROR] scouts.ats — Greenhouse[segment] fetch error: 404 Client Error: Not Found for url: https://boards-api.greenhouse.io/v1/boards/segment/jobs?content=true
+2026-03-18 12:03:28 [INFO] scouts.ats — Greenhouse → Amplitude (amplitude)
+2026-03-18 12:03:29 [INFO] scouts.ats — Greenhouse → Mixpanel (mixpanel)
+2026-03-18 12:03:30 [INFO] scouts.ats — Greenhouse → Intercom (intercom)
+2026-03-18 12:03:31 [INFO] scouts.ats — Greenhouse → Zendesk (zendesk)
+2026-03-18 12:03:31 [ERROR] scouts.ats — Greenhouse[zendesk] fetch error: 404 Client Error: Not Found for url: https://boards-api.greenhouse.io/v1/boards/zendesk/jobs?content=true
+2026-03-18 12:03:31 [INFO] scouts.ats — Greenhouse → HubSpot (hubspot)
+2026-03-18 12:03:32 [INFO] scouts.ats — Greenhouse → Salesforce (salesforce)
+2026-03-18 12:03:32 [ERROR] scouts.ats — Greenhouse[salesforce] fetch error: 404 Client Error: Not Found for url: https://boards-api.greenhouse.io/v1/boards/salesforce/jobs?content=true
+2026-03-18 12:03:32 [INFO] scouts.ats — Greenhouse → Cloudflare (cloudflare)
+2026-03-18 12:03:34 [INFO] scouts.ats — Greenhouse → HashiCorp (hashicorp)
+2026-03-18 12:03:34 [ERROR] scouts.ats — Greenhouse[hashicorp] fetch error: 404 Client Error: Not Found for url: https://boards-api.greenhouse.io/v1/boards/hashicorp/jobs?content=true
+2026-03-18 12:03:34 [INFO] scouts.ats — Greenhouse → Confluent (confluent)
+2026-03-18 12:03:34 [ERROR] scouts.ats — Greenhouse[confluent] fetch error: 404 Client Error: Not Found for url: https://boards-api.greenhouse.io/v1/boards/confluent/jobs?content=true
+2026-03-18 12:03:35 [INFO] scouts.ats — Greenhouse → Elastic (elastic)
+2026-03-18 12:03:35 [INFO] scouts.ats — Greenhouse → MongoDB (mongodb)
+2026-03-18 12:03:36 [INFO] scouts.ats — Greenhouse → Supabase (supabase)
+2026-03-18 12:03:36 [ERROR] scouts.ats — Greenhouse[supabase] fetch error: 404 Client Error: Not Found for url: https://boards-api.greenhouse.io/v1/boards/supabase/jobs?content=true
+2026-03-18 12:03:37 [INFO] scouts.ats — Greenhouse → Oscar Health (oscar)
+2026-03-18 12:03:37 [INFO] scouts.ats — Greenhouse → Squarespace (squarespace)
+2026-03-18 12:03:38 [INFO] scouts.ats — Greenhouse → Justworks (justworks)
+2026-03-18 12:03:39 [INFO] scouts.ats — Greenhouse → Betterment (betterment)
+2026-03-18 12:03:39 [INFO] scouts.ats — Greenhouse → Spring Health (springhealth)
+2026-03-18 12:03:39 [ERROR] scouts.ats — Greenhouse[springhealth] fetch error: 404 Client Error: Not Found for url: https://boards-api.greenhouse.io/v1/boards/springhealth/jobs?content=true
+2026-03-18 12:03:40 [INFO] scouts.ats — Greenhouse → Yotpo (yotpo)
+2026-03-18 12:03:40 [INFO] scouts.ats — Greenhouse → Veeva Systems (veeva)
+2026-03-18 12:03:40 [ERROR] scouts.ats — Greenhouse[veeva] fetch error: 404 Client Error: Not Found for url: https://boards-api.greenhouse.io/v1/boards/veeva/jobs?content=true
+2026-03-18 12:03:41 [INFO] scouts.ats — Greenhouse → Cohere (cohere)
+2026-03-18 12:03:41 [ERROR] scouts.ats — Greenhouse[cohere] fetch error: 404 Client Error: Not Found for url: https://boards-api.greenhouse.io/v1/boards/cohere/jobs?content=true
+2026-03-18 12:03:41 [INFO] scouts.ats — Greenhouse → Databricks (databricks)
+2026-03-18 12:03:42 [INFO] scouts.ats — ATS scout done | found=4704 new=0 dedup=4460 low_score=922 errors=0
+2026-03-18 12:03:42 [INFO] scouts.orchestrator — Orchestrator done | run_id=0a7fa509a5b0 total_found=4704 total_new=0
+2026-03-18 12:03:42 [INFO] __main__ — Scout results: {'boards': {'jobs_found': 0, 'jobs_new': 0, 'jobs_skipped': 86, 'jobs_excluded': 0, 'search_errors': 0, 'by_term': {'head of partnerships web3 crypto': {'found': 3, 'new': 0}, 'VP business development blockchain': {'found': 24, 'new': 0}, 'director of ecosystem crypto defi': {'found': 3, 'new': 0}, 'VP growth web3 fintech': {'found': 20, 'new': 0}, 'head of BD crypto protocol': {'found': 0, 'new': 0}, 'director partnerships crypto': {'found': 28, 'new': 0}, 'VP partnerships web3 NYC': {'found': 0, 'new': 0}, 'ecosystem lead blockchain protocol': {'found': 8, 'new': 0}}, 'by_board': {}}, 'ats': {'jobs_found': 4704, 'jobs_new': 0, 'jobs_skipped_dedup': 4460, 'jobs_skipped_low_score': 922, 'jobs_skipped_location': 1552, 'errors': 0, 'companies_queried': 103}, '_summary': {'run_id': '0a7fa509a5b0', 'run_type': 'full', 'total_found': 4704, 'total_new': 0, 'completed_at': '2026-03-18T16:03:42.904845'}}
+2026-03-18 12:03:42 [INFO] __main__ — Ranking new jobs...
+2026-03-18 12:03:42 [ERROR] __main__ — Error during orchestration: "Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted"
+Traceback (most recent call last):
+  File "/Users/jarvis/.openclaw/workspace/projects/job-hunt/scraper/daily_job_hunt_cron.py", line 132, in main
+    ranked = rank_new_jobs(limit=args.limit)
+  File "/Users/jarvis/.openclaw/workspace/projects/job-hunt/scraper/agents/ranking_agent.py", line 203, in rank_new_jobs
+    rankings = call_claude(jobs)
+  File "/Users/jarvis/.openclaw/workspace/projects/job-hunt/scraper/agents/ranking_agent.py", line 155, in call_claude
+    response = client.messages.create(
+        model="claude-haiku-4-5",
+        max_tokens=2048,
+        messages=[{"role": "user", "content": prompt}],
+    )
+  File "/Users/jarvis/.openclaw/workspace/projects/job-hunt/.venv/lib/python3.14/site-packages/anthropic/_utils/_utils.py", line 282, in wrapper
+    return func(*args, **kwargs)
+  File "/Users/jarvis/.openclaw/workspace/projects/job-hunt/.venv/lib/python3.14/site-packages/anthropic/resources/messages/messages.py", line 996, in create
+    return self._post(
+           ~~~~~~~~~~^
+        "/v1/messages",
+        ^^^^^^^^^^^^^^^
+    ...<30 lines>...
+        stream_cls=Stream[RawMessageStreamEvent],
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/jarvis/.openclaw/workspace/projects/job-hunt/.venv/lib/python3.14/site-packages/anthropic/_base_client.py", line 1364, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+                           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jarvis/.openclaw/workspace/projects/job-hunt/.venv/lib/python3.14/site-packages/anthropic/_base_client.py", line 1058, in request
+    request = self._build_request(options, retries_taken=retries_taken)
+  File "/Users/jarvis/.openclaw/workspace/projects/job-hunt/.venv/lib/python3.14/site-packages/anthropic/_base_client.py", line 521, in _build_request
+    headers = self._build_headers(options, retries_taken=retries_taken)
+  File "/Users/jarvis/.openclaw/workspace/projects/job-hunt/.venv/lib/python3.14/site-packages/anthropic/_base_client.py", line 451, in _build_headers
+    self._validate_headers(headers_dict, custom_headers)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jarvis/.openclaw/workspace/projects/job-hunt/.venv/lib/python3.14/site-packages/anthropic/_client.py", line 196, in _validate_headers
+    raise TypeError(
+        '"Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted"'
+    )
+TypeError: "Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted"
+[ranking] Fetching up to 20 new jobs from last 24h…
+[ranking] Found 20 new jobs. Ranking with Claude…
+[ranking] Sending 20 jobs to Claude haiku-4-5…
+[notify] ⚠️  No SLACK_WEBHOOK_URL configured.
+[notify] Message (not sent):
+❌ Job Hunt Error: "Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted"
+Traceback (most recent call last):
+  File "/Users/jarvis/.openclaw/workspace/projects/job-hunt/scraper/daily_job_hunt_cron.py", line 185, in <module>
+    main(args)
+    ~~~~^^^^^^
+  File "/Users/jarvis/.openclaw/workspace/projects/job-hunt/scraper/daily_job_hunt_cron.py", line 132, in main
+    ranked = rank_new_jobs(limit=args.limit)
+  File "/Users/jarvis/.openclaw/workspace/projects/job-hunt/scraper/agents/ranking_agent.py", line 203, in rank_new_jobs
+    rankings = call_claude(jobs)
+  File "/Users/jarvis/.openclaw/workspace/projects/job-hunt/scraper/agents/ranking_agent.py", line 155, in call_claude
+    response = client.messages.create(
+        model="claude-haiku-4-5",
+        max_tokens=2048,
+        messages=[{"role": "user", "content": prompt}],
+    )
+  File "/Users/jarvis/.openclaw/workspace/projects/job-hunt/.venv/lib/python3.14/site-packages/anthropic/_utils/_utils.py", line 282, in wrapper
+    return func(*args, **kwargs)
+  File "/Users/jarvis/.openclaw/workspace/projects/job-hunt/.venv/lib/python3.14/site-packages/anthropic/resources/messages/messages.py", line 996, in create
+    return self._post(
+           ~~~~~~~~~~^
+        "/v1/messages",
+        ^^^^^^^^^^^^^^^
+    ...<30 lines>...
+        stream_cls=Stream[RawMessageStreamEvent],
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/jarvis/.openclaw/workspace/projects/job-hunt/.venv/lib/python3.14/site-packages/anthropic/_base_client.py", line 1364, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+                           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jarvis/.openclaw/workspace/projects/job-hunt/.venv/lib/python3.14/site-packages/anthropic/_base_client.py", line 1058, in request
+    request = self._build_request(options, retries_taken=retries_taken)
+  File "/Users/jarvis/.openclaw/workspace/projects/job-hunt/.venv/lib/python3.14/site-packages/anthropic/_base_client.py", line 521, in _build_request
+    headers = self._build_headers(options, retries_taken=retries_taken)
+  File "/Users/jarvis/.openclaw/workspace/projects/job-hunt/.venv/lib/python3.14/site-packages/anthropic/_base_client.py", line 451, in _build_headers
+    self._validate_headers(headers_dict, custom_headers)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jarvis/.openclaw/workspace/projects/job-hunt/.venv/lib/python3.14/site-packages/anthropic/_client.py", line 196, in _validate_headers
+    raise TypeError(
+        '"Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted"'
+    )
+TypeError: "Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted"
